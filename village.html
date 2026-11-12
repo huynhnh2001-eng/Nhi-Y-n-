@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#16223f">
+<title>Làng gốm Bàu Trúc 3D — Khám phá</title>
+<meta name="description" content="Dạo bước trong làng gốm Bàu Trúc 3D: gặp nghệ nhân, thu thập gốm đặc trưng, chụp ảnh kỷ niệm.">
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="village.css">
+</head>
+<body>
+<div id="world" aria-label="Không gian làng gốm Bàu Trúc 3D" role="img"></div>
+
+<div class="hud" id="hud">
+  <div class="tl">
+    <div class="card loc">
+      <a class="icon-btn" href="index.html#space" aria-label="Quay lại trang chính"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" /></svg></a>
+      <svg class="pin" viewBox="0 0 24 24"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.6"/></svg>
+      <div><b>VIỆT NAM</b><small>Làng gốm Bàu Trúc · Ninh Thuận</small></div>
+    </div>
+    <div class="card weather">
+      <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+      <div><b id="clock">08:07</b><small id="date">Nắng nhẹ</small></div>
+      <span class="temp">32°C</span>
+    </div>
+    <div class="card mana">
+      <span class="lbl">MANA</span>
+      <div class="bar"><i id="mana-bar"></i></div>
+      <b id="mana-val">100</b>
+      <span class="bag" title="Túi đồ"><svg viewBox="0 0 24 24"><path d="M6 8h12l1 13H5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><b id="bag">0</b></span>
+    </div>
+    <div class="card quests" id="quests">
+      <button class="q-head" id="q-toggle" aria-expanded="true"><span class="dot"></span>Khám phá Làng gốm Bàu Trúc</button>
+      <ul>
+        <li id="q-met" class="active">Gặp gỡ nghệ nhân (0/3)</li>
+        <li id="q-items">Gốm đặc trưng (0/7)</li>
+        <li id="q-photo">Ảnh kỷ niệm (0/1)</li>
+      </ul>
+    </div>
+  </div>
+
+  <button class="card notebook" id="btn-notes"><svg viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4z"/><path d="M9 8h6M9 12h6"/></svg>Sổ tay</button>
+
+  <div class="tr">
+    <div class="card wallet">
+      <span class="coin">₫</span>
+      <div><small>Ví · Cửa hàng</small><b id="coins">500.000 GVNĐ</b></div>
+    </div>
+    <div class="card pieces">
+      <svg class="puzzle" viewBox="0 0 24 24"><path d="M4 8h4a2 2 0 1 1 4 0h4v4a2 2 0 1 1 0 4v4H4v-4a2 2 0 1 0 0-4V8z"/></svg>
+      <div><small>Mảnh ghép</small><b id="pieces">0/6</b><div class="bar thin"><i id="pieces-bar"></i></div></div>
+    </div>
+    <button class="card sq" id="btn-collection"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span>Bộ sưu tập</span></button>
+    <button class="card sq" id="btn-map"><svg viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2V6z"/><path d="M9 4v14M15 6v14"/></svg><span>Bản đồ</span></button>
+  </div>
+
+  <canvas id="minimap" width="300" height="300" aria-hidden="true"></canvas>
+
+  <div id="waypoint" class="waypoint" hidden><span class="arrow">➜</span><span id="wp-text"></span><b id="wp-dist"></b></div>
+  <div id="prompt" class="prompt" hidden><kbd>E</kbd><span id="prompt-text"></span></div>
+  <div id="toasts" aria-live="polite"></div>
+
+  <div class="joy" id="joy" hidden><div class="knob" id="knob"></div></div>
+  <div class="actions">
+    <button id="btn-photo" aria-label="Chụp ảnh (C)"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></button>
+    <button id="btn-run" aria-label="Chạy (Shift)"><svg viewBox="0 0 24 24"><circle cx="14" cy="4.5" r="2"/><path d="M8 21l3-6 3 2v4M6 12l3-4h5l2 4 3 1M11 15l-1-4"/></svg></button>
+    <button id="btn-jump" aria-label="Nhảy (Space)"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+    <button id="btn-act" class="act" aria-label="Tương tác (E)">E</button>
+  </div>
+  <div class="help">W A S D di chuyển · Kéo chuột xoay camera · Shift chạy · Space nhảy · E tương tác · C chụp ảnh · M bản đồ</div>
+</div>
+
+<div id="start">
+  <div class="start-card">
+    <span class="kicker">KHÔNG GIAN 3D · NINH PHƯỚC – NINH THUẬN</span>
+    <h1>Làng gốm<br>Bàu Trúc</h1>
+    <p>Dạo quanh nhà trưng bày, ghé xưởng tạo hình và bãi nung lộ thiên. Gặp ba nghệ nhân, tìm 7 món gốm đặc trưng và chụp một tấm ảnh kỷ niệm.</p>
+    <ul class="keys">
+      <li><kbd>W A S D</kbd> Di chuyển</li>
+      <li><kbd>Chuột</kbd> Kéo để xoay</li>
+      <li><kbd>Shift</kbd> Chạy</li>
+      <li><kbd>E</kbd> Tương tác</li>
+    </ul>
+    <p class="touch-note">Trên điện thoại: chạm nửa trái màn hình để đi, kéo nửa phải để xoay camera.</p>
+    <button id="btn-start" class="start-btn" disabled>Đang dựng làng…</button>
+    <p class="fine">Không gian dựng minh họa, không phải bản quét 3D thực tế. Giá, ví và vật phẩm là dữ liệu trò chơi.</p>
+    <p class="fine error" id="start-error" hidden>Thiết bị chưa hỗ trợ WebGL. Hãy mở bằng trình duyệt khác.</p>
+  </div>
+</div>
+
+<dialog id="panel">
+  <div class="panel-head"><span id="panel-kicker"></span><button class="close" aria-label="Đóng">×</button></div>
+  <div id="panel-body"></div>
+</dialog>
+
+<script type="module" src="village.js"></script>
+</body>
+</html>

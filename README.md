@@ -7,6 +7,7 @@ Website tiếng Việt, ưu tiên mobile, giới thiệu làng gốm Bàu Trúc.
 - Giới thiệu nghề gốm Chăm và tư liệu tham khảo.
 - Luồng workshop: chọn lịch, nhập thông tin, kiểm tra và hoàn tất bản mẫu.
 - Không gian xưởng gốm 3D minh họa, xoay và thu phóng bằng chuột hoặc cảm ứng.
+- `village.html`: làng gốm 3D góc nhìn thứ ba (kiểu thế giới mở). Điều khiển nhân vật đi quanh nhà trưng bày, xưởng tạo hình, sân phơi, bãi nung lộ thiên; gặp 3 nghệ nhân, thu thập 7 món gốm, 6 mảnh ghép và chụp ảnh kỷ niệm. HUD gồm vị trí, giờ, mana, nhiệm vụ, ví, bản đồ mini. Hỗ trợ bàn phím/chuột và joystick cảm ứng.
 - Ba mô hình sản phẩm 3D: bình mộc, bình cổ cao, bát đất.
 - Hai hành trình du lịch gợi ý và liên kết bản đồ.
 
@@ -30,4 +31,4 @@ Lịch, giá và chương trình workshop là dữ liệu mẫu. Biểu mẫu kh
 - Three.js v0.170.0 được lưu tại `three.js`, thư viện hiển thị 3D.
 - Font Be Vietnam Pro và Playfair Display tải từ Google Fonts; có font hệ thống dự phòng.
 
-Mã giao diện: `index.html`, `style.css`, `app.js`, `scene.js`.
+Mã giao diện: `index.html`, `style.css`, `app.js`, `scene.js`; làng 3D: `village.html`, `village.css`, `village.js`.
