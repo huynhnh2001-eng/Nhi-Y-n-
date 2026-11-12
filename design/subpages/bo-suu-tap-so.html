@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Làng gốm Bàu Trúc</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b1714; --paper:#f3f0ea; --line:#d9d3c8; --muted:#7a7068;
+  --clay:#a3442b; --clay-dk:#4a1d12; --sand:#e8dccb; --accent:#8a341d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font:400 12px/1.55 "Be Vietnam Pro",system-ui,sans-serif}
+.wrap{width:1100px;margin:0 auto;padding:0 60px}
+.serif{font-family:"Playfair Display",Georgia,serif}
+h2{font:400 34px/1 "Playfair Display",Georgia,serif;text-transform:uppercase;letter-spacing:-.5px}
+.head{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:22px}
+.more{font:600 10px/1 "Be Vietnam Pro";letter-spacing:1.5px;text-transform:uppercase}
+.more::after{content:" ↗"}
+.tag{font:500 8.5px/1.2 "Be Vietnam Pro";letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+section{padding:90px 0 0}
+.img{background:#3a2a20 center/cover no-repeat}
+.a{background-image:url(../../artisan.jpg)} .p{background-image:url(../../pottery.jpg)}
+
+/* HERO */
+.hero{background:#171412;color:#f3ede4;padding:0 0 30px;overflow:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 34px}
+.logo{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.logo b{font:500 38px/0.9 "Playfair Display",serif}
+.logo small{font:600 6.5px/1.3 "Be Vietnam Pro";letter-spacing:1.4px;margin-top:4px}
+nav ul{display:flex;gap:26px;list-style:none;font-size:10.5px;opacity:.9}
+nav ul li:last-child{border-left:1px solid #5a514a;padding-left:16px}
+.hero h1{text-align:center;font:400 64px/1 "Playfair Display",serif;margin-top:20px;letter-spacing:-1px}
+.hero .sub{text-align:center;font:400 15px/1 "Be Vietnam Pro";letter-spacing:4px;margin-top:10px;opacity:.85}
+.collage{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:-6px;height:330px}
+.collage>div{flex:none;box-shadow:0 20px 40px #0008}
+
+/* VISIT */
+.visit{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:28px;align-items:end}
+.visit .ic{font-size:13px;border-top:1px solid var(--line);padding-top:8px;height:100px}
+.visit p{font:500 11px/1.5 "Be Vietnam Pro";text-transform:uppercase;letter-spacing:.4px}
+.visit .tag{display:block;margin-top:6px}
+.visit .ph{height:150px}
+
+/* EXHIBITIONS */
+.ex{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;align-items:start}
+.ex .t{width:100%}
+.ex h4{font:500 12.5px/1.25 "Be Vietnam Pro";color:var(--accent);margin-top:3px}
+.ex .tag{margin-top:8px;display:block}
+
+/* CURRENT */
+.cur{display:grid;grid-template-columns:150px 300px 1fr;gap:28px}
+.cur h3{font:600 17px/1.2 "Be Vietnam Pro";color:var(--accent);text-transform:uppercase}
+.cur .d{font-size:10px;color:var(--muted);margin:6px 0 12px}
+.cur p.body{font-size:10.5px;color:#4a423c;max-width:330px}
+
+/* OFFERS */
+.off{display:grid;grid-template-columns:150px 300px 1fr;gap:28px;align-items:start}
+.off ul{list-style:none;margin-top:-6px}
+.off li{font:600 17px/1 "Be Vietnam Pro";text-transform:uppercase;color:var(--accent);padding:9px 0}
+.off li.on{background:#e6e0d6;margin:0 -60px 0 -20px;padding:12px 60px 12px 20px;position:relative}
+.off li.on span{display:block;font:400 9.5px/1.4 "Be Vietnam Pro";text-transform:none;color:var(--muted);margin-top:6px;max-width:300px}
+
+/* DIGITAL */
+.dig{position:relative;height:420px;overflow:hidden}
+.dig .bg{position:absolute;inset:0;background-position:50% 35%;filter:sepia(.35) saturate(1.2)}
+.dig .bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 62% 30%,#0009,transparent 45%),linear-gradient(transparent 40%,#0008)}
+.dig .c{position:absolute;left:68%;top:30%;transform:translate(-50%,-50%);color:#fff;text-align:center;font-size:12px;line-height:1.4}
+.dig .c b{display:block;margin-top:8px;letter-spacing:1.5px;font-size:10px}
+.dig h2{position:absolute;bottom:10px;left:0;right:0;text-align:center;color:#fff;font:800 92px/1 "Be Vietnam Pro";letter-spacing:-2px;white-space:nowrap}
+
+/* ABOUT */
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.ab .lead{font:600 14px/1.35 "Be Vietnam Pro";text-transform:uppercase;color:var(--accent)}
+.ab .lead.r{grid-column:2}
+.ab p.body{font-size:10.5px;color:#4a423c;column-count:1}
+.ab-imgs{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-top:40px;align-items:start}
+
+/* PRESS */
+.pr{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:230px 140px 1fr 30px;gap:30px;padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.row.on{background:#e6e0d6;margin:0 -60px;padding:18px 60px}
+.row h5{font:500 13px/1.3 "Be Vietnam Pro";color:var(--accent)}
+.row .d{font-size:9.5px;color:var(--muted);margin-top:4px}
+.row p{font-size:9.5px;color:#7d746c;max-width:380px}
+.row .arr{text-align:right;color:#b8afa5}
+.row.on .arr{color:var(--ink)}
+
+footer{background:var(--clay-dk);color:#efe3d6;margin-top:90px;padding:40px 0 22px}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+footer h6{font:600 9px/1 "Be Vietnam Pro";letter-spacing:1.4px;margin-bottom:12px;opacity:.75}
+footer li{list-style:none;font-size:10.5px;line-height:1.9}
+.fb{display:flex;justify-content:space-between;font-size:9px;opacity:.6;margin-top:44px}
+.fb span{margin-left:20px}
+
+.facts4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:44px}
+.facts4 div{border-top:1px solid var(--line);padding-top:12px}
+.facts4 b{display:block;font:400 30px/1 "Playfair Display",serif;color:var(--accent)}
+.facts4 span{font:500 10px/1.4 "Be Vietnam Pro";text-transform:uppercase;letter-spacing:.8px}
+.story{display:grid;grid-template-columns:300px 1fr;gap:40px}
+.story blockquote{font:400 24px/1.3 "Playfair Display",serif;margin-bottom:18px}
+.story .who{font:600 11px/1 "Be Vietnam Pro";letter-spacing:1.4px;text-transform:uppercase;color:var(--accent)}
+.thumbs{display:flex;gap:12px;margin-top:26px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.steps .n{font:400 40px/1 "Playfair Display",serif;color:var(--accent);margin:14px 0 6px}
+.steps h4{font:600 12px/1.3 "Be Vietnam Pro";text-transform:uppercase;margin-bottom:6px}
+.steps p{font-size:10px;color:#5a514a}
+.ev{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ev .card{border-top:2px solid var(--ink);padding-top:14px}
+.ev .day{font:400 56px/1 "Playfair Display",serif}
+.ev .mon{font:600 10px/1 "Be Vietnam Pro";letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin:4px 0 14px}
+.ev h4{font:600 15px/1.3 "Be Vietnam Pro";color:var(--accent);margin-bottom:6px}
+.ev p{font-size:10.5px;color:#5a514a}
+.ev .ph{height:150px;margin-top:16px}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.ct dl div{display:grid;grid-template-columns:110px 1fr;border-bottom:1px solid var(--line);padding:12px 0;font-size:12px}
+.ct dt{font:600 9px/1.6 "Be Vietnam Pro";letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+.field{border-bottom:1px solid #b9b0a5;padding:14px 0 8px;font-size:11px;color:#9a9087}
+.btn{display:inline-block;margin-top:22px;background:var(--accent);color:#fff;font:600 10px/1 "Be Vietnam Pro";letter-spacing:1.5px;padding:14px 26px}
+.map{height:200px;margin-top:24px;background:#e3dccf;position:relative;overflow:hidden}
+
+.sub-hero{background:#171412;color:#f3ede4;padding-bottom:0;position:relative;overflow:hidden}
+.sub-hero .in{padding:40px 60px 50px;width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 360px;gap:40px;align-items:end}
+.crumb{font:500 9px/1 "Be Vietnam Pro";letter-spacing:1.4px;text-transform:uppercase;opacity:.6;margin-bottom:18px}
+.sub-hero h1{font:400 58px/1 "Playfair Display",serif;letter-spacing:-1px;text-transform:uppercase}
+.sub-hero p{font-size:12px;opacity:.75;line-height:1.6}
+.sub-hero .strip{display:flex;gap:10px;height:120px;padding:0 0 0 60px}
+.sub-hero .strip>div{flex:1}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tabs span{border:1px solid #c9c0b4;padding:8px 14px;font:500 10px/1 "Be Vietnam Pro";letter-spacing:.6px;text-transform:uppercase}
+.tabs span.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.card h4{font:600 13px/1.3 "Be Vietnam Pro";color:var(--accent);margin-top:4px}
+.card .tag{display:block;margin-top:10px}
+.card p{font-size:10.5px;color:#5a514a;margin-top:4px}
+.meta{display:flex;justify-content:space-between;font-size:9.5px;color:var(--muted);margin-top:8px;border-top:1px solid var(--line);padding-top:8px}
+.badge{position:absolute;top:10px;left:10px;background:#f3f0ea;color:var(--ink);font:600 8.5px/1 "Be Vietnam Pro";letter-spacing:1.2px;padding:6px 8px;text-transform:uppercase}
+.badge.dk{background:var(--accent);color:#fff}
+.rel{position:relative}
+.big{font:400 26px/1.2 "Playfair Display",serif}
+.cta{background:var(--accent);color:#f6ece2;padding:46px 50px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px}
+.cta h3{font:400 34px/1.1 "Playfair Display",serif;text-transform:uppercase}
+.cta .btn{background:#f3f0ea;color:var(--ink);margin:0}
+.btnl{display:inline-block;border:1px solid var(--ink);font:600 10px/1 "Be Vietnam Pro";letter-spacing:1.5px;padding:13px 22px;margin-top:18px}
+.spec div{display:grid;grid-template-columns:120px 1fr;border-bottom:1px solid var(--line);padding:10px 0;font-size:11.5px}
+.spec dt{font:600 9px/1.6 "Be Vietnam Pro";letter-spacing:1.3px;text-transform:uppercase;color:var(--muted)}
+.tl{border-left:1px solid var(--line);margin-left:6px}
+.tl div{position:relative;padding:0 0 18px 22px}
+.tl div::before{content:"";position:absolute;left:-5px;top:3px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.tl b{font:400 20px/1 "Playfair Display",serif;display:block;margin-bottom:4px}
+.tl span{font-size:11px;color:#4a423c}
+.pager{display:flex;gap:6px;justify-content:center;margin-top:40px;font:500 11px/1 "Be Vietnam Pro"}
+.pager span{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line)}
+.pager span.on{background:var(--ink);color:#fff}
+.side{display:grid;grid-template-columns:200px 1fr;gap:36px}
+.filter h6{font:600 9px/1 "Be Vietnam Pro";letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin:22px 0 10px}
+.filter label{display:flex;justify-content:space-between;font-size:11.5px;padding:5px 0}
+.filter label::before{content:"";width:11px;height:11px;border:1px solid #9a9087;margin-right:8px;flex:none}
+.filter label.on::before{background:var(--accent);border-color:var(--accent)}
+.filter label i{margin-left:auto;font-style:normal;color:var(--muted);font-size:10px}
+.search{border:1px solid #c9c0b4;padding:11px 14px;font-size:11px;color:#9a9087;display:flex;justify-content:space-between}
+.tour{border:1px solid var(--line);background:#f7f5f0}
+.tour .b{padding:20px}
+.tour h4{font:400 22px/1.15 "Playfair Display",serif;margin:8px 0}
+.tour ol{list-style:none;margin:14px 0;border-top:1px solid var(--line)}
+.tour li{display:grid;grid-template-columns:52px 1fr;font-size:10.5px;padding:7px 0;border-bottom:1px solid var(--line)}
+.tour li b{color:var(--accent);font-weight:600}
+.price{display:flex;justify-content:space-between;align-items:end;margin-top:12px}
+.price b{font:400 24px/1 "Playfair Display",serif}
+.price small{font-size:9.5px;color:var(--muted)}
+.mini{font:600 9px/1 "Be Vietnam Pro";letter-spacing:1.4px;text-transform:uppercase;background:var(--ink);color:#fff;padding:11px 16px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.cal div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);height:64px;padding:6px 8px;font-size:10.5px}
+.cal .h{height:auto;font:600 9px/1 "Be Vietnam Pro";letter-spacing:1.2px;color:var(--muted);padding:8px}
+.cal .e{background:#efe4d8}
+.cal .e i{display:block;font-style:normal;font-size:8.5px;color:var(--accent);font-weight:600;margin-top:6px;line-height:1.25}
+.cal .m{color:#c5bdb2}
+.qa div{border-top:1px solid var(--line);padding:16px 0;display:flex;justify-content:space-between;font:500 13px/1.3 "Be Vietnam Pro"}
+.qa div:last-child{border-bottom:1px solid var(--line)}
+.prof{display:grid;grid-template-columns:380px 1fr;gap:50px}
+.stat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:26px 0}
+.stat b{display:block;font:400 34px/1 "Playfair Display",serif;color:var(--accent)}
+.stat span{font:500 9.5px/1.4 "Be Vietnam Pro";letter-spacing:.8px;text-transform:uppercase}
+.award{display:grid;grid-template-columns:60px 1fr auto;gap:16px;border-top:1px solid var(--line);padding:14px 0;align-items:center}
+.award .ic{width:52px;height:52px;border-radius:50%;border:1px solid var(--accent);display:grid;place-items:center;color:var(--accent);font:400 18px "Playfair Display"}
+.award h5{font:600 12.5px/1.3 "Be Vietnam Pro"}
+.award p{font-size:10px;color:var(--muted)}
+.viewer360{height:430px;position:relative;background:radial-gradient(circle at 50% 45%,#3b2c22,#120e0c 70%);display:grid;place-items:center}
+.viewer360 .ctrl{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.viewer360 .ctrl span{white-space:nowrap;background:#ffffff1a;color:#fff;font:500 9.5px/1 "Be Vietnam Pro";padding:9px 14px;letter-spacing:1px}
+.ring{position:absolute;width:300px;height:60px;border:1px dashed #ffffff40;border-radius:50%;bottom:70px}
+</style></head><body><!-- SVG pottery defs -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="clay" x1="0" x2="1"><stop offset="0" stop-color="#6e2c18"/><stop offset=".45" stop-color="#c0653d"/><stop offset="1" stop-color="#5a2312"/></linearGradient>
+    <linearGradient id="clay2" x1="0" x2="1"><stop offset="0" stop-color="#3d2a20"/><stop offset=".5" stop-color="#8a6448"/><stop offset="1" stop-color="#2e1f17"/></linearGradient>
+    <symbol id="vase1" viewBox="0 0 100 140"><path d="M38 6h24v6c0 6-8 10-8 18 0 8 30 20 30 54 0 30-18 46-34 50-16-4-34-20-34-50 0-34 30-46 30-54 0-8-8-12-8-18z"/></symbol>
+    <symbol id="vase2" viewBox="0 0 100 140"><path d="M42 4h16l-2 6c-2 30 18 50 18 80 0 28-12 42-24 46-12-4-24-18-24-46 0-30 20-50 18-80z"/></symbol>
+    <symbol id="bowl" viewBox="0 0 100 60"><path d="M4 8h92c0 28-20 46-46 46S4 36 4 8z"/></symbol>
+    <symbol id="jar" viewBox="0 0 100 120"><path d="M30 6h40v8c22 8 28 30 28 50 0 30-22 50-48 50S2 94 2 64c0-20 6-42 28-50z"/></symbol>
+  <symbol id="pot" viewBox="0 0 100 80"><path d="M20 4h60v6c14 6 18 20 18 32 0 22-20 36-48 36S2 64 2 42c0-12 4-26 18-32z"/></symbol></defs>
+</svg>
+
+<header class="sub-hero"><nav>
+    <div class="logo"><b>B</b><small>BÀU TRÚC<br>LÀNG GỐM</small></div>
+    <ul><li>Giới thiệu</li><li>Nghệ nhân</li><li>Hiện vật</li><li>Tham quan</li><li>Bộ sưu tập số</li><li>Tin tức</li><li>Liên hệ</li><li>VI ⌄</li></ul>
+  </nav><div class="in"><div><div class="crumb">Trang chủ / Bộ sưu tập số</div><h1>Bộ sưu tập số</h1></div><p>Sản phẩm của các nghệ nhân dự thi và các cơ sở sản xuất gốm Bàu Trúc, được số hóa 3D để ngắm ở mọi góc nhìn.</p></div><div class="strip"><div style="height:120px;background:#2f4a3a;display:grid;place-items:center"><svg width="54" height="74"><use href="#vase1" fill="url(#clay)" width="54" height="74"/></svg></div><div class="img p" style="height:120px;background-position:45% 60%;background-size:auto 380px;"></div><div style="height:120px;background:#3b2a22;display:grid;place-items:center"><svg width="63" height="74"><use href="#jar" fill="url(#clay)" width="63" height="74"/></svg></div><div style="height:120px;background:#b9c2b0;display:grid;place-items:center"><svg width="70" height="54"><use href="#pot" fill="url(#clay2)" width="70" height="54"/></svg></div><div class="img a" style="height:120px;background-position:55% 40%;background-size:auto 520px;"></div><div style="height:120px;background:#c8a77f;display:grid;place-items:center"><svg width="54" height="74"><use href="#vase1" fill="url(#clay2)" width="54" height="74"/></svg></div><div style="height:120px;background:#6f4a33;display:grid;place-items:center"><svg width="45" height="74"><use href="#vase2" fill="url(#clay)" width="45" height="74"/></svg></div></div></header><main class="wrap">
+<section><div class="tabs"><span class="on">Tất cả</span><span>Sản phẩm dự thi</span><span>Cơ sở sản xuất</span><span>Bình</span><span>Gia dụng</span><span>Tượng</span><span>Trang trí</span></div>
+<div class="g2" style="grid-template-columns:1.4fr 1fr;align-items:center"><div class="viewer360"><span class="badge dk">Nổi bật · 360°</span><div class="ring"></div><svg width="200" height="280"><use href="#vase1" fill="url(#clay)" width="200" height="280"/></svg><div class="ctrl"><span>⟲ XOAY</span><span>＋ PHÓNG TO</span><span>◐ ÁNH SÁNG</span><span>⛶ TOÀN MÀN HÌNH</span></div></div>
+<div><span class="tag">Giải Nhất · Cuộc thi Gốm Bàu Trúc 2025</span><div class="big" style="margin:10px 0 14px">Bình gốm “Sóng nước Pa Leng”</div><dl class="spec"><div><dt>Nghệ nhân</dt><dd>Đàng Thị Hoa</dd></div><div><dt>Cơ sở</dt><dd>Cơ sở gốm Pa Leng</dd></div><div><dt>Kích thước</dt><dd>Cao 42 cm · Đường kính 28 cm</dd></div><div><dt>Kỹ thuật</dt><dd>Nặn tay, khắc vạch, nung lộ thiên</dd></div></dl><span class="btnl">XEM CHI TIẾT ↗</span></div></div></section>
+<section><div class="head"><h2>Sản phẩm dự thi 2026</h2><span class="more">Tất cả 128 sản phẩm</span></div><div class="g4" style="align-items:start"><div class="card"><div class="rel"><div style="height:200px;background:#2f4a3a;display:grid;place-items:center"><svg width="89" height="124"><use href="#vase1" fill="url(#clay)" width="89" height="124"/></svg></div><span class="badge dk">Top bình chọn</span></div><span class="tag">Mã DT-101 · Bình</span><h4>Bình sóng nước</h4><p>Nghệ nhân Đàng Thị Hoa</p><div class="meta"><span>♡ 514 bình chọn</span><span>360° ↗</span></div></div><div class="card"><div class="rel"><div class="img p" style="height:240px;background-position:45% 60%;background-size:auto 380px;"></div><span class="badge dk">Top bình chọn</span></div><span class="tag">Mã DT-102 · Gia dụng</span><h4>Nồi đất ba chân</h4><p>Nghệ nhân Phú Thị Lan</p><div class="meta"><span>♡ 257 bình chọn</span><span>360° ↗</span></div></div><div class="card"><div class="rel"><div style="height:200px;background:#3b2a22;display:grid;place-items:center"><svg width="105" height="124"><use href="#jar" fill="url(#clay)" width="105" height="124"/></svg></div><span class="badge dk">Top bình chọn</span></div><span class="tag">Mã DT-103 · Bình</span><h4>Ché men lửa</h4><p>Nghệ nhân Thạch Văn Minh</p><div class="meta"><span>♡ 177 bình chọn</span><span>360° ↗</span></div></div><div class="card"><div class="rel"><div style="height:240px;background:#b9c2b0;display:grid;place-items:center"><svg width="140" height="108"><use href="#pot" fill="url(#clay2)" width="140" height="108"/></svg></div><span class="badge ">Dự thi 2026</span></div><span class="tag">Mã DT-104 · Gia dụng</span><h4>Bình cổ cao hoa văn</h4><p>Nghệ nhân Đàng Thị Nga</p><div class="meta"><span>♡ 363 bình chọn</span><span>360° ↗</span></div></div><div class="card"><div class="rel"><div class="img a" style="height:200px;background-position:55% 40%;background-size:auto 520px;"></div><span class="badge ">Dự thi 2026</span></div><span class="tag">Mã DT-105 · Bình</span><h4>Tượng thiếu nữ Chăm</h4><p>Nghệ nhân Trượng Thị Yến</p><div class="meta"><span>♡ 361 bình chọn</span><span>360° ↗</span></div></div><div class="card"><div class="rel"><div style="height:240px;background:#c8a77f;display:grid;place-items:center"><svg width="107" height="149"><use href="#vase1" fill="url(#clay2)" width="107" height="149"/></svg></div><span class="badge ">Dự thi 2026</span></div><span class="tag">Mã DT-106 · Gia dụng</span><h4>Bát mộc khắc vạch</h4><p>Nghệ nhân Phú Văn Sang</p><div class="meta"><span>♡ 757 bình chọn</span><span>360° ↗</span></div></div><div class="card"><div class="rel"><div style="height:200px;background:#6f4a33;display:grid;place-items:center"><svg width="74" height="124"><use href="#vase2" fill="url(#clay)" width="74" height="124"/></svg></div><span class="badge ">Dự thi 2026</span></div><span class="tag">Mã DT-107 · Bình</span><h4>Lu đựng nước</h4><p>Nghệ nhân Đàng Thị Mỹ</p><div class="meta"><span>♡ 932 bình chọn</span><span>360° ↗</span></div></div><div class="card"><div class="rel"><div class="img a" style="height:240px;background-position:90% 30%;background-size:auto 400px;"></div><span class="badge ">Dự thi 2026</span></div><span class="tag">Mã DT-108 · Gia dụng</span><h4>Đèn gốm lửa rơm</h4><p>Nghệ nhân Quảng Thị Hạnh</p><div class="meta"><span>♡ 451 bình chọn</span><span>360° ↗</span></div></div></div><div class="pager"><span class="on">1</span><span>2</span><span>3</span><span>…</span><span>16</span></div></section>
+<section><div class="cta"><div><span class="tag" style="color:#f6ece2aa">Cuộc thi Gốm Bàu Trúc 2026</span><h3 style="margin-top:10px">Nghệ nhân, hãy gửi tác phẩm của bạn</h3><p style="font-size:11px;opacity:.8;margin-top:10px">Hạn đăng ký: 31.12.2026 · Sản phẩm được số hóa 3D và trưng bày trực tuyến.</p></div><span class="btn">ĐĂNG KÝ DỰ THI ↗</span></div></section>
+<section><div class="head"><h2>Cơ sở sản xuất gốm</h2><span class="more">Bản đồ cơ sở</span></div><div class="g4"><div class="card"><div class="img p" style="height:170px;background-position:45% 60%;background-size:auto 380px;"></div><span class="tag">Cơ sở sản xuất · 12 sản phẩm</span><h4>Cơ sở gốm Pa Leng</h4><p>Khu phố 1, Phước Dân · Nhận đặt hàng, workshop</p><span class="btnl" style="padding:9px 14px;font-size:9px">XEM CƠ SỞ ↗</span></div><div class="card"><div class="img p" style="height:170px;background-position:70% 30%;background-size:auto 360px;"></div><span class="tag">Cơ sở sản xuất · 19 sản phẩm</span><h4>HTX Gốm Bàu Trúc</h4><p>Khu phố 2, Phước Dân · Nhận đặt hàng, workshop</p><span class="btnl" style="padding:9px 14px;font-size:9px">XEM CƠ SỞ ↗</span></div><div class="card"><div class="img p" style="height:170px;background-position:20% 30%;background-size:auto 360px;"></div><span class="tag">Cơ sở sản xuất · 26 sản phẩm</span><h4>Xưởng gốm Gia đình Đàng</h4><p>Khu phố 3, Phước Dân · Nhận đặt hàng, workshop</p><span class="btnl" style="padding:9px 14px;font-size:9px">XEM CƠ SỞ ↗</span></div><div class="card"><div class="img a" style="height:170px;background-position:90% 30%;background-size:auto 400px;"></div><span class="tag">Cơ sở sản xuất · 33 sản phẩm</span><h4>Gốm Chăm Lửa Rơm</h4><p>Khu phố 4, Phước Dân · Nhận đặt hàng, workshop</p><span class="btnl" style="padding:9px 14px;font-size:9px">XEM CƠ SỞ ↗</span></div></div></section></main><footer><div class="wrap"><div class="fg">
+<div class="logo"><b>B</b><small>BÀU TRÚC<br>LÀNG GỐM</small></div>
+<div><h6>KHÁM PHÁ</h6><ul><li>Về gốm Chăm</li><li>Câu chuyện nghệ nhân</li><li>Nghệ thuật làm gốm</li><li>Hiện vật</li></ul></div>
+<div><h6>THAM QUAN</h6><ul><li>Trải nghiệm</li><li>Bộ sưu tập số</li><li>Tin tức</li><li>Sự kiện</li><li>Liên hệ</li></ul></div>
+<div><h6>MẠNG XÃ HỘI</h6><ul><li>Facebook</li><li>Instagram</li><li>YouTube</li><li>TikTok</li></ul></div>
+</div><div class="fb"><div>© 2026 Làng gốm Bàu Trúc. Bản thiết kế minh họa.</div><div><span>Chính sách</span><span>Điều khoản</span></div></div></div></footer>
+</body></html>
