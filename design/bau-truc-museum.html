@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Làng gốm Bàu Trúc</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1b1714; --paper:#f3f0ea; --line:#d9d3c8; --muted:#7a7068;
+  --clay:#a3442b; --clay-dk:#4a1d12; --sand:#e8dccb; --accent:#8a341d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font:400 12px/1.55 "Be Vietnam Pro",system-ui,sans-serif}
+.wrap{width:1100px;margin:0 auto;padding:0 60px}
+.serif{font-family:"Playfair Display",Georgia,serif}
+h2{font:400 34px/1 "Playfair Display",Georgia,serif;text-transform:uppercase;letter-spacing:-.5px}
+.head{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:22px}
+.more{font:600 10px/1 "Be Vietnam Pro";letter-spacing:1.5px;text-transform:uppercase}
+.more::after{content:" ↗"}
+.tag{font:500 8.5px/1.2 "Be Vietnam Pro";letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+section{padding:90px 0 0}
+.img{background:#3a2a20 center/cover no-repeat}
+.a{background-image:url(../artisan.jpg)} .p{background-image:url(../pottery.jpg)}
+
+/* HERO */
+.hero{background:#171412;color:#f3ede4;padding:0 0 30px;overflow:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 34px}
+.logo{display:flex;flex-direction:column;align-items:flex-start;line-height:1}
+.logo b{font:500 38px/0.9 "Playfair Display",serif}
+.logo small{font:600 6.5px/1.3 "Be Vietnam Pro";letter-spacing:1.4px;margin-top:4px}
+nav ul{display:flex;gap:26px;list-style:none;font-size:10.5px;opacity:.9}
+nav ul li:last-child{border-left:1px solid #5a514a;padding-left:16px}
+.hero h1{text-align:center;font:400 64px/1 "Playfair Display",serif;margin-top:20px;letter-spacing:-1px}
+.hero .sub{text-align:center;font:400 15px/1 "Be Vietnam Pro";letter-spacing:4px;margin-top:10px;opacity:.85}
+.collage{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:-6px;height:330px}
+.collage>div{flex:none;box-shadow:0 20px 40px #0008}
+
+/* VISIT */
+.visit{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:28px;align-items:end}
+.visit .ic{font-size:13px;border-top:1px solid var(--line);padding-top:8px;height:100px}
+.visit p{font:500 11px/1.5 "Be Vietnam Pro";text-transform:uppercase;letter-spacing:.4px}
+.visit .tag{display:block;margin-top:6px}
+.visit .ph{height:150px}
+
+/* EXHIBITIONS */
+.ex{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;align-items:start}
+.ex .t{width:100%}
+.ex h4{font:500 12.5px/1.25 "Be Vietnam Pro";color:var(--accent);margin-top:3px}
+.ex .tag{margin-top:8px;display:block}
+
+/* CURRENT */
+.cur{display:grid;grid-template-columns:150px 300px 1fr;gap:28px}
+.cur h3{font:600 17px/1.2 "Be Vietnam Pro";color:var(--accent);text-transform:uppercase}
+.cur .d{font-size:10px;color:var(--muted);margin:6px 0 12px}
+.cur p.body{font-size:10.5px;color:#4a423c;max-width:330px}
+
+/* OFFERS */
+.off{display:grid;grid-template-columns:150px 300px 1fr;gap:28px;align-items:start}
+.off ul{list-style:none;margin-top:-6px}
+.off li{font:600 17px/1 "Be Vietnam Pro";text-transform:uppercase;color:var(--accent);padding:9px 0}
+.off li.on{background:#e6e0d6;margin:0 -60px 0 -20px;padding:12px 60px 12px 20px;position:relative}
+.off li.on span{display:block;font:400 9.5px/1.4 "Be Vietnam Pro";text-transform:none;color:var(--muted);margin-top:6px;max-width:300px}
+
+/* DIGITAL */
+.dig{position:relative;height:420px;overflow:hidden}
+.dig .bg{position:absolute;inset:0;background-position:50% 35%;filter:sepia(.35) saturate(1.2)}
+.dig .bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 62% 30%,#0009,transparent 45%),linear-gradient(transparent 40%,#0008)}
+.dig .c{position:absolute;left:68%;top:30%;transform:translate(-50%,-50%);color:#fff;text-align:center;font-size:12px;line-height:1.4}
+.dig .c b{display:block;margin-top:8px;letter-spacing:1.5px;font-size:10px}
+.dig h2{position:absolute;bottom:10px;left:0;right:0;text-align:center;color:#fff;font:800 92px/1 "Be Vietnam Pro";letter-spacing:-2px;white-space:nowrap}
+
+/* ABOUT */
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.ab .lead{font:600 14px/1.35 "Be Vietnam Pro";text-transform:uppercase;color:var(--accent)}
+.ab .lead.r{grid-column:2}
+.ab p.body{font-size:10.5px;color:#4a423c;column-count:1}
+.ab-imgs{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-top:40px;align-items:start}
+
+/* PRESS */
+.pr{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:230px 140px 1fr 30px;gap:30px;padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.row.on{background:#e6e0d6;margin:0 -60px;padding:18px 60px}
+.row h5{font:500 13px/1.3 "Be Vietnam Pro";color:var(--accent)}
+.row .d{font-size:9.5px;color:var(--muted);margin-top:4px}
+.row p{font-size:9.5px;color:#7d746c;max-width:380px}
+.row .arr{text-align:right;color:#b8afa5}
+.row.on .arr{color:var(--ink)}
+
+footer{background:var(--clay-dk);color:#efe3d6;margin-top:90px;padding:40px 0 22px}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+footer h6{font:600 9px/1 "Be Vietnam Pro";letter-spacing:1.4px;margin-bottom:12px;opacity:.75}
+footer li{list-style:none;font-size:10.5px;line-height:1.9}
+.fb{display:flex;justify-content:space-between;font-size:9px;opacity:.6;margin-top:44px}
+.fb span{margin-left:20px}
+</style>
+</head>
+<body>
+
+<!-- SVG pottery defs -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="clay" x1="0" x2="1"><stop offset="0" stop-color="#6e2c18"/><stop offset=".45" stop-color="#c0653d"/><stop offset="1" stop-color="#5a2312"/></linearGradient>
+    <linearGradient id="clay2" x1="0" x2="1"><stop offset="0" stop-color="#3d2a20"/><stop offset=".5" stop-color="#8a6448"/><stop offset="1" stop-color="#2e1f17"/></linearGradient>
+    <symbol id="vase1" viewBox="0 0 100 140"><path d="M38 6h24v6c0 6-8 10-8 18 0 8 30 20 30 54 0 30-18 46-34 50-16-4-34-20-34-50 0-34 30-46 30-54 0-8-8-12-8-18z"/></symbol>
+    <symbol id="vase2" viewBox="0 0 100 140"><path d="M42 4h16l-2 6c-2 30 18 50 18 80 0 28-12 42-24 46-12-4-24-18-24-46 0-30 20-50 18-80z"/></symbol>
+    <symbol id="bowl" viewBox="0 0 100 60"><path d="M4 8h92c0 28-20 46-46 46S4 36 4 8z"/></symbol>
+    <symbol id="jar" viewBox="0 0 100 120"><path d="M30 6h40v8c22 8 28 30 28 50 0 30-22 50-48 50S2 94 2 64c0-20 6-42 28-50z"/></symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <nav>
+    <div class="logo"><b>B</b><small>BÀU TRÚC<br>LÀNG GỐM</small></div>
+    <ul><li>Chương trình</li><li>Tham quan</li><li>Bộ sưu tập số</li><li>Giới thiệu</li><li>Báo chí</li><li>VI ⌄</li></ul>
+  </nav>
+  <h1>HÀNG TRĂM NĂM GỐM CHĂM</h1>
+  <div class="sub">DƯỚI MỘT MÁI LÀNG</div>
+  <div class="collage">
+    <div class="img p" style="width:60px;height:130px;background-position:2% 40%;background-size:600px"></div>
+    <div class="img p" style="width:118px;height:150px;background-position:22% 30%;background-size:640px"></div>
+    <div class="img p" style="width:150px;height:200px;background-position:50% 70%;background-size:auto 420px"></div>
+    <div class="img" style="width:96px;height:140px;background:#a3442b"><svg viewBox="0 0 100 140" width="96" height="140"><use href="#vase1" fill="url(#clay2)" transform="translate(15 15) scale(.7)"/></svg></div>
+    <div class="img a" style="width:190px;height:250px;background-position:22% 15%;background-size:620px"></div>
+    <div class="img p" style="width:110px;height:150px;background-position:70% 30%;background-size:620px"></div>
+    <div class="img" style="width:150px;height:118px;background:#d9c6a8"><svg viewBox="0 0 150 118" width="150" height="118"><use href="#jar" fill="url(#clay)" x="20" y="22" width="60" height="80"/><use href="#vase2" fill="url(#clay2)" x="78" y="10" width="60" height="96"/></svg></div>
+    <div class="img a" style="width:120px;height:150px;background-position:72% 60%;background-size:520px;filter:sepia(.5)"></div>
+    <div class="img p" style="width:70px;height:110px;background-position:98% 40%;background-size:600px"></div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <div class="head"><h2>Thăm làng</h2></div>
+    <div class="visit">
+      <div class="ic">◷<div style="margin-top:44px"><p>7:00 – 17:00<br>Mở cửa hôm nay</p><span class="tag">Giờ tham quan ↗</span></div></div>
+      <div class="ic">▭<div style="margin-top:44px"><p>Tham quan miễn phí<br>Workshop 250.000đ / người</p><span class="tag">Giá minh họa</span></div></div>
+      <div class="img a ph" style="background-position:80% 70%"></div>
+      <div class="ic">◎<div style="margin-top:44px"><p>Thị trấn Phước Dân<br>Ninh Phước, Ninh Thuận</p><span class="tag">Chỉ đường ↗</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><h2>Trưng bày</h2><span class="more">Tất cả</span></div>
+    <div class="ex">
+      <div><div class="img a t" style="height:250px;background-position:30% 25%;background-size:auto 420px"></div><span class="tag">Nghệ nhân</span><h4>Bàn tay giữ hồn đất</h4></div>
+      <div><div class="t" style="height:170px;background:#2f4a3a;display:grid;place-items:center"><svg width="90" height="130"><use href="#vase2" fill="url(#clay)" width="90" height="130"/></svg></div><span class="tag">Kỹ thuật</span><h4>Nặn không bàn xoay</h4></div>
+      <div><div class="t" style="height:110px;background:#e9c46a;display:grid;place-items:center"><svg width="110" height="70"><use href="#bowl" fill="url(#clay)" width="110" height="66"/></svg></div><span class="tag">Gia dụng</span><h4>Gốm trong đời sống</h4></div>
+      <div><div class="img p t" style="height:190px;background-position:60% 50%;background-size:auto 360px"></div><span class="tag">Cộng đồng</span><h4>Phụ nữ Chăm &amp; nghề gốm</h4></div>
+      <div><div class="t" style="height:120px;background:repeating-linear-gradient(45deg,#c9a27e 0 6px,#b8875f 6px 12px);display:grid;place-items:center"><svg width="80" height="100"><use href="#jar" fill="url(#clay2)" width="80" height="96"/></svg></div><span class="tag">Hoa văn</span><h4>Hoa văn sóng nước</h4></div>
+      <div><div class="img a t" style="height:200px;background-position:75% 50%;background-size:auto 380px;filter:sepia(.6)"></div><span class="tag">Lửa rơm</span><h4>Nung lộ thiên ngoài trời</h4></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><h2>Đang trưng bày</h2><span class="more">Xem thêm</span></div>
+    <div class="cur">
+      <div></div>
+      <div class="img a" style="height:250px;background-position:30% 20%;background-size:auto 520px"></div>
+      <div>
+        <h3>Nặn gốm không bàn xoay<br>— nghệ thuật của người Chăm</h3>
+        <div class="d">12.11.2026 — 28.02.2027</div>
+        <p class="body">Người thợ đi vòng quanh khối đất thay vì xoay đất. Từ những dụng cụ giản dị như vỏ sò, mảnh vải và que tre, từng chiếc bình, chiếc nồi thành hình. Trưng bày giới thiệu kỹ thuật nặn tay và nung lộ thiên bằng rơm, củi — nghệ thuật được UNESCO ghi danh là di sản văn hóa phi vật thể cần bảo vệ khẩn cấp năm 2022.</p>
+        <div class="img p" style="width:70px;height:70px;margin-top:16px;background-position:50% 80%;background-size:auto 260px"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="off">
+      <h2>Trải nghiệm</h2>
+      <div class="img p" style="height:200px;margin-top:20px;background-position:42% 60%;background-size:auto 420px"></div>
+      <ul>
+        <li>Workshop nặn gốm</li>
+        <li>Tham quan xưởng gốm</li>
+        <li class="on">Gặp gỡ nghệ nhân<span>Trò chuyện cùng nghệ nhân, nghe câu chuyện về đất, lửa và hoa văn Chăm qua nhiều thế hệ.</span></li>
+        <li>Nung gốm lộ thiên</li>
+        <li>Hành trình văn hóa Chăm</li>
+        <li>Lễ hội Katê</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="dig">
+      <div class="bg img a"></div>
+      <div class="c">Lướt qua hàng trăm năm gốm Chăm, hoặc tìm<br>đúng tác phẩm bạn yêu thích<b>KHÁM PHÁ ↗</b></div>
+      <h2>BỘ SƯU TẬP SỐ</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><h2>Bàu Trúc</h2><span class="more">Xem thêm</span></div>
+    <div class="ab">
+      <div></div>
+      <div class="lead">Chạm vào đất, khám phá di sản,</div>
+      <div class="lead" style="grid-column:1/3;margin-top:-22px">gặp gỡ, học hỏi: Bàu Trúc là nơi giao thoa, trao đổi và khám phá quá khứ, hiện tại và tương lai của gốm Chăm.</div>
+      <div></div>
+      <p class="body">Bàu Trúc là một trong những làng gốm cổ nhất Đông Nam Á, nơi người Chăm vẫn giữ cách làm gốm truyền thống: đất sét bên dòng sông Quao, tạo hình bằng tay, trang trí bằng hoa văn khắc và nung lộ thiên. Nghề gốm được truyền chủ yếu qua những người phụ nữ trong gia đình — từ bà, sang mẹ, rồi đến con gái. Hôm nay, làng là điểm đến của những ai muốn chạm tay vào đất và nghe câu chuyện của một nền văn hóa sống.</p>
+    </div>
+    <div class="ab-imgs">
+      <div class="img p" style="height:90px;margin-top:20px;background-position:20% 30%"></div>
+      <div></div>
+      <div class="img a" style="height:150px;background-position:55% 40%;background-size:auto 360px"></div>
+      <div style="height:130px;background:#c8a77f;display:grid;place-items:center;margin-top:10px"><svg width="170" height="110"><use href="#vase1" fill="url(#clay)" x="10" y="10" width="64" height="96"/><use href="#jar" fill="url(#clay2)" x="74" y="34" width="60" height="72"/><use href="#bowl" fill="url(#clay)" x="126" y="78" width="40" height="26"/></svg></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><h2>Báo chí</h2><span class="more">Xem thêm</span></div>
+    <div class="pr">
+      <div class="row on"><div><h5>UNESCO ghi danh nghệ thuật làm gốm Chăm</h5><div class="d">29.11.2022</div></div><div class="img a" style="height:100px;background-position:32% 22%;background-size:auto 360px"></div><p>Nghệ thuật làm gốm của người Chăm được ghi danh vào Danh sách di sản văn hóa phi vật thể cần bảo vệ khẩn cấp, mở ra trách nhiệm bảo tồn và trao truyền cho cộng đồng.</p><span class="arr">↗</span></div>
+      <div class="row"><div><h5>Mùa nung gốm lộ thiên</h5><div class="d">05.10.2026 — 30.11.2026</div></div><div></div><p>Những buổi nung bằng rơm và củi ngoài trời được mở cho khách tham quan vào cuối tuần.</p><span class="arr">↗</span></div>
+      <div class="row"><div><h5>Workshop gốm cho học sinh</h5><div class="d">01.09.2026 — 31.12.2026</div></div><div></div><p>Chương trình giáo dục di sản dành cho trường học trong và ngoài tỉnh.</p><span class="arr">↗</span></div>
+      <div class="row"><div><h5>Gốm Bàu Trúc tại triển lãm thủ công</h5><div class="d">15.08.2026 — 15.09.2026</div></div><div></div><p>Các nghệ nhân giới thiệu tác phẩm và trình diễn kỹ thuật nặn tay truyền thống.</p><span class="arr">↗</span></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div class="logo"><b>B</b><small>BÀU TRÚC<br>LÀNG GỐM</small></div>
+      <div><h6>ĐỊA CHỈ</h6><ul><li>Làng gốm Bàu Trúc</li><li>Thị trấn Phước Dân</li><li>Ninh Phước, Ninh Thuận</li></ul></div>
+      <div><h6>CHUNG</h6><ul><li>Chương trình</li><li>Tham quan</li><li>Bộ sưu tập số</li><li>Giới thiệu</li><li>Báo chí</li></ul></div>
+      <div><h6>MẠNG XÃ HỘI</h6><ul><li>Facebook</li><li>Instagram</li><li>YouTube</li><li>TikTok</li></ul></div>
+    </div>
+    <div class="fb"><div>© 2026 Làng gốm Bàu Trúc. Bản thiết kế minh họa.</div><div><span>Liên hệ</span><span>Chính sách</span><span>Điều khoản</span></div></div>
+  </div>
+</footer>
+</body>
+</html>
