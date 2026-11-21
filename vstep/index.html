@@ -1,499 +1,420 @@
 <title>VSTEP B2 30 ngày</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@500&display=swap">
 <style>
-/* Layout: sổ học tập — phần tổng quan đề thi, thanh tiến độ, 4 tuần × các ngày dạng thẻ mở rộng, cuối trang là mẫu bài & tiêu chí. */
+/* Layout: sổ học — đầu trang tóm tắt đề thi, lịch 30 ô chia 4 tuần, bên dưới là trang bài học của ngày đang chọn (2 kỹ năng). Bài đọc dùng font serif như đề giấy. */
 :root{
-  --bg:#f3f5f8; --surface:#ffffff; --ink:#152033; --muted:#5a6577; --line:#dde2ea;
+  --bg:#f3f5f8; --surface:#ffffff; --sunk:#eef1f6; --ink:#152033; --muted:#5a6577; --line:#dde2ea;
   --accent:#1f4fd1; --accent-soft:#e6ecfc;
-  --L:#0e7c86; --R:#7a4fc9; --W:#c2571a; --S:#b0306a; --G:#4a6a1f;
-  --done:#1f8a4c;
-  --display:"Be Vietnam Pro", system-ui, sans-serif;
+  --L:#0e7c86; --R:#7a4fc9; --W:#c2571a; --S:#b0306a;
+  --ok:#1f8a4c; --ok-soft:#e3f4ea; --bad:#c0392b; --bad-soft:#fbe7e4;
   --body:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
   --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0f141c; --surface:#171e29; --ink:#e7ecf4; --muted:#9aa5b6; --line:#2a3342;
+  --bg:#0f141c; --surface:#171e29; --sunk:#121821; --ink:#e7ecf4; --muted:#9aa5b6; --line:#2a3342;
   --accent:#7c9dff; --accent-soft:#1d2a48;
-  --L:#4cc3cc; --R:#b495f0; --W:#f0915a; --S:#ec7aa9; --G:#9cc561; --done:#4fcf86; color-scheme:dark}}
+  --L:#4cc3cc; --R:#b495f0; --W:#f0915a; --S:#ec7aa9;
+  --ok:#4fcf86; --ok-soft:#15301f; --bad:#ff8a7a; --bad-soft:#3a1d1a; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0f141c; --surface:#171e29; --ink:#e7ecf4; --muted:#9aa5b6; --line:#2a3342;
+  --bg:#0f141c; --surface:#171e29; --sunk:#121821; --ink:#e7ecf4; --muted:#9aa5b6; --line:#2a3342;
   --accent:#7c9dff; --accent-soft:#1d2a48;
-  --L:#4cc3cc; --R:#b495f0; --W:#f0915a; --S:#ec7aa9; --G:#9cc561; --done:#4fcf86; color-scheme:dark}
+  --L:#4cc3cc; --R:#b495f0; --W:#f0915a; --S:#ec7aa9;
+  --ok:#4fcf86; --ok-soft:#15301f; --bad:#ff8a7a; --bad-soft:#3a1d1a; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
-.wrap{max-width:980px;margin:0 auto}
-h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.2;margin:0}
-h1{font-size:clamp(28px,5vw,42px);font-weight:800;letter-spacing:-.02em}
-h2{font-size:22px;font-weight:700}
-h3{font-size:16px;font-weight:700}
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 80px}
+.wrap{max-width:1040px;margin:0 auto}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.25;margin:0}
+h1{font-size:clamp(26px,4.6vw,38px);font-weight:800;letter-spacing:-.02em}
+h2{font-size:21px;font-weight:700}
+h3{font-size:16.5px;font-weight:700}
 p{margin:0}
+button{font:inherit;color:inherit}
+button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-header{padding-block:40px 24px;display:grid;gap:14px}
-header .lead{max-width:62ch;color:var(--muted);font-size:16px}
-.band{display:flex;flex-wrap:wrap;gap:8px}
-.pill{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
-section{margin-top:36px;display:grid;gap:16px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
 
-/* exam overview */
-.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-@media (max-width:820px){.skills{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:460px){.skills{grid-template-columns:1fr}}
-.skill{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:6px;align-content:start;border-top:3px solid var(--c)}
-.skill .k{font-weight:700;color:var(--c)}
-.skill ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--muted)}
-.skill .target{font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
-.scale{display:grid;grid-template-columns:4fr 2.5fr 4fr 3fr;border-radius:8px;overflow:hidden;font-size:12.5px;font-weight:600;border:1px solid var(--line)}
-.scale div{padding:8px 10px;background:var(--surface)}
-.scale .b2{background:var(--accent-soft);color:var(--accent)}
-.scale .goal{background:var(--accent);color:var(--surface)}
-.note{font-size:13px;color:var(--muted)}
+header{padding-block:32px 8px;display:grid;gap:10px}
+header .lead{max-width:66ch;color:var(--muted)}
+details.fmt{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+details.fmt>summary{cursor:pointer;padding:10px 14px;font-weight:600;font-size:14px}
+.fmt-body{padding:0 14px 14px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:820px){.fmt-body{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.fmt-body{grid-template-columns:1fr}}
+.fmt-body div{font-size:13.5px;border-top:3px solid var(--c);padding-top:8px}
+.fmt-body b{color:var(--c)}
+.fmt-body ul{margin:4px 0 0;padding-left:18px;color:var(--muted)}
 
-/* routine */
-.routine{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
-@media (max-width:700px){.routine{grid-template-columns:1fr 1fr}}
-.routine div{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13.5px}
-.routine b{display:block;font-family:var(--mono);font-size:12px;color:var(--accent)}
+/* calendar */
+.cal{margin-top:22px;display:grid;gap:14px}
+.cal-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;flex:1;min-width:120px;max-width:320px}
+.bar i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+.wk{display:grid;grid-template-columns:120px 1fr;gap:10px;align-items:start}
+@media (max-width:640px){.wk{grid-template-columns:1fr}}
+.wk-label{font-size:13px;font-weight:700;padding-top:6px}
+.wk-label span{display:block;font-weight:500;color:var(--muted);font-size:12px}
+.days{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:6px}
+.dbtn{display:grid;gap:2px;text-align:left;padding:7px 9px;border-radius:8px;border:1px solid var(--line);background:var(--surface);cursor:pointer;min-width:0}
+.dbtn:hover{border-color:var(--accent)}
+.dbtn .n{font-weight:800;font-size:15px;display:flex;justify-content:space-between;gap:4px}
+.dbtn .n small{font-family:var(--mono);font-weight:500;font-size:11px;color:var(--ok)}
+.dbtn .s{display:flex;gap:4px}
+.dbtn .s i{font-style:normal;font-size:10.5px;font-weight:700;color:var(--c)}
+.dbtn .t{font-size:11.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dbtn[aria-current="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
+.dbtn.done .n{color:var(--ok)}
+.dbtn.pending{opacity:.55}
 
-/* progress */
-.progress{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;display:grid;gap:6px;border-bottom:1px solid var(--line)}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
-.progress .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13.5px;font-weight:600}
-.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden}
-.bar i{display:block;height:100%;width:0;background:var(--done);transition:width .3s}
-.tabs{display:flex;gap:6px;flex-wrap:wrap}
-.tabs button{font:inherit;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
-.tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* lesson */
+#lesson{margin-top:28px;display:grid;gap:22px}
+.lhead{display:grid;gap:8px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.lhead .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.chip{font-size:12px;font-weight:700;padding:2px 9px;border-radius:999px;border:1px solid var(--c);color:var(--c)}
+.goal{max-width:70ch}
+.nav{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 14px;font-size:14px;font-weight:600;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.btn.ghost{background:none}
+.btn.sm{padding:4px 10px;font-size:13px}
+.btn:disabled{opacity:.5;cursor:default}
 
-/* weeks */
-.week{display:grid;gap:10px}
-.week-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding-top:8px}
-.week-head p{color:var(--muted);font-size:14px;max-width:60ch}
-details.day{background:var(--surface);border:1px solid var(--line);border-radius:10px}
-details.day[open]{border-color:var(--accent)}
-details.day summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center;padding:12px 14px}
-details.day summary::-webkit-details-marker{display:none}
-.dnum{font-family:var(--mono);font-size:12px;color:var(--muted);line-height:1.2}
-.dnum b{display:block;font-size:20px;color:var(--ink);font-family:var(--display);font-weight:800}
-.day.complete .dnum b{color:var(--done)}
-.stitle{min-width:0}
-.stitle h3{font-size:15.5px}
-.stitle .meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px;align-items:center}
-.tag{font-size:11px;font-weight:700;padding:1px 7px;border-radius:4px;color:var(--c);border:1px solid var(--c)}
-.topic{font-size:12.5px;color:var(--muted)}
-.count{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap}
-.day.complete .count{color:var(--done)}
-.body{padding:4px 14px 18px;display:grid;grid-template-columns:1.25fr 1fr;gap:18px;border-top:1px solid var(--line)}
-@media (max-width:760px){.body{grid-template-columns:1fr}}
-.body>div{min-width:0;display:grid;gap:14px;align-content:start}
-.blk h4{margin:12px 0 6px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-.tasks{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.tasks label{display:grid;grid-template-columns:20px 46px 1fr;gap:8px;align-items:start;cursor:pointer;font-size:14px}
-.tasks input{margin-top:4px;accent-color:var(--done);width:16px;height:16px}
-.tasks .min{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
-.tasks input:checked ~ span:last-child{color:var(--muted);text-decoration:line-through}
-table.vocab{width:100%;border-collapse:collapse;font-size:13.5px}
-table.vocab td{padding:5px 6px;border-bottom:1px solid var(--line);vertical-align:top}
-table.vocab td:first-child{font-weight:600;width:48%}
-.box{background:var(--bg);border-radius:8px;padding:12px;font-size:14px}
-.box .lab{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c,var(--accent));margin-bottom:4px}
-.box.prompt{border-left:3px solid var(--c,var(--accent))}
-.box em{font-style:normal;font-weight:600}
-.tip{font-size:13.5px;color:var(--muted)}
-.tip b{color:var(--ink)}
-.hidden-week{display:none}
+.sec{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:12px;padding:18px;display:grid;gap:16px}
+@media (max-width:520px){.sec{padding:14px}}
+.sec-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sec-h h2{color:var(--c)}
+.lessonbox{background:var(--sunk);border-radius:10px;padding:12px 14px}
+.lessonbox h4{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.lessonbox ol{margin:0;padding-left:20px;display:grid;gap:5px;font-size:14.5px}
 
-/* templates */
-.tpl{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media (max-width:760px){.tpl{grid-template-columns:1fr}}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:8px;align-content:start;min-width:0}
-.card ol,.card ul{margin:0;padding-left:20px;font-size:14px;display:grid;gap:4px}
-.phr{font-size:13.5px}
-.phr code{font-family:var(--body);background:var(--accent-soft);color:var(--ink);padding:1px 5px;border-radius:4px}
-.crit{overflow-x:auto}
-.crit table{border-collapse:collapse;width:100%;min-width:560px;font-size:13.5px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
-.crit th,.crit td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-.crit th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
-.reset{font:inherit;font-size:12.5px;background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:3px 10px;cursor:pointer}
+/* listening */
+.item{border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:12px}
+.item-h{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.item-h .ctx{font-size:13px;color:var(--muted)}
+.player{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.play{display:inline-flex;align-items:center;gap:8px;border:none;background:var(--c);color:var(--surface);padding:7px 14px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer}
+.play svg{width:14px;height:14px;fill:currentColor}
+.play[data-state="playing"]{background:var(--ink)}
+.speed{font-size:13px;border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:4px 6px}
+.plays{font-size:12px;color:var(--muted);font-family:var(--mono)}
+.script{background:var(--sunk);border-radius:8px;padding:10px 12px;display:grid;gap:4px;font-size:14px}
+.script p{padding:2px 6px;border-radius:4px}
+.script p.on{background:var(--accent-soft)}
+.script b{font-size:12px;color:var(--muted);margin-right:6px}
+.notts{font-size:13px;background:var(--bad-soft);border-radius:8px;padding:8px 12px}
+
+/* questions */
+.qs{display:grid;gap:14px;counter-reset:q}
+.q{display:grid;gap:6px}
+.q .qt{font-weight:600}
+.q .qt span{font-family:var(--mono);font-size:12px;color:var(--muted);margin-right:6px}
+.opts{display:grid;gap:4px}
+.opt{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:start;padding:5px 8px;border-radius:6px;border:1px solid transparent;cursor:pointer;font-size:14.5px}
+.opt:hover{background:var(--sunk)}
+.opt input{margin-top:4px;accent-color:var(--accent)}
+.opt.right{background:var(--ok-soft);border-color:var(--ok)}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad)}
+.why{font-size:13.5px;border-left:3px solid var(--c);padding:4px 10px;background:var(--sunk);border-radius:0 6px 6px 0}
+.result{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.score{font-family:var(--mono);font-size:15px;font-weight:500}
+
+/* reading */
+.rgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:start}
+@media (max-width:860px){.rgrid{grid-template-columns:1fr}}
+.rgrid>*{min-width:0}
+.passage{font-family:var(--serif);font-size:16.5px;line-height:1.7;background:var(--sunk);border-radius:10px;padding:16px 18px;display:grid;gap:12px}
+@media (min-width:861px){.passage{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}}
+.passage h3{font-family:var(--serif);font-size:19px}
+.passage p{display:grid;grid-template-columns:22px 1fr;gap:6px}
+.passage p i{font-family:var(--mono);font-style:normal;font-size:11px;color:var(--muted);padding-top:5px}
+.wc{font-size:12px;color:var(--muted);font-family:var(--body)}
+
+/* writing / speaking */
+.prompt{border:1px solid var(--c);border-radius:10px;padding:14px;font-size:15px;background:var(--surface)}
+.prompt .lab{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.timer{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.clock{font-family:var(--mono);font-size:22px;min-width:76px;font-variant-numeric:tabular-nums}
+.clock.warn{color:var(--bad)}
+.phase{font-size:12.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+textarea{width:100%;min-height:240px;font:inherit;font-size:15px;line-height:1.6;padding:12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);resize:vertical}
+.count{font-size:13px;font-family:var(--mono)}
+.count.ok{color:var(--ok)}
+details.more{border:1px solid var(--line);border-radius:10px}
+details.more>summary{cursor:pointer;padding:9px 14px;font-weight:600;font-size:14px}
+details.more>div{padding:0 14px 14px;display:grid;gap:10px}
+.model p{font-family:var(--serif);font-size:16px;line-height:1.7}
+ul.notes{margin:0;padding-left:20px;display:grid;gap:5px;font-size:14px}
+table.ph{width:100%;border-collapse:collapse;font-size:14px}
+table.ph td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.ph td:first-child{font-weight:600;width:55%}
+.task{border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:12px}
+
+/* vocab + footer */
+.vocab{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px}
+.vw{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:start;padding:7px 10px;background:var(--surface);border:1px solid var(--line);border-radius:8px;font-size:14px}
+.vw b{display:block}
+.vw span{color:var(--muted);font-size:13px}
+.say{border:none;background:var(--sunk);border-radius:50%;width:26px;height:26px;display:grid;place-items:center;cursor:pointer;color:var(--accent)}
+.say svg{width:12px;height:12px;fill:currentColor}
+.tip{background:var(--accent-soft);border-radius:10px;padding:12px 14px;font-size:14.5px}
+.finish{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:8px;border-top:1px solid var(--line)}
+.empty{padding:40px 16px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <div class="wrap">
 <header>
-  <span class="eyebrow">Lộ trình 30 ngày · mục tiêu 6.5 – 7.0</span>
+  <span class="eyebrow">Mục tiêu 6.5 – 7.0 · mỗi ngày 2 kỹ năng · khoảng 2 giờ</span>
   <h1>VSTEP B2 trong 30 ngày</h1>
-  <p class="lead">Mỗi ngày khoảng 2 giờ, đi đủ 4 kỹ năng. Tuần 1 làm quen dạng đề, tuần 2 luyện sâu từng phần, tuần 3 nâng band, tuần 4 thi thử và về đích. Bấm vào từng ngày để xem nhiệm vụ, từ vựng, ngữ pháp và đề luyện; tick xong việc nào thì đánh dấu việc đó.</p>
-  <div class="band">
-    <span class="pill">Nghe 40'</span><span class="pill">Đọc 60'</span><span class="pill">Viết 60'</span><span class="pill">Nói ~12'</span><span class="pill">Điểm = trung bình 4 kỹ năng, làm tròn 0.5</span>
-  </div>
+  <p class="lead">Ngày lẻ học Nghe + Đọc, ngày chẵn học Viết + Nói. Tuần 1 làm Part 1, tuần 2 lên Part 2, tuần 3 lên Part 3 (bài đọc 4 khó nhất), tuần 4 làm bài tổng hợp như thi thật. Mỗi bài nghe có audio đọc bằng giọng máy, bài đọc có 10 câu hỏi, chấm điểm và giải thích từng câu.</p>
+  <details class="fmt"><summary>Cấu trúc đề VSTEP bậc 3–5 và thang điểm</summary>
+    <div class="fmt-body">
+      <div style="--c:var(--L)"><b>Nghe · 35 câu · ~40'</b><ul><li>Part 1: 8 thông báo ngắn</li><li>Part 2: 3 hội thoại × 4 câu</li><li>Part 3: 3 bài giảng × 5 câu</li><li>Chỉ nghe 1 lần</li></ul></div>
+      <div style="--c:var(--R)"><b>Đọc · 40 câu · 60'</b><ul><li>4 bài × 10 câu</li><li>Bài 1 ~300 từ → bài 4 ~550 từ</li><li>Mục tiêu 26–28 câu đúng</li></ul></div>
+      <div style="--c:var(--W)"><b>Viết · 60'</b><ul><li>Task 1: thư/email ≥120 từ (20')</li><li>Task 2: luận ≥250 từ (40')</li><li>Task 2 chiếm 2/3 điểm</li></ul></div>
+      <div style="--c:var(--S)"><b>Nói · ~12'</b><ul><li>Part 1: giao tiếp xã hội</li><li>Part 2: chọn giải pháp</li><li>Part 3: phát triển chủ đề</li><li>B2 = 6.0–8.0 (TB 4 kỹ năng)</li></ul></div>
+    </div>
+  </details>
 </header>
 
-<section aria-labelledby="exam">
-  <h2 id="exam">Đề thi VSTEP bậc 3–5 gồm gì</h2>
-  <div class="skills">
-    <div class="skill" style="--c:var(--L)"><span class="k">Listening · 35 câu</span>
-      <ul><li>Part 1: 8 thông báo, hướng dẫn ngắn</li><li>Part 2: 3 hội thoại, 12 câu</li><li>Part 3: 3 bài nói/bài giảng, 15 câu</li></ul>
-      <span class="target">Mục tiêu: đúng 23–25/35</span></div>
-    <div class="skill" style="--c:var(--R)"><span class="k">Reading · 40 câu</span>
-      <ul><li>4 bài đọc, mỗi bài 10 câu</li><li>Độ khó tăng dần, bài 4 dài nhất</li><li>Main idea, chi tiết, từ vựng, suy luận</li></ul>
-      <span class="target">Mục tiêu: đúng 26–28/40</span></div>
-    <div class="skill" style="--c:var(--W)"><span class="k">Writing · 2 bài</span>
-      <ul><li>Task 1: thư/email ≥120 từ (20')</li><li>Task 2: bài luận ≥250 từ (40')</li><li>Task 2 chiếm 2/3 số điểm</li></ul>
-      <span class="target">Mục tiêu: 6.0–7.0</span></div>
-    <div class="skill" style="--c:var(--S)"><span class="k">Speaking · 3 phần</span>
-      <ul><li>Part 1: giao tiếp xã hội (~3')</li><li>Part 2: thảo luận giải pháp (~4')</li><li>Part 3: phát triển chủ đề (~5')</li></ul>
-      <span class="target">Mục tiêu: 6.5–7.5</span></div>
-  </div>
-  <div class="scale" role="img" aria-label="Thang điểm: dưới 4.0 không đạt; 4.0–5.5 B1; 6.0–8.0 B2; 8.5–10 C1">
-    <div>&lt;4.0 · chưa xếp bậc</div><div>4.0–5.5 · B1</div><div class="b2">6.0–8.0 · B2 <span class="goal" style="padding:1px 6px;border-radius:4px;margin-left:4px">đích 6.5–7.0</span></div><div>8.5–10 · C1</div>
-  </div>
-  <p class="note">Số câu đúng mục tiêu là ước lượng để tự theo dõi; mỗi đơn vị tổ chức thi quy đổi điểm theo đáp án và thang riêng. Đạt 6.5–7.0 nghĩa là có biên an toàn 0.5–1.0 điểm trên ngưỡng B2.</p>
+<section class="cal" aria-labelledby="cal-h">
+  <div class="cal-top"><h2 id="cal-h">Lịch học</h2>
+    <div style="display:flex;align-items:center;gap:10px;flex:1;justify-content:flex-end"><span class="small muted" id="ptext">0/30 ngày</span><div class="bar"><i id="pbar"></i></div></div></div>
+  <div id="weeks"></div>
 </section>
 
-<section aria-labelledby="routine">
-  <h2 id="routine">Khung 2 giờ mỗi ngày</h2>
-  <div class="routine">
-    <div><b>15'</b>Học 8 từ/cụm từ của ngày, ôn lại từ hôm trước</div>
-    <div><b>30'</b>Kỹ năng chính của ngày (lý thuyết + bài mẫu)</div>
-    <div><b>30'</b>Luyện đề kỹ năng thứ hai</div>
-    <div><b>30'</b>Output: viết hoặc nói theo đề của ngày</div>
-    <div><b>15'</b>Ghi lỗi sai vào sổ, đọc lại trước khi ngủ</div>
-  </div>
-</section>
-
-<div class="progress" id="progress">
-  <div class="row"><span id="ptext">0/30 ngày hoàn thành</span>
-    <span style="display:flex;gap:8px;align-items:center"><span id="ptask" class="note">0 nhiệm vụ</span><button class="reset" id="reset" type="button">Xoá tiến độ</button></span></div>
-  <div class="bar"><i id="pbar"></i></div>
-  <div class="tabs" id="tabs" role="group" aria-label="Lọc theo tuần"></div>
+<main id="lesson" aria-live="polite"></main>
 </div>
 
-<div id="weeks"></div>
-
-<section aria-labelledby="tpl">
-  <h2 id="tpl">Khung bài &amp; cụm từ dùng ngay</h2>
-  <div class="tpl">
-    <div class="card"><h3 style="color:var(--W)">Writing Task 1 · Thư/email (≥120 từ)</h3>
-      <ol>
-        <li><b>Chào:</b> Dear Mr Smith, (trang trọng) / Hi Tom, (thân mật)</li>
-        <li><b>Mục đích (1–2 câu):</b> <i>I am writing to enquire about / complain about / apply for…</i></li>
-        <li><b>Thân thư:</b> trả lời <u>đủ từng ý</u> đề yêu cầu, mỗi ý 2–3 câu có chi tiết.</li>
-        <li><b>Kết:</b> <i>I look forward to hearing from you.</i> / <i>Can't wait to see you!</i></li>
-        <li><b>Ký:</b> Yours sincerely (biết tên) · Yours faithfully (Dear Sir/Madam) · Best wishes (bạn bè)</li>
-      </ol>
-      <p class="note">Mất điểm nhiều nhất khi bỏ sót một ý đề hỏi hoặc lẫn giọng trang trọng/thân mật.</p></div>
-    <div class="card"><h3 style="color:var(--W)">Writing Task 2 · Luận (≥250 từ, 4–5 đoạn)</h3>
-      <ol>
-        <li><b>Mở bài (40–50 từ):</b> paraphrase đề + nêu quan điểm/phạm vi bài.</li>
-        <li><b>Thân 1 (80–90 từ):</b> Topic sentence → giải thích → ví dụ cụ thể.</li>
-        <li><b>Thân 2 (80–90 từ):</b> ý thứ hai cùng cấu trúc.</li>
-        <li><b>(Tuỳ chọn)</b> đoạn nhượng bộ: <i>Admittedly, … However, …</i></li>
-        <li><b>Kết (30–40 từ):</b> nhắc lại quan điểm, không thêm ý mới.</li>
-      </ol>
-      <p class="note">Dạng đề: opinion · discussion · advantages/disadvantages · problem–solution · cause–effect.</p></div>
-    <div class="card"><h3 style="color:var(--S)">Speaking Part 2 · Thảo luận giải pháp</h3>
-      <ul class="phr">
-        <li>Chọn: <code>Of the three options, I'd go for … because …</code></li>
-        <li>Lý do 2: <code>On top of that, …</code> <code>Another reason is that …</code></li>
-        <li>Bác bỏ: <code>As for …, it might sound appealing, but …</code></li>
-        <li>Kết: <code>All things considered, … is the most sensible choice.</code></li>
-      </ul>
-      <p class="note">Dùng đủ 3 phương án: 1 chọn (2 lý do) + 2 bác bỏ (mỗi cái 1 lý do).</p></div>
-    <div class="card"><h3 style="color:var(--S)">Speaking Part 3 · Phát triển chủ đề</h3>
-      <ul class="phr">
-        <li>Mở: <code>Today I'd like to talk about … There are three main …</code></li>
-        <li>Chuyển ý: <code>To begin with,</code> <code>Moving on to,</code> <code>Last but not least,</code></li>
-        <li>Ý thêm của bạn: <code>Apart from the ideas given, I think … also …</code></li>
-        <li>Kết: <code>In short, … That's all I'd like to say.</code></li>
-      </ul>
-      <p class="note">1 phút chuẩn bị: ghi từ khoá cho 3 ý gợi ý + 1 ý riêng. Nói 2 phút, rồi trả lời câu hỏi mở rộng.</p></div>
-  </div>
-</section>
-
-<section aria-labelledby="crit">
-  <h2 id="crit">Giám khảo chấm gì ở Viết và Nói</h2>
-  <div class="crit"><table>
-    <thead><tr><th>Tiêu chí</th><th>Mức ~5 (B1)</th><th>Mức 6.5–7 (B2 vững)</th></tr></thead>
-    <tbody>
-      <tr><td><b>Hoàn thành nhiệm vụ</b></td><td>Trả lời được phần lớn yêu cầu, ý còn chung chung</td><td>Đủ mọi ý đề hỏi, có lý do và ví dụ cụ thể, quan điểm rõ</td></tr>
-      <tr><td><b>Tổ chức / Mạch lạc</b></td><td>Có đoạn nhưng nối ý lặp (and, but, so)</td><td>Mỗi đoạn một ý chính, từ nối đa dạng và dùng đúng chỗ</td></tr>
-      <tr><td><b>Từ vựng</b></td><td>Từ thông dụng, hay lặp</td><td>Có collocation và từ chủ đề, biết paraphrase, ít sai chính tả</td></tr>
-      <tr><td><b>Ngữ pháp</b></td><td>Chủ yếu câu đơn, lỗi thì và chia động từ</td><td>Trộn câu đơn và phức (mệnh đề quan hệ, điều kiện, bị động), lỗi không cản trở hiểu</td></tr>
-      <tr><td><b>Phát âm (Nói)</b></td><td>Thiếu âm cuối, ngữ điệu phẳng</td><td>Rõ âm cuối /s/ /t/ /d/, trọng âm đúng, ngắt nghỉ theo cụm</td></tr>
-      <tr><td><b>Độ trôi chảy (Nói)</b></td><td>Ngập ngừng nhiều, câu ngắn</td><td>Nói liền mạch, tự sửa nhanh, dùng cụm câu giờ tự nhiên</td></tr>
-    </tbody></table></div>
-</section>
-
-<section aria-labelledby="src">
-  <h2 id="src">Nguồn luyện thêm</h2>
-  <div class="tpl">
-    <div class="card"><h3>Đề thi</h3><ul>
-      <li>Đề mẫu VSTEP chính thức và sách luyện đề do các trường được cấp phép tổ chức thi phát hành (ĐHQG Hà Nội – ULIS, ĐH Sư phạm, ĐH Huế, ĐH Cần Thơ…).</li>
-      <li>Ưu tiên đề có file nghe và đáp án để tự chấm.</li></ul></div>
-    <div class="card"><h3>Nghe & từ vựng</h3><ul>
-      <li><a href="https://www.bbc.co.uk/learningenglish/english/features/6-minute-english" style="color:var(--accent)">BBC 6 Minute English</a> – giống Listening Part 3.</li>
-      <li><a href="https://learningenglish.voanews.com/" style="color:var(--accent)">VOA Learning English</a> – tin ngắn, tốc độ vừa.</li>
-      <li>Ghi âm điện thoại mỗi lần luyện Speaking để nghe lại.</li></ul></div>
-  </div>
-</section>
-</div>
-
+<script src="data/day01.js"></script><script src="data/day02.js"></script><script src="data/day03.js"></script><script src="data/day04.js"></script><script src="data/day05.js"></script>
+<script src="data/day06.js"></script><script src="data/day07.js"></script><script src="data/day08.js"></script><script src="data/day09.js"></script><script src="data/day10.js"></script>
+<script src="data/day11.js"></script><script src="data/day12.js"></script><script src="data/day13.js"></script><script src="data/day14.js"></script><script src="data/day15.js"></script>
+<script src="data/day16.js"></script><script src="data/day17.js"></script><script src="data/day18.js"></script><script src="data/day19.js"></script><script src="data/day20.js"></script>
+<script src="data/day21.js"></script><script src="data/day22.js"></script><script src="data/day23.js"></script><script src="data/day24.js"></script><script src="data/day25.js"></script>
+<script src="data/day26.js"></script><script src="data/day27.js"></script><script src="data/day28.js"></script><script src="data/day29.js"></script><script src="data/day30.js"></script>
 <script>
-const SK={L:["Nghe","var(--L)"],R:["Đọc","var(--R)"],W:["Viết","var(--W)"],S:["Nói","var(--S)"],G:["Ngữ pháp","var(--G)"],T:["Thi thử","var(--accent)"]};
-const WEEKS=[
- {n:1,t:"Tuần 1 · Làm quen dạng đề & nền tảng",d:"Biết rõ từng phần thi đòi hỏi gì, đo trình độ hiện tại và học khung bài Viết, Nói cơ bản."},
- {n:2,t:"Tuần 2 · Luyện sâu từng phần",d:"Đi vào các dạng câu hỏi khó: Listening Part 3, câu hỏi suy luận, các dạng luận Task 2 và Speaking Part 2."},
- {n:3,t:"Tuần 3 · Nâng band lên 6.5–7.0",d:"Ngữ pháp ăn điểm, bẫy trong Nghe, đọc nhanh, Speaking Part 3, và bài thi thử đầu tiên."},
- {n:4,t:"Tuần 4 · Thi thử & về đích",d:"Sửa lỗi theo sổ, thi thử bấm giờ, ôn từ vựng theo chủ đề và giữ sức trước ngày thi."}
-];
-const DAYS=[
-// ===== WEEK 1
-{w:1,t:"Test đầu vào & hiểu cấu trúc đề",topic:"Education",sk:["T","R","L"],
- tasks:[[20,"Đọc kỹ cấu trúc đề ở đầu trang, ghi lại thời gian từng phần"],[40,"Làm 1 bài Reading (10 câu) + Listening Part 1 (8 câu), bấm giờ thật"],[20,"Viết 1 email ngắn bất kỳ (120 từ) để đo trình độ Viết"],[20,"Chấm điểm, lập 'sổ lỗi' với 4 cột: Nghe · Đọc · Viết · Nói"],[20,"Học 8 từ chủ đề Education"]],
- vocab:[["tuition fee","học phí"],["compulsory subject","môn bắt buộc"],["academic performance","kết quả học tập"],["extracurricular activities","hoạt động ngoại khoá"],["vocational training","đào tạo nghề"],["drop out of school","bỏ học"],["broaden one's horizons","mở mang tầm nhìn"],["lifelong learning","học tập suốt đời"]],
- gram:"Ôn 12 thì: tập trung hiện tại hoàn thành vs quá khứ đơn. <em>I have studied English for 5 years</em> (vẫn học) / <em>I studied French in 2019</em> (đã xong).",
- pr:["W","Writing Task 1 (đo trình độ)","Your friend is thinking about taking an English course in the evenings. Write an email to give advice: which course to choose, how to study effectively and what to avoid."],
- tip:"<b>Đừng nản với điểm test đầu.</b> Mục đích là tìm kỹ năng yếu nhất để dồn thời gian. Kỹ năng thấp nhất thường tăng nhanh nhất."},
-{w:1,t:"Listening Part 1: đoán trước từ khoá",topic:"Travel",sk:["L","S"],
- tasks:[[15,"Học 8 từ chủ đề Travel"],[30,"Luyện kỹ thuật: 10 giây đọc câu hỏi, gạch chân từ để hỏi + danh từ chính, đoán loại thông tin cần nghe (giờ, địa điểm, số tiền)"],[30,"Làm 2 bộ Listening Part 1 (16 câu), nghe lại câu sai kèm transcript"],[25,"Nói: trả lời 3 câu Part 1 về du lịch, ghi âm"],[20,"Shadowing 1 đoạn thông báo sân bay/nhà ga 5 lần"]],
- vocab:[["itinerary","lịch trình"],["accommodation","chỗ ở"],["off the beaten track","nơi ít người biết"],["boarding pass","thẻ lên máy bay"],["delayed / cancelled","bị trễ / bị huỷ"],["reasonably priced","giá phải chăng"],["tourist attraction","điểm tham quan"],["get away from it all","thoát khỏi bộn bề"]],
- gram:"Giới từ thời gian & nơi chốn: <em>at</em> 7 a.m., <em>on</em> Monday, <em>in</em> July; <em>at</em> the gate, <em>on</em> platform 3, <em>in</em> the lobby. Đây là chỗ hay nghe nhầm trong Part 1.",
- pr:["S","Speaking Part 1","1) How often do you travel? 2) Do you prefer travelling alone or with others? Why? 3) What is the most memorable trip you have had?"],
- tip:"<b>Đáp án Part 1 thường bị đổi ý.</b> Người nói hay nói 'The train leaves at 8… sorry, 8:30'. Nghe đến hết câu rồi mới chọn."},
-{w:1,t:"Reading: skimming & scanning",topic:"Technology",sk:["R","W"],
- tasks:[[15,"Học 8 từ chủ đề Technology"],[25,"Kỹ thuật skimming: đọc câu đầu + câu cuối mỗi đoạn, viết 1 dòng tóm tắt mỗi đoạn"],[35,"Làm 1 bài Reading 10 câu trong 13 phút; câu main idea làm cuối cùng"],[25,"Phân tích câu sai: đáp án nằm ở dòng nào, paraphrase thế nào"],[20,"Viết 5 câu dùng từ mới của hôm nay"]],
- vocab:[["cutting-edge","tiên tiến nhất"],["artificial intelligence","trí tuệ nhân tạo"],["be addicted to","nghiện"],["data privacy","quyền riêng tư dữ liệu"],["user-friendly","dễ sử dụng"],["obsolete","lỗi thời"],["revolutionise","cách mạng hoá"],["screen time","thời gian dùng màn hình"]],
- gram:"Câu so sánh: <em>far / much / considerably + more…than</em>; <em>the more…, the more…</em> — <em>The more time children spend online, the less they exercise.</em>",
- pr:["W","Viết 5 câu","Dùng 5 từ mới hôm nay để viết 5 câu về ảnh hưởng của điện thoại thông minh tới cuộc sống của bạn."],
- tip:"<b>Đọc câu hỏi trước, bài sau.</b> Câu hỏi đi theo thứ tự đoạn văn, nên đáp án câu 3 thường nằm sau đáp án câu 2."},
-{w:1,t:"Writing Task 1: thư trang trọng & thân mật",topic:"Work",sk:["W","R"],
- tasks:[[15,"Học 8 từ chủ đề Work"],[25,"Học khung thư Task 1 (cuối trang); so sánh 2 thư mẫu formal vs informal"],[30,"Viết đề của ngày trong 20 phút, đếm đủ ≥120 từ"],[20,"Tự soát: đủ ý chưa? đúng giọng chưa? lời chào/kết đúng chưa?"],[30,"Reading 1 bài (10 câu) chủ đề công việc"]],
- vocab:[["apply for a position","ứng tuyển vị trí"],["job satisfaction","sự hài lòng trong công việc"],["work–life balance","cân bằng công việc – cuộc sống"],["meet a deadline","kịp hạn chót"],["be promoted","được thăng chức"],["flexible working hours","giờ làm linh hoạt"],["colleague","đồng nghiệp"],["at your earliest convenience","sớm nhất khi có thể"]],
- gram:"Câu hỏi gián tiếp trong thư trang trọng: <em>Could you tell me <u>when the course starts</u>?</em> (không đảo ngữ sau từ để hỏi). <em>I would be grateful if you could…</em>",
- pr:["W","Writing Task 1 (formal)","You saw an advertisement for a part-time job as a receptionist at a hotel. Write an email to the manager. In your email: introduce yourself, explain why you are suitable, and ask about working hours and salary."],
- tip:"<b>Formal không viết tắt.</b> Viết <i>I am, do not</i>, tránh <i>I'm, don't, gonna, wanna</i>. Thư thân mật thì ngược lại, nên thoải mái hơn."},
-{w:1,t:"Speaking Part 1: mở rộng câu trả lời",topic:"Hobbies & free time",sk:["S","L"],
- tasks:[[15,"Học 8 từ chủ đề Free time"],[20,"Học công thức A-R-E: Answer → Reason → Example/Extra, mỗi câu trả lời 3–4 câu (~20 giây)"],[35,"Trả lời 6 câu Part 1 (2 chủ đề), ghi âm, nghe lại đếm số lần 'uhm'"],[30,"Listening Part 2: 1 hội thoại (4 câu), nghe lại không nhìn transcript"],[20,"Shadowing 2 phút với BBC 6 Minute English"]],
- vocab:[["unwind / wind down","thư giãn"],["be keen on","thích"],["take up a hobby","bắt đầu một sở thích"],["a couch potato","người lười vận động"],["recharge my batteries","nạp lại năng lượng"],["spare time","thời gian rảnh"],["be into something","mê cái gì"],["kill time","giết thời gian"]],
- gram:"Danh động từ & to-V: <em>enjoy / avoid / mind + V-ing</em>; <em>want / decide / hope + to V</em>; <em>stop / remember / try</em> đổi nghĩa theo dạng.",
- pr:["S","Speaking Part 1","Topic 1 – Free time: 1) What do you usually do in your free time? 2) Has your hobby changed since you were a child? 3) Do you think people today have less free time than before?<br>Topic 2 – Music: 1) What kind of music do you like? 2) Do you prefer live music or recordings? 3) Should music be taught at school?"],
- tip:"<b>Đừng chỉ trả lời Yes/No.</b> Giám khảo cần nghe bạn nói. Nhưng cũng đừng quá 30 giây ở Part 1, vì phần này có nhiều câu hỏi."},
-{w:1,t:"Ngữ pháp nền + Listening Part 2",topic:"Health",sk:["G","L"],
- tasks:[[15,"Học 8 từ chủ đề Health"],[30,"Ôn câu điều kiện loại 0, 1, 2, 3 và mixed; làm 20 câu bài tập"],[35,"Listening Part 2: 2 hội thoại (8 câu); chú ý ai nói gì, thái độ đồng ý/phản đối"],[20,"Viết 6 câu điều kiện về sức khoẻ, mỗi loại ít nhất 1 câu"],[20,"Ôn từ vựng ngày 1–5, tự kiểm tra"]],
- vocab:[["a balanced diet","chế độ ăn cân bằng"],["sedentary lifestyle","lối sống ít vận động"],["boost the immune system","tăng sức đề kháng"],["work out","tập thể dục"],["mental health","sức khoẻ tinh thần"],["junk food","đồ ăn vặt kém dinh dưỡng"],["prevention is better than cure","phòng bệnh hơn chữa bệnh"],["get enough sleep","ngủ đủ giấc"]],
- gram:"Câu điều kiện: Loại 2 <em>If I had more time, I would exercise more.</em> Loại 3 <em>If I had slept earlier, I wouldn't have felt tired.</em> Đảo ngữ (điểm cộng): <em>Had I known…, Were I…</em>",
- pr:["W","Viết 6 câu","Viết 6 câu điều kiện về thói quen sức khoẻ của bạn, có ít nhất 1 câu đảo ngữ (Should / Were / Had)."],
- tip:"<b>Part 2 hay hỏi quan điểm.</b> Nghe các cụm <i>I'm not so sure about that</i>, <i>That's exactly what I think</i> để biết người nói đồng ý hay không."},
-{w:1,t:"Ôn tuần 1 & mini test",topic:"Tổng hợp",sk:["T","R","W"],
- tasks:[[15,"Ôn toàn bộ 48 từ tuần 1 (che nghĩa, tự nói)"],[25,"Reading 1 bài 10 câu, bấm 13 phút"],[20,"Writing Task 1, bấm đúng 20 phút"],[25,"Listening Part 1 + Part 2 (20 câu)"],[20,"Cập nhật sổ lỗi; chọn 3 lỗi hay gặp nhất cho tuần 2"],[15,"Nghỉ ngơi, xem 1 video tiếng Anh giải trí có phụ đề Anh"]],
- vocab:[["review","ôn lại"],["revise for an exam","ôn thi"],["make progress","tiến bộ"],["weak point","điểm yếu"],["set a goal","đặt mục tiêu"],["stay motivated","giữ động lực"]],
- gram:"Tự kiểm tra: tìm lại các lỗi về thì, chia động từ số ít/số nhiều (<em>he go → he goes</em>) và mạo từ a/an/the trong bài viết tuần này.",
- pr:["W","Writing Task 1 (informal)","Your English friend is going to visit your city next month and has asked you for advice. Write an email telling them the best time to visit, where to stay and what local food they should try."],
- tip:"<b>Sổ lỗi là tài liệu quý nhất.</b> Trước ngày thi bạn chỉ cần đọc lại sổ này, không phải học lại sách."},
-// ===== WEEK 2
-{w:2,t:"Writing Task 2: dạng Opinion",topic:"Environment",sk:["W","R"],
- tasks:[[15,"Học 8 từ chủ đề Environment"],[25,"Học khung Task 2 (cuối trang); đọc 1 bài mẫu, tô màu topic sentence, ví dụ, từ nối"],[15,"Lập dàn ý đề của ngày: quan điểm + 2 lý do + 2 ví dụ"],[40,"Viết bài 250+ từ trong 40 phút"],[25,"Reading 1 bài chủ đề môi trường"]],
- vocab:[["greenhouse gas emissions","khí thải nhà kính"],["renewable energy","năng lượng tái tạo"],["single-use plastic","nhựa dùng một lần"],["carbon footprint","dấu chân carbon"],["raise public awareness","nâng cao nhận thức cộng đồng"],["impose strict penalties","áp dụng hình phạt nghiêm"],["deforestation","nạn phá rừng"],["sustainable development","phát triển bền vững"]],
- gram:"Câu mở quan điểm: <em>I firmly believe that…</em>, <em>From my perspective,…</em>, <em>It is undeniable that…</em>. Không dùng <em>I think</em> quá 1 lần trong bài.",
- pr:["W","Writing Task 2 (opinion)","Some people believe that the government should ban single-use plastic products completely. To what extent do you agree or disagree? Give reasons and relevant examples."],
- tip:"<b>Quan điểm phải rõ từ mở bài và giữ nguyên tới kết bài.</b> Bài 'nửa đồng ý nửa không' mà không giải thích dễ bị chấm thấp phần Task achievement."},
-{w:2,t:"Listening Part 3: ghi chú bài giảng",topic:"Science",sk:["L","S"],
- tasks:[[15,"Học 8 từ chủ đề Science"],[20,"Học ký hiệu ghi chú nhanh: ↑ tăng, ↓ giảm, → dẫn đến, ≠ khác, w/ với, e.g."],[40,"Làm 1 bài Listening Part 3 (5 câu) x 2 lần: lần 1 làm đề, lần 2 ghi chú đầy đủ"],[25,"Nói lại nội dung bài nghe trong 1 phút bằng lời của bạn"],[20,"Nghe 1 tập BBC 6 Minute English"]],
- vocab:[["conduct research","tiến hành nghiên cứu"],["breakthrough","bước đột phá"],["findings","kết quả nghiên cứu"],["significant","đáng kể"],["a wide range of","đa dạng"],["hypothesis","giả thuyết"],["take into account","tính đến"],["according to","theo như"]],
- gram:"Bị động trong bài giảng khoa học: <em>It is believed that…</em>, <em>The experiment was carried out…</em>, <em>Results have been published…</em>",
- pr:["S","Tóm tắt nói","Nghe xong bài Part 3, nói lại trong 1 phút: chủ đề bài giảng là gì, 3 điểm chính, và bạn thấy điểm nào thú vị nhất."],
- tip:"<b>Part 3 nói nhanh và dài.</b> Đọc hết 5 câu trước khi bài bắt đầu. Câu hỏi về 'main purpose' của bài giảng thường được trả lời ở 30 giây đầu."},
-{w:2,t:"Reading: từ vựng trong ngữ cảnh & quy chiếu",topic:"Culture",sk:["R","G"],
- tasks:[[15,"Học 8 từ chủ đề Culture"],[25,"Kỹ thuật: câu 'The word X is closest in meaning to' → đọc 1 câu trước và sau, thay từng đáp án vào thử"],[20,"Câu 'It/They refers to' → tìm danh từ phía trước, cùng số ít/số nhiều"],[40,"Làm 2 bài Reading (20 câu), đánh dấu riêng câu từ vựng và quy chiếu"],[20,"Ghi 10 cặp từ đồng nghĩa bắt gặp trong bài vào sổ"]],
- vocab:[["cultural heritage","di sản văn hoá"],["preserve traditions","gìn giữ truyền thống"],["globalisation","toàn cầu hoá"],["cultural identity","bản sắc văn hoá"],["festival","lễ hội"],["customs","phong tục"],["diverse","đa dạng"],["be passed down from generation to generation","truyền từ đời này sang đời khác"]],
- gram:"Đại từ quy chiếu & từ thay thế: <em>this, these, the former, the latter, such…</em>; mạo từ <em>the</em> khi danh từ đã nhắc trước đó.",
- pr:["W","Paraphrase","Viết lại 5 câu sau bằng từ khác: 1) Many young people are not interested in traditional music. 2) Festivals help to keep local customs alive. 3) Tourism can damage old buildings. 4) Globalisation makes cultures more similar. 5) Grandparents teach children old stories."],
- tip:"<b>Đáp án từ vựng thường không phải nghĩa phổ biến nhất của từ.</b> Luôn quay lại câu gốc để kiểm tra."},
-{w:2,t:"Speaking Part 2: thảo luận giải pháp",topic:"City life",sk:["S","L"],
- tasks:[[15,"Học 8 từ chủ đề City life"],[20,"Học khung Part 2 (cuối trang): chọn 1 + 2 lý do, bác bỏ 2 phương án còn lại"],[40,"Làm đề của ngày: chuẩn bị 1 phút, nói 2 phút, ghi âm; làm lại lần 2 sau khi nghe"],[25,"Listening Part 2: 2 hội thoại"],[20,"Học thuộc 6 cụm câu giờ: Well, let me see… / That's an interesting question…"]],
- vocab:[["traffic congestion","tắc đường"],["public transport","giao thông công cộng"],["air pollution","ô nhiễm không khí"],["high cost of living","chi phí sinh hoạt cao"],["green spaces","không gian xanh"],["overcrowded","quá đông đúc"],["commute","đi lại (đi làm)"],["urban sprawl","đô thị hoá tràn lan"]],
- gram:"Ngôn ngữ so sánh lựa chọn: <em>X is more practical than Y</em>; <em>X is by far the best option</em>; <em>Y is not as effective as X</em>; <em>would rather…than…</em>",
- pr:["S","Speaking Part 2","Situation: Your city is suffering from serious traffic jams. Three solutions are suggested: <em>building more roads</em>, <em>improving public transport</em>, or <em>encouraging people to work from home</em>. Which do you think is the best solution?"],
- tip:"<b>Không cần đúng, cần thuyết phục.</b> Chọn phương án nào bạn có nhiều từ vựng để nói nhất, không phải phương án bạn thật sự thích nhất."},
-{w:2,t:"Writing Task 2: Discussion & Adv/Disadv",topic:"Technology & children",sk:["W","R"],
- tasks:[[15,"Học 8 từ chủ đề Children & technology"],[20,"So sánh bố cục: Discussion (quan điểm A – quan điểm B – ý kiến bạn) vs Advantages/Disadvantages"],[45,"Viết đề của ngày trong 40 phút + 5 phút soát lỗi"],[20,"Đối chiếu bảng tiêu chí, tự cho điểm 4 tiêu chí"],[20,"Reading 1 bài (đọc nhanh)"]],
- vocab:[["have access to","được tiếp cận"],["online learning platform","nền tảng học trực tuyến"],["be exposed to","tiếp xúc với"],["inappropriate content","nội dung không phù hợp"],["social skills","kỹ năng xã hội"],["digital literacy","năng lực số"],["parental supervision","sự giám sát của cha mẹ"],["a double-edged sword","con dao hai lưỡi"]],
- gram:"Từ nối thể hiện tương phản & nhượng bộ: <em>Although / Even though + mệnh đề</em>; <em>Despite / In spite of + N / V-ing</em>; <em>On the one hand… On the other hand…</em>; <em>Nevertheless,</em>",
- pr:["W","Writing Task 2 (discussion)","Some people think children should be allowed to use smartphones from an early age, while others believe this is harmful. Discuss both views and give your own opinion."],
- tip:"<b>Đề 'Discuss both views' mà không nêu ý kiến riêng là thiếu ý.</b> Đặt ý kiến của bạn ở cả mở bài và kết bài."},
-{w:2,t:"Reading: suy luận & thái độ tác giả",topic:"Media",sk:["R","S"],
- tasks:[[15,"Học 8 từ chủ đề Media"],[25,"Câu 'It can be inferred…' → đáp án đúng KHÔNG nằm nguyên văn trong bài nhưng suy ra được; loại đáp án quá tuyệt đối (always, never, all)"],[40,"Làm 1 bài Reading khó (bài 3 hoặc 4 trong đề) 15 phút"],[20,"Học từ chỉ thái độ: critical, supportive, neutral, sceptical, optimistic"],[20,"Speaking Part 1 chủ đề Media: 3 câu, ghi âm"]],
- vocab:[["social media platform","nền tảng mạng xã hội"],["fake news","tin giả"],["go viral","lan truyền mạnh"],["influence public opinion","ảnh hưởng dư luận"],["reliable source","nguồn tin đáng tin"],["advertising","quảng cáo"],["invasion of privacy","xâm phạm đời tư"],["keep up with the news","cập nhật tin tức"]],
- gram:"Động từ khuyết thiếu chỉ mức độ chắc chắn: <em>must be</em> (chắc chắn), <em>may / might / could be</em> (có thể), <em>can't be</em> (không thể). Dạng quá khứ: <em>must have done</em>.",
- pr:["S","Speaking Part 1","1) How do you usually get the news? 2) Do you trust information on social media? 3) Do you think newspapers will disappear in the future?"],
- tip:"<b>Câu suy luận cần bằng chứng trong bài.</b> Nếu không chỉ ra được dòng nào hỗ trợ đáp án, có thể bạn đang suy diễn quá xa."},
-{w:2,t:"Ôn tuần 2 & mini test",topic:"Tổng hợp",sk:["T","L","S"],
- tasks:[[40,"Listening đủ 3 phần (35 câu) – bấm giờ như thi thật"],[20,"Chấm, ghi câu sai vào sổ lỗi theo từng Part"],[25,"Speaking Part 1 + Part 2 liền mạch, ghi âm"],[20,"Ôn 48 từ tuần 2"],[15,"Đọc lại sổ lỗi; so sánh điểm Nghe với test ngày 1"]],
- vocab:[["accomplish","hoàn thành"],["consistent","đều đặn"],["time management","quản lý thời gian"],["under pressure","dưới áp lực"],["pay attention to","chú ý đến"],["keep track of","theo dõi"]],
- gram:"Tự soát: lỗi thiếu <em>-s/-es</em>, thiếu <em>-ed</em> khi nói. Nghe lại bản ghi âm và đếm số lỗi âm cuối.",
- pr:["S","Speaking Part 2","Situation: A group of friends is planning a weekend trip. They are considering <em>going camping</em>, <em>visiting a big city</em>, or <em>staying at a beach resort</em>. Which option do you think is the best?"],
- tip:"<b>Nếu Listening dưới 20/35:</b> tuần 3 thêm 20 phút nghe mỗi ngày (bớt từ phần Đọc). Nghe là kỹ năng tăng chậm nhất nên cần làm đều."},
-// ===== WEEK 3
-{w:3,t:"Writing Task 2: Problem–Solution / Cause–Effect",topic:"Urbanisation",sk:["W","G"],
- tasks:[[15,"Học 8 từ chủ đề Urbanisation"],[20,"Bố cục: Mở bài – Nguyên nhân/Vấn đề (2 ý) – Giải pháp/Kết quả (2 ý) – Kết bài"],[15,"Học cụm chỉ nguyên nhân – kết quả: lead to, result in, stem from, be attributed to, as a consequence"],[45,"Viết đề của ngày trong 40 phút"],[25,"Viết lại 1 đoạn thân bài tuần trước, nâng cấp từ vựng"]],
- vocab:[["migrate to urban areas","di cư lên thành thị"],["job opportunities","cơ hội việc làm"],["housing shortage","thiếu nhà ở"],["put pressure on infrastructure","gây áp lực lên hạ tầng"],["tackle the problem","giải quyết vấn đề"],["invest in","đầu tư vào"],["rural areas","vùng nông thôn"],["standard of living","mức sống"]],
- gram:"Mệnh đề chỉ kết quả & mục đích: <em>so…that</em>, <em>such…that</em>, <em>so that / in order to / so as to</em>. <em>The city is so crowded that housing prices have soared.</em>",
- pr:["W","Writing Task 2 (problem–solution)","More and more people are moving from the countryside to big cities. What problems does this cause, and what can be done to solve them?"],
- tip:"<b>Giải pháp phải khớp với vấn đề.</b> Nếu thân bài 1 nói tắc đường, giải pháp ở thân bài 2 phải nhắm vào tắc đường."},
-{w:3,t:"Speaking Part 3: phát triển chủ đề",topic:"Online learning",sk:["S","L"],
- tasks:[[15,"Học 8 từ chủ đề Online learning"],[20,"Học khung Part 3 (cuối trang); cách dùng mind map 3 nhánh + 1 nhánh riêng"],[40,"Làm đề của ngày: 1 phút chuẩn bị, 2 phút nói, sau đó tự trả lời 2 câu hỏi mở rộng; ghi âm"],[25,"Listening Part 3: 1 bài giảng"],[20,"Nghe lại ghi âm, viết ra 5 câu bạn muốn nói hay hơn"]],
- vocab:[["self-discipline","tính tự giác"],["flexible schedule","lịch học linh hoạt"],["face-to-face interaction","tương tác trực tiếp"],["distraction","sự sao nhãng"],["cost-effective","tiết kiệm chi phí"],["internet connection","kết nối mạng"],["at one's own pace","theo tốc độ của mình"],["blended learning","học kết hợp"]],
- gram:"Mệnh đề quan hệ để câu dài, tự nhiên hơn: <em>Online courses, which are often cheaper, allow students to…</em>; <em>Students who lack self-discipline may…</em>",
- pr:["S","Speaking Part 3","Topic: <em>Online learning has many benefits.</em> Gợi ý: flexibility · cost · variety of courses · (your own idea).<br>Follow-up: 1) Will online learning replace traditional schools? 2) What are the disadvantages of studying online?"],
- tip:"<b>Đừng đọc mind map như danh sách.</b> Mỗi nhánh nói 3–4 câu: ý chính → giải thích → ví dụ bản thân. Ví dụ cá nhân giúp nói trôi và tự nhiên."},
-{w:3,t:"Ngữ pháp ăn điểm B2",topic:"Work",sk:["G","W"],
- tasks:[[15,"Học 8 từ chủ đề Career"],[30,"Học 4 cấu trúc: bị động nâng cao, đảo ngữ, câu chẻ (It is… that), mệnh đề rút gọn"],[25,"Viết lại 10 câu đơn giản thành câu phức dùng 4 cấu trúc trên"],[30,"Writing Task 1: thư xin việc/thực tập (formal)"],[20,"Ôn từ vựng ngày 8–16"]],
- vocab:[["career prospects","triển vọng nghề nghiệp"],["gain hands-on experience","tích luỹ kinh nghiệm thực tế"],["be self-employed","tự kinh doanh"],["job security","sự ổn định công việc"],["teamwork skills","kỹ năng làm việc nhóm"],["unemployment rate","tỉ lệ thất nghiệp"],["internship","thực tập"],["a well-paid job","công việc lương cao"]],
- gram:"<em>Not only does remote work save time, but it also reduces costs.</em> · <em>It is experience that employers value most.</em> · <em>Having finished university, I applied for…</em> · <em>Employees are expected to…</em>",
- pr:["W","Writing Task 1 (formal)","You want to do a summer internship at an international company. Write a letter to the HR manager explaining why you are interested, what skills you have and when you are available."],
- tip:"<b>Mỗi bài chỉ cần 2–3 câu 'đắt'.</b> Nhồi quá nhiều cấu trúc khó dễ sinh lỗi. Đúng và rõ quan trọng hơn khó."},
-{w:3,t:"Listening: bẫy & paraphrase",topic:"Shopping",sk:["L","R"],
- tasks:[[15,"Học 8 từ chủ đề Shopping"],[20,"Nhận diện 3 loại bẫy: đáp án được nhắc nhưng bị phủ định; đổi ý; số liệu gần giống (15 vs 50)"],[40,"Làm 2 bài Listening Part 2 + 1 bài Part 3, khoanh từ trong transcript đã được paraphrase"],[25,"Reading 1 bài, gạch chân cặp paraphrase giữa câu hỏi và bài đọc"],[20,"Luyện nghe số: giá tiền, năm, phần trăm, số điện thoại"]],
- vocab:[["impulse buying","mua sắm bốc đồng"],["shop around","so sánh giá"],["a bargain","món hời"],["on sale","đang giảm giá"],["consumerism","chủ nghĩa tiêu dùng"],["refund","hoàn tiền"],["brand loyalty","sự trung thành với thương hiệu"],["online shopping","mua sắm trực tuyến"]],
- gram:"Phân biệt cách đọc số: <em>fifteen /fɪfˈtiːn/</em> (nhấn sau) vs <em>fifty /ˈfɪfti/</em> (nhấn trước); <em>2.5% = two point five per cent</em>.",
- pr:["S","Speaking Part 2","Situation: You want to buy a new laptop. You are deciding between <em>buying online</em>, <em>buying from a big electronics store</em>, or <em>buying a second-hand one from a friend</em>. Which is the best option?"],
- tip:"<b>Đáp án đúng hiếm khi dùng đúng từ trong bài nghe.</b> Nếu một đáp án lặp lại nguyên từ bạn vừa nghe, hãy cẩn thận vì đó có thể là bẫy."},
-{w:3,t:"Writing Task 1 nâng cao: thư phàn nàn & yêu cầu",topic:"Services",sk:["W","S"],
- tasks:[[15,"Học 8 từ chủ đề Customer service"],[20,"Học cụm phàn nàn lịch sự: I am writing to express my dissatisfaction with…; I would appreciate it if…"],[25,"Viết đề của ngày trong 20 phút"],[25,"Viết lại bài đó ở giọng thân mật (kể cho bạn nghe) – luyện chuyển giọng"],[25,"Speaking Part 3 chủ đề dịch vụ, ghi âm"]],
- vocab:[["faulty product","sản phẩm lỗi"],["express dissatisfaction","bày tỏ sự không hài lòng"],["compensation","bồi thường"],["customer service","dịch vụ khách hàng"],["warranty","bảo hành"],["inconvenience","sự bất tiện"],["resolve the issue","giải quyết vấn đề"],["take appropriate action","có biện pháp phù hợp"]],
- gram:"Giọng lịch sự: <em>I would appreciate it if you could…</em>, <em>I was wondering whether…</em>, <em>I trust that this matter will be dealt with promptly.</em>",
- pr:["W","Writing Task 1 (complaint)","You recently bought a pair of headphones online, but they stopped working after a week. Write an email to the shop. In your email: describe the problem, explain how it has affected you, and say what you want the shop to do."],
- tip:"<b>Thư phàn nàn vẫn phải lịch sự.</b> Giám khảo trừ điểm giọng điệu nếu bạn dùng lời lẽ gay gắt."},
-{w:3,t:"Reading tốc độ: 4 bài trong 60 phút",topic:"Health",sk:["R","L"],
- tasks:[[60,"Làm đủ 4 bài Reading (40 câu) trong 60 phút: bài 1 ~12', bài 2 ~13', bài 3 ~15', bài 4 ~17', 3' tô đáp án"],[20,"Chấm; ghi lại bài nào tốn thời gian nhất và vì sao"],[25,"Listening Part 1 + 2"],[15,"Học 8 từ chủ đề Health & lifestyle"]],
- vocab:[["life expectancy","tuổi thọ"],["obesity","béo phì"],["chronic disease","bệnh mãn tính"],["healthcare system","hệ thống y tế"],["side effect","tác dụng phụ"],["stress-related illness","bệnh do căng thẳng"],["cut down on","cắt giảm"],["in good shape","khoẻ mạnh, cân đối"]],
- gram:"Lượng từ: <em>a large number of + N đếm được</em>, <em>a great deal of + N không đếm được</em>, <em>few / a few, little / a little</em>.",
- pr:["S","Speaking Part 3","Topic: <em>Young people today are less healthy than before.</em> Gợi ý: diet · technology · stress · (your own idea).<br>Follow-up: Whose responsibility is it to keep young people healthy?"],
- tip:"<b>Câu nào quá 90 giây thì bỏ, đánh dấu, quay lại sau.</b> Không để trống ô nào vì sai không bị trừ điểm."},
-{w:3,t:"Thi thử full test #1",topic:"Đề tổng hợp",sk:["T","L","R","W","S"],
- tasks:[[40,"Listening 35 câu"],[60,"Reading 40 câu"],[60,"Writing Task 1 + Task 2"],[12,"Speaking 3 phần, ghi âm"],[20,"Chấm Nghe + Đọc; ghi điểm từng kỹ năng"]],
- vocab:[["mock test","bài thi thử"],["stamina","sức bền"],["concentration","sự tập trung"],["allocate time","phân bổ thời gian"],["answer sheet","phiếu trả lời"],["proofread","soát lỗi"]],
- gram:"Không học ngữ pháp mới hôm nay. Dành sức cho bài thi.",
- pr:["W","Writing Task 2 (full test)","Many people believe that university students should pay the full cost of their education. Others think the government should pay. Discuss both views and give your opinion."],
- tip:"<b>Thi đúng thứ tự Nghe → Đọc → Viết → Nói</b> và nghỉ ngắn giữa các phần như thi thật để làm quen với mệt mỏi."},
-// ===== WEEK 4
-{w:4,t:"Sửa lỗi sau full test #1",topic:"Family",sk:["W","G"],
- tasks:[[30,"Nghe lại toàn bộ câu Listening sai kèm transcript, xác định loại lỗi"],[25,"Đọc lại câu Reading sai, tìm dòng chứa đáp án"],[30,"Viết lại bài Writing Task 2 hôm qua, sửa hết lỗi ngữ pháp và lặp từ"],[20,"Nghe ghi âm Speaking, liệt kê 3 điều cần cải thiện"],[15,"Học 8 từ chủ đề Family"]],
- vocab:[["generation gap","khoảng cách thế hệ"],["nuclear / extended family","gia đình hạt nhân / nhiều thế hệ"],["bring up children","nuôi dạy con"],["household chores","việc nhà"],["get along with","hoà thuận với"],["quality time","thời gian chất lượng bên nhau"],["role model","hình mẫu"],["work-oriented parents","cha mẹ tập trung vào công việc"]],
- gram:"Sửa lỗi lặp từ bằng từ đồng nghĩa & đại từ: <em>children → kids, youngsters, the young, they</em>; <em>important → crucial, vital, essential</em>.",
- pr:["W","Writing Task 2","In many countries, grandparents no longer live with their families. What are the advantages and disadvantages of this trend?"],
- tip:"<b>Ưu tiên sửa lỗi lặp lại nhiều lần.</b> Một lỗi xuất hiện 5 lần trong bài đáng sửa hơn 5 lỗi chỉ xuất hiện 1 lần."},
-{w:4,t:"Listening + Reading đề #2",topic:"Tourism",sk:["L","R"],
- tasks:[[40,"Listening 35 câu – đề mới"],[60,"Reading 40 câu – đề mới"],[20,"Chấm, so sánh với full test #1"],[15,"Học 8 từ chủ đề Tourism"]],
- vocab:[["mass tourism","du lịch đại trà"],["eco-tourism","du lịch sinh thái"],["boost the local economy","thúc đẩy kinh tế địa phương"],["cultural exchange","giao lưu văn hoá"],["overtourism","quá tải du lịch"],["souvenir","quà lưu niệm"],["package tour","tour trọn gói"],["breathtaking scenery","cảnh đẹp ngoạn mục"]],
- gram:"Ôn nhanh: cấu trúc <em>used to V</em> (thói quen quá khứ) / <em>be used to V-ing</em> (quen với) / <em>get used to V-ing</em> (dần quen).",
- pr:["S","Speaking Part 3","Topic: <em>Tourism brings both benefits and problems to local communities.</em> Gợi ý: jobs · environment · culture · (your own idea)."],
- tip:"<b>Điểm Nghe + Đọc đạt 23+/35 và 26+/40</b> là bạn đã ở vùng an toàn cho 6.5. Chưa đạt thì 2 ngày tới thêm 1 bài Part 3 nghe mỗi ngày."},
-{w:4,t:"Writing bấm giờ: 2 bài liên tục",topic:"Environment",sk:["W","R"],
- tasks:[[60,"Viết Task 1 (20') rồi Task 2 (40') liên tục như thi thật"],[20,"Tự chấm theo bảng tiêu chí, đếm từ, gạch lỗi"],[25,"Reading 1 bài 4 (khó nhất)"],[15,"Học 8 từ chủ đề Climate"]],
- vocab:[["climate change","biến đổi khí hậu"],["extreme weather","thời tiết cực đoan"],["rising sea levels","nước biển dâng"],["natural disaster","thiên tai"],["environmentally friendly","thân thiện môi trường"],["take drastic measures","có biện pháp quyết liệt"],["conserve resources","tiết kiệm tài nguyên"],["biodiversity","đa dạng sinh học"]],
- gram:"Câu giả định cho đề xuất: <em>It is essential that the government (should) invest…</em>; <em>I suggest that people (should) use…</em> (động từ nguyên mẫu).",
- pr:["W","Task 1 + Task 2","<b>Task 1:</b> Your school/company is organising a 'Green Week'. Write an email to your classmates/colleagues inviting them to join, explaining the activities and asking for ideas.<br><b>Task 2:</b> Individuals can do nothing to improve the environment; only governments and large companies can make a difference. To what extent do you agree or disagree?"],
- tip:"<b>Để 5 phút cuối soát lỗi:</b> chia động từ, số nhiều, mạo từ, chính tả. 5 phút này thường cứu được 0.5 điểm."},
-{w:4,t:"Speaking thi thử 3 phần",topic:"Technology",sk:["S","L"],
- tasks:[[15,"Ôn khung Part 2 + Part 3 và cụm câu giờ"],[15,"Thi thử Speaking 3 phần liền mạch, ghi âm"],[20,"Chấm theo 5 tiêu chí: trôi chảy, từ vựng, ngữ pháp, phát âm, hoàn thành nhiệm vụ"],[15,"Thi lại lần 2 với đề khác"],[35,"Listening Part 3: 2 bài giảng"],[20,"Học 8 từ chủ đề Technology 2"]],
- vocab:[["technological advances","tiến bộ công nghệ"],["automation","tự động hoá"],["replace human workers","thay thế người lao động"],["online fraud","lừa đảo trực tuyến"],["stay connected","giữ liên lạc"],["e-commerce","thương mại điện tử"],["make life more convenient","làm cuộc sống tiện lợi hơn"],["rely heavily on","phụ thuộc nhiều vào"]],
- gram:"Ngữ điệu: lên giọng ở câu hỏi Yes/No, xuống giọng ở câu khẳng định và câu hỏi Wh-; ngắt hơi sau từ nối (<em>However, | …</em>).",
- pr:["S","Full Speaking","<b>Part 1:</b> 1) Do you use social media every day? 2) What app do you find most useful?<br><b>Part 2:</b> Your parents want to learn to use technology. Options: <em>you teach them</em>, <em>they join a class</em>, <em>they watch online tutorials</em>. Which is best?<br><b>Part 3:</b> <em>Technology has made our lives better.</em> Gợi ý: communication · work · health · (your idea)."],
- tip:"<b>Khi bí ý, nói về bản thân.</b> 'In my case…', 'For example, my mother…' giúp bạn nói tiếp mà không bị im lặng."},
-{w:4,t:"Thi thử full test #2",topic:"Đề tổng hợp",sk:["T","L","R","W","S"],
- tasks:[[40,"Listening 35 câu"],[60,"Reading 40 câu"],[60,"Writing Task 1 + Task 2"],[12,"Speaking 3 phần, ghi âm"],[20,"Chấm, so sánh với full test #1, ghi điểm vào sổ"]],
- vocab:[["exam technique","kỹ thuật làm bài"],["confident","tự tin"],["stay calm","giữ bình tĩnh"],["make an educated guess","đoán có cơ sở"],["eliminate wrong answers","loại đáp án sai"],["double-check","kiểm tra lại"]],
- gram:"Không học mới. Trước khi viết, đọc lại 3 lỗi hay gặp nhất trong sổ.",
- pr:["W","Writing Task 2 (full test)","Some people think that working from home is better than working in an office. Do you agree or disagree? Give reasons and examples."],
- tip:"<b>So sánh 2 lần thi thử.</b> Kỹ năng nào thấp nhất thì 3 ngày còn lại dồn vào đó."},
-{w:4,t:"Ôn từ vựng theo chủ đề",topic:"Sport & Culture",sk:["S","W"],
- tasks:[[30,"Ôn toàn bộ từ vựng 26 ngày theo nhóm chủ đề; đánh dấu từ còn quên"],[20,"Học 8 từ chủ đề Sport"],[25,"Speaking Part 3 chủ đề thể thao, ghi âm"],[25,"Writing Task 2: chỉ lập dàn ý cho 3 đề (5' mỗi đề) + viết 1 mở bài"],[20,"Listening nhẹ: 1 tập podcast"]],
- vocab:[["physical fitness","thể lực"],["team spirit","tinh thần đồng đội"],["professional athlete","vận động viên chuyên nghiệp"],["sporting event","sự kiện thể thao"],["competitive","mang tính cạnh tranh"],["keep fit","giữ dáng"],["sportsmanship","tinh thần thể thao"],["promote national pride","nâng cao niềm tự hào dân tộc"]],
- gram:"Ôn tập từ nối theo chức năng: thêm ý (Moreover, Furthermore), ví dụ (For instance, To illustrate), kết quả (Therefore, As a result), tổng kết (In conclusion, All in all).",
- pr:["W","3 dàn ý","1) Professional athletes earn too much money. Agree or disagree?<br>2) Should schools spend more time on sport?<br>3) What are the benefits of hosting international sporting events?"],
- tip:"<b>Lập dàn ý nhanh là kỹ năng thi.</b> 5 phút dàn ý tốt giúp 35 phút viết không bị lạc đề."},
-{w:4,t:"Ôn chiến thuật & khung bài",topic:"Tổng ôn",sk:["L","R","W","S"],
- tasks:[[20,"Đọc lại toàn bộ mẹo trong 28 ngày và 4 khung bài cuối trang"],[25,"Listening 1 bài Part 3 + 2 bài Part 1"],[25,"Reading 1 bài, tập trung quản lý thời gian"],[25,"Writing Task 1 trong 20 phút"],[25,"Speaking Part 2 + Part 3, mỗi phần 1 đề"]],
- vocab:[["in a nutshell","tóm lại"],["it goes without saying","không cần phải nói"],["play a vital role in","đóng vai trò quan trọng"],["there is no denying that","không thể phủ nhận rằng"],["bear in mind","ghi nhớ"],["from my point of view","theo quan điểm của tôi"],["a growing number of","ngày càng nhiều"],["have a detrimental effect on","có ảnh hưởng xấu tới"]],
- gram:"Đọc lại toàn bộ sổ lỗi. Đọc thành tiếng 10 câu 'mẫu' bạn viết đúng và hay nhất trong tháng.",
- pr:["S","Speaking Part 2","Situation: Your university is planning to use extra money for students. Options: <em>a new library</em>, <em>a sports centre</em>, or <em>scholarships</em>. Which do you think is the best?"],
- tip:"<b>Đừng làm đề mới quá nhiều ở 2 ngày cuối.</b> Mục tiêu bây giờ là tự tin và ổn định, không phải học thêm kiến thức."},
-{w:4,t:"Luyện nhẹ & chuẩn bị giấy tờ",topic:"Thư giãn",sk:["L","S"],
- tasks:[[20,"Listening Part 1 (8 câu) để giữ phản xạ"],[20,"Speaking Part 1: 6 câu hỏi nhanh, nói to"],[15,"Đọc lại 4 khung bài + sổ lỗi"],[15,"Chuẩn bị: CCCD/CMND, giấy báo dự thi, bút chì 2B, tẩy, đồng hồ (nếu được phép)"],[15,"Xem lại đường đi tới điểm thi, giờ có mặt"]],
- vocab:[["identity card","căn cước"],["admission ticket","giấy báo dự thi"],["exam venue","địa điểm thi"],["arrive early","đến sớm"],["get a good night's sleep","ngủ ngon"],["take a deep breath","hít thở sâu"]],
- gram:"Không học mới. Ngủ trước 23h.",
- pr:["S","Speaking Part 1","1) Where are you from? 2) What do you like most about your hometown? 3) What do you usually do at weekends? 4) Why are you learning English?"],
- tip:"<b>Ngủ đủ ảnh hưởng đến điểm Nghe nhiều hơn bất kỳ bài luyện nào</b> vì Listening cần tập trung liên tục 40 phút."},
-{w:4,t:"Ngày thi: checklist",topic:"Ngày thi",sk:["T"],
- tasks:[[10,"Ăn sáng đầy đủ, mang nước"],[10,"Có mặt trước giờ thi ít nhất 30 phút"],[10,"Khởi động: nói tiếng Anh 5 phút (tự giới thiệu bản thân)"],[5,"Listening: tận dụng thời gian đọc câu hỏi trước mỗi phần"],[5,"Reading: không để trống câu nào"],[5,"Writing: viết Task 2 trước nếu bạn hay thiếu giờ, vì nó chiếm 2/3 điểm"],[5,"Speaking: mỉm cười, nói rõ, nếu không nghe rõ thì hỏi lại 'Could you repeat the question, please?'"]],
- vocab:[["Could you repeat that, please?","Bạn nhắc lại được không?"],["Let me think for a moment.","Để tôi suy nghĩ một chút."],["That's a good question.","Câu hỏi hay."],["What I mean is…","Ý tôi là…"],["To put it another way…","Nói cách khác…"],["I'm not entirely sure, but…","Tôi không chắc lắm, nhưng…"]],
- gram:"Bạn đã sẵn sàng. Bình tĩnh và làm từng phần một.",
- pr:["S","Tự giới thiệu (khởi động)","Hi, my name is… I'm from… I'm currently a student / working as… In my free time I enjoy… I'm taking this test because…"],
- tip:"<b>Làm xong phần nào, quên phần đó.</b> Một phần làm chưa tốt không quyết định kết quả vì điểm là trung bình của 4 kỹ năng."}
-];
+const DATA=window.VSTEP_DAYS||{};
+const SK={listening:["Nghe","var(--L)","L"],reading:["Đọc","var(--R)","R"],writing:["Viết","var(--W)","W"],speaking:["Nói","var(--S)","S"]};
+const PLAN=[null,
+ ["listening",1,"reading",1],["writing",1,"speaking",1],["listening",1,"reading",1],["writing",1,"speaking",1],["listening",1,"reading",2],["writing",1,"speaking",1],["listening",1,"reading",2],
+ ["listening",2,"reading",2],["writing",2,"speaking",2],["listening",2,"reading",3],["writing",2,"speaking",2],["listening",2,"reading",3],["writing",2,"speaking",2],["listening",2,"reading",3],
+ ["listening",3,"reading",4],["writing",2,"speaking",3],["listening",3,"reading",4],["writing",2,"speaking",3],["listening",3,"reading",4],["writing",1,"speaking",3],["listening",3,"reading",4],
+ ["listening","mix","reading",3],["writing",2,"speaking","full"],["listening","mix","reading",4],["writing",1,"speaking","full"],["listening","mix","reading",2],["writing",2,"speaking","full"],["listening","mix","reading",4],["writing",2,"speaking","full"],["listening",1,"speaking",1]];
+const TOPIC=[null,"Education","Free time","Travel","Work & study","Health","Shopping","Technology","Family","Environment","Culture","City life","Media","Children & tech","Careers","Science","Urbanisation","Psychology","Lifestyle","Climate","Online learning","Economy","Tourism","Work from home","Sport","Volunteering","Heritage","AI","Food & farming","Tuition","Ngày thi"];
+const WEEKS=[[1,7,"Tuần 1","Part 1 · làm quen"],[8,14,"Tuần 2","Part 2 · luyện sâu"],[15,21,"Tuần 3","Part 3 · nâng band"],[22,30,"Tuần 4","Thi thử · về đích"]];
+const partLabel=(t,p)=>t==="listening"?(p==="mix"?"Nghe tổng hợp":"Nghe Part "+p):t==="reading"?"Đọc bài "+p:t==="writing"?"Viết Task "+p:(p==="full"?"Nói 3 phần":"Nói Part "+p);
 
-const KEY="vstep30-progress";
-let state={};
-try{state=JSON.parse(localStorage.getItem(KEY)||"{}")||{}}catch(e){state={}}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+/* ---------- storage (per-viewer convenience) ---------- */
+const KEY="vstep30v2";
+let ST={};try{ST=JSON.parse(localStorage.getItem(KEY)||"{}")||{}}catch(e){ST={}}
+ST.done=ST.done||{};ST.scores=ST.scores||{};ST.drafts=ST.drafts||{};ST.ans=ST.ans||{};
+let saveT;function save(){clearTimeout(saveT);saveT=setTimeout(()=>{try{localStorage.setItem(KEY,JSON.stringify(ST))}catch(e){}},200)}
 
-const weeksEl=document.getElementById("weeks");
-WEEKS.forEach(W=>{
-  const sec=document.createElement("section");sec.className="week";sec.dataset.week=W.n;
-  sec.innerHTML=`<div class="week-head"><h2>${W.t}</h2><p>${W.d}</p></div>`;
-  DAYS.forEach((D,i)=>{if(D.w!==W.n)return;const n=i+1;
-    const tot=D.tasks.reduce((a,t)=>a+t[0],0);
-    const det=document.createElement("details");det.className="day";det.id="day-"+n;
-    const tags=D.sk.map(k=>`<span class="tag" style="--c:${SK[k][1]}">${SK[k][0]}</span>`).join("");
-    const pc=SK[D.pr[0]][1];
-    det.innerHTML=`<summary><span class="dnum">Ngày<b>${n}</b></span>
-      <span class="stitle"><h3>${D.t}</h3><span class="meta">${tags}<span class="topic">· ${D.topic} · ~${tot}'</span></span></span>
-      <span class="count" data-count></span></summary>
-      <div class="body">
-        <div class="blk"><h4>Nhiệm vụ hôm nay</h4><ul class="tasks">${D.tasks.map((t,j)=>`<li><label><input type="checkbox" id="t-${n}-${j}" data-d="${n}" data-j="${j}"><span class="min">${t[0]}'</span><span>${t[1]}</span></label></li>`).join("")}</ul>
-          <div class="box prompt" style="--c:${pc}"><div class="lab">Đề luyện · ${D.pr[1]}</div>${D.pr[2]}</div>
-          <p class="tip">${D.tip}</p></div>
-        <div class="blk"><h4>Từ vựng · ${D.topic}</h4><table class="vocab">${D.vocab.map(v=>`<tr><td>${v[0]}</td><td>${v[1]}</td></tr>`).join("")}</table>
-          <div class="box" style="--c:var(--G)"><div class="lab">Ngữ pháp / trọng tâm</div>${D.gram}</div></div>
-      </div>`;
-    sec.appendChild(det);
-  });
-  weeksEl.appendChild(sec);
-});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const h=(html)=>{const t=document.createElement("template");t.innerHTML=html.trim();return t.content.firstElementChild};
+const words=s=>(s.trim().match(/[A-Za-zÀ-ỹ0-9'’-]+/g)||[]).length;
+const ICON_PLAY='<svg viewBox="0 0 16 16"><path d="M4 2.5v11l9-5.5z"/></svg>';
+const ICON_STOP='<svg viewBox="0 0 16 16"><rect x="3.5" y="3.5" width="9" height="9" rx="1"/></svg>';
+const ICON_SAY='<svg viewBox="0 0 16 16"><path d="M2 6h3l4-3v10l-4-3H2zM11 5.5a3.5 3.5 0 0 1 0 5M12.6 3.5a6 6 0 0 1 0 9" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M2 6h3l4-3v10l-4-3H2z"/></svg>';
 
-function render(){
-  let daysDone=0,tDone=0,tAll=0;
-  DAYS.forEach((D,i)=>{const n=i+1;const s=state[n]||[];
-    const c=D.tasks.filter((_,j)=>s.includes(j)).length;tDone+=c;tAll+=D.tasks.length;
-    const el=document.getElementById("day-"+n);
-    el.querySelector("[data-count]").textContent=c===D.tasks.length?"✓ xong":`${c}/${D.tasks.length}`;
-    el.classList.toggle("complete",c===D.tasks.length);if(c===D.tasks.length)daysDone++;
-    D.tasks.forEach((_,j)=>{document.getElementById(`t-${n}-${j}`).checked=s.includes(j)});
-  });
-  document.getElementById("ptext").textContent=`${daysDone}/30 ngày hoàn thành`;
-  document.getElementById("ptask").textContent=`${tDone}/${tAll} nhiệm vụ`;
-  document.getElementById("pbar").style.width=(tDone/tAll*100)+"%";
+/* ---------- speech (text-to-speech) ---------- */
+const TTS={ok:"speechSynthesis" in window,voices:[],cur:null,
+  load(){if(!this.ok)return;const v=speechSynthesis.getVoices().filter(v=>/^en[-_]/i.test(v.lang));if(v.length)this.voices=v;},
+  pick(sp){const V=this.voices;if(!V.length)return null;
+    const fem=/female|samantha|victoria|karen|moira|tessa|serena|susan|zira|hazel|libby|sonia|aria|jenny|kate|fiona|google uk english female|google us english/i;
+    const mal=/male|daniel|alex|fred|david|mark|george|ryan|guy|arthur|oliver|thomas|rishi|aaron|google uk english male/i;
+    const pref=V.filter(v=>/en[-_](GB|US|AU)/i.test(v.lang));const pool=pref.length?pref:V;
+    if(sp==="F")return pool.find(v=>fem.test(v.name)&&!/\bmale\b/i.test(v.name.replace(/female/i,"")))||pool[0];
+    if(sp==="M")return pool.find(v=>mal.test(v.name)&&!/female/i.test(v.name))||pool[1]||pool[0];
+    return pool.find(v=>/GB/i.test(v.lang))||pool[0];},
+  stop(){if(!this.ok)return;this.cur&&this.cur.onstop&&this.cur.onstop();this.cur=null;speechSynthesis.cancel();},
+  // lines: [{sp,text}], opts: {rate, onLine(i), onEnd()}
+  play(lines,opts){if(!this.ok)return;this.stop();this.load();
+    const job={cancelled:false,onstop:()=>{job.cancelled=true;opts.onEnd&&opts.onEnd(true)}};this.cur=job;
+    let i=0;const next=()=>{if(job.cancelled)return;if(i>=lines.length){this.cur=null;opts.onEnd&&opts.onEnd(false);return;}
+      const L=lines[i];const u=new SpeechSynthesisUtterance(L.text.replace(/<[^>]+>/g,""));
+      const v=this.pick(L.sp);if(v){u.voice=v;u.lang=v.lang}else u.lang="en-GB";
+      u.rate=opts.rate||1;
+      // when the device has a single voice, separate speakers by pitch
+      const same=this.pick("M")===this.pick("F");u.pitch=L.sp==="M"?(same?.78:.95):L.sp==="F"?(same?1.25:1.05):1;
+      opts.onLine&&opts.onLine(i);
+      u.onend=()=>{i++;setTimeout(next,L.sp==="N"?500:350)};u.onerror=()=>{i++;setTimeout(next,100)};
+      speechSynthesis.speak(u);};
+    next();}};
+if(TTS.ok){TTS.load();speechSynthesis.onvoiceschanged=()=>TTS.load();}
+function sayWord(t){if(!TTS.ok)return;TTS.play([{sp:"N",text:t}],{rate:.9});}
+
+/* ---------- calendar ---------- */
+function renderCal(){
+  const W=document.getElementById("weeks");W.innerHTML="";
+  WEEKS.forEach(([a,b,name,sub])=>{
+    const row=h(`<div class="wk"><div class="wk-label">${name}<span>${sub}</span></div><div class="days"></div></div>`);
+    for(let d=a;d<=b;d++){const P=PLAN[d];const sc=ST.scores[d];
+      const scoreTxt=sc?Object.values(sc).map(x=>x.c+"/"+x.t).join(" "):"";
+      const btn=h(`<button type="button" class="dbtn${ST.done[d]?" done":""}${DATA[d]?"":" pending"}" data-d="${d}">
+        <span class="n">Ngày ${d}${ST.done[d]?"<small>✓</small>":""}</span>
+        <span class="s"><i style="--c:${SK[P[0]][1]}">${partLabel(P[0],P[1])}</i></span>
+        <span class="s"><i style="--c:${SK[P[2]][1]}">${partLabel(P[2],P[3])}</i></span>
+        <span class="t">${esc(TOPIC[d])}${scoreTxt?" · "+scoreTxt:""}</span></button>`);
+      btn.onclick=()=>{location.hash="day-"+d};
+      row.querySelector(".days").appendChild(btn);}
+    W.appendChild(row);});
+  const n=Object.keys(ST.done).filter(k=>ST.done[k]).length;
+  document.getElementById("ptext").textContent=`${n}/30 ngày xong`;
+  document.getElementById("pbar").style.width=(n/30*100)+"%";
 }
-weeksEl.addEventListener("change",e=>{const t=e.target;if(!t.dataset.d)return;
-  const d=t.dataset.d,j=+t.dataset.j;const s=new Set(state[d]||[]);t.checked?s.add(j):s.delete(j);state[d]=[...s];save();render();});
-const rb=document.getElementById("reset");
-rb.addEventListener("click",()=>{if(rb.dataset.armed){state={};save();render();rb.textContent="Xoá tiến độ";delete rb.dataset.armed;}
-  else{rb.dataset.armed=1;rb.textContent="Bấm lần nữa để xoá";setTimeout(()=>{if(rb.dataset.armed){delete rb.dataset.armed;rb.textContent="Xoá tiến độ"}},3000);}});
 
-const tabs=document.getElementById("tabs");
-[["all","Tất cả"],[1,"Tuần 1"],[2,"Tuần 2"],[3,"Tuần 3"],[4,"Tuần 4"]].forEach(([v,l])=>{
-  const b=document.createElement("button");b.type="button";b.textContent=l;b.dataset.v=v;b.setAttribute("aria-pressed",v==="all");
-  b.onclick=()=>{tabs.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-    document.querySelectorAll(".week").forEach(s=>s.classList.toggle("hidden-week",v!=="all"&&+s.dataset.week!==v));
-    try{localStorage.setItem(KEY+"-tab",v)}catch(e){}};
-  tabs.appendChild(b);});
-try{const t=localStorage.getItem(KEY+"-tab");if(t){const b=tabs.querySelector(`[data-v="${t}"]`);b&&b.click();}}catch(e){}
-// open first unfinished day
-render();
-const firstOpen=DAYS.findIndex((D,i)=>!(state[i+1]||[]).length||state[i+1].length<D.tasks.length);
-if(firstOpen>=0)document.getElementById("day-"+(firstOpen+1)).open=true;
+/* ---------- questions ---------- */
+function quiz(day,key,qs,color){
+  const box=h(`<div class="qs"></div>`);const saved=(ST.ans[day]||{})[key]||{};
+  qs.forEach((Q,i)=>{const name=`q-${day}-${key}-${i}`;
+    const q=h(`<div class="q"><div class="qt"><span>${i+1}.</span>${Q.q}</div><div class="opts"></div><div class="why" hidden></div></div>`);
+    Q.opts.forEach((o,j)=>{const lab=h(`<label class="opt"><input type="radio" name="${name}" id="${name}-${j}" value="${j}"><span><b>${"ABCD"[j]}.</b> ${o}</span></label>`);
+      if(saved[i]===j)lab.querySelector("input").checked=true;
+      lab.querySelector("input").onchange=()=>{ST.ans[day]=ST.ans[day]||{};ST.ans[day][key]=ST.ans[day][key]||{};ST.ans[day][key][i]=j;save()};
+      q.querySelector(".opts").appendChild(lab)});
+    q.querySelector(".why").innerHTML=`<b>Đáp án ${"ABCD"[Q.a]}.</b> ${Q.why||""}`;
+    box.appendChild(q)});
+  const res=h(`<div class="result"><button type="button" class="btn primary">Nộp bài và xem đáp án</button><button type="button" class="btn ghost" hidden>Làm lại</button><span class="score"></span></div>`);
+  const [sub,redo]=res.querySelectorAll("button");
+  sub.onclick=()=>{let c=0;box.querySelectorAll(".q").forEach((q,i)=>{const Q=qs[i];
+      q.querySelectorAll(".opt").forEach((l,j)=>{l.classList.toggle("right",j===Q.a);const inp=l.querySelector("input");l.classList.toggle("wrong",inp.checked&&j!==Q.a);inp.disabled=true});
+      const sel=q.querySelector("input:checked");if(sel&&+sel.value===Q.a)c++;q.querySelector(".why").hidden=false});
+    res.querySelector(".score").textContent=`Đúng ${c}/${qs.length}`;
+    ST.scores[day]=ST.scores[day]||{};ST.scores[day][key]={c,t:qs.length};save();renderCal();
+    sub.hidden=true;redo.hidden=false;};
+  redo.onclick=()=>{box.querySelectorAll(".opt").forEach(l=>{l.classList.remove("right","wrong");const i=l.querySelector("input");i.disabled=false;i.checked=false});
+    box.querySelectorAll(".why").forEach(w=>w.hidden=true);if(ST.ans[day])delete ST.ans[day][key];save();res.querySelector(".score").textContent="";sub.hidden=false;redo.hidden=true;};
+  const wrap=document.createElement("div");wrap.style.display="grid";wrap.style.gap="14px";wrap.append(box,res);return wrap;
+}
+
+/* ---------- player ---------- */
+function player(lines,scriptEl){
+  const el=h(`<div class="player"><button type="button" class="play" data-state="idle">${ICON_PLAY}<span>Phát audio</span></button>
+    <select class="speed" aria-label="Tốc độ đọc"><option value="0.85">Chậm</option><option value="1" selected>Tốc độ thi</option><option value="1.1">Nhanh</option></select>
+    <span class="plays">đã nghe 0 lần</span></div>`);
+  const b=el.querySelector(".play"),sp=el.querySelector(".speed"),cnt=el.querySelector(".plays");let n=0;
+  if(!TTS.ok){b.disabled=true;}
+  b.onclick=()=>{if(b.dataset.state==="playing"){TTS.stop();return;}
+    document.querySelectorAll('.play[data-state="playing"]').forEach(x=>{x.dataset.state="idle";x.innerHTML=ICON_PLAY+"<span>Phát audio</span>"});
+    b.dataset.state="playing";b.innerHTML=ICON_STOP+"<span>Dừng</span>";
+    TTS.play(lines,{rate:+sp.value,
+      onLine:i=>{if(scriptEl)scriptEl.querySelectorAll("p").forEach((p,k)=>p.classList.toggle("on",k===i))},
+      onEnd:(stopped)=>{b.dataset.state="idle";b.innerHTML=ICON_PLAY+"<span>Nghe lại</span>";if(!stopped){n++;cnt.textContent=`đã nghe ${n} lần`;}
+        if(scriptEl)scriptEl.querySelectorAll("p").forEach(p=>p.classList.remove("on"))}});};
+  return el;
+}
+
+/* ---------- timer ---------- */
+function timer(phases){ // [{label,secs}]
+  const el=h(`<div class="timer"><span class="phase">Sẵn sàng</span><span class="clock">--:--</span><button type="button" class="btn sm">Bắt đầu</button><button type="button" class="btn sm ghost">Đặt lại</button></div>`);
+  const [ph,ck]=[el.querySelector(".phase"),el.querySelector(".clock")];const [go,rs]=el.querySelectorAll("button");
+  let iv=null,idx=0,left=0;const fmt=s=>String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
+  const show=()=>{ck.textContent=fmt(left);ck.classList.toggle("warn",left<=10&&left>0)};
+  const reset=()=>{clearInterval(iv);iv=null;idx=0;left=phases[0].secs;ph.textContent="Sẵn sàng";go.textContent="Bắt đầu";show()};
+  go.onclick=()=>{if(iv){clearInterval(iv);iv=null;go.textContent="Tiếp tục";return;}
+    ph.textContent=phases[idx].label;go.textContent="Tạm dừng";
+    iv=setInterval(()=>{left--;show();if(left<=0){idx++;if(idx<phases.length){left=phases[idx].secs;ph.textContent=phases[idx].label;show();}
+      else{clearInterval(iv);iv=null;ph.textContent="Hết giờ";go.textContent="Bắt đầu";idx=0;left=phases[0].secs;}}},1000);};
+  rs.onclick=reset;reset();return el;
+}
+
+/* ---------- section renderers ---------- */
+function lessonBox(items,title){return h(`<div class="lessonbox"><h4>${title||"Bài học & chiến thuật"}</h4><ol>${items.map(x=>`<li>${x}</li>`).join("")}</ol></div>`)}
+function secShell(S,num){const k=SK[S.type];
+  const lab=partLabel(S.type,S.type==="reading"?S.passage:S.type==="writing"?S.task:S.part);
+  const el=h(`<section class="sec" style="--c:${k[1]}"><div class="sec-h"><h2>Kỹ năng ${num}: ${lab}</h2><span class="small muted"></span></div></section>`);
+  return el;}
+
+function renderListening(S,day,num){
+  const el=secShell(S,num);const nq=S.items.reduce((a,it)=>a+it.questions.length,0);
+  el.querySelector(".sec-h span").textContent=`${S.items.length} bài nghe · ${nq} câu hỏi`;
+  el.appendChild(lessonBox(S.lesson));
+  if(!TTS.ok)el.appendChild(h(`<p class="notts">Trình duyệt này không phát được giọng đọc. Bạn hãy mở trang bằng Chrome, Safari hoặc Edge, hoặc nhờ người khác đọc transcript cho bạn nghe.</p>`));
+  el.appendChild(h(`<p class="small muted">Cách làm: đọc câu hỏi trước, bấm <b>Phát audio</b> và chỉ nghe <b>1 lần</b> như thi thật. Chọn đáp án cho tất cả bài rồi mới nộp. Sau khi nộp, mở transcript và nghe lại những câu sai.</p>`));
+  const allQ=[];const hold=h(`<div style="display:grid;gap:12px"></div>`);
+  S.items.forEach((it,ii)=>{
+    const script=h(`<div class="script">${it.script.map(l=>`<p><b>${l.sp==="M"?"Man":l.sp==="F"?"Woman":"Narrator"}</b>${l.text}</p>`).join("")}</div>`);
+    const tr=h(`<details class="more"><summary>Transcript</summary><div></div></details>`);tr.querySelector("div").appendChild(script);
+    const card=h(`<div class="item"><div class="item-h"><div><h3>${it.label}</h3><span class="ctx">${it.context||""}</span></div></div></div>`);
+    card.querySelector(".item-h").appendChild(player(it.script,script));
+    const start=allQ.length;it.questions.forEach(q=>allQ.push(q));
+    const qlist=h(`<ol class="small muted" start="${start+1}" style="margin:0;padding-left:22px">${it.questions.map(q=>`<li>${q.q}</li>`).join("")}</ol>`);
+    card.append(qlist,tr);hold.appendChild(card);});
+  el.appendChild(hold);
+  el.appendChild(h(`<h3>Phiếu trả lời</h3>`));
+  el.appendChild(quiz(day,"L",allQ));
+  return el;}
+
+function renderReading(S,day,num){
+  const el=secShell(S,num);const wc=S.text.reduce((a,p)=>a+words(p.replace(/<[^>]+>/g,"")),0);
+  el.querySelector(".sec-h span").textContent=`${wc} từ · ${S.questions.length} câu · gợi ý ${[0,12,13,15,17][S.passage]||15} phút`;
+  el.appendChild(lessonBox(S.lesson));
+  const g=h(`<div class="rgrid"><article class="passage"><h3>${S.title}</h3>${S.text.map((p,i)=>`<p><i>${i+1}</i><span>${p}</span></p>`).join("")}</article><div style="display:grid;gap:12px"></div></div>`);
+  const right=g.children[1];right.appendChild(timer([{label:"Đang đọc",secs:([0,12,13,15,17][S.passage]||15)*60}]));
+  right.appendChild(quiz(day,"R",S.questions));el.appendChild(g);return el;}
+
+function renderWriting(S,day,num){
+  const el=secShell(S,num);el.querySelector(".sec-h span").textContent=`${S.kind} · ≥${S.minWords} từ · ${S.minutes} phút`;
+  el.appendChild(lessonBox(S.lesson));
+  el.appendChild(h(`<div class="prompt"><div class="lab">Đề bài</div>${S.prompt}</div>`));
+  el.appendChild(timer([{label:"Đang viết",secs:S.minutes*60}]));
+  const id=`draft-${day}`;const ta=h(`<textarea id="${id}" placeholder="Viết bài của bạn ở đây. Bài được lưu tự động trên trình duyệt này." spellcheck="false"></textarea>`);
+  ta.value=ST.drafts[day]||"";const ct=h(`<div class="count"></div>`);
+  const upd=()=>{const n=words(ta.value);ct.textContent=`${n}/${S.minWords} từ`;ct.classList.toggle("ok",n>=S.minWords)};
+  ta.oninput=()=>{ST.drafts[day]=ta.value;save();upd()};upd();el.append(ta,ct);
+  el.appendChild(h(`<p class="small muted">Viết xong mới mở dàn ý và bài mẫu để so sánh. Tự chấm: đủ ý đề hỏi chưa, mỗi đoạn có 1 ý chính chưa, có lặp từ không, chia động từ đúng chưa.</p>`));
+  const o=h(`<details class="more"><summary>Dàn ý gợi ý</summary><div><ol class="notes">${S.outline.map(x=>`<li>${x}</li>`).join("")}</ol></div></details>`);
+  const m=h(`<details class="more"><summary>Bài mẫu band ~7.0 (${S.model.reduce((a,p)=>a+words(p.replace(/<[^>]+>/g,"")),0)} từ) và phân tích</summary><div><div class="model">${S.model.map(p=>`<p>${p}</p>`).join("")}</div><h4 class="eyebrow">Vì sao bài này được điểm cao</h4><ul class="notes">${S.notes.map(x=>`<li>${x}</li>`).join("")}</ul></div></details>`);
+  const p=h(`<details class="more" open><summary>Cụm từ dùng được ngay</summary><div><table class="ph">${S.phrases.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table></div></details>`);
+  el.append(o,m,p);return el;}
+
+function renderSpeaking(S,day,num){
+  const el=secShell(S,num);el.querySelector(".sec-h span").textContent=`${S.tasks.length} đề`;
+  el.appendChild(lessonBox(S.lesson));
+  el.appendChild(h(`<p class="small muted">Dùng điện thoại ghi âm khi luyện. Bấm <b>Bắt đầu</b> để chạy giờ chuẩn bị và giờ nói như phòng thi. Nói xong mới nghe bài mẫu.</p>`));
+  S.tasks.forEach(T=>{
+    const card=h(`<div class="task"><h3>${T.label}</h3><div class="prompt"><div class="lab">Đề</div>${T.prompt}</div></div>`);
+    const ph=[];if(T.prep)ph.push({label:"Chuẩn bị",secs:T.prep});ph.push({label:"Nói",secs:T.time});card.appendChild(timer(ph));
+    const mtxt=T.model.map(p=>p.replace(/<[^>]+>/g," ")).join(" ");
+    const m=h(`<details class="more"><summary>Bài nói mẫu</summary><div><div class="model">${T.model.map(p=>`<p>${p}</p>`).join("")}</div></div></details>`);
+    const lines=T.model.map(p=>({sp:"F",text:p.replace(/^Q\d+:\s*/,"").replace(/<[^>]+>/g," ")}));
+    const pl=player(lines,m.querySelector(".model"));pl.querySelector("span").textContent="Nghe bài mẫu";
+    m.querySelector("div").prepend(pl);card.appendChild(m);el.appendChild(card);});
+  el.appendChild(h(`<details class="more" open><summary>Cụm từ dùng được ngay</summary><div><table class="ph">${S.phrases.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table></div></details>`));
+  return el;}
+
+/* ---------- lesson page ---------- */
+function renderDay(d){
+  TTS.stop();const L=document.getElementById("lesson");L.innerHTML="";const D=DATA[d];const P=PLAN[d];
+  document.querySelectorAll(".dbtn").forEach(b=>b.setAttribute("aria-current",+b.dataset.d===d));
+  const head=h(`<div class="lhead"><span class="eyebrow">Ngày ${d} / 30 · ${esc(TOPIC[d])}</span>
+    <h2 style="font-size:clamp(22px,3.6vw,30px)">${D?D.title:"Đang cập nhật"}</h2>
+    <div class="row"><span class="chip" style="--c:${SK[P[0]][1]}">${partLabel(P[0],P[1])}</span><span class="chip" style="--c:${SK[P[2]][1]}">${partLabel(P[2],P[3])}</span></div>
+    ${D?`<p class="goal">${D.goal}</p>`:""}</div>`);
+  L.appendChild(head);
+  if(!D){L.appendChild(h(`<div class="empty">Bài của ngày ${d} chưa có nội dung.</div>`));return;}
+  const R={listening:renderListening,reading:renderReading,writing:renderWriting,speaking:renderSpeaking};
+  D.sections.forEach((S,i)=>L.appendChild(R[S.type](S,d,i+1)));
+  if(D.vocab&&D.vocab.length){const v=h(`<section style="display:grid;gap:10px"><h2>Từ vựng hôm nay</h2><div class="vocab"></div></section>`);
+    D.vocab.forEach(w=>{const c=h(`<div class="vw"><button type="button" class="say" aria-label="Đọc ${esc(w[0])}">${ICON_SAY}</button><div><b>${w[0]}</b><span>${w[1]}</span></div></div>`);
+      c.querySelector("button").onclick=()=>sayWord(w[0]);v.querySelector(".vocab").appendChild(c)});L.appendChild(v);}
+  if(D.tip)L.appendChild(h(`<p class="tip"><b>Mẹo:</b> ${D.tip}</p>`));
+  const fin=h(`<div class="finish"><button type="button" class="btn ${ST.done[d]?"":"primary"}">${ST.done[d]?"✓ Đã học xong · bỏ đánh dấu":"Đánh dấu đã học xong ngày "+d}</button><div class="nav"></div></div>`);
+  fin.querySelector("button").onclick=()=>{ST.done[d]=!ST.done[d];save();renderCal();renderDay(d)};
+  const nav=fin.querySelector(".nav");
+  if(d>1){const b=h(`<button type="button" class="btn">← Ngày ${d-1}</button>`);b.onclick=()=>{location.hash="day-"+(d-1)};nav.appendChild(b)}
+  if(d<30){const b=h(`<button type="button" class="btn">Ngày ${d+1} →</button>`);b.onclick=()=>{location.hash="day-"+(d+1)};nav.appendChild(b)}
+  L.appendChild(fin);
+}
+function route(scroll){const m=/^#day-(\d+)$/.exec(location.hash);let d=m?+m[1]:0;
+  if(!(d>=1&&d<=30)){d=1;for(let i=1;i<=30;i++){if(!ST.done[i]){d=i;break}}}
+  renderDay(d);if(scroll)document.getElementById("lesson").scrollIntoView({behavior:"smooth",block:"start"});}
+renderCal();route(false);
+addEventListener("hashchange",()=>route(true));
 </script>
