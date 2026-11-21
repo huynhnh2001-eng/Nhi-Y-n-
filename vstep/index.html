@@ -128,6 +128,15 @@ details.tipwrap>summary{cursor:pointer;font-weight:700;font-size:13px;color:var(
 .bgrp .vi{display:block;color:var(--muted);font-size:13px}
 .hidevi .vi{filter:blur(5px);transition:filter .2s}
 .hidevi li:hover .vi{filter:none}
+.real{margin-top:22px;display:grid;gap:10px}
+.reallist{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px}
+.rl{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:4px;align-content:start;min-width:0}
+.rl a{color:var(--accent);font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+.rl a:hover{text-decoration:underline}
+.rl .who{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c)}
+.rl p{font-size:13.5px;color:var(--muted)}
+.realtip{background:var(--surface);border:1px dashed var(--c);border-radius:10px;padding:10px 12px;font-size:14px;display:grid;gap:4px}
+.realtip a{color:var(--accent);font-weight:600}
 .plan{display:grid;gap:4px;font-size:14px}
 .prow{display:grid;grid-template-columns:72px 10px 1fr;gap:8px;align-items:center}
 .pt{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -222,6 +231,12 @@ table.ph td:first-child{font-weight:600;width:55%}
   </details>
 </header>
 
+<section class="real" id="de-that" aria-labelledby="real-h">
+  <h2 id="real-h">Đề mẫu có file nghe giọng thật</h2>
+  <p class="small muted">Bài nghe trong khoá là giọng máy đọc bài tự soạn. Muốn nghe giọng người thật thì làm đề mẫu ở các link dưới, bắt đầu từ tuần 3 (từ ngày 15 trở đi mỗi buổi Nghe có nhắc phần nên làm). Các link này lấy từ kết quả tìm kiếm, mình chưa mở trực tiếp được, nên nếu link hỏng hoặc đòi trả phí thì chuyển sang link khác.</p>
+  <div class="reallist" id="reallist"></div>
+</section>
+
 <section class="cal" aria-labelledby="cal-h">
   <div class="cal-top"><h2 id="cal-h">Lịch học</h2>
     <div style="display:flex;align-items:center;gap:10px;flex:1;justify-content:flex-end"><span class="small muted" id="ptext">0/30 ngày</span><div class="bar"><i id="pbar"></i></div></div></div>
@@ -308,6 +323,24 @@ function renderCal(){
   document.getElementById("ptext").textContent=`${n}/30 ngày xong`;
   document.getElementById("pbar").style.width=(n/30*100)+"%";
 }
+
+/* ---------- real-audio sample tests (from web search; not opened from here) ---------- */
+const REAL=[
+ {k:"udn",who:"Chính thức · ĐH Ngoại ngữ – ĐH Đà Nẵng",c:"var(--ok)",t:"Đề thi mẫu VSTEP bậc 3–5",u:"https://vstep.ufl.udn.vn/NLTA/Dinhdang/2025/De-thi-mau-Vstep-bac-3-52025.9.10067",d:"Trang của đơn vị tổ chức thi. Có file nghe mẫu Sample Test 2 chia Part 1, Part 2, Part 3."},
+ {k:"vnu",who:"Chính thức · Trung tâm Khảo thí ĐHNN – ĐHQG Hà Nội",c:"var(--ok)",t:"VSTEP test format & Sample Test",u:"https://vstep.vnu.edu.vn/test-format/",d:"Mô tả định dạng đề và link tới VSTEP.3-5 Sample Test của đơn vị ra đề VSTEP."},
+ {k:"pn",who:"Sách luyện đề · Phương Nam Education",c:"var(--W)",t:"File nghe bộ đề VSTEP bậc 3–5 (B1–C1)",u:"https://phuongnamedu.vn/resource/detail/bo-de-thi-theo-dinh-dang-vstep-bac-3-5-b1-c1-phan-ghi-am-luyen-tap-ki-nang-nghe-1219",d:"5 file nghe (nén .rar) đi kèm sách. Dùng cùng sách để có câu hỏi và đáp án."},
+ {k:"tav",who:"Tổng hợp · bên thứ ba",c:"var(--muted)",t:"Tổng hợp đề minh hoạ VSTEP Sample Test 3–5",u:"https://tienganhvstep.com/vstep-sample-test/",d:"Gom đề mẫu của nhiều trường (ĐHQG Hà Nội, ĐH Cần Thơ, ĐH Đồng Tháp…) kèm file audio."},
+ {k:"zim",who:"Tổng hợp · bên thứ ba",c:"var(--muted)",t:"Đề thi VSTEP B1, B2, C1 có đáp án chi tiết",u:"https://zim.vn/de-thi-vstep",d:"Đề mẫu kèm đáp án và giải thích."},
+ {k:"vv",who:"Tổng hợp · bên thứ ba",c:"var(--muted)",t:"Đề nghe VSTEP Listening Part 1, 2, 3",u:"https://vstepvietnam.org/vstep-listening/",d:"Bài nghe theo từng part, có file audio. Chưa rõ đơn vị soạn."}
+];
+function realLink(r){return `<a href="${r.u}" target="_blank" rel="noopener">${r.t} ↗</a>`}
+(function(){const L=document.getElementById("reallist");if(!L)return;
+  REAL.forEach(r=>L.appendChild(h(`<div class="rl" style="--c:${r.c}"><span class="who">${r.who}</span>${realLink(r)}<p>${r.d}</p></div>`)))})();
+// which real part to practise after a listening day (week 3 onward)
+function realTip(S,day){if(day<15)return null;
+  const part=S.part==="mix"?"cả 3 part (35 câu, 40 phút, nghe 1 lần)":"Part "+S.part;
+  const main=REAL[day%2?0:1],alt=REAL[3];
+  return h(`<div class="realtip" style="--c:var(--ok)"><b>Nghe thêm giọng thật (20–30 phút)</b><span>Sau bài hôm nay, làm ${part} của đề mẫu: ${realLink(main)} hoặc ${realLink(alt)}. Ghi điểm vào sổ để so với bài giọng máy.</span><a href="#de-that">Xem tất cả nguồn đề mẫu</a></div>`);}
 
 /* ---------- questions ---------- */
 function qBlock(day,key,i,Q){const name=`q-${day}-${key}-${i}`;const saved=((ST.ans[day]||{})[key]||{})[i];
@@ -409,6 +442,7 @@ function renderListening(S,day,num){
   const [c,main,aside]=cols();
   aside.appendChild(h(`<p class="small muted">Cách làm: đọc mẹo và câu hỏi trước, bấm <b>Phát audio</b>, chỉ nghe <b>1 lần</b> như thi thật rồi chọn đáp án ngay bên dưới. Làm hết các bài rồi bấm nộp ở cuối. Sau khi nộp, mở transcript để nghe lại câu sai.</p>`));
   aside.appendChild(lessonBox(S.lesson));
+  const rt=realTip(S,day);if(rt)aside.appendChild(rt);
   if(!TTS.ok)main.appendChild(h(`<p class="notts">Trình duyệt này không phát được giọng đọc. Bạn hãy mở trang bằng Chrome, Safari hoặc Edge, hoặc đọc transcript.</p>`));
   const allQ=[],qEls=[];
   S.items.forEach(it=>{
@@ -520,5 +554,5 @@ function route(scroll){const m=/^#day-(\d+)$/.exec(location.hash);let d=m?+m[1]:
   if(!(d>=1&&d<=30)){d=1;for(let i=1;i<=30;i++){if(!ST.done[i]){d=i;break}}}
   renderDay(d);if(scroll)document.getElementById("lesson").scrollIntoView({behavior:"smooth",block:"start"});}
 renderCal();route(false);
-addEventListener("hashchange",()=>route(true));
+addEventListener("hashchange",()=>{if(/^#day-\d+$/.test(location.hash))route(true)});
 </script>
