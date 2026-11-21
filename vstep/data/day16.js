@@ -39,6 +39,60 @@
         "<b>“First and foremost… Secondly… Finally, and perhaps most importantly…”</b> – từ nối có phân cấp mức độ quan trọng, không chỉ liệt kê máy móc.",
         "<b>Kết luận “these problems are not inevitable”</b> – nêu quan điểm rõ ràng, diễn đạt lại các giải pháp bằng cụm danh từ (well-planned public transport, targeted housing policies) chứ không chép lại câu ở thân bài."
       ],
+      gloss: [
+        ["have expanded at a remarkable pace", "đã mở rộng với tốc độ đáng kinh ngạc", "at a … pace: với tốc độ…"],
+        ["in search of better-paid jobs", "để tìm kiếm công việc lương cao hơn", "in search of + N: để tìm kiếm"],
+        ["this migration has fuelled economic growth", "làn sóng di cư này đã thúc đẩy tăng trưởng kinh tế", "fuel growth: thúc đẩy tăng trưởng (collocation)"],
+        ["placed enormous pressure on urban infrastructure", "gây áp lực khổng lồ lên hạ tầng đô thị", "place pressure on + N"],
+        ["simply cannot cope with the sheer number of", "đơn giản là không thể đáp ứng nổi số lượng khổng lồ", "cope with: đối phó, xoay xở; the sheer number of: số lượng quá lớn"],
+        ["This, in turn, worsens air pollution", "Điều này, đến lượt nó, làm ô nhiễm không khí tồi tệ hơn", "in turn: nối chuỗi nhân quả"],
+        ["which has been linked to a rise in respiratory illnesses", "điều đã được cho là có liên quan đến sự gia tăng bệnh hô hấp", "Mệnh đề quan hệ không xác định + bị động HTHT"],
+        ["As demand outstrips supply", "Khi cầu vượt cung", "As = khi/vì; outstrip: vượt quá"],
+        ["forcing many low-income migrants to live", "buộc nhiều người nhập cư thu nhập thấp phải sống", "Mệnh đề phân từ chỉ kết quả: V-ing; force sb to V"],
+        ["Tackling these issues requires action on several fronts", "Giải quyết những vấn đề này cần hành động trên nhiều mặt", "Danh động từ làm chủ ngữ + V số ít"],
+        ["First and foremost", "Trước hết và quan trọng nhất", ""],
+        ["without adding to congestion", "mà không làm tăng thêm ùn tắc", "without + V-ing; add to: làm tăng thêm"],
+        ["If such services are cheap, frequent and reliable", "Nếu những dịch vụ như vậy rẻ, thường xuyên và đáng tin cậy", "Câu điều kiện loại 1"],
+        ["a genuine incentive to leave their vehicles at home", "động lực thực sự để để xe ở nhà", "an incentive to + V"],
+        ["by offering tax breaks to developers who reserve", "bằng cách ưu đãi thuế cho chủ đầu tư nào dành ra", "by + V-ing: bằng cách; mệnh đề quan hệ who"],
+        ["could be eased by creating jobs", "có thể được giảm bớt bằng cách tạo việc làm", "Bị động với modal: could be + V3"],
+        ["so that young people no longer feel", "để người trẻ không còn cảm thấy", "so that + mệnh đề: để mà; no longer: không còn"],
+        ["these problems are not inevitable", "những vấn đề này không phải là tất yếu", "inevitable: không thể tránh khỏi"]
+      ],
+      bank: [
+        { h: "Mở bài (paraphrase + quan điểm)", items: [
+          ["The rapid movement of people from villages to major cities is one of the defining trends of our time.", "Sự dịch chuyển nhanh của người dân từ nông thôn lên thành phố lớn là một trong những xu hướng tiêu biểu của thời đại."],
+          ["Although urban growth creates jobs and wealth, it also brings a number of pressing problems.", "Dù tăng trưởng đô thị tạo ra việc làm và của cải, nó cũng mang đến nhiều vấn đề cấp bách."],
+          ["This essay will outline the main difficulties facing fast-growing cities and suggest how they could be addressed.", "Bài luận này sẽ nêu những khó khăn chính mà các thành phố phát triển nhanh đang đối mặt và đề xuất cách giải quyết."]
+        ] },
+        { h: "Câu chủ đề thân bài", items: [
+          ["The first and most obvious consequence of rapid urbanisation is overcrowded roads.", "Hệ quả đầu tiên và rõ ràng nhất của đô thị hóa nhanh là đường sá quá tải."],
+          ["Another serious issue is that housing has become unaffordable for ordinary workers.", "Một vấn đề nghiêm trọng khác là nhà ở đã vượt quá khả năng chi trả của người lao động bình thường."],
+          ["Fortunately, there are several measures that city authorities could take.", "May mắn là có một số biện pháp mà chính quyền thành phố có thể thực hiện."],
+          ["The most effective solution to traffic congestion would be a modern public transport network.", "Giải pháp hiệu quả nhất cho ùn tắc giao thông là một mạng lưới giao thông công cộng hiện đại."]
+        ] },
+        { h: "Giải thích & đưa ví dụ", items: [
+          ["In Hanoi, for instance, a ten-kilometre trip across the city can easily take more than an hour at peak times.", "Ví dụ ở Hà Nội, một chuyến đi mười cây số qua thành phố dễ dàng mất hơn một giờ vào giờ cao điểm."],
+          ["Because rents are so high, many factory workers have no choice but to share a tiny room with three or four others.", "Vì giá thuê quá cao, nhiều công nhân không còn lựa chọn nào khác ngoài ở chung phòng chật với ba bốn người."],
+          ["Singapore shows that when public transport is fast and affordable, people are willing to give up their private vehicles.", "Singapore cho thấy khi giao thông công cộng nhanh và rẻ, người dân sẵn sàng từ bỏ xe cá nhân."],
+          ["If more jobs were available in the provinces, fewer young people would feel the need to move to the capital.", "Nếu có nhiều việc làm hơn ở các tỉnh, sẽ ít người trẻ cảm thấy cần chuyển lên thủ đô hơn."]
+        ] },
+        { h: "Câu nối & chuyển ý", items: [
+          ["Closely related to this is the problem of air quality.", "Liên quan chặt chẽ đến điều này là vấn đề chất lượng không khí."],
+          ["Turning to possible solutions, the government has a key role to play.", "Chuyển sang các giải pháp khả thi, chính phủ đóng vai trò then chốt."],
+          ["Equally important is the need to reduce the flow of migrants in the first place.", "Quan trọng không kém là cần giảm dòng người di cư ngay từ đầu."]
+        ] },
+        { h: "Nhượng bộ – phản bác", items: [
+          ["Admittedly, building metro lines is extremely expensive, but the long-term savings in time and health are far greater.", "Phải thừa nhận rằng xây metro rất tốn kém, nhưng lợi ích lâu dài về thời gian và sức khỏe lớn hơn nhiều."],
+          ["Some argue that restricting private vehicles is unfair; however, without such measures, the roads will only become more crowded.", "Một số người cho rằng hạn chế xe cá nhân là không công bằng; tuy nhiên, nếu không có biện pháp đó, đường sá sẽ chỉ đông hơn."],
+          ["It is true that cities cannot stop people from moving there, yet they can manage growth more wisely.", "Đúng là thành phố không thể ngăn người dân đến sống, nhưng có thể quản lý tăng trưởng khôn ngoan hơn."]
+        ] },
+        { h: "Kết bài", items: [
+          ["In conclusion, the problems of rapid urbanisation are serious but far from impossible to solve.", "Tóm lại, các vấn đề của đô thị hóa nhanh tuy nghiêm trọng nhưng hoàn toàn có thể giải quyết."],
+          ["With careful planning and long-term investment, our cities can remain good places to live and work.", "Với quy hoạch cẩn thận và đầu tư dài hạn, các thành phố của chúng ta có thể vẫn là nơi tốt để sống và làm việc."],
+          ["Only by combining transport, housing and regional policies can these challenges be fully overcome.", "Chỉ khi kết hợp chính sách giao thông, nhà ở và vùng miền thì những thách thức này mới được vượt qua hoàn toàn."]
+        ] }
+      ],
       phrases: [
         ["place enormous pressure on…", "gây áp lực khổng lồ lên…"],
         ["The most visible problem is…", "Vấn đề dễ thấy nhất là…"],
@@ -76,8 +130,51 @@
             "<b>Follow-up 1:</b> I don't think the government should push people to move back, because that rarely works. A better approach would be to make the countryside more attractive – for example, by building industrial zones and improving internet access in the provinces, so people can choose to stay rather than feel forced to leave.",
             "<b>Follow-up 2:</b> I expect them to become much more dependent on public transport. Hanoi and Ho Chi Minh City are already building metro lines, and in twenty years I imagine far fewer people will ride motorbikes in the city centre. Hopefully, there'll be more green space too, although that depends on how seriously planners take the environment.",
             "<b>Follow-up 3:</b> Probably the cost of housing. Rent can take up almost half of a graduate's salary, which means many young people share tiny rooms and can't save anything. On top of that, they're often far from their families, so loneliness can be a hidden problem as well."
+          ],
+          gloss: [
+            ["I'm well aware that", "tôi hiểu rất rõ rằng", "be well aware that + mệnh đề"],
+            ["come with some serious problems", "đi kèm một số vấn đề nghiêm trọng", "come with: đi kèm"],
+            ["the range of jobs is simply much wider", "phạm vi việc làm đơn giản là rộng hơn nhiều", "much + so sánh hơn: nhấn mạnh"],
+            ["nearly double what she could earn at home", "gần gấp đôi số tiền cô ấy có thể kiếm ở quê", "double + what-clause: gấp đôi cái mà…"],
+            ["are concentrated in cities", "tập trung ở các thành phố", "Bị động: be concentrated in"],
+            ["whereas city residents can reach a specialist", "trong khi cư dân thành phố có thể gặp bác sĩ chuyên khoa", "whereas: trong khi (đối lập)"],
+            ["The same goes for education", "Điều tương tự cũng đúng với giáo dục", "The same goes for + N"],
+            ["have access to better schools", "được tiếp cận trường học tốt hơn", "have access to + N"],
+            ["you grow up quickly", "bạn trưởng thành nhanh", "grow up: lớn lên, trưởng thành"],
+            ["Admittedly, cities have real drawbacks", "Phải thừa nhận rằng thành phố có những nhược điểm thực sự", "Admittedly: mở đầu nhượng bộ"],
+            ["these are problems that can be reduced over time", "đây là những vấn đề có thể giảm dần theo thời gian", "Mệnh đề quan hệ + bị động modal"],
+            ["choose to stay rather than feel forced to leave", "chọn ở lại thay vì cảm thấy bị buộc phải rời đi", "rather than + V nguyên mẫu; feel forced to V"],
+            ["become much more dependent on public transport", "phụ thuộc nhiều hơn vào giao thông công cộng", "be dependent on: phụ thuộc vào"],
+            ["Rent can take up almost half of", "Tiền thuê nhà có thể chiếm gần một nửa", "take up: chiếm (thời gian, tiền, không gian)"]
           ]
         }
+      ],
+      bank: [
+        { h: "Mở đầu", items: [
+          ["Today I’m going to discuss whether the benefits of living in a big city outweigh the drawbacks.", "Hôm nay tôi sẽ bàn về việc liệu lợi ích của sống ở thành phố lớn có vượt trội nhược điểm không."],
+          ["To be honest, I’m a city person, so I tend to agree with this statement.", "Thật lòng mà nói, tôi là người thích thành phố, nên tôi có xu hướng đồng ý với nhận định này."],
+          ["I’ll cover two of the ideas on the card and then share one point of my own.", "Tôi sẽ nói về hai ý trên thẻ và sau đó chia sẻ một ý của riêng mình."]
+        ] },
+        { h: "Chuyển ý", items: [
+          ["Moving on to public services, the difference between city and countryside is huge.", "Chuyển sang dịch vụ công, sự khác biệt giữa thành phố và nông thôn là rất lớn."],
+          ["Another thing worth mentioning is entertainment and culture.", "Một điều khác đáng nhắc đến là giải trí và văn hóa."],
+          ["Apart from that, cities also offer something you can’t measure in money.", "Ngoài ra, thành phố còn mang lại điều không thể đo bằng tiền."]
+        ] },
+        { h: "Ý riêng của bạn", items: [
+          ["One more idea I’d like to add is that cities expose you to people from very different backgrounds.", "Một ý nữa tôi muốn thêm là thành phố cho bạn tiếp xúc với những người có xuất thân rất khác nhau."],
+          ["Something that isn’t on the card, but matters a lot to me, is the speed of internet and modern services.", "Một điều không có trên thẻ nhưng rất quan trọng với tôi là tốc độ internet và các dịch vụ hiện đại."],
+          ["From my own experience, living in the city has made me much more confident and independent.", "Từ trải nghiệm của bản thân, sống ở thành phố đã khiến tôi tự tin và độc lập hơn nhiều."]
+        ] },
+        { h: "Kết luận", items: [
+          ["So, all in all, I’m convinced that city life offers more than it takes away.", "Vậy, nhìn chung, tôi tin chắc rằng cuộc sống thành phố mang lại nhiều hơn những gì nó lấy đi."],
+          ["Despite the traffic and the pollution, I’d still choose to live in a big city.", "Bất chấp kẹt xe và ô nhiễm, tôi vẫn sẽ chọn sống ở thành phố lớn."],
+          ["That’s why I believe the advantages clearly win, at least for young people.", "Đó là lý do tôi tin ưu điểm rõ ràng chiếm ưu thế, ít nhất là với người trẻ."]
+        ] },
+        { h: "Trả lời câu hỏi phụ", items: [
+          ["That’s an interesting question. I think the answer depends on what kind of support people receive.", "Đó là câu hỏi thú vị. Tôi nghĩ câu trả lời phụ thuộc vào việc người dân nhận được hỗ trợ gì."],
+          ["I’ve never really thought about that before, but my guess is that cities will become much greener.", "Tôi chưa từng nghĩ về điều đó trước đây, nhưng tôi đoán các thành phố sẽ xanh hơn nhiều."],
+          ["If I had to pick just one challenge, I’d say it’s finding a place to live that you can actually afford.", "Nếu phải chọn một thách thức thôi, tôi cho rằng đó là tìm được chỗ ở mà mình thực sự trả nổi."]
+        ] }
       ],
       phrases: [
         ["I'd like to talk about whether…", "Tôi muốn nói về việc liệu…"],

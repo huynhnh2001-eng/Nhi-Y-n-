@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "In a city museum",
+          tip: "Câu hỏi chi tiết về triển lãm: thông báo có nhiều mốc giờ cho nhiều nơi khác nhau (bảo tàng, cửa hàng). Chỉ bám vào câu có từ “exhibition/ceramics” và để ý thì của động từ – đâu là kế hoạch cũ, đâu là tình hình hiện tại.",
           script: [
             { sp: "F", text: "Good afternoon, visitors. The museum will close in thirty minutes, at five o’clock, so please begin making your way towards the exit. The gift shop on the ground floor will stay open until five fifteen. We would also like to remind you that the special exhibition on ancient ceramics, which was due to end this Sunday, has been extended until the end of next month due to popular demand." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Announcement 2",
           context: "A voicemail from a tour company",
+          tip: "Câu hỏi địa điểm: tin nhắn thường nêu địa điểm quen thuộc trước rồi đổi bằng “however… instead”. Cẩn thận các địa điểm chỉ được nhắc làm mốc tham chiếu (opposite, next to) – chúng không phải là điểm hẹn.",
           script: [
             { sp: "M", text: "Hello, Ms Lan. This is Quang from Heritage Walks, calling about your group booking for the Imperial Citadel tour on the twenty-third. You asked for an English-speaking guide, and that’s confirmed. The time remains eight thirty. However, the main gate will be closed for restoration that week, so we’ll meet at the east gate instead, opposite the car park. Could you also send me the final number of participants by Friday? Thanks." }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Announcement 3",
           context: "In a city archive reading room",
+          tip: "Câu hỏi “trước khi làm gì”: bài liệt kê nhiều quy định, mỗi quy định gắn với một hoạt động khác nhau. Chờ nghe đúng hoạt động trong câu hỏi (chụp ảnh) rồi bắt từ “first/before” đi ngay sau đó.",
           script: [
             { sp: "M", text: "Welcome to the city archive reading room. Before you request any documents, please leave your bags and coats in the lockers by the entrance. Only pencils may be used in this room. Original maps and letters older than nineteen hundred must be handled with the cotton gloves provided. If you wish to take photographs, you must first complete a permission form at the desk, and please remember that flash photography is not allowed." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Conversation 1",
           context: "Two students are discussing a history project",
+          tip: "4 câu hỏi theo đúng thứ tự hội thoại. Câu hạn nộp: sẽ có hạn cũ và hạn mới. Câu “why”: nghe sau “but”. Câu “the woman”: đừng nhầm với việc người đàn ông nhận làm. Câu cuối: một cách được đề xuất rồi bị gạt đi – chờ quyết định cuối cùng.",
           script: [
             { sp: "F", text: "Hi Tuan. Have you thought about our history project? It’s due on the fifteenth, isn’t it?" },
             { sp: "M", text: "Actually, Ms Ha extended the deadline. Didn’t you see her email? It’s now the twenty-second." },
@@ -94,6 +98,7 @@
         {
           label: "Talk 1",
           context: "A public talk by a heritage conservation specialist",
+          tip: "Bài nói quan điểm 5 câu: phân biệt niềm tin phổ biến (“people often imagine…”) với ý của người nói (“In fact…”). Câu “why” nghe sau “the reason is”; câu về quy tắc và lời mời nghe các cụm “Our rule is…”, “I’d like to invite you to…”.",
           script: [
             { sp: "N", text: "You will hear a talk by a heritage conservation specialist at a public event." },
             { sp: "F", text: "Good evening, everyone, and thank you for coming. When people hear that I work in heritage conservation, they often imagine that my job is to make old buildings look new again. In fact, that’s usually the last thing we want to do." },
@@ -145,6 +150,29 @@
         "Supporters point to several advantages. First, reuse protects a city’s identity. Old buildings remind residents of the work and lives of earlier generations, and they give neighbourhoods a sense of character that new glass towers often lack. Second, reuse can be better for the environment. Constructing a new building requires huge amounts of energy and raw materials, so keeping an existing structure often produces far less waste and carbon.",
         "That said, adaptive reuse is neither simple nor cheap. Old buildings may contain dangerous materials, have weak foundations or fail to meet modern safety standards. The work also requires skilled craftspeople familiar with traditional techniques, and they can be hard to find. Architects sometimes discover these problems only after work has begun, which can push costs far beyond the original budget. In some cases, developers argue that demolition is the only realistic option.",
         "Even so, many successful projects show that the effort can be worthwhile. Converted factories and warehouses often become popular places for cafés, studios and small businesses, bringing new life to districts that had been in decline. Perhaps the greatest lesson of adaptive reuse is that heritage does not have to be frozen in the past. It can continue to serve the community, as long as we are creative enough to imagine a new future for it."
+      ],
+      gloss: [
+        ["outlived their original purpose","không còn phục vụ mục đích ban đầu (tồn tại lâu hơn công năng cũ)","outlive + N: tồn tại lâu hơn"],
+        ["knock such buildings down","phá bỏ những tòa nhà như vậy","knock sth down: phá dỡ (cụm động từ tách được)"],
+        ["known as adaptive reuse","được gọi là tái sử dụng thích ứng","Rút gọn mệnh đề quan hệ bị động: (which is) known as"],
+        ["while keeping its historic character","trong khi vẫn giữ nét lịch sử của nó","while + V-ing: rút gọn mệnh đề cùng chủ ngữ"],
+        ["might be converted into offices and apartments","có thể được chuyển đổi thành văn phòng và căn hộ","Bị động với động từ khuyết thiếu: might be + V3; convert into"],
+        ["have been turned into creative hubs","đã được biến thành các trung tâm sáng tạo","Bị động hiện tại hoàn thành: have been + V3; turn into"],
+        ["to meet modern needs","để đáp ứng nhu cầu hiện đại","meet needs/standards: đáp ứng"],
+        ["Supporters point to several advantages.","Những người ủng hộ chỉ ra một số lợi ích.","point to + N: chỉ ra, viện dẫn"],
+        ["remind residents of the work","nhắc cư dân nhớ đến công việc","remind sb of sth"],
+        ["a sense of character that new glass towers often lack","nét đặc trưng mà các tòa tháp kính mới thường thiếu","Mệnh đề quan hệ that; lack + N (không có giới từ)"],
+        ["requires huge amounts of energy and raw materials","đòi hỏi lượng lớn năng lượng và nguyên liệu thô","amounts of + N không đếm được"],
+        ["produces far less waste and carbon","tạo ra ít rác thải và carbon hơn nhiều","far + so sánh hơn: nhấn mạnh “hơn nhiều”"],
+        ["That said,","Dù vậy,","Từ nối nhượng bộ, đầu câu"],
+        ["is neither simple nor cheap","không đơn giản mà cũng chẳng rẻ","neither … nor …: không … cũng không …"],
+        ["fail to meet modern safety standards","không đạt tiêu chuẩn an toàn hiện đại","fail to + V: không làm được"],
+        ["familiar with traditional techniques","thông thạo các kỹ thuật truyền thống","be familiar with + N; rút gọn mệnh đề quan hệ"],
+        ["push costs far beyond the original budget","đẩy chi phí vượt xa ngân sách ban đầu","far beyond: vượt xa"],
+        ["Even so,","Mặc dù vậy,","Từ nối đối lập, dẫn tới kết luận"],
+        ["bringing new life to districts that had been in decline","mang lại sức sống mới cho những khu vực từng sa sút","V-ing chỉ kết quả; quá khứ hoàn thành had been"],
+        ["does not have to be frozen in the past","không nhất thiết phải bị “đóng băng” trong quá khứ","not have to: không cần phải; bị động be + V3"],
+        ["as long as we are creative enough to imagine","miễn là chúng ta đủ sáng tạo để hình dung","as long as: miễn là; adj + enough to + V"]
       ],
       questions: [
         { q: "Which of the following is the best title for the passage?",

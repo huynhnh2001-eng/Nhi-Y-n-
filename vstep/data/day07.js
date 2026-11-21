@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "A message from a company's IT department",
+          tip: "Câu hỏi về việc nhân viên phải làm: chờ nghe câu yêu cầu (please make sure…). Cẩn thận với thông tin chỉ được nhắc là “không bị ảnh hưởng”.",
           script: [
             { sp: "M", text: "Hello everyone, this is a message from the IT department. We'll be carrying out system maintenance from ten p.m. this Saturday until six a.m. on Sunday. During this time, email and the company intranet will be unavailable. Before you leave the office on Friday, please make sure you save all your work and log off properly. The office Wi-Fi will not be affected." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Announcement 2",
           context: "A voicemail from a repair shop",
+          tip: "Câu hỏi hai vế: có nhiều mốc thời gian cho nhiều việc khác nhau. Ghi chú mỗi ngày đi kèm sự việc nào, chỉ chọn mốc gắn với đúng vật được hỏi.",
           script: [
             { sp: "M", text: "Hello, Mr Duc, this is Quang from PhoneFix. I'm calling about your laptop. We've replaced the broken screen, but the keyboard part you need is still on order. The supplier says it'll arrive on Thursday. You can either collect the laptop now and bring it back later, or wait and pick it up on Friday afternoon with both repairs done. Just let us know." }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Announcement 3",
           context: "At a community library",
+          tip: "Câu hỏi “bring”: nghe sau please bring… Phân biệt thứ người tham gia tự mang với thứ được cho mượn hoặc miễn phí.",
           script: [
             { sp: "F", text: "Are you over sixty and feeling confused by your smartphone? Our free workshop, Smartphones Made Simple, takes place every Tuesday morning at nine thirty in the community library. You'll learn how to make video calls, send photos and protect yourself from online scams. Please bring your own phone with a full battery. If you don't have a smartphone, don't worry – we can lend you a tablet for the session." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Announcement 4",
           context: "A recorded message from a bank",
+          tip: "Câu hỏi hành động nên làm: bài sẽ liệt kê vài việc bị cấm (do not…) trước. Đáp án thường nằm sau từ tín hiệu Instead.",
           script: [
             { sp: "F", text: "Thank you for calling Sunrise Bank. Please remember that we will never ask for your password or your one-time code by phone, text or email. If you receive a message like this, do not reply and do not click on any links. Instead, forward the message to our security team at security at sunrise bank dot com and call our hotline immediately." }
           ],
@@ -71,6 +75,7 @@
         {
           label: "Announcement 5",
           context: "A radio advertisement",
+          tip: "Câu hỏi về giá: bài nhắc ba con số (giá thường, giá khuyến mãi, số tiền tiết kiệm). Gắn mỗi số với từ đi kèm như normally, this weekend only, a saving of.",
           script: [
             { sp: "M", text: "Make your home smarter with the new Echo Home speaker! Control your lights, play music and check the weather – just by using your voice. The Echo Home normally costs two point five million dong, but this weekend only, you can get one for just one point nine million. That's a saving of six hundred thousand! Plus, delivery is free anywhere in the city." }
           ],
@@ -84,6 +89,7 @@
         {
           label: "Announcement 6",
           context: "A lecturer talking to students",
+          tip: "Câu hỏi “how”: một cách nộp bài sẽ bị phủ định (please don’t…). Để ý cả định dạng file được yêu cầu để loại phương án sai chi tiết.",
           script: [
             { sp: "F", text: "Before you go, a quick reminder about your assignments. This term, please don't send them to me by email. All work must be uploaded to the online learning platform as a PDF file. The deadline is eleven fifty-nine p.m. on Sunday, and the system closes automatically at that time. Late work will lose ten per cent of the mark for each day it is late." }
           ],
@@ -97,6 +103,7 @@
         {
           label: "Announcement 7",
           context: "A voicemail from a classmate",
+          tip: "Câu hỏi “why”: nghe lý do ngay sau thông báo đổi kế hoạch. Giờ 7:30 trong bài gắn với một người khác – đừng nhầm giờ với lý do.",
           script: [
             { sp: "F", text: "Hi Nam, it's Hoa. Quick change of plan for our group video call tonight. Linh just told me her internet connection is down, and the technician can't come until seven thirty. So instead of starting at seven, let's start at eight thirty to give her time. I'll send everyone the new link by text message, not by email, so keep an eye on your phone." }
           ],
@@ -110,6 +117,7 @@
         {
           label: "Announcement 8",
           context: "At a science and technology fair",
+          tip: "Câu hỏi có điều kiện (if the weather is bad): chờ nghe If it rains… Hai địa điểm khác được nhắc cho trường hợp bình thường và cho hoạt động khác.",
           script: [
             { sp: "M", text: "Welcome to the Young Inventors Technology Fair. The robotics exhibition is in Hall A, with live demonstrations every hour on the hour. Don't miss our drone show, which will take place outside on the main lawn at three o'clock. If it rains, the show will be moved indoors to Hall C. Visitors are welcome to take photos, but please don't use flash." }
           ],
@@ -140,6 +148,30 @@
         "At first glance, this sounds worrying. However, many researchers argue that it is not necessarily a bad thing. Humans have always used tools to support their memory, from shopping lists to calendars. By handing routine details over to our devices, they say, we free up mental space for more demanding tasks, such as solving problems and thinking creatively. In this sense, the smartphone is simply the latest version of the notebook.",
         "Others are less optimistic. They point out that memory is not just a storage space but also the foundation of understanding. A doctor who has to look up every symptom, or a student who searches online for every formula, may never develop the deep knowledge needed to make quick and accurate judgements. There is also a practical risk: if a phone is lost or its battery runs out, its owner may suddenly be left without vital information.",
         "So what is the answer? Most experts recommend a sensible, balanced approach. It makes sense to let technology handle information we rarely need, such as the opening hours of a bank or the date of a dentist’s appointment. However, skills and knowledge that we use every day, or that matter in an emergency, are worth keeping in our own heads. Learning a few key phone numbers by heart, for example, takes only minutes and could prove invaluable one day."
+      ],
+      gloss: [
+        ["know by heart","biết thuộc lòng","by heart: thuộc lòng (learn/know sth by heart)"],
+        ["it was common to remember","việc ghi nhớ là điều phổ biến","It was common to + V: … là chuyện thường"],
+        ["store this information on","lưu thông tin này trên","store sth on/in sth: lưu trữ"],
+        ["have even given this habit a name","thậm chí đã đặt tên cho thói quen này","give sth a name: đặt tên cho; hiện tại hoàn thành"],
+        ["The idea behind","ý tưởng đằng sau / cơ sở của","the idea behind + N"],
+        ["make less effort to remember","ít cố gắng ghi nhớ hơn","make (an) effort to + V: cố gắng làm gì"],
+        ["In one well-known experiment,","Trong một thí nghiệm nổi tiếng,","Cụm trạng từ mở câu, dùng để dẫn chứng"],
+        ["Half of them were told that","Một nửa số họ được cho biết rằng","Bị động quá khứ: were told that + mệnh đề"],
+        ["At first glance,","Thoạt nhìn,","Từ nối mở đầu, thường đi trước However"],
+        ["it is not necessarily a bad thing","đó không hẳn là điều xấu","not necessarily: không nhất thiết"],
+        ["By handing routine details over to","Bằng cách giao những chi tiết thường ngày cho","By + V-ing: bằng cách…; hand sth over to sb"],
+        ["free up mental space for","giải phóng không gian trí óc cho","free up + N: giải phóng, dành ra"],
+        ["In this sense,","Theo nghĩa này,","Từ nối để tóm lại / diễn giải ý"],
+        ["Others are less optimistic.","Những người khác kém lạc quan hơn.","Others… : chuyển sang quan điểm đối lập"],
+        ["They point out that","Họ chỉ ra rằng","point out that + mệnh đề"],
+        ["not just a storage space but also","không chỉ là nơi lưu trữ mà còn là","not just … but also …: không chỉ … mà còn …"],
+        ["look up every symptom","tra cứu mọi triệu chứng","look up: tra cứu (cụm động từ)"],
+        ["its battery runs out","pin của nó hết","run out: hết, cạn"],
+        ["be left without vital information","bị bỏ lại mà không có thông tin quan trọng","Bị động sau modal: may be left without + N"],
+        ["It makes sense to","Thật hợp lý khi","It makes sense to + V: hợp lý để làm gì"],
+        ["are worth keeping in","đáng được giữ trong","be worth + V-ing: đáng để làm gì"],
+        ["could prove invaluable","có thể tỏ ra vô cùng quý giá","prove + adj: hóa ra là, tỏ ra"]
       ],
       questions: [
         { q: "According to paragraph 1, what was more common a generation ago?",

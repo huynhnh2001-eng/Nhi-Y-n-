@@ -6,6 +6,55 @@
   sections: [
     {
       type: "writing",
+      gloss: [
+        ["It was great to hear from you","Rất vui khi nhận được tin của bạn","It was + adj + to V: mở đầu thư thân mật"],
+        ["congratulations on picking up the guitar","chúc mừng bạn đã bắt đầu học guitar","congratulations on + V-ing; pick up: bắt đầu học (kỹ năng)"],
+        ["in no time","chẳng mấy chốc, rất nhanh",""],
+        ["As for me,","Còn về phần mình,","cụm chuyển ý sang bản thân"],
+        ["I don’t have much free time these days","dạo này mình không có nhiều thời gian rảnh","much + danh từ không đếm được"],
+        ["make the most of my weekends","tận dụng tối đa những ngày cuối tuần","make the most of + N: tận dụng tối đa"],
+        ["I usually go jogging","mình thường đi chạy bộ","go + V-ing: đi (làm hoạt động)"],
+        ["meet friends for coffee","gặp bạn bè uống cà phê","meet sb for + N"],
+        ["I’ve been thinking about taking up photography","dạo này mình đang tính bắt đầu học nhiếp ảnh","Hiện tại hoàn thành tiếp diễn + think about + V-ing; take up: bắt đầu một sở thích"],
+        ["My cousin has lent me his old camera","anh họ đã cho mình mượn chiếc máy ảnh cũ","lend sb sth (lent – lent): cho ai mượn gì"],
+        ["I’d love to learn how to take better pictures","mình rất muốn học cách chụp ảnh đẹp hơn","would love to + V; learn how to + V"],
+        ["I might even join an online course","có khi mình còn tham gia một khóa học trực tuyến","might + V: có lẽ sẽ (khả năng)"],
+        ["It’s fantastic news that you’re coming to Vietnam","thật là tin tuyệt vời khi bạn sắp đến Việt Nam","It’s + N/adj + that + mệnh đề; hiện tại tiếp diễn chỉ kế hoạch"],
+        ["If you’re free at the weekend, why don’t we","Nếu cuối tuần bạn rảnh, hay là chúng mình","Câu điều kiện loại 1 + Why don’t we + V? (gợi ý)"],
+        ["take a day trip to Ninh Binh","đi chơi trong ngày ở Ninh Bình","take a day trip to + nơi chốn"],
+        ["We could rent bikes","Chúng mình có thể thuê xe đạp","could + V: gợi ý nhẹ nhàng"],
+        ["at the same time","đồng thời, cùng lúc",""],
+        ["Let me know your dates so I can start planning","Cho mình biết ngày bạn đến để mình bắt đầu lên kế hoạch","Let me know + N; so (that) I can + V: để mình có thể"]
+      ],
+      bank: [
+        { h: "Mở đầu thư", items: [
+          ["Hi Tom, thanks so much for your email – it really made my day!","Chào Tom, cảm ơn email của bạn nhiều – nó làm mình vui cả ngày!"],
+          ["Sorry I haven’t written for ages – I’ve been snowed under with work lately.","Xin lỗi lâu lắm rồi mình không viết thư – dạo này mình ngập đầu trong công việc."],
+          ["It’s brilliant that you’ve started learning the guitar – I’m really impressed!","Thật tuyệt khi bạn đã bắt đầu học guitar – mình thật sự nể đấy!"]
+        ] },
+        { h: "Nêu lý do viết thư", items: [
+          ["I’m writing to answer your questions about how I spend my free time.","Mình viết thư để trả lời mấy câu hỏi của bạn về cách mình dùng thời gian rảnh."],
+          ["I just wanted to tell you a bit about my hobbies and make some plans for your visit.","Mình chỉ muốn kể bạn nghe một chút về sở thích của mình và lên kế hoạch cho chuyến thăm của bạn."],
+          ["You asked what we could do together when you’re here, so here are a few ideas.","Bạn hỏi chúng mình có thể làm gì cùng nhau khi bạn ở đây, nên đây là vài ý tưởng."]
+        ] },
+        { h: "Trình bày từng ý", items: [
+          ["These days, most of my free time goes on reading and going to the gym.","Dạo này, phần lớn thời gian rảnh của mình dành cho đọc sách và đi tập gym."],
+          ["One hobby I’d really like to try is pottery, because I love making things with my hands.","Một sở thích mình rất muốn thử là làm gốm, vì mình thích tự tay làm ra đồ vật."],
+          ["When you come over, how about spending a weekend in Da Lat? The weather there is lovely.","Khi bạn sang, hay mình dành một cuối tuần ở Đà Lạt nhé? Thời tiết ở đó rất dễ chịu."],
+          ["If you’d prefer something more relaxing, we could stay in Hanoi and try some street food.","Nếu bạn thích cái gì thư thả hơn, chúng mình có thể ở lại Hà Nội và thử đồ ăn đường phố."]
+        ] },
+        { h: "Câu nối & chuyển ý", items: [
+          ["Apart from that, I’ve recently joined a badminton club near my office.","Ngoài ra, gần đây mình đã tham gia một câu lạc bộ cầu lông gần cơ quan."],
+          ["Speaking of new hobbies, I’ve been meaning to take up yoga for a while.","Nhân nói về sở thích mới, mình định tập yoga từ lâu rồi."],
+          ["Anyway, enough about me – let’s talk about your trip!","Thôi, nói về mình thế đủ rồi – giờ nói về chuyến đi của bạn nhé!"]
+        ] },
+        { h: "Kết thư", items: [
+          ["Let me know what you think of these ideas.","Cho mình biết bạn nghĩ gì về mấy ý tưởng này nhé."],
+          ["Keep practising the guitar – I want to hear you play when you’re here!","Cứ tập guitar đều nhé – mình muốn nghe bạn chơi khi bạn sang đây!"],
+          ["I can’t wait to show you around. Take care!","Mình rất mong được dẫn bạn đi tham quan. Giữ gìn sức khỏe nhé!"],
+          ["Write back soon and tell me your flight details.","Viết thư lại sớm và cho mình biết thông tin chuyến bay nhé."]
+        ] }
+      ],
       task: 1,
       kind: "Informal email",
       lesson: [
@@ -57,6 +106,28 @@
     },
     {
       type: "speaking",
+      bank: [
+        { h: "Trả lời trực tiếp", items: [
+          ["To be honest, I spend most of my free time reading or watching films.","Thật lòng mà nói, mình dành phần lớn thời gian rảnh để đọc sách hoặc xem phim."],
+          ["I’d say I’m more of a homebody, so I enjoy quiet hobbies.","Mình nghĩ mình là người thích ở nhà, nên mình thích những sở thích yên tĩnh."],
+          ["Yes, I listen to music pretty much every day, especially pop and indie.","Có, hầu như ngày nào mình cũng nghe nhạc, nhất là nhạc pop và indie."]
+        ] },
+        { h: "Đưa lý do", items: [
+          ["The main reason is that it helps me switch off after a long day.","Lý do chính là nó giúp mình thả lỏng đầu óc sau một ngày dài."],
+          ["That’s mainly because I find it really relaxing.","Chủ yếu là vì mình thấy nó rất thư giãn."],
+          ["I think it’s because I’ve loved music since I was a kid.","Mình nghĩ là vì mình đã yêu âm nhạc từ khi còn bé."]
+        ] },
+        { h: "Ví dụ bản thân", items: [
+          ["For example, last weekend I went hiking with some colleagues and it was amazing.","Ví dụ, cuối tuần trước mình đi leo núi với mấy đồng nghiệp và thật tuyệt."],
+          ["Just yesterday, I spent the whole evening learning a new song on YouTube.","Mới hôm qua thôi, mình dành cả buổi tối học một bài hát mới trên YouTube."],
+          ["I remember when I was at secondary school, I used to sing in the school choir.","Mình nhớ hồi học cấp hai, mình từng hát trong dàn hợp xướng của trường."]
+        ] },
+        { h: "Câu câu giờ tự nhiên", items: [
+          ["Hmm, that’s an interesting question – I’ve never really thought about it.","Hmm, câu hỏi hay đấy – mình chưa bao giờ thực sự nghĩ về điều đó."],
+          ["Let me think… I suppose it depends on how busy I am.","Để mình nghĩ xem… chắc là còn tùy mình bận thế nào."],
+          ["Well, off the top of my head, I’d say…","À, nghĩ nhanh thì mình sẽ nói là…"]
+        ] }
+      ],
       part: 1,
       lesson: [
         "<b>Part 1 là phần “khởi động”:</b> giám khảo hỏi 2 chủ đề quen thuộc, mỗi chủ đề 3 câu. Mục tiêu là cho thấy bạn giao tiếp tự nhiên, không phải trình bày bài học thuộc.",
@@ -68,6 +139,22 @@
       ],
       tasks: [
         { label: "Part 1 – Topic: Free time",
+          gloss: [
+            ["unwind by listening to podcasts","thư giãn bằng cách nghe podcast","unwind by + V-ing: thư giãn bằng cách…"],
+            ["At the weekend, though,","Tuy nhiên, vào cuối tuần thì","though đặt giữa câu = however"],
+            ["something more active","điều gì đó năng động hơn","something + adj (tính từ đứng sau)"],
+            ["going jogging or cycling around West Lake","chạy bộ hoặc đạp xe quanh Hồ Tây","go + V-ing"],
+            ["It really depends on my mood","Điều đó thực sự tùy vào tâm trạng của mình","depend on + N"],
+            ["After a stressful week","Sau một tuần căng thẳng",""],
+            ["recharge my batteries","nạp lại năng lượng","thành ngữ"],
+            ["I prefer spending time with other people","mình thích dành thời gian với người khác hơn","prefer + V-ing; spend time with sb"],
+            ["makes me feel much more relaxed","khiến mình thấy thoải mái hơn nhiều","make sb + V nguyên mẫu; much + so sánh hơn"],
+            ["It has changed quite a lot","Nó đã thay đổi khá nhiều","Hiện tại hoàn thành: thay đổi từ quá khứ đến nay"],
+            ["I used to play outside","mình từng chơi ngoài trời","used to + V: thói quen trong quá khứ"],
+            ["I spend far more time on screens","mình dành nhiều thời gian hơn hẳn cho màn hình","far more + N: nhiều hơn hẳn; spend time on + N"],
+            ["which is a bit of a shame","điều này hơi đáng tiếc","which thay cho cả mệnh đề trước"],
+            ["get outdoors more often","ra ngoài trời thường xuyên hơn",""]
+          ],
           prompt: "Let’s talk about your free time.<br>1. What do you usually do in your free time?<br>2. Do you prefer to spend your free time alone or with other people? Why?<br>3. How has the way you spend your free time changed since you were a child?",
           prep: 0,
           time: 90,
@@ -77,6 +164,22 @@
             "Q3: It has changed quite a lot. When I was a child, I used to play outside with the neighbours’ kids for hours – we played football or flew kites. Nowadays I spend far more time on screens, which is a bit of a shame, so I’m trying to get outdoors more often."
           ] },
         { label: "Part 1 – Topic: Music",
+          gloss: [
+            ["I’m really into acoustic and indie music","mình rất mê nhạc acoustic và indie","be into + N: rất thích"],
+            ["meaningful lyrics and simple melodies","lời bài hát ý nghĩa và giai điệu đơn giản",""],
+            ["they help me calm down","chúng giúp mình bình tĩnh lại","help sb + V; calm down: bình tĩnh lại"],
+            ["I’m not a big fan of very loud music","mình không thích nhạc quá ồn lắm","not a big fan of + N: không mê lắm"],
+            ["to be honest","thật lòng mà nói",""],
+            ["Mostly when I’m commuting","Chủ yếu là khi mình đang đi làm","commute: đi lại hằng ngày"],
+            ["makes the journey much more enjoyable","khiến chuyến đi thú vị hơn nhiều","make + O + adj"],
+            ["I also put on some soft background music","mình cũng bật chút nhạc nền nhẹ nhàng","put on (music): bật nhạc"],
+            ["as it helps me concentrate","vì nó giúp mình tập trung","as = because"],
+            ["I’ve always wanted to learn the piano","mình luôn muốn học đàn piano","Hiện tại hoàn thành với always"],
+            ["it would be a great way to relieve stress","đó sẽ là cách tuyệt vời để giảm căng thẳng","a great way to + V; relieve stress"],
+            ["being able to play a song for my family","việc có thể chơi một bài cho gia đình nghe","V-ing làm chủ ngữ; be able to + V"],
+            ["would be really rewarding","sẽ rất đáng công, rất mãn nguyện","rewarding: mang lại sự hài lòng"],
+            ["finding the time to practise regularly","tìm được thời gian để luyện tập đều đặn","find the time to + V"]
+          ],
           prompt: "Now let’s talk about music.<br>1. What kind of music do you enjoy listening to?<br>2. When do you usually listen to music?<br>3. Would you like to learn to play a musical instrument? Why or why not?",
           prep: 0,
           time: 90,

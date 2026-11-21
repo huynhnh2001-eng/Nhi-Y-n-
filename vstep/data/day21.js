@@ -19,6 +19,7 @@
         {
           label: "Talk 1",
           context: "A lecture in a marketing course",
+          tip: "Đọc trước 5 câu: lý do giá đuôi 9 hiệu quả – nghe sau “because”; câu thí nghiệm – bỏ qua diễn biến, chỉ ghi kết quả cuối (thường bất ngờ); câu “purpose” – chờ câu nói rõ “its job / its purpose”. Câu quan điểm cuối: nghe sau “Personally, I'd say…”, loại phương án cực đoan.",
           script: [
             { sp: "N", text: "You will hear part of a lecture about pricing." },
             { sp: "M", text: "Good morning. In economics, we often assume that customers compare prices rationally and choose the best value. Today I'm going to look at three pricing techniques that work precisely because we're not as rational as we think." },
@@ -54,6 +55,7 @@
         {
           label: "Talk 2",
           context: "A radio programme about personal finance",
+          tip: "Câu 1 và 2 nằm sát nhau trong cùng một đoạn – để mắt cả hai câu cùng lúc. Số liệu khảo sát sẽ bị paraphrase (phân số → “majority/minority”). Câu “fair”: nghe sau “in one sense that's fair”; lời khuyên chính nằm sau “My suggestion is…”.",
           script: [
             { sp: "N", text: "You will hear part of a radio programme about personal finance." },
             { sp: "F", text: "Hello, and welcome back to Money Matters. Today I want to talk about something that has grown incredibly fast: 'buy now, pay later' services. If you've shopped online recently, you've almost certainly seen the button. Instead of paying 1.2 million dong for a pair of trainers today, you pay four instalments of 300,000 over six weeks, with no interest." },
@@ -106,6 +108,30 @@
         "Manufacturers, however, reject the idea that they are secretly sabotaging their own products. They argue that sealed designs make devices thinner, lighter and more resistant to water and dust – features that consumers clearly want. They also point out that the main reason people replace their phones is not that the old one has broken, but that a newer model has appeared with a better camera or a larger screen. If this is true, the problem lies less with engineering than with consumer culture itself, and with marketing that encourages people to see a perfectly functional device as out of date.",
         "Whatever the cause, a growing movement is pushing back. Campaigners for the right to repair argue that owners should be able to fix their own devices, or take them to independent repair shops, without being penalised by the loss of their warranty. Their efforts are starting to change the law. In several regions, manufacturers of certain household appliances, such as washing machines and refrigerators, are now required to make spare parts available for up to ten years and to supply repair manuals to professional repairers. Similar rules for smartphones, including batteries that users can replace themselves, are gradually being introduced. Several manufacturers have responded by launching their own self-repair programmes, although critics note that the parts are often expensive and the instructions far from simple.",
         "Economists are divided on what these changes will mean. Some predict that longer-lasting products will lead to higher prices and fewer sales, harming manufacturers and the workers they employ. Others suggest that the money consumers save by repairing rather than replacing will simply be spent elsewhere, and that a thriving repair sector could create local jobs that cannot easily be moved abroad. What seems clear is that the assumption on which much of modern consumer culture has been built – that the newest version is always the best – is beginning to be questioned. Whether shoppers will change their behaviour as quickly as the law does is a different matter."
+      ],
+      gloss: [
+        ["agreed to limit the life of their products", "đồng ý giới hạn tuổi thọ sản phẩm của họ", "agree to + V"],
+        ["roughly half of what was then technically possible", "khoảng một nửa so với mức kỹ thuật cho phép khi đó", "half of what…: mệnh đề danh từ với what"],
+        ["which only came to light decades later", "điều mà mãi nhiều thập kỷ sau mới bị phơi bày", "come to light: được công khai, lộ ra"],
+        ["is often cited as", "thường được dẫn ra như là", "Bị động: be cited as"],
+        ["so that they will need to be replaced", "để chúng sẽ cần phải được thay thế", "so that + mệnh đề: chỉ mục đích; need to be + V3"],
+        ["are most often aimed at", "thường nhắm vào nhất", "be aimed at: nhắm vào"],
+        ["whose batteries are glued in place", "có pin được dán cố định", "Mệnh đề quan hệ sở hữu whose + N"],
+        ["sell the printer itself at a loss", "bán chính chiếc máy in với giá lỗ", "at a loss: chịu lỗ; itself: nhấn mạnh"],
+        ["The environmental consequences are considerable.", "Hậu quả về môi trường là đáng kể.", ""],
+        ["reject the idea that", "bác bỏ ý kiến rằng", "the idea that + mệnh đề (mệnh đề đồng vị)"],
+        ["more resistant to water and dust", "chống nước và bụi tốt hơn", "resistant to + N"],
+        ["is not that the old one has broken, but that", "không phải vì máy cũ bị hỏng mà là vì", "not that … but that …"],
+        ["the problem lies less with engineering than with", "vấn đề nằm ở kỹ thuật ít hơn là ở", "lie with: thuộc về; less … than …"],
+        ["is pushing back", "đang phản kháng lại", "push back (against): chống lại"],
+        ["without being penalised by", "mà không bị phạt bởi", "without + being + V3 (bị động dạng V-ing)"],
+        ["are now required to make spare parts available", "giờ bị bắt buộc phải cung cấp linh kiện thay thế", "be required to + V; make + O + adj"],
+        ["are gradually being introduced", "đang dần dần được áp dụng", "Bị động tiếp diễn: are being + V3"],
+        ["have responded by launching", "đã phản ứng bằng cách tung ra", "respond by + V-ing"],
+        ["Economists are divided on", "Các nhà kinh tế bất đồng về", "be divided on: chia rẽ ý kiến về"],
+        ["repairing rather than replacing", "sửa chữa thay vì thay mới", "rather than + V-ing"],
+        ["that cannot easily be moved abroad", "không thể dễ dàng chuyển ra nước ngoài", "Bị động với động từ khuyết thiếu: cannot be + V3"],
+        ["is a different matter", "lại là chuyện khác", "Whether … is a different matter: còn chưa chắc"]
       ],
       questions: [
         { q: "Why does the author mention the meeting in Geneva in 1924?",

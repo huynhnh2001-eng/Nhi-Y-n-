@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "At the university library",
+          tip: "Câu hỏi về giờ của riêng phòng tự học tầng 2: bài sẽ nhắc nhiều mốc giờ (giờ đóng cửa hôm nay, giờ thông thường). Nghe kỹ con số đi cùng cụm “study rooms on the second floor”.",
           script: [
             { sp: "F", text: "Attention, please. The main library will close early today, at six thirty instead of the usual nine p.m., because essential maintenance work needs to be done on the heating system. However, the study rooms on the second floor will stay open until eight o'clock, but you will need to enter through the side door on Park Road. Normal opening hours will return tomorrow morning. We apologise for any inconvenience." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Announcement 2",
           context: "A voicemail message from a tutor",
+          tip: "Câu hỏi mục đích (Why … calling): phần nói về bài luận chỉ là dẫn dắt; mục đích thật thường nằm ở câu đề nghị phía sau như “could you…?”. Đừng chọn theo chi tiết nghe thấy đầu tiên.",
           script: [
             { sp: "M", text: "Hi Lan, it's Dr Morris from the English department. I'm calling about your essay. I've read your first draft, and your ideas are good, but the conclusion still needs some work. We were supposed to meet on Thursday, but I've got to attend a conference that day, so could you come to my office on Wednesday at ten instead? If that time doesn't suit you, just send me an email. Bye for now." }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Announcement 3",
           context: "During orientation week",
+          tip: "Câu hỏi địa điểm: sẽ có hơn một tòa nhà được nhắc tới. Chú ý câu đính chính dạng “not in …, as it says in…” để biết thông tin nào đã lỗi thời.",
           script: [
             { sp: "F", text: "Good morning, new students, and welcome to orientation week. Before you collect your student card, you must complete your online registration. After that, take a printed copy of the confirmation page to the Student Services office in Building C. Please note that it is not in Building B, as it says in your welcome pack; that information is out of date. Remember to bring a passport photo as well. Cards can be collected from Tuesday." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Announcement 4",
           context: "An advertisement on the campus radio",
+          tip: "Câu hỏi “What must students do”: nghe động từ yêu cầu như <em>must, make sure, remember</em>. Thông tin về phí và về các tình nguyện viên dễ bị cài làm phương án nhiễu; nhớ đáp án thường được paraphrase.",
           script: [
             { sp: "M", text: "Would you like to improve your speaking skills? The International Conversation Club meets every Friday afternoon from three to five in Room two-fourteen. Membership is free for all students, but places are limited to thirty, so make sure you sign up at the Students' Union desk by the end of this week. Each session focuses on a different topic, and the discussions are led by native-speaker volunteers." }
           ],
@@ -71,6 +75,7 @@
         {
           label: "Announcement 5",
           context: "An announcement for economics students",
+          tip: "Câu hỏi “What has changed”: từ <em>still</em> báo hiệu thông tin giữ nguyên, còn <em>but there has been a change</em> báo hiệu thông tin thay đổi. Cẩn thận cặp số đuôi -teen / -ty.",
           script: [
             { sp: "M", text: "Attention, first-year economics students. Your mid-term exam will still be held on Monday the twentieth at nine a.m., but there has been a change of location. Because of building work, it will now take place in Hall Fifteen, not Hall Fifty as stated on the timetable. Please arrive at least fifteen minutes early, and remember that mobile phones are not allowed in the exam room." }
           ],
@@ -84,6 +89,7 @@
         {
           label: "Announcement 6",
           context: "A message from a lecturer",
+          tip: "Câu hỏi về yêu cầu của giáo sư: nghe câu mệnh lệnh mở đầu bằng <em>Please…</em>. Các thứ trong tuần (Wednesday, Thursday) gắn với những việc khác nhau, đừng ghép nhầm.",
           script: [
             { sp: "F", text: "Hello everyone, this is Professor Hanh. Unfortunately, I'm unwell, so this afternoon's lecture on research methods is cancelled. Instead of meeting in person, I'll upload a recorded version to the course website by Wednesday evening. Please watch it before Thursday's seminar, because we'll be discussing it in small groups. The reading list hasn't changed, so just keep working through chapter four." }
           ],
@@ -97,6 +103,7 @@
         {
           label: "Announcement 7",
           context: "A notice for students in a hall of residence",
+          tip: "Câu hỏi “What can residents do”: phân biệt dịch vụ vẫn dùng được (<em>will be available</em>) với những gì bị đóng (<em>will be closed</em>); điều kiện “with a valid student card” không có nghĩa là phải mua gì.",
           script: [
             { sp: "F", text: "Good afternoon. This is a message for all students living in Riverside Hall. The water supply will be turned off tomorrow between nine and twelve in the morning while repairs are carried out. During this time, showers will be available at the sports centre, free of charge for residents with a valid student card. The laundry room will also be closed, but it should reopen in the afternoon." }
           ],
@@ -110,6 +117,7 @@
         {
           label: "Announcement 8",
           context: "Information about campus transport",
+          tip: "Câu hỏi tần suất ban ngày: bài có lịch hiện tại, lịch mới và lịch buổi tối. Chỉ lấy con số của lịch MỚI trong khung giờ ban ngày; số đứng sau <em>instead of</em> là lịch cũ.",
           script: [
             { sp: "M", text: "Attention, students. The free campus shuttle bus will run on a new timetable from next Monday. Between seven a.m. and six p.m., buses will leave the main gate every twenty minutes, instead of every half an hour as they do now. After six, there will be a reduced service, with one bus per hour until ten p.m. Full details are available on the university app." }
           ],
@@ -140,6 +148,30 @@
         "Joining a club has clear social benefits. Members meet people who share their interests, and these friendships often last long after graduation. However, the advantages are not only social. Running events, managing a budget or organising a trip teaches practical skills that are rarely covered in lectures. Employers know this, and many of them ask job applicants about their extracurricular activities during interviews.",
         "Of course, students need to be careful. Some join too many clubs in their excitement and then find that they have little time left for their studies. Experts recommend choosing one or two activities and committing to them properly rather than attending ten different groups occasionally.",
         "In short, clubs can turn a confusing new environment into a real community. As one third-year student put it, “I came here for a degree, but the club is where I learned how to work with people.” For anyone starting university, it is an opportunity worth taking."
+      ],
+      gloss: [
+        ["Lectures are much larger than school classes","các bài giảng đông hơn nhiều so với lớp học ở trường phổ thông","much + so sánh hơn: nhấn mạnh “hơn nhiều”"],
+        ["nobody checks whether you have done your homework","không ai kiểm tra xem bạn đã làm bài tập chưa","check whether + mệnh đề: kiểm tra xem… hay không"],
+        ["Students are expected to manage their own time","sinh viên được kỳ vọng tự quản lý thời gian của mình","be expected to + V: được kỳ vọng / phải (bị động)"],
+        ["As a result,","Kết quả là,","từ nối chỉ kết quả, đứng đầu câu + dấu phẩy"],
+        ["especially if they have moved away from home","đặc biệt nếu họ đã chuyển đi xa nhà","move away from home: rời nhà đi sống nơi khác"],
+        ["One simple way to deal with this problem is to","Một cách đơn giản để giải quyết vấn đề này là","One way to V … is to V; deal with: giải quyết"],
+        ["Membership is usually cheap or even free","phí thành viên thường rẻ, thậm chí miễn phí","even: thậm chí (nhấn mạnh)"],
+        ["hold a fair at the start of the academic year","tổ chức hội chợ vào đầu năm học","hold a fair/event: tổ chức sự kiện"],
+        ["so that new students can","để tân sinh viên có thể","so that + S + can + V: để (chỉ mục đích)"],
+        ["find out what is available","tìm hiểu xem có những gì","find out + từ để hỏi: tìm hiểu, phát hiện"],
+        ["invite visitors to sign up","mời khách tham quan đăng ký","invite sb to V: mời ai làm gì"],
+        ["who share their interests","những người có cùng sở thích với họ","Mệnh đề quan hệ với who; share interests: có chung sở thích"],
+        ["long after graduation","rất lâu sau khi tốt nghiệp","long after + N: rất lâu sau…"],
+        ["the advantages are not only social","lợi ích không chỉ về mặt xã hội","not only …: không chỉ…"],
+        ["that are rarely covered in lectures","những điều hiếm khi được dạy trong bài giảng","Mệnh đề quan hệ + bị động: are rarely covered"],
+        ["ask job applicants about their extracurricular activities","hỏi ứng viên về các hoạt động ngoại khóa","ask sb about sth: hỏi ai về điều gì"],
+        ["have little time left for their studies","còn lại rất ít thời gian cho việc học","have little time left for + N: còn ít thời gian cho…"],
+        ["Experts recommend choosing one or two activities","các chuyên gia khuyên nên chọn một hoặc hai hoạt động","recommend + V-ing: khuyên nên làm gì"],
+        ["rather than attending","thay vì tham gia","rather than + V-ing: thay vì"],
+        ["turn a confusing new environment into a real community","biến một môi trường mới khó hiểu thành một cộng đồng thực sự","turn A into B: biến A thành B"],
+        ["As one third-year student put it,","Như một sinh viên năm ba đã nói,","As sb put it: như ai đó đã diễn đạt"],
+        ["it is an opportunity worth taking","đó là một cơ hội đáng nắm lấy","N + worth + V-ing: đáng để làm"]
       ],
       questions: [
         { q: "What is the passage mainly about?",

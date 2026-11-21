@@ -19,6 +19,7 @@
         {
           label: "Conversation 1",
           context: "Two siblings planning a family celebration",
+          tip: "Câu 1 hỏi ý chính: nghe kỹ 1–2 câu đầu, đừng chọn chi tiết phụ như năm tháng. Câu “why reject/decide not to”: lý do thường đến sau “Hmm…”, “I’d rather not”. Câu cuối hỏi việc của người nam – coi chừng bẫy đổi người nói (I’ll… của ai?).",
           script: [
             { sp: "F", text: "Hi Tom, have you got a minute? I want to sort out the plans for Mum and Dad’s anniversary before the weekend." },
             { sp: "M", text: "Sure. It’s their thirty-fifth, isn’t it?" },
@@ -56,6 +57,7 @@
         {
           label: "Conversation 2",
           context: "Two colleagues talking during a lunch break",
+          tip: "Bài có nhiều lý do và chi tiết giờ giấc: hỏi “why/main cause” thì chờ cụm như since…, very different ideas about…, the key was… Câu “suggest” nghe sau Maybe you could… và đáp án thường được diễn đạt lại bằng từ đồng nghĩa, không lặp nguyên văn.",
           script: [
             { sp: "M", text: "You look tired, Hoa. Is everything all right?" },
             { sp: "F", text: "Oh, I’m fine. It’s just that my mother moved in with us last month, and we’re all still adjusting." },
@@ -111,6 +113,30 @@
         "The benefits appear to flow in both directions. Children who spend time with their grandparents often develop a stronger sense of identity, as they hear stories about the family’s past and learn customs that might otherwise disappear. Researchers have also noted that teenagers who feel close to a grandparent tend to report fewer emotional difficulties. For older people, meanwhile, caring for grandchildren can provide a sense of purpose and help them stay physically and mentally active, which may even reduce their risk of loneliness and depression.",
         "However, the picture is not entirely positive. When childcare becomes a daily obligation rather than a choice, it can be exhausting. Some grandparents admit that they feel unable to refuse their children’s requests, even when their own health is suffering. Disagreements over discipline, diet and screen time can also create tension between generations, particularly when three generations share the same home.",
         "Experts suggest that the most successful arrangements are built on open communication. Parents should discuss expectations clearly, show appreciation and avoid taking help for granted. Grandparents, for their part, need to feel comfortable saying no from time to time. When these conditions are met, the extended family can be one of the most valuable sources of support a child will ever have."
+      ],
+      gloss: [
+        ["has changed dramatically over the past fifty years","đã thay đổi mạnh mẽ trong năm mươi năm qua","Hiện tại hoàn thành + over the past + thời gian"],
+        ["a growing number of couples choose to","ngày càng nhiều cặp đôi chọn","a growing number of + N số nhiều + V số nhiều"],
+        ["grown in importance rather than declined","tăng thêm tầm quan trọng thay vì suy giảm","grow in importance; A rather than B: A chứ không phải B"],
+        ["that of the grandparent","vai trò của ông bà","that of + N: thay cho danh từ đã nhắc (the role of …)"],
+        ["Several factors explain this shift.","Một số yếu tố giải thích sự thay đổi này.","Câu chủ đề mở đoạn nguyên nhân"],
+        ["feel uncomfortable leaving a baby with a stranger","thấy không yên tâm khi để em bé cho người lạ","feel + adj + V-ing; leave sb with sb: gửi ai cho ai"],
+        ["As a result,","Kết quả là,","Từ nối chỉ kết quả"],
+        ["step in","ra tay giúp đỡ, can thiệp","Cụm động từ: step in = giúp/đảm nhận khi cần"],
+        ["on a regular basis","một cách thường xuyên","= regularly"],
+        ["flow in both directions","đem lại lợi ích cho cả hai phía","Nghĩa bóng: lợi ích “chảy” theo hai chiều"],
+        ["a stronger sense of identity","ý thức mạnh mẽ hơn về bản sắc","a sense of + N: cảm giác/ý thức về"],
+        ["that might otherwise disappear","mà nếu không thì có thể biến mất","otherwise: nếu không thì; mệnh đề quan hệ"],
+        ["tend to report fewer","có xu hướng cho biết ít … hơn","tend to + V: có xu hướng"],
+        ["For older people, meanwhile,","Trong khi đó, đối với người lớn tuổi,","meanwhile: chuyển sang phía/đối tượng thứ hai"],
+        ["provide a sense of purpose","mang lại cảm giác có mục đích sống","provide + N: mang lại"],
+        ["the picture is not entirely positive","bức tranh không hoàn toàn tích cực","not entirely: không hoàn toàn; câu chuyển sang mặt trái"],
+        ["a daily obligation rather than a choice","một nghĩa vụ hằng ngày chứ không phải sự lựa chọn","A rather than B"],
+        ["feel unable to refuse","cảm thấy không thể từ chối","feel unable to + V"],
+        ["are built on open communication","được xây dựng trên sự giao tiếp cởi mở","Bị động hiện tại đơn: are + V3; be built on"],
+        ["avoid taking help for granted","tránh coi sự giúp đỡ là điều đương nhiên","avoid + V-ing; take sth for granted"],
+        ["for their part,","về phần họ,","Chỉ trách nhiệm của bên còn lại"],
+        ["When these conditions are met,","Khi những điều kiện này được đáp ứng,","meet a condition: đáp ứng điều kiện (bị động)"]
       ],
       questions: [
         { q: "What is the passage mainly about?",

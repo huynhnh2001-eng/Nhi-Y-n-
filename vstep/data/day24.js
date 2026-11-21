@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "At a sports centre",
+          tip: "Câu hỏi “while the main pool is closed”: chờ cụm “During this period…” – thông tin trả lời nằm ngay sau. Câu cuối nhắc đến những khu vẫn mở bình thường, nhưng phương án dùng chúng sai mục đích là bẫy.",
           script: [
             { sp: "F", text: "Attention, please. This is an announcement for all users of the Riverside Sports Centre. The main swimming pool will be closed from Monday the fourteenth for cleaning and repairs to the heating system. The work is expected to take ten days. During this period, members may use the pool at our Westlake branch free of charge by showing their membership card. Please note that the children’s pool and the gym will remain open as usual." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Announcement 2",
           context: "A voicemail from a football coach",
+          tip: "Câu hỏi “why”: nghe sau “because / since”. Bài có hai thay đổi với hai lý do khác nhau (địa điểm và giờ có mặt) – ghép đúng lý do với đúng thay đổi; điều gì “still” giữ nguyên thì không phải là lý do.",
           script: [
             { sp: "M", text: "Hi everyone, it’s Coach Minh. Just a reminder about Saturday’s match against Hai Chau. Because the pitch at our ground is being resurfaced, the game has been moved to the university stadium. Kick-off is still at four, but I want everyone there by three fifteen for the warm-up, not three thirty as usual, since we need extra time to get changed. Bring both your red and your white shirts." }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Announcement 3",
           context: "At the start of a city marathon",
+          tip: "Câu hỏi “what should runners do if…”: nghe ngay sau “If you feel unwell”. Hành động bị cấm trong câu “please do not…” sẽ xuất hiện trong phương án làm bẫy; các thông tin khác (trạm nước, xe buýt) dành cho tình huống khác.",
           script: [
             { sp: "F", text: "Good morning, runners. A few final instructions before the start. Water stations are located every two and a half kilometres along the route. If you feel unwell at any point, raise your hand and a medical volunteer will come to you; please do not try to walk to the first-aid tent yourself. Runners who have not finished by eleven thirty will be asked to board the support bus, as the roads reopen to traffic at noon." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Conversation 1",
           context: "Two colleagues are talking at work",
+          tip: "Câu 1: câu trả lời đầu tiên có thể phủ định giả định của người hỏi – nghe tiếp. Câu thời hạn: chú ý “I was going to, but…” (định làm nhưng đổi ý). Câu về ngày đi: người kia có thể sửa đề xuất ở cuối, nghe đến câu cuối cùng.",
           script: [
             { sp: "F", text: "Morning, Nam. You look exhausted. Late night?" },
             { sp: "M", text: "Not really. I’ve just started going to the gym before work, at six in the morning. I’m still getting used to it." },
@@ -97,6 +101,7 @@
         {
           label: "Talk 1",
           context: "A university lecture on sports science",
+          tip: "Câu 1 hỏi về việc hiện tượng có tồn tại không – nghe cách diễn giả đánh giá “the basic fact”. Câu “Why mention…”: nghe kết luận rút ra sau ví dụ (“so…”). Câu so sánh môn thể thao: ghi môn nào “matters” và môn nào “much less”. Câu cuối: nghe phần giao bài sau “For your seminar…”.",
           script: [
             { sp: "N", text: "You will hear part of a lecture about home advantage in sport." },
             { sp: "M", text: "Good afternoon. Today I want to look at one of the most studied effects in sports science: home advantage. The basic fact is not in dispute. Across almost every team sport, from football to basketball, teams win more often when they play at home. In professional football, for example, home teams have historically won close to half of their matches, while away teams win only about a quarter. The interesting question is why." },
@@ -150,6 +155,30 @@
         "This is not to say that hosting is always a mistake. Barcelona, which hosted the Summer Olympics in 1992, is frequently cited as a success. The city used the Games as a catalyst for long-planned improvements, opening up its seafront, upgrading its road network and turning a run-down industrial district into a lively neighbourhood. Crucially, most of this investment would have been valuable even without the Games; the event simply provided a deadline and the political will to act. By contrast, Montreal took about thirty years to pay off the debt from its 1976 Olympics, and its main stadium became a symbol of overspending.",
         "In response to such criticism, sporting organisations have begun to change their approach. Recent bidding rules encourage cities to use existing or temporary venues, and some tournaments are now shared between several cities or even several countries, spreading both the costs and the benefits. Whether these reforms will succeed remains to be seen, but the number of cities willing to bid has fallen noticeably in recent decades, suggesting that voters are becoming more sceptical.",
         "Supporters of mega-events argue that their value cannot be measured in money alone. National pride, international attention and the inspiration they provide to young athletes are real, if hard to quantify. The challenge for governments is to be honest about which benefits are measurable and which are not, and to ask whether the same money might bring greater benefits if it were spent on schools, hospitals or community sports facilities."
+      ],
+      gloss: [
+        ["compete fiercely for the right to host", "cạnh tranh gay gắt để giành quyền đăng cai", "compete for + N; the right to + V"],
+        ["as if they had already won a gold medal", "như thể họ đã giành huy chương vàng", "as if + quá khứ hoàn thành: giả định không có thật"],
+        ["there is a surprisingly strong consensus that", "có một sự đồng thuận mạnh mẽ đáng ngạc nhiên rằng", "consensus that + mệnh đề"],
+        ["rarely pays for itself", "hiếm khi tự bù đắp được chi phí", "pay for itself: tự hoàn vốn"],
+        ["require not only stadiums but also", "không chỉ cần sân vận động mà còn cần", "not only … but also …"],
+        ["are notoriously optimistic", "lạc quan một cách khét tiếng", "notoriously + adj: nổi tiếng (theo nghĩa xấu) là…"],
+        ["exceeded initial estimates by a wide margin", "vượt dự toán ban đầu một khoảng lớn", "by a wide margin: với chênh lệch lớn"],
+        ["has an incentive to promise more and estimate less", "có động cơ hứa nhiều hơn và dự toán ít hơn", "have an incentive to + V"],
+        ["often prove smaller than advertised", "thường hoá ra nhỏ hơn so với quảng cáo", "prove + adj: hoá ra là; rút gọn than (they were) advertised"],
+        ["a surge in tourism", "sự tăng vọt về du lịch", "a surge in + N"],
+        ["have little use once the competition is over", "ít có công dụng một khi cuộc thi kết thúc", "once + mệnh đề: một khi"],
+        ["only a handful of events", "chỉ một vài sự kiện", "a handful of: một số ít"],
+        ["This is not to say that", "Điều này không có nghĩa là", "Cụm nhượng bộ để cân bằng lập luận"],
+        ["as a catalyst for long-planned improvements", "như chất xúc tác cho các cải tạo đã được lên kế hoạch từ lâu", "a catalyst for + N"],
+        ["would have been valuable even without the Games", "lẽ ra vẫn có giá trị ngay cả khi không có Thế vận hội", "Câu điều kiện loại 3 ẩn: would have + V3 + without…"],
+        ["By contrast,", "Ngược lại,", "Từ nối chỉ sự tương phản"],
+        ["In response to such criticism,", "Để đáp lại những lời chỉ trích như vậy,", "in response to + N"],
+        ["remains to be seen", "vẫn còn phải chờ xem", "remain to be + V3"],
+        ["spreading both the costs and the benefits", "phân bổ cả chi phí lẫn lợi ích", "Mệnh đề rút gọn V-ing chỉ kết quả; both A and B"],
+        ["cannot be measured in money alone", "không thể chỉ đo bằng tiền", "Bị động với modal: cannot be + V3"],
+        ["are real, if hard to quantify", "là có thật, dù khó định lượng", "if + adj = although (it is) + adj"],
+        ["if it were spent on schools", "nếu nó được chi cho trường học", "Câu điều kiện loại 2, bị động: were + V3"]
       ],
       questions: [
         { q: "What is the main idea of the passage?",

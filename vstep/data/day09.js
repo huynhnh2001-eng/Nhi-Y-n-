@@ -48,6 +48,59 @@
         ["Second, and perhaps more importantly, …", "Thứ hai, và có lẽ quan trọng hơn, …"],
         ["… was driven largely by…", "… chủ yếu được thúc đẩy bởi…"],
         ["Real progress depends on…", "Tiến bộ thực sự phụ thuộc vào…"]
+      ],
+      gloss: [
+        ["It is often argued that","Người ta thường cho rằng","Bị động khách quan: It is argued that + mệnh đề"],
+        ["should be left to","nên được giao phó cho","Bị động với modal: should be + V3; leave sth to sb"],
+        ["have neither the power nor the resources","không có quyền lực cũng không có nguồn lực","neither A nor B: không A cũng không B"],
+        ["While I accept that","Dù tôi thừa nhận rằng","While + mệnh đề: nhượng bộ trong câu quan điểm"],
+        ["must take the lead","phải đi đầu","take the lead: dẫn đầu, tiên phong"],
+        ["are beyond the control of","nằm ngoài tầm kiểm soát của","be beyond the control of + N"],
+        ["the vast majority of","phần lớn, đại đa số","the vast majority of + N"],
+        ["it is companies that decide","chính các công ty mới là bên quyết định","Câu chẻ: It is + N + that … (nhấn mạnh)"],
+        ["can hardly stop the flow of waste","khó có thể ngăn dòng rác thải","can hardly + V: hầu như không thể"],
+        ["place the main burden on","đặt gánh nặng chính lên","place a burden on sb"],
+        ["small changes add up","những thay đổi nhỏ cộng dồn lại","add up: cộng dồn thành con số lớn"],
+        ["Second, and perhaps more importantly,","Thứ hai, và có lẽ quan trọng hơn,","Từ nối xếp hạng lý do"],
+        ["the very institutions mentioned above","chính những tổ chức được nhắc ở trên","the very + N: chính…; mệnh đề quan hệ rút gọn (mentioned)"],
+        ["rarely introduce strict environmental policies unless","hiếm khi đưa ra chính sách môi trường nghiêm ngặt trừ khi","rarely … unless …: hiếm khi … trừ khi …"],
+        ["was driven largely by customer pressure rather than by law","chủ yếu được thúc đẩy bởi áp lực khách hàng chứ không phải luật","Bị động quá khứ + A rather than B"],
+        ["have the greatest capacity to","có khả năng lớn nhất để","capacity to + V"],
+        ["push those in power to act","thúc ép những người có quyền hành động","push sb to + V; those in power: những người nắm quyền"],
+        ["depends on both sides working together","phụ thuộc vào việc cả hai bên cùng hợp tác","depend on + N + V-ing"]
+      ],
+      bank: [
+        { h: "Mở bài (paraphrase + quan điểm)", items: [
+            ["Many people claim that saving the planet is a job for governments and big businesses rather than for ordinary citizens.","Nhiều người cho rằng cứu hành tinh là việc của chính phủ và doanh nghiệp lớn hơn là của người dân bình thường."],
+            ["Although the authorities clearly have more power, I believe that individuals also have an important part to play.","Dù chính quyền rõ ràng có nhiều quyền lực hơn, tôi tin rằng cá nhân cũng có vai trò quan trọng."],
+            ["In my view, protecting the environment is a shared responsibility, and I only partly agree with this statement.","Theo tôi, bảo vệ môi trường là trách nhiệm chung, và tôi chỉ đồng ý một phần với nhận định này."]
+          ] },
+        { h: "Câu chủ đề thân bài", items: [
+            ["There is no doubt that large-scale pollution can only be tackled through government regulation.","Không thể phủ nhận rằng ô nhiễm quy mô lớn chỉ có thể được giải quyết bằng quy định của chính phủ."],
+            ["However, the everyday choices of individuals have a greater impact than many people realise.","Tuy nhiên, lựa chọn hằng ngày của cá nhân có tác động lớn hơn nhiều người nghĩ."],
+            ["Another reason why individuals matter is that they can put pressure on companies to go green.","Một lý do khác khiến cá nhân quan trọng là họ có thể gây áp lực buộc các công ty chuyển sang xanh."]
+          ] },
+        { h: "Giải thích & đưa ví dụ", items: [
+            ["For instance, if every family in Ho Chi Minh City stopped using plastic bags, millions of bags would be kept out of landfill each month.","Ví dụ, nếu mọi gia đình ở TP.HCM ngừng dùng túi ni-lông, hàng triệu túi sẽ không bị đưa ra bãi rác mỗi tháng."],
+            ["A clear example of this is the growing number of cafés in Vietnam that now offer discounts to customers who bring their own cups.","Một ví dụ rõ ràng là ngày càng nhiều quán cà phê ở Việt Nam giảm giá cho khách mang cốc riêng."],
+            ["This means that even a small change in habits, such as switching off unused lights, can save a significant amount of energy over time.","Điều này có nghĩa là ngay cả một thay đổi nhỏ trong thói quen, như tắt đèn không dùng, cũng có thể tiết kiệm đáng kể năng lượng theo thời gian."]
+          ] },
+        { h: "Câu nối & chuyển ý", items: [
+            ["On top of that, …","Thêm vào đó, …"],
+            ["Equally important is the fact that …","Quan trọng không kém là thực tế rằng …"],
+            ["Turning to the role of individuals, …","Chuyển sang vai trò của cá nhân, …"],
+            ["As a consequence, pollution levels would fall considerably.","Hệ quả là mức độ ô nhiễm sẽ giảm đáng kể."]
+          ] },
+        { h: "Nhượng bộ – phản bác", items: [
+            ["It is true that one person recycling a few bottles will not solve the climate crisis.","Đúng là một người tái chế vài chai nhựa sẽ không giải quyết được khủng hoảng khí hậu."],
+            ["Even so, this argument ignores the combined effect of millions of people acting together.","Dù vậy, lập luận này bỏ qua tác động cộng hưởng của hàng triệu người cùng hành động."],
+            ["Granted, companies produce most of the waste, but they only do so because consumers keep buying their products.","Đành rằng các công ty tạo ra phần lớn rác thải, nhưng họ làm vậy chỉ vì người tiêu dùng vẫn tiếp tục mua sản phẩm."]
+          ] },
+        { h: "Kết bài", items: [
+            ["To sum up, while governments and corporations must lead the way, individuals are far from powerless.","Tóm lại, dù chính phủ và doanh nghiệp phải dẫn đường, cá nhân hoàn toàn không bất lực."],
+            ["Ultimately, a cleaner environment can only be achieved if everyone does their part.","Rốt cuộc, môi trường sạch hơn chỉ có thể đạt được nếu ai cũng làm phần việc của mình."],
+            ["For these reasons, I firmly believe that environmental protection should be seen as a shared duty.","Vì những lý do này, tôi tin chắc rằng bảo vệ môi trường nên được xem là nghĩa vụ chung."]
+          ] }
       ]
     },
     {
@@ -73,6 +126,21 @@
             "As for a total ban, I think it sounds effective, but it would be very hard to enforce, especially in traditional markets where thousands of small sellers use plastic bags every day. It might also hurt people who sell fish or meat, because they genuinely need something waterproof.",
             "Giving out free reusable bags is a nice idea, but it’s not as practical as it seems. It would cost the city a lot of money, and many people would simply leave the bags at home and keep taking plastic ones from shops.",
             "So, all things considered, a fee is the most balanced solution: it’s cheap, it’s fair, and it actually changes behaviour."
+          ],
+          gloss: [
+            ["cut down on plastic waste","cắt giảm rác thải nhựa","cut down on + N: cắt giảm"],
+            ["Of the three options, I’d go for","Trong ba phương án, tôi chọn","I’d go for + N: tôi chọn"],
+            ["changes people’s habits without forcing them","thay đổi thói quen của mọi người mà không ép buộc họ","without + V-ing"],
+            ["simply to save money","chỉ để tiết kiệm tiền","to + V chỉ mục đích"],
+            ["dropped dramatically within a year","giảm mạnh trong vòng một năm","drop dramatically: giảm mạnh"],
+            ["Another advantage is that","Một ưu điểm khác là","Câu chuyển sang lý do thứ hai"],
+            ["the scheme partly pays for itself","chương trình tự bù đắp một phần chi phí","pay for itself: tự hoàn vốn"],
+            ["As for a total ban,","Còn về việc cấm hoàn toàn,","As for + N: chuyển sang phương án khác"],
+            ["it would be very hard to enforce","sẽ rất khó thực thi","hard to + V; would: giả định"],
+            ["it’s not as practical as it seems","nó không thực tế như vẻ ngoài","not as + adj + as: so sánh không bằng"],
+            ["leave the bags at home","để túi ở nhà","leave sth at home: bỏ quên/để lại"],
+            ["all things considered,","xét mọi mặt,","Cụm kết luận"],
+            ["the most balanced solution","giải pháp cân bằng nhất","So sánh nhất: the most + adj"]
           ]
         }
       ],
@@ -84,6 +152,28 @@
         ["It would be very hard to enforce.", "Sẽ rất khó thực thi."],
         ["It’s not as practical as it seems.", "Nó không thực tế như vẻ ngoài."],
         ["All things considered, …", "Xét mọi mặt, …"]
+      ],
+      bank: [
+        { h: "Nêu lựa chọn", items: [
+            ["If I were on the city council, I would definitely vote for charging a small fee for plastic bags.","Nếu tôi ở trong hội đồng thành phố, tôi chắc chắn sẽ bỏ phiếu cho việc thu phí túi ni-lông."],
+            ["Personally, I think the most effective way to reduce plastic waste is to make people pay for each bag.","Cá nhân tôi nghĩ cách hiệu quả nhất để giảm rác nhựa là bắt mọi người trả tiền cho mỗi chiếc túi."],
+            ["Having thought about all three options, I’d say a plastic bag fee makes the most sense.","Sau khi cân nhắc cả ba phương án, tôi cho rằng thu phí túi ni-lông là hợp lý nhất."]
+          ] },
+        { h: "Lý do ủng hộ", items: [
+            ["People tend to change their behaviour quickly when it affects their wallet.","Mọi người có xu hướng thay đổi hành vi nhanh khi nó ảnh hưởng đến túi tiền của họ."],
+            ["What I like about this option is that it still gives people a choice.","Điều tôi thích ở phương án này là nó vẫn cho mọi người quyền lựa chọn."],
+            ["On top of that, the money raised could be used to fund recycling centres in the city.","Hơn nữa, số tiền thu được có thể dùng để tài trợ các trung tâm tái chế trong thành phố."]
+          ] },
+        { h: "Bác bỏ phương án khác", items: [
+            ["A complete ban might work in supermarkets, but it would be almost impossible to control in street markets.","Lệnh cấm hoàn toàn có thể hiệu quả ở siêu thị, nhưng gần như không thể kiểm soát ở chợ truyền thống."],
+            ["The problem with free reusable bags is that many people would simply forget to use them.","Vấn đề với túi tái sử dụng miễn phí là nhiều người sẽ đơn giản là quên dùng chúng."],
+            ["Handing out free bags to every household would put a heavy burden on the city budget.","Phát túi miễn phí cho mọi hộ gia đình sẽ tạo gánh nặng lớn cho ngân sách thành phố."]
+          ] },
+        { h: "Kết luận", items: [
+            ["So, for all these reasons, I believe a fee on plastic bags is the smartest choice for my city.","Vì vậy, vì tất cả những lý do này, tôi tin thu phí túi ni-lông là lựa chọn thông minh nhất cho thành phố tôi."],
+            ["In short, it’s cheap to run, fair to everyone and good for the environment.","Tóm lại, nó tốn ít chi phí, công bằng với mọi người và tốt cho môi trường."],
+            ["That’s why I think charging for bags is the best way forward.","Đó là lý do tôi nghĩ thu phí túi là hướng đi tốt nhất."]
+          ] }
       ]
     }
   ],

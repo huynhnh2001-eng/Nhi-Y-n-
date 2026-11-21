@@ -19,6 +19,7 @@
         {
           label: "Talk 1",
           context: "A lecture on the history of science",
+          tip: "Diễn giả nêu lộ trình “I'll start with…, then…, and finally…” – ghi ngay khung 3 dòng. Câu mục đích: đừng chọn ví dụ minh hoạ làm mục đích. Câu về chiếc lò đầu tiên: nghe sau “I should add” và cẩn thận năm phát hiện khác năm ra sản phẩm.",
           script: [
             { sp: "N", text: "You will hear part of a lecture on the history of science." },
             { sp: "F", text: "Good morning, everyone. Today I want to look at a question that students often ask me: are great discoveries mostly the result of luck? I'll start with a famous example, then I'll explain why I think 'luck' is the wrong word, and finally I'll say something about what this means for how we fund research." },
@@ -54,6 +55,7 @@
         {
           label: "Talk 2",
           context: "A radio programme about science",
+          tip: "Bài có nhiều con số gần nhau (ước tính ban đầu, thời gian thực tế, “over a century”) – ghi rõ con số nào gắn với ai. Câu “most important benefit” nằm sau “But… isn't the only benefit”; câu chỉ trích nằm sau “There are, of course, limits… there's a risk”.",
           script: [
             { sp: "N", text: "You will hear a radio talk about citizen science." },
             { sp: "M", text: "Hello and welcome to Science Weekly. This week's topic is citizen science – research projects in which members of the public, most of them with no scientific training at all, help professional researchers collect or analyse data." },
@@ -106,6 +108,30 @@
         "Statistical practices have made the problem worse. Many studies, particularly older ones, relied on small samples, which are more likely to produce misleadingly large effects purely by chance. Researchers also enjoyed considerable freedom in how they analysed their data: which participants to exclude, which measurements to emphasise, when to stop collecting data. None of these choices is necessarily wrong in itself, but when they are made after the results are known, they can quietly push an analysis towards the answer the researcher was hoping for. Critics have compared this to drawing a target around an arrow after it has landed.",
         "In response, a number of reforms have gained ground. One of the most significant is pre-registration, in which scientists publicly record their hypotheses and methods before collecting any data. This makes it much harder to adjust the analysis afterwards without readers noticing. Some journals now go further, agreeing to publish a study on the basis of its design alone, regardless of whether the eventual results turn out to be positive or negative. Meanwhile, large collaborative projects, in which dozens of laboratories run the same experiment simultaneously, are producing estimates far more robust than any single team could achieve.",
         "Not everyone welcomes these changes. Some researchers worry that strict pre-registration will discourage the kind of exploratory work from which unexpected discoveries often emerge, and that a culture of constant checking may damage public trust in science. These concerns deserve to be taken seriously, yet they arguably misunderstand what science is. Its authority has never rested on individual studies being infallible; it rests on a process that is able to detect and correct its own mistakes. Seen in this light, the so-called replication crisis is less a sign that science is broken than evidence that its self-correcting machinery, after a long period of neglect, has finally been switched back on."
+      ],
+      gloss: [
+        ["was considered established once it had passed peer review", "được coi là đã xác lập một khi đã qua bình duyệt", "Bị động quá khứ + once + quá khứ hoàn thành"],
+        ["were reluctant to pay for work", "ngần ngại chi tiền cho công trình", "be reluctant to + V: không muốn, ngần ngại"],
+        ["this assumption has been seriously challenged", "giả định này đã bị thách thức nghiêm trọng", "Bị động hiện tại hoàn thành: has been + V3"],
+        ["a surprisingly large proportion could not be confirmed", "một tỉ lệ lớn đáng ngạc nhiên không thể được xác nhận", "Bị động với modal: could not be + V3"],
+        ["It would be easy to conclude that", "Rất dễ đi đến kết luận rằng", "It would be + adj + to V: cấu trúc giả định để phản bác"],
+        ["explain only a small fraction of these failures", "chỉ giải thích được một phần nhỏ trong những thất bại này", "a small fraction of: một phần nhỏ của"],
+        ["A more troubling explanation lies in", "Một lời giải thích đáng lo ngại hơn nằm ở", "lie in: nằm ở, bắt nguồn từ"],
+        ["is far less likely to be published than", "ít có khả năng được đăng hơn nhiều so với", "far less likely to be + V3 than: so sánh kém + bị động"],
+        ["As a result, positive findings reach print", "Kết quả là các phát hiện tích cực được in ra", "As a result: từ nối chỉ kết quả; reach print: được xuất bản"],
+        ["have made the problem worse", "đã làm vấn đề tồi tệ hơn", "make + O + adj (so sánh hơn)"],
+        ["more likely to produce misleadingly large effects purely by chance", "dễ tạo ra hiệu ứng lớn sai lệch hoàn toàn do ngẫu nhiên", "by chance: tình cờ; misleadingly: một cách gây hiểu lầm"],
+        ["None of these choices is necessarily wrong in itself", "Không lựa chọn nào trong số này tự bản thân nó nhất thiết là sai", "None of + N số nhiều + V số ít; in itself: tự bản thân"],
+        ["a number of reforms have gained ground", "một số cải cách đã dần được chấp nhận rộng rãi", "a number of + N số nhiều + V số nhiều; gain ground: lan rộng"],
+        ["in which scientists publicly record their hypotheses", "trong đó các nhà khoa học công khai ghi lại giả thuyết của họ", "Mệnh đề quan hệ giới từ + which"],
+        ["on the basis of its design alone", "chỉ dựa trên thiết kế của nó", "on the basis of: dựa trên"],
+        ["regardless of whether the eventual results turn out to be", "bất kể kết quả cuối cùng hóa ra là", "regardless of whether…: bất kể liệu…; turn out to be: hóa ra là"],
+        ["far more robust than any single team could achieve", "vững chắc hơn nhiều so với bất kỳ nhóm đơn lẻ nào có thể đạt được", "So sánh hơn nhấn mạnh: far more + adj + than"],
+        ["from which unexpected discoveries often emerge", "nơi mà từ đó những phát hiện bất ngờ thường xuất hiện", "Mệnh đề quan hệ from which"],
+        ["deserve to be taken seriously", "xứng đáng được xem xét nghiêm túc", "deserve to be + V3: bị động nguyên mẫu"],
+        ["has never rested on", "chưa bao giờ dựa vào", "rest on: dựa trên, dựa vào"],
+        ["Seen in this light", "Nhìn từ góc độ này", "Mệnh đề rút gọn bị động đầu câu (= If it is seen…)"],
+        ["less a sign that science is broken than evidence that", "không hẳn là dấu hiệu khoa học đã hỏng mà đúng hơn là bằng chứng rằng", "less A than B: là B hơn là A"]
       ],
       questions: [
         { q: "Which of the following is the best title for the passage?",

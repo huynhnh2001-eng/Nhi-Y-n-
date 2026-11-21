@@ -19,6 +19,7 @@
         {
           label: "Talk 1",
           context: "A university lecture on environmental science",
+          tip: "Bài giảng 5 câu: chủ đề chính, con số, câu “why”, nhận xét về giải pháp, nội dung tiếp theo. Chủ đề nằm sau “Today I want to…” chứ không phải phần “Last week”; ghi mỗi con số kèm nhãn ngày/đêm vì cả hai số sẽ xuất hiện trong phương án; nghe đến câu cuối để bắt câu chuyển tiếp “In the second half…”.",
           script: [
             { sp: "N", text: "You will hear part of a lecture about cities and rising temperatures." },
             { sp: "F", text: "Good morning. Last week we looked at how global temperatures are rising. Today I want to zoom in on cities, because cities are heating up faster than the countryside around them. This effect is known as the urban heat island." },
@@ -54,6 +55,7 @@
         {
           label: "Talk 2",
           context: "A radio report",
+          tip: "Câu đầu có cấu trúc “isn't X – it's Y”: đáp án là Y, X là bẫy. Câu NOT mentioned: đánh dấu ✓ từng nguyên nhân nghe được sau “part of the story”. Câu trích của nông dân: hiểu theo việc ông làm được mô tả ngay trước đó; lời khuyên của quan chức nằm sau “Their advice is…”.",
           script: [
             { sp: "N", text: "You will hear a radio report about farming in the Mekong Delta." },
             { sp: "M", text: "Good evening. Tonight's report comes from the Mekong Delta, the region that produces more than half of Vietnam's rice. For generations, farmers here have planted two or even three rice crops a year. But that pattern is coming under pressure, and the main reason isn't a lack of water – it's the wrong kind of water." },
@@ -105,6 +107,30 @@
         "At the other end of the spectrum is direct air capture, a technology that uses giant fans to draw in air and chemical filters to extract carbon dioxide from it. The captured gas can then be pumped deep underground into rock formations, where it may remain for thousands of years. The appeal of this approach is that it is measurable and, in principle, permanent. Its drawbacks are cost and energy. Removing a single tonne currently costs several hundred dollars, and the machines consume so much electricity that they only make sense if they are powered by renewable sources. The largest plants now operating capture only a tiny fraction of what a single coal-fired power station emits. Supporters argue that costs will fall sharply as the technology matures, just as the price of solar panels did, but that remains to be seen.",
         "Between these two extremes lie a number of experimental techniques. One, known as enhanced weathering, involves spreading finely crushed volcanic rock on farmland. As the rock slowly breaks down in the rain, it reacts with carbon dioxide and locks it into stable minerals, while also improving the quality of the soil for crops. Early field trials are promising, but scientists still disagree about how much carbon is actually removed, and verifying the results across thousands of fields is far from simple.",
         "Perhaps the greatest danger of carbon removal is not technical but political. Some researchers fear that the promise of future technology could become an excuse for delaying difficult decisions today. If governments and companies believe that machines will eventually clean up the atmosphere, they may feel less pressure to cut emissions now. This concern, sometimes described as moral hazard, is not merely hypothetical: several large companies have already announced climate pledges that rely heavily on removal methods which do not yet exist at scale. Most experts therefore insist that removal should be treated as a complement to emission cuts, not a substitute for them – rather like a mop, which is useful only once someone has turned off the tap."
+      ],
+      gloss: [
+        ["focused almost entirely on", "tập trung gần như hoàn toàn vào", "focus on + N/V-ing"],
+        ["Those efforts remain essential.", "Những nỗ lực đó vẫn rất thiết yếu.", "remain + adj: vẫn còn (như thế nào)"],
+        ["on its own, will no longer be enough", "tự bản thân nó sẽ không còn đủ nữa", "no longer: không còn nữa; on its own = alone"],
+        ["is already locked in", "đã được định sẵn, không thể tránh", "be locked in: bị khoá chặt, chắc chắn xảy ra"],
+        ["a process known as carbon removal", "một quá trình được gọi là loại bỏ carbon", "Mệnh đề quan hệ rút gọn: (which is) known as"],
+        ["let nature do the work", "để thiên nhiên tự làm việc", "let + O + V nguyên mẫu"],
+        ["on a large scale", "ở quy mô lớn", ""],
+        ["brings other benefits, such as", "mang lại những lợi ích khác, chẳng hạn như", "such as: liệt kê ví dụ"],
+        ["compete with food production", "cạnh tranh với sản xuất lương thực", "compete with + N"],
+        ["At the other end of the spectrum", "Ở đầu kia của phổ (thái cực ngược lại)", "Cụm mở đầu đoạn để đối lập"],
+        ["The appeal of this approach is that", "Sức hấp dẫn của cách tiếp cận này là", "The + N + of + N + is that + mệnh đề"],
+        ["Its drawbacks are cost and energy.", "Nhược điểm của nó là chi phí và năng lượng.", "drawback = disadvantage"],
+        ["they only make sense if", "chúng chỉ hợp lý/đáng làm nếu", "make sense: hợp lý"],
+        ["a tiny fraction of", "một phần rất nhỏ của", ""],
+        ["as the technology matures", "khi công nghệ trưởng thành/hoàn thiện", "as + mệnh đề: khi, trong khi (diễn biến song song)"],
+        ["that remains to be seen", "điều đó vẫn còn phải chờ xem", "remain to be + V3: chưa chắc chắn"],
+        ["Between these two extremes lie", "Nằm giữa hai thái cực này là", "Đảo ngữ với cụm giới từ chỉ nơi chốn: Prep phrase + V + S"],
+        ["is far from simple", "không hề đơn giản chút nào", "far from + adj: còn xa mới…, hoàn toàn không"],
+        ["is not technical but political", "không phải về kỹ thuật mà là về chính trị", "not A but B"],
+        ["an excuse for delaying difficult decisions", "cái cớ để trì hoãn những quyết định khó khăn", "an excuse for + V-ing"],
+        ["rely heavily on", "phụ thuộc nhiều vào", "rely on + N"],
+        ["a complement to emission cuts, not a substitute for them", "sự bổ sung cho việc cắt giảm khí thải, không phải sự thay thế", "a complement to / a substitute for"]
       ],
       questions: [
         { q: "What is the passage mainly about?",

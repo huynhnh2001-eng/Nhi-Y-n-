@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "On a tour bus",
+          tip: "Câu hỏi “what has changed”: nghe sau “Just a quick change… Instead,…”. Người nói sẽ nhắc cả điều thay đổi lẫn điều giữ nguyên (“still”) – đừng chọn phương án nói về phần vẫn giữ nguyên.",
           script: [
             { sp: "F", text: "Good morning, everyone, and welcome aboard the Mekong Delta day tour. Just a quick change to today’s schedule: because of the high tide, we won’t be visiting the floating market first as planned. Instead, we’ll start at the coconut candy workshop and reach the market at around eleven. Lunch will still be served at the riverside restaurant, but at one thirty rather than twelve thirty. Please keep your tickets with you for the boat transfer." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Announcement 2",
           context: "A voicemail from a hotel",
+          tip: "Câu hỏi có điều kiện “if he does not contact the hotel”: phân biệt kế hoạch đã được sắp xếp sẵn với phương án thay thế chỉ áp dụng khi khách báo lại. Ghi từng cặp giờ + phương tiện, vì cả hai giờ đều xuất hiện trong phương án.",
           script: [
             { sp: "F", text: "Hello, this is Linh from the reception desk at the Sea Pearl Hotel, calling for Mr Davies. You booked an airport transfer for Thursday at six fifteen. Unfortunately, our driver isn’t available that early, so we’ve arranged a taxi for you at the same time instead, at no extra charge. If you’d prefer to leave at six fifty with our hotel shuttle, just let us know by Wednesday evening. Thank you." }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Announcement 3",
           context: "At a visitor centre",
+          tip: "Câu hỏi “How can visitors get a place”: tập trung vào động từ chỉ hành động khách phải làm (collect, please…). Câu phủ định (“cannot be…”) sẽ loại một phương án; cẩn thận các con số phút bị tráo trong phương án.",
           script: [
             { sp: "M", text: "Welcome to the Old Quarter Visitor Centre. Walking tours leave from the front entrance every hour between nine and four. Tours are free, but places are limited to fifteen people, so please collect a numbered token from the information desk at least twenty minutes before your chosen tour. Tokens cannot be reserved by phone. Visitors with limited mobility may ask staff about our shorter, forty-minute route." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Conversation 1",
           context: "Two friends are planning a long-weekend trip",
+          tip: "Bốn câu đi theo trình tự hội thoại. Lý do từ chối thường nằm sau “but”; với câu về phương tiện, đề xuất đầu tiên có thể bị phản đối – chờ đến khi hai người thống nhất (“Sure, we can do that”). Câu “why October” nghe sau “That's the best part”.",
           script: [
             { sp: "F", text: "Have you decided where to go for the long weekend? I was thinking we could book that package to Phu Quoc I showed you." },
             { sp: "M", text: "I had a closer look at it last night. The price looked reasonable at first, but once you add the airport tax and the resort fee, it comes to almost four million each." },
@@ -95,6 +99,7 @@
         {
           label: "Talk 1",
           context: "A radio talk by a tourism researcher",
+          tip: "Ghi các giai đoạn theo mốc “first stage / second stage” để trả lời câu hỏi chi tiết. Câu quan điểm: nghe sau “In my view”, chú ý từ giới hạn phạm vi (“in very fragile places”). Câu kết quả: có hai con số đi ngược chiều nhau – nghe kỹ cái nào tăng, cái nào giảm; câu “Why mention…” hỏi mục đích của ví dụ.",
           script: [
             { sp: "N", text: "You will hear part of a radio talk about the effects of tourism on small destinations." },
             { sp: "F", text: "Thank you for having me. Over the past decade, I’ve studied what happens to small towns when they suddenly become popular with tourists, often because of a single viral photo on social media. The pattern is surprisingly consistent. In the first stage, local people are delighted. Guesthouses open, cafés are busy, and young people who had moved to the cities come home because there are jobs again." },
@@ -147,6 +152,30 @@
         "Supporters argue that this style of travel benefits both visitors and hosts. Because slow travellers spend their money over a longer period and in smaller, family-run businesses, a larger share of it remains in the local economy. A study of visitors to rural Portugal found that guests who stayed more than six nights spent nearly twice as much per day in village shops and restaurants as those on short coach tours. Slow travel can also reduce the environmental cost of tourism, since a single long journey by train generally produces far less carbon than several short flights. Hosts, too, often say they value the longer friendships they can build with guests who stay for weeks rather than a single night.",
         "Nevertheless, the trend is not without its critics. Some point out that slow travel requires two things that many workers simply do not have: long periods of paid leave and the freedom to work remotely. For a factory worker with ten days of annual holiday, a month in a Tuscan village is hardly a realistic option. Others warn that, as the idea becomes fashionable, it risks turning into just another marketing label. Several travel companies now sell “slow” packages that differ from ordinary tours mainly in their price.",
         "Perhaps the most valuable lesson of slow travel, then, is not about the length of a trip at all. Even a weekend away can be slow if travellers resist the urge to see everything, talk to the people they meet, and leave time for the unexpected. As one travel writer put it, the point is not to visit more places, but to arrive more fully in the place you are."
+      ],
+      gloss: [
+        ["was often measured by how much could be seen", "thường được đo bằng việc có thể xem được bao nhiêu", "Bị động: be measured by + mệnh đề how much"],
+        ["in the shortest possible time", "trong thời gian ngắn nhất có thể", "so sánh nhất + possible"],
+        ["the places they had passed through", "những nơi họ đã đi qua", "Quá khứ hoàn thành; pass through: đi ngang qua"],
+        ["a growing number of tourists have begun to question", "ngày càng nhiều du khách bắt đầu đặt câu hỏi về", "a growing number of + N số nhiều + V số nhiều"],
+        ["Instead of rushing from one landmark to the next", "Thay vì vội vã từ địa danh này sang địa danh khác", "instead of + V-ing"],
+        ["what has become known as", "cái đã được biết đến với tên gọi", "become known as"],
+        ["borrows its name from", "mượn tên từ", ""],
+        ["as a protest against fast-food chains", "như một sự phản đối các chuỗi đồ ăn nhanh", "a protest against + N"],
+        ["rather than booking a large hotel", "thay vì đặt một khách sạn lớn", "rather than + V-ing"],
+        ["whenever possible", "bất cứ khi nào có thể", "Rút gọn của whenever it is possible"],
+        ["Their aim is not to tick off famous sights but to understand", "Mục đích của họ không phải là đánh dấu các điểm nổi tiếng mà là hiểu", "not to V … but to V; tick off: đánh dấu đã xong"],
+        ["benefits both visitors and hosts", "có lợi cho cả khách lẫn chủ nhà", "both A and B"],
+        ["a larger share of it remains in the local economy", "phần lớn hơn của nó ở lại trong nền kinh tế địa phương", "a share of: một phần của"],
+        ["spent nearly twice as much per day", "chi tiêu gần gấp đôi mỗi ngày", "twice as much as: gấp đôi"],
+        ["far less carbon than several short flights", "ít carbon hơn nhiều so với vài chuyến bay ngắn", "far + so sánh hơn: nhấn mạnh"],
+        ["the trend is not without its critics", "xu hướng này không phải không có người chỉ trích", "not without: phủ định kép = có"],
+        ["is hardly a realistic option", "khó có thể là một lựa chọn thực tế", "hardly: hầu như không"],
+        ["it risks turning into just another marketing label", "nó có nguy cơ trở thành chỉ là một nhãn tiếp thị khác", "risk + V-ing; turn into: biến thành"],
+        ["differ from ordinary tours mainly in their price", "khác tour thông thường chủ yếu ở giá cả", "differ from A in B"],
+        ["resist the urge to see everything", "cưỡng lại mong muốn xem mọi thứ", "resist the urge to + V"],
+        ["As one travel writer put it,", "Như một nhà văn du lịch đã nói,", "As sb put it: như ai đó đã diễn đạt"],
+        ["the point is not to visit more places", "điều quan trọng không phải là đến nhiều nơi hơn", "the point is (not) to + V"]
       ],
       questions: [
         { q: "Which of the following would be the best title for the passage?",

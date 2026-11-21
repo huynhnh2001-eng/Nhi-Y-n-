@@ -19,6 +19,7 @@
         {
           label: "Conversation 1",
           context: "Two friends discussing job offers",
+          tip: "Hội thoại so chọn hai công việc: kẻ bảng 2 cột (lương – công việc – rủi ro – đi lại). Khi người nam “đoán” điều gì, chờ xem cô ấy xác nhận hay sửa lại; với câu “will… ask”, phân biệt việc cô ấy ĐÃ hỏi với việc SẼ hỏi.",
           script: [
             { sp: "F", text: "Hey Nam, can I get your advice on something? I’ve been offered two jobs, and I have to decide by Friday." },
             { sp: "M", text: "Congratulations! What are they?" },
@@ -58,6 +59,7 @@
         {
           label: "Conversation 2",
           context: "An employee talking to a human resources manager",
+          tip: "Câu mục đích thường nằm ở 1–2 câu đầu. Câu “condition” và “why must”: nghe sau <em>you need to / as long as / because</em>. Câu làm bù giờ: chú ý ai đề xuất cách gì và người kia có đồng ý không – đừng nhầm lịch học với lịch làm bù.",
           script: [
             { sp: "M", text: "Ms Huong, thanks for seeing me. I wanted to ask about the company’s support for further study." },
             { sp: "F", text: "Of course, Duc. What did you have in mind?" },
@@ -112,6 +114,31 @@
         "For some workers, these changes have opened up exciting possibilities. A growing number are building what has been called a “portfolio career”, combining several part-time roles – a graphic designer who also teaches evening classes and runs a small online shop, for example. Supporters argue that this variety reduces dependence on a single employer and allows people to pursue several interests at once. Many also value the freedom to choose their own hours and projects, and some find that moving between roles makes them better at each one, as ideas from one field feed into another.",
         "Yet flexibility is not always a free choice. For many, particularly young people and those with fewer qualifications, short-term work means irregular income, no paid holidays and little protection if they fall ill. Critics point out that while the benefits of flexibility often go to companies, the risks are increasingly carried by individuals. Planning for the future, whether buying a home or starting a family, becomes considerably harder when one does not know what next month’s income will be.",
         "What, then, should today’s students do to prepare? Most career experts agree that the answer lies less in choosing the “right” job than in developing adaptable skills. Communication, problem-solving and the ability to learn quickly are valued in almost every field and are unlikely to be replaced by machines. Equally important is a willingness to keep learning throughout one’s life, through short courses, online programmes or training on the job. In a world where no job is guaranteed, the most secure position may belong to the person who is ready for change."
+      ],
+      gloss: [
+        ["followed a predictable path", "đi theo một lộ trình có thể đoán trước", "follow a path: đi theo con đường"],
+        ["climb steadily up its ranks", "thăng tiến đều đặn qua các cấp bậc", "climb up the ranks: thăng tiến"],
+        ["a clear sense of who one was", "cảm nhận rõ ràng về bản thân mình là ai", "Mệnh đề danh từ who one was; one = người ta"],
+        ["it is becoming increasingly rare", "nó ngày càng trở nên hiếm", "become increasingly + adj: ngày càng…"],
+        ["Several forces lie behind this transformation", "Nhiều yếu tố nằm sau sự chuyển biến này", "lie behind: là nguyên nhân sâu xa của"],
+        ["can rise and fall within a single generation", "có thể hưng thịnh rồi suy tàn chỉ trong một thế hệ", "rise and fall: thăng trầm"],
+        ["under pressure to cut costs", "chịu áp lực phải cắt giảm chi phí", "under pressure to + V"],
+        ["rely on short-term contracts and freelancers rather than permanent staff", "dựa vào hợp đồng ngắn hạn và người làm tự do thay vì nhân viên chính thức", "rely on A rather than B"],
+        ["go through regular rounds of restructuring", "trải qua các đợt tái cơ cấu thường xuyên", "go through: trải qua"],
+        ["have made it far easier for individuals to sell", "đã giúp các cá nhân bán… dễ dàng hơn nhiều", "make it + adj + for sb + to V"],
+        ["opened up exciting possibilities", "mở ra những khả năng thú vị", "open up: mở ra"],
+        ["what has been called", "cái được gọi là", "Mệnh đề danh từ + bị động hiện tại hoàn thành"],
+        ["reduces dependence on a single employer", "giảm sự phụ thuộc vào một chủ lao động duy nhất", "dependence on + N"],
+        ["pursue several interests at once", "theo đuổi nhiều sở thích cùng lúc", "pursue an interest; at once = cùng lúc"],
+        ["feed into another", "đóng góp/bổ trợ cho lĩnh vực khác", "feed into: góp phần vào"],
+        ["Yet flexibility is not always a free choice", "Tuy nhiên, sự linh hoạt không phải lúc nào cũng là lựa chọn tự nguyện", "Yet đầu câu = However; not always: phủ định một phần"],
+        ["little protection if they fall ill", "ít được bảo vệ nếu họ bị ốm", "fall ill: bị ốm"],
+        ["the risks are increasingly carried by individuals", "rủi ro ngày càng do cá nhân gánh chịu", "Bị động hiện tại đơn: are + V3"],
+        ["becomes considerably harder when one does not know", "trở nên khó hơn đáng kể khi người ta không biết", "considerably + so sánh hơn: nhấn mạnh"],
+        ["the answer lies less in choosing", "câu trả lời nằm ít ở việc chọn…", "lie less in A than in B: nằm ở B hơn là A"],
+        ["are unlikely to be replaced by machines", "khó có khả năng bị máy móc thay thế", "be unlikely to be + V3: bị động với unlikely"],
+        ["Equally important is a willingness to keep learning", "Quan trọng không kém là sự sẵn sàng tiếp tục học", "Đảo ngữ: Equally important is + N; keep + V-ing"],
+        ["In a world where no job is guaranteed", "Trong một thế giới nơi không công việc nào được đảm bảo", "Mệnh đề quan hệ where"]
       ],
       questions: [
         { q: "Which of the following is the best title for the passage?",

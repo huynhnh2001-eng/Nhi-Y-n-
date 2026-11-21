@@ -35,6 +35,53 @@
         "I’m already looking forward to the next clean-up.",
         "Best regards,<br>Mai Tran"
       ],
+      gloss: [
+        ["I hope you are well.","Tôi hy vọng ông vẫn khỏe.","Câu mở đầu thư bán trang trọng quen thuộc"],
+        ["one of the volunteers in green T-shirts","một trong những tình nguyện viên mặc áo xanh lá","one of + danh từ số nhiều"],
+        ["I just wanted to thank you for organising","tôi chỉ muốn cảm ơn ông vì đã tổ chức","thank sb for + V-ing"],
+        ["such a well-run and enjoyable morning","một buổi sáng được tổ chức tốt và vui vẻ như vậy","such a + adj + N: nhấn mạnh"],
+        ["What I enjoyed most was","Điều tôi thích nhất là","Mệnh đề danh từ What… làm chủ ngữ"],
+        ["working side by side","cùng làm việc bên nhau",""],
+        ["I spent most of the morning with","tôi dành phần lớn buổi sáng cùng với","spend + thời gian + with sb / V-ing"],
+        ["by lunchtime we had filled","đến giờ trưa chúng tôi đã đổ đầy","by + mốc thời gian + quá khứ hoàn thành (had + V3)"],
+        ["One small problem, though, was that","Tuy nhiên, có một vấn đề nhỏ là","though đặt giữa câu làm mềm lời phê bình"],
+        ["we ran out of gloves quite early","chúng tôi hết găng tay khá sớm","run out of + N: dùng hết, cạn"],
+        ["pick up litter with their bare hands","nhặt rác bằng tay không","pick up: nhặt lên (cụm động từ)"],
+        ["which didn’t seem very safe","điều đó có vẻ không an toàn lắm","which bổ nghĩa cho cả mệnh đề phía trước"],
+        ["I wonder whether we could ask local shops to donate","Tôi tự hỏi liệu chúng ta có thể nhờ các cửa hàng địa phương tài trợ","I wonder whether + S + could…: gợi ý lịch sự; ask sb to V"],
+        ["in exchange for a mention","để đổi lấy việc được nhắc tên","in exchange for + N: để đổi lấy"],
+        ["I’d be happy to contact a few of them myself","Tôi rất sẵn lòng tự mình liên hệ vài cửa hàng","would be happy to + V; myself nhấn mạnh “tự mình”"],
+        ["I could also help design a poster","tôi cũng có thể giúp thiết kế áp phích","help + V nguyên mẫu"],
+        ["I’m already looking forward to the next clean-up.","Tôi đã mong chờ buổi dọn dẹp lần tới.","look forward to + N / V-ing"]
+      ],
+      bank: [
+        { h: "Mở đầu thư", items: [
+          ["Dear Mr Hoang, I hope this email finds you well after the busy weekend.","Thưa ông Hoang, tôi hy vọng ông vẫn khỏe sau một cuối tuần bận rộn."],
+          ["You may not remember me, but we met briefly at the clean-up in … Park last Sunday.","Có thể ông không nhớ tôi, nhưng chúng ta đã gặp nhau một lát ở buổi dọn dẹp tại công viên … Chủ nhật vừa rồi."],
+          ["I was the volunteer who helped hand out rubbish bags near the main gate.","Tôi là tình nguyện viên đã giúp phát túi rác gần cổng chính."]
+        ] },
+        { h: "Nêu lý do viết thư", items: [
+          ["I’m writing to thank you for all the time and effort you put into the event.","Tôi viết thư để cảm ơn ông vì tất cả thời gian và công sức ông đã bỏ ra cho sự kiện."],
+          ["I thought I’d drop you a line to share a few thoughts about the clean-up.","Tôi nghĩ nên viết vài dòng để chia sẻ một vài suy nghĩ về buổi dọn dẹp."],
+          ["I’d also like to pass on a small suggestion for the next event, if I may.","Tôi cũng muốn gửi một gợi ý nhỏ cho sự kiện lần sau, nếu ông cho phép."]
+        ] },
+        { h: "Trình bày từng ý", items: [
+          ["The best part for me was seeing how quickly the lake area became clean again.","Phần tuyệt nhất với tôi là thấy khu vực hồ sạch trở lại nhanh như thế nào."],
+          ["It was also lovely to see so many families bring their children along.","Thật dễ thương khi thấy rất nhiều gia đình đưa con nhỏ đi cùng."],
+          ["The only thing that could be improved, in my opinion, is the number of rubbish bins in the park.","Theo tôi, điều duy nhất có thể cải thiện là số lượng thùng rác trong công viên."],
+          ["Perhaps next time we could divide volunteers into small teams, each with its own area.","Có lẽ lần sau chúng ta có thể chia tình nguyện viên thành các nhóm nhỏ, mỗi nhóm phụ trách một khu vực."]
+        ] },
+        { h: "Câu nối & chuyển ý", items: [
+          ["Apart from that, everything went very smoothly.","Ngoài điều đó ra, mọi thứ diễn ra rất suôn sẻ."],
+          ["Speaking of the next event, I have one idea I’d like to share.","Nhân nói về sự kiện lần tới, tôi có một ý tưởng muốn chia sẻ."],
+          ["With this in mind, I’d be glad to help in any way I can.","Với suy nghĩ đó, tôi rất vui được giúp đỡ bằng mọi cách có thể."]
+        ] },
+        { h: "Kết thư", items: [
+          ["Please let me know if there’s anything else I can do to help.","Xin cho tôi biết nếu tôi có thể giúp thêm việc gì khác."],
+          ["Thank you once again for bringing our neighbourhood together.","Một lần nữa cảm ơn ông đã gắn kết khu phố chúng ta."],
+          ["I hope to hear from you soon. Best regards, …","Mong sớm nhận được hồi âm của ông. Trân trọng, …"]
+        ] }
+      ],
       notes: [
         "<b>Câu giới thiệu bản thân phù hợp tình huống</b> “I was one of the volunteers in green T-shirts at the clean-up…” – vì mới gặp lần đầu, người viết giúp người nhận nhớ ra mình. Đây là chi tiết thể hiện hiểu đúng mối quan hệ (Task fulfilment).",
         "<b>Văn phong bán trang trọng nhất quán:</b> “Dear Mr Hoang” + “Best regards”, dùng rút gọn vừa phải (“I’d be happy”, “I’m already looking forward”) nhưng không có từ lóng.",
@@ -75,6 +122,18 @@
             "Q1: I live in a fairly busy residential area in the east of the city. It’s quite crowded, but it’s very convenient – there’s a market, a primary school and a small park just a few minutes’ walk from my house.",
             "Q2: Better than most people in big cities, I think. My street has a residents’ group on Zalo, so we often share news, and the older neighbours always invite us to join community events like the Mid-Autumn Festival for the children.",
             "Q3: Yes, quite a lot. Ten years ago there were mostly small houses, but now there are several apartment blocks and coffee shops. It’s more modern, although I sometimes miss the quieter atmosphere we used to have."
+          ],
+          gloss: [
+            ["a fairly busy residential area","một khu dân cư khá nhộn nhịp","fairly + adj: khá"],
+            ["It’s quite crowded, but it’s very convenient","Khá đông đúc nhưng rất tiện lợi",""],
+            ["just a few minutes’ walk from my house","chỉ cách nhà tôi vài phút đi bộ","a few minutes’ walk from: cách … vài phút đi bộ"],
+            ["Better than most people in big cities","Hơn hầu hết mọi người ở các thành phố lớn","Câu trả lời rút gọn bằng so sánh hơn"],
+            ["we often share news","chúng tôi thường chia sẻ tin tức",""],
+            ["invite us to join community events","mời chúng tôi tham gia các sự kiện cộng đồng","invite sb to + V"],
+            ["Yes, quite a lot.","Có, khá nhiều.","Trả lời thẳng trước, giải thích sau"],
+            ["Ten years ago there were mostly small houses","Mười năm trước chủ yếu là nhà nhỏ","there were + N số nhiều (quá khứ)"],
+            ["It’s more modern, although","Nó hiện đại hơn, mặc dù","although + mệnh đề: nhượng bộ"],
+            ["the quieter atmosphere we used to have","bầu không khí yên tĩnh hơn mà chúng tôi từng có","used to + V: trạng thái trong quá khứ"]
           ]
         },
         {
@@ -87,6 +146,22 @@
             "The main reason is that it makes the best use of what students can actually offer. We’re university students, so most of us have a decent level of English, and for children in remote areas, a few weeks with enthusiastic young teachers can make a real difference. Many of these kids rarely get the chance to speak English with anyone, so even simple games and songs could boost their confidence. On top of that, the experience would benefit the volunteers too – we’d improve our communication and planning skills, which employers really value.",
             "Planting trees in a flooded area is a great idea in theory, but it usually requires expert knowledge about which species to plant and where. Without that, the trees might not survive, and the effort would be wasted. As for helping at a care home for the elderly, it’s very meaningful, but residents often need professional care, and a short summer programme might not allow us to build the kind of trust that older people need.",
             "So, taking everything into account, teaching English is the option where students’ skills match the community’s needs most closely, and I’m sure it would leave a lasting impact on both sides."
+          ],
+          gloss: [
+            ["All three options are worthwhile","Cả ba phương án đều đáng làm",""],
+            ["if I had to choose one","nếu phải chọn một","Câu điều kiện loại 2: If + S + V2, S + would…"],
+            ["I’d definitely go for","tôi chắc chắn sẽ chọn","go for + N: chọn"],
+            ["makes the best use of what students can actually offer","tận dụng tốt nhất những gì sinh viên thực sự có thể đóng góp","make the best use of + N"],
+            ["can make a real difference","có thể tạo ra khác biệt thực sự",""],
+            ["rarely get the chance to speak English","hiếm khi có cơ hội nói tiếng Anh","get the chance to + V"],
+            ["boost their confidence","tăng sự tự tin của các em",""],
+            ["On top of that,","Thêm vào đó,","Từ nối bổ sung ý"],
+            ["which employers really value","điều mà nhà tuyển dụng rất coi trọng","Mệnh đề quan hệ which"],
+            ["a great idea in theory","một ý tưởng hay về mặt lý thuyết","in theory ↔ in practice"],
+            ["requires expert knowledge","đòi hỏi kiến thức chuyên môn",""],
+            ["As for helping at a care home","Còn về việc giúp đỡ ở viện dưỡng lão","As for + N/V-ing: còn về"],
+            ["taking everything into account,","cân nhắc mọi yếu tố,","take sth into account: tính đến"],
+            ["leave a lasting impact on both sides","để lại tác động lâu dài cho cả hai bên","leave an impact on sb/sth"]
           ]
         },
         {
@@ -102,6 +177,22 @@
             "And finally, my own idea is that volunteering broadens young people’s perspectives. Many students in big cities have never seen how people live in remote areas. Spending even a week there can make them more grateful and more understanding, which I think is just as valuable as any skill.",
             "Follow-up 1: I don’t think it should be strictly compulsory, because forced volunteering loses its meaning. However, schools could include a certain number of community hours in their programmes and let students choose the activity they’re interested in.",
             "Follow-up 2: I think the main reason is time. Many young people are under pressure from exams or part-time jobs. Some also don’t know where to start, so better information about local volunteer groups would definitely help."
+          ],
+          gloss: [
+            ["I completely agree that","Tôi hoàn toàn đồng ý rằng",""],
+            ["To begin with,","Trước hết,","Từ nối mở ý thứ nhất"],
+            ["develop practical skills","phát triển kỹ năng thực tế",""],
+            ["skills you simply can’t get from textbooks","những kỹ năng bạn đơn giản là không thể học từ sách vở","Mệnh đề quan hệ lược bỏ that"],
+            ["make a genuine contribution to the local community","đóng góp thực sự cho cộng đồng địa phương","make a contribution to + N"],
+            ["may seem small, but together they improve","có vẻ nhỏ bé, nhưng cùng nhau chúng cải thiện","may seem + adj: có vẻ"],
+            ["especially where public services are limited","đặc biệt ở những nơi dịch vụ công còn hạn chế",""],
+            ["make a CV stand out","làm hồ sơ xin việc nổi bật","make + O + V nguyên mẫu"],
+            ["the candidate is proactive","ứng viên chủ động",""],
+            ["broadens young people’s perspectives","mở rộng tầm nhìn của người trẻ",""],
+            ["just as valuable as any skill","đáng giá không kém bất kỳ kỹ năng nào","So sánh bằng: just as + adj + as"],
+            ["forced volunteering loses its meaning","tình nguyện bị ép buộc sẽ mất ý nghĩa","V3 làm tính từ: forced = bị ép buộc"],
+            ["under pressure from exams","chịu áp lực từ thi cử","be under pressure from + N"],
+            ["don’t know where to start","không biết bắt đầu từ đâu","từ để hỏi + to V"]
           ]
         }
       ],
@@ -114,6 +205,32 @@
         ["make a CV stand out", "làm hồ sơ xin việc nổi bật"],
         ["broaden young people’s perspectives", "mở rộng tầm nhìn của người trẻ"],
         ["I don’t think it should be strictly compulsory, because…", "Tôi không nghĩ việc đó nên bắt buộc hoàn toàn, vì…"]
+      ],
+      bank: [
+        { h: "Part 1 – trả lời & lý do", items: [
+          ["To be honest, I don’t know my neighbours as well as I’d like to, mainly because…","Thật lòng mà nói, tôi không biết hàng xóm nhiều như tôi muốn, chủ yếu vì…"],
+          ["I’ve done some volunteer work, mostly at weekends when I have more free time.","Tôi đã làm một số việc tình nguyện, chủ yếu vào cuối tuần khi rảnh hơn."],
+          ["What I like most about my neighbourhood is the sense of community.","Điều tôi thích nhất ở khu phố mình là tinh thần cộng đồng."],
+          ["The main reason is that people here still look out for each other.","Lý do chính là người dân ở đây vẫn quan tâm, để ý giúp đỡ nhau."]
+        ] },
+        { h: "Part 2 – chọn & bác bỏ", items: [
+          ["For a group of students with limited time, I think … would be the most practical choice.","Với một nhóm sinh viên ít thời gian, tôi nghĩ … sẽ là lựa chọn thực tế nhất."],
+          ["This option matches our skills with what the community really needs.","Phương án này kết hợp kỹ năng của chúng tôi với điều cộng đồng thực sự cần."],
+          ["Although … is very meaningful, it would require training that most of us don’t have.","Mặc dù … rất ý nghĩa, nó đòi hỏi sự đào tạo mà phần lớn chúng tôi không có."],
+          ["The problem with … is that the results might not last after we leave.","Vấn đề của … là kết quả có thể không bền vững sau khi chúng tôi rời đi."]
+        ] },
+        { h: "Part 3 – mở đầu & chuyển ý", items: [
+          ["Volunteering is something I feel quite strongly about, so I’d like to start with…","Tình nguyện là điều tôi khá tâm đắc, nên tôi muốn bắt đầu với…"],
+          ["There are several reasons why young people should give their time to others.","Có nhiều lý do vì sao người trẻ nên dành thời gian cho người khác."],
+          ["Moving on to the second idea, volunteering also benefits the community itself.","Chuyển sang ý thứ hai, tình nguyện còn mang lại lợi ích cho chính cộng đồng."],
+          ["Apart from the ideas on the card, I’d like to add that…","Ngoài các ý trên thẻ, tôi muốn bổ sung rằng…"]
+        ] },
+        { h: "Part 3 – kết luận & câu hỏi phụ", items: [
+          ["All in all, volunteering benefits both the helpers and the people they help.","Tóm lại, tình nguyện mang lại lợi ích cho cả người giúp lẫn người được giúp."],
+          ["That’s why I believe schools and families should encourage it more.","Đó là lý do tôi tin rằng nhà trường và gia đình nên khuyến khích điều này nhiều hơn."],
+          ["That’s an interesting question. I’d say it depends on how it is organised.","Câu hỏi thú vị đấy. Tôi cho rằng điều đó phụ thuộc vào cách tổ chức."],
+          ["I haven’t thought about that before, but I suppose the main reason is…","Tôi chưa nghĩ về điều đó trước đây, nhưng tôi đoán lý do chính là…"]
+        ] }
       ]
     }
   ],

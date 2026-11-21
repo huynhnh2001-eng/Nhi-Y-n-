@@ -19,6 +19,7 @@
         {
           label: "Conversation 1",
           context: "Two friends talking about a traditional festival",
+          tip: "Câu “why reconsider” và “dislike”: người nữ nêu hai mối lo, nghe sau the cost isn’t my only concern để biết lý do thứ hai. Câu ngày tháng: số ngày bị sửa giữa chừng và nhiều mốc được nhắc – chỉ tin vào câu quyết định cuối cùng (Then I’ll…).",
           script: [
             { sp: "M", text: "Linh, are you still thinking of going to the Hue Festival next month?" },
             { sp: "F", text: "I was, but I’ve just found out that hotel prices have nearly tripled for that week. Even the guesthouses near the Citadel are fully booked." },
@@ -56,6 +57,7 @@
         {
           label: "Conversation 2",
           context: "A student asking a Vietnamese friend about a holiday visit",
+          tip: "Mỗi câu hỏi theo đúng thứ tự lời khuyên của người nữ. Câu “why not…”: lý do đến sau maybe not / Actually, it’s better if… Câu “probably do this week”: chờ xem người nam có đồng ý (I’ll do that) với gợi ý nào.",
           script: [
             { sp: "M", text: "Mai, thanks again for inviting me to your family’s home for Tet. I’m really excited, but I’m also a bit nervous about doing something wrong." },
             { sp: "F", text: "Don’t worry, my family’s very relaxed. But there are a few things that might be useful to know." },
@@ -110,6 +112,29 @@
         "Yet critics argue that this success comes at a price. When a ritual is performed mainly for spectators, its meaning can gradually shift. In some places, ceremonies that once took place at dawn have been moved to the evening so that tour groups can attend, and sacred dances have been shortened to fit into a performance schedule. Local residents sometimes complain that they feel like actors in their own celebrations. A more serious concern is that younger generations may come to see the festival purely as a commercial event, losing touch with the beliefs that gave it its original purpose.",
         "Not all observers share this pessimistic view. Anthropologists point out that festivals have always evolved; many customs now regarded as ancient were in fact introduced or reshaped within the last hundred years. From this perspective, tourism is simply one more influence in a long history of change. Moreover, outside interest can encourage communities to revive traditions that were on the verge of disappearing. In several regions, folk songs and crafts have been rediscovered precisely because visitors were willing to pay to experience them.",
         "The challenge, therefore, is not to keep tourists away but to manage their presence wisely. Some communities have found a balance by separating public performances from private rituals, which remain open only to residents. Others publish simple guidelines explaining how visitors should dress and behave during ceremonies. Still others involve village elders in deciding how the festival is presented, ensuring that any changes are made by the community itself rather than imposed by outside organisers. Where such approaches are adopted, festivals can remain both economically viable and culturally meaningful."
+      ],
+      gloss: [
+        ["have played a central role in","đã đóng vai trò trung tâm trong","play a central/key role in + N"],
+        ["brought scattered relatives back to","đưa những người thân sống rải rác trở về","bring sb back to + nơi chốn"],
+        ["a challenge their founders could never have imagined","một thách thức mà những người sáng lập không bao giờ có thể tưởng tượng được","could have + V3 (khả năng trong quá khứ); mệnh đề quan hệ lược “that”"],
+        ["can generate more income for","có thể tạo ra nhiều thu nhập hơn cho","generate income: tạo thu nhập"],
+        ["who might otherwise move to the cities","những người nếu không thì có thể sẽ chuyển lên thành phố","otherwise: nếu không có điều đó"],
+        ["in search of work","để tìm việc làm","in search of + N"],
+        ["pays for the restoration of","chi trả cho việc trùng tu","pay for + N; the restoration of"],
+        ["this success comes at a price","thành công này phải trả giá","come at a price/cost: phải đánh đổi"],
+        ["is performed mainly for spectators","được biểu diễn chủ yếu cho khán giả xem","Bị động hiện tại đơn: is + V3"],
+        ["have been moved to the evening so that","đã bị dời sang buổi tối để","Bị động hiện tại hoàn thành + so that (mục đích)"],
+        ["feel like actors in their own celebrations","cảm thấy như diễn viên trong chính lễ hội của mình","feel like + N: cảm thấy như"],
+        ["losing touch with","mất kết nối với","lose touch with; mệnh đề rút gọn V-ing chỉ kết quả"],
+        ["share this pessimistic view","đồng tình với quan điểm bi quan này","share a view: có chung quan điểm"],
+        ["now regarded as ancient","nay được coi là cổ xưa","Mệnh đề quan hệ rút gọn bị động: (which are) now regarded as"],
+        ["From this perspective,","Từ góc nhìn này,","Từ nối diễn giải quan điểm"],
+        ["on the verge of disappearing","trên bờ vực biến mất","on the verge of + V-ing/N"],
+        ["is not to keep tourists away but to","không phải là ngăn khách du lịch mà là","not to V … but to V …"],
+        ["have found a balance by","đã tìm được sự cân bằng bằng cách","find a balance; by + V-ing"],
+        ["rather than imposed by outside organisers","chứ không phải bị áp đặt bởi những người tổ chức bên ngoài","A rather than B; bị động: (are) imposed by"],
+        ["Where such approaches are adopted,","Ở những nơi áp dụng các cách tiếp cận như vậy,","Where + mệnh đề bị động: ở nơi mà…"],
+        ["both economically viable and culturally meaningful","vừa khả thi về kinh tế vừa có ý nghĩa văn hóa","both … and …; trạng từ + tính từ"]
       ],
       questions: [
         { q: "Which of the following is the best title for the passage?",

@@ -50,6 +50,59 @@
         ["…, by contrast, …", "…, ngược lại, …"],
         ["…is the more sustainable choice, although…", "…là lựa chọn bền vững hơn, mặc dù…"],
         ["…will only succeed if…", "…chỉ thành công nếu…"]
+      ],
+      gloss: [
+        ["has become a daily frustration","đã trở thành nỗi bực bội hằng ngày","become a daily frustration"],
+        ["the solution lies in","giải pháp nằm ở","the solution lies in + N/V-ing"],
+        ["would be better spent on","sẽ được chi tiêu hiệu quả hơn vào","Bị động với would: would be better spent on"],
+        ["This essay will examine both views before","Bài luận này sẽ xem xét cả hai quan điểm trước khi","before + V-ing: báo trước cấu trúc bài"],
+        ["Those in favour of","Những người ủng hộ","in favour of + N/V-ing"],
+        ["rely on motorbikes and cars","phụ thuộc vào xe máy và ô tô","rely on + N"],
+        ["ease bottlenecks almost immediately","giảm điểm nghẽn gần như ngay lập tức","ease + N: làm giảm bớt"],
+        ["unlike a metro system, which may take a decade to complete","không giống hệ thống tàu điện, vốn có thể mất một thập kỷ để hoàn thành","unlike + N; mệnh đề quan hệ không xác định; take + time + to V"],
+        ["on the other hand, point out that","mặt khác, chỉ ra rằng","on the other hand đặt giữa câu; point out that"],
+        ["tends to fill up within a few years","có xu hướng bị lấp đầy trong vài năm","tend to + V; fill up: đầy lên"],
+        ["a phenomenon known as","một hiện tượng được gọi là","Mệnh đề quan hệ rút gọn bị động: (which is) known as"],
+        ["returns to its previous level","quay lại mức trước đó","return to + N"],
+        ["by contrast,","ngược lại,","Từ nối đối lập, đặt giữa câu"],
+        ["while taking up far less space","trong khi chiếm ít không gian hơn nhiều","while + V-ing; far + so sánh hơn"],
+        ["the more sustainable choice","lựa chọn bền vững hơn","the + so sánh hơn khi so sánh hai phương án"],
+        ["does not tackle the underlying problem","không giải quyết vấn đề gốc rễ","tackle a problem: giải quyết vấn đề"],
+        ["will only succeed if","sẽ chỉ thành công nếu","only … if: chỉ khi"],
+        ["to support rather than replace it","để hỗ trợ chứ không phải thay thế nó","Cấu trúc song song: to V rather than V"]
+      ],
+      bank: [
+        { h: "Mở bài (paraphrase + quan điểm)", items: [
+            ["As cities in Vietnam continue to grow, the question of how to reduce traffic jams has become increasingly urgent.","Khi các thành phố ở Việt Nam tiếp tục phát triển, câu hỏi làm sao giảm ùn tắc ngày càng trở nên cấp bách."],
+            ["Some people believe that the answer is to build more roads, whereas others think that investment in buses and metro lines is the better option.","Một số người tin rằng câu trả lời là xây thêm đường, trong khi những người khác cho rằng đầu tư vào xe buýt và tàu điện là lựa chọn tốt hơn."],
+            ["Although both approaches have their merits, I am convinced that public transport offers the more lasting solution.","Dù cả hai cách đều có ưu điểm, tôi tin chắc rằng giao thông công cộng mang lại giải pháp lâu dài hơn."]
+          ] },
+        { h: "Câu chủ đề thân bài", items: [
+            ["On the one hand, there are good reasons why governments choose to widen roads.","Một mặt, có những lý do chính đáng khiến chính phủ chọn mở rộng đường."],
+            ["On the other hand, a growing number of experts argue that new roads only attract more vehicles.","Mặt khác, ngày càng nhiều chuyên gia cho rằng đường mới chỉ thu hút thêm phương tiện."],
+            ["The strongest argument for public transport is that it moves far more people using far less space.","Lập luận mạnh nhất ủng hộ giao thông công cộng là nó chở được nhiều người hơn nhiều mà tốn ít không gian hơn nhiều."]
+          ] },
+        { h: "Giải thích & đưa ví dụ", items: [
+            ["For example, the Cat Linh–Ha Dong metro line now carries thousands of commuters who would otherwise ride motorbikes.","Ví dụ, tuyến tàu Cát Linh–Hà Đông hiện chở hàng nghìn người đi làm, những người nếu không thì sẽ đi xe máy."],
+            ["This is mainly because wider roads make driving more convenient, which encourages people to buy more cars.","Điều này chủ yếu là vì đường rộng hơn khiến lái xe thuận tiện hơn, từ đó khuyến khích người dân mua thêm ô tô."],
+            ["A newly built flyover can reduce travel time at a busy junction from twenty minutes to five, at least in the short term.","Một cầu vượt mới xây có thể giảm thời gian đi qua một nút giao đông đúc từ hai mươi phút xuống năm phút, ít nhất trong ngắn hạn."]
+          ] },
+        { h: "Câu nối & chuyển ý", items: [
+            ["Turning to the opposing view, …","Chuyển sang quan điểm đối lập, …"],
+            ["In addition to this, …","Thêm vào đó, …"],
+            ["Having considered both sides, I would now like to explain my own position.","Sau khi xem xét cả hai phía, tôi xin trình bày quan điểm của mình."],
+            ["This leads to a further problem: …","Điều này dẫn đến một vấn đề nữa: …"]
+          ] },
+        { h: "Nhượng bộ – phản bác", items: [
+            ["Admittedly, building a metro system is extremely expensive and takes many years.","Phải thừa nhận rằng xây hệ thống tàu điện cực kỳ tốn kém và mất nhiều năm."],
+            ["However, this initial cost should be weighed against the long-term savings in time, fuel and health.","Tuy nhiên, chi phí ban đầu này cần được cân nhắc so với khoản tiết kiệm lâu dài về thời gian, nhiên liệu và sức khỏe."],
+            ["It is true that new roads bring quick relief, yet this relief rarely lasts more than a few years.","Đúng là đường mới mang lại sự giải tỏa nhanh, nhưng sự giải tỏa này hiếm khi kéo dài quá vài năm."]
+          ] },
+        { h: "Kết bài", items: [
+            ["In conclusion, although road building has a role to play, public transport should be the main focus of investment.","Tóm lại, dù xây đường có vai trò nhất định, giao thông công cộng nên là trọng tâm đầu tư."],
+            ["Only by giving people a fast and reliable alternative to private vehicles can cities truly solve their traffic problems.","Chỉ bằng cách cho người dân một lựa chọn nhanh và đáng tin cậy thay cho xe cá nhân thì các thành phố mới thực sự giải quyết được vấn đề giao thông."],
+            ["For these reasons, I believe that money spent on buses and trains is money well spent.","Vì những lý do này, tôi tin rằng tiền chi cho xe buýt và tàu là tiền tiêu đúng chỗ."]
+          ] }
       ]
     },
     {
@@ -75,6 +128,20 @@
             "It’s true that the bus is a bit slower and sometimes late, but I could simply leave home fifteen minutes earlier.",
             "Now, as for the other two options. If I rode my motorbike, I’d have more freedom, but I’d arrive at work stressed and probably covered in dust, and parking in the city centre is quite expensive. Renting a room near the office would save the most time, but it’s not nearly as practical as it sounds. I’d have to pay rent on top of my other costs, and I’d miss having dinner with my family every evening.",
             "So, all in all, the bus gives me the best balance between cost, comfort and time."
+          ],
+          gloss: [
+            ["right in the city centre","ngay giữa trung tâm thành phố","right + giới từ: nhấn mạnh vị trí"],
+            ["it’s by far the cheapest choice","đó là lựa chọn rẻ nhất, hơn hẳn","by far + so sánh nhất"],
+            ["which is much less than what I’d spend on","ít hơn nhiều so với số tiền tôi sẽ chi cho","which thay cho cả mệnh đề; spend on + N"],
+            ["saving money really matters","tiết kiệm tiền thực sự quan trọng","V-ing làm chủ ngữ; matter (v): quan trọng"],
+            ["far less tiring than","đỡ mệt hơn nhiều so với","far less + adj + than"],
+            ["Instead of breathing in exhaust fumes","Thay vì hít khói thải","Instead of + V-ing"],
+            ["I could simply leave home fifteen minutes earlier","tôi có thể đơn giản là đi sớm hơn mười lăm phút","could + V: đưa ra cách khắc phục"],
+            ["as for the other two options","còn về hai phương án kia","as for + N: chuyển ý"],
+            ["If I rode my motorbike, I’d have more freedom","Nếu tôi đi xe máy, tôi sẽ tự do hơn","Câu điều kiện loại 2"],
+            ["it’s not nearly as practical as it sounds","nó không hề thực tế như nghe có vẻ","not nearly as … as: kém xa"],
+            ["on top of my other costs","cộng thêm vào các chi phí khác của tôi","on top of + N: ngoài ra, cộng thêm"],
+            ["the best balance between cost, comfort and time","sự cân bằng tốt nhất giữa chi phí, sự thoải mái và thời gian","balance between A, B and C"]
           ]
         }
       ],
@@ -87,6 +154,28 @@
         ["If I…, I’d have more…, but…", "Nếu tôi…, tôi sẽ có nhiều… hơn, nhưng…"],
         ["It’s not nearly as practical as it sounds.", "Nó không hề thực tế như nghe có vẻ."],
         ["All in all, … gives me the best balance between…", "Nói chung, … mang lại sự cân bằng tốt nhất giữa…"]
+      ],
+      bank: [
+        { h: "Nêu lựa chọn", items: [
+            ["Having thought it over, I’ve decided that the bus is the most sensible way for me to get to work.","Sau khi suy nghĩ kỹ, tôi quyết định xe buýt là cách hợp lý nhất để tôi đi làm."],
+            ["For someone who has just started a new job, I think public transport is the smartest choice.","Với người vừa mới bắt đầu công việc mới, tôi nghĩ giao thông công cộng là lựa chọn khôn ngoan nhất."],
+            ["If I had to pick one, I’d definitely go for taking the bus every day.","Nếu phải chọn một, tôi chắc chắn sẽ chọn đi xe buýt mỗi ngày."]
+          ] },
+        { h: "Lý do ủng hộ", items: [
+            ["The biggest advantage is that I wouldn’t have to deal with the stress of rush-hour traffic.","Ưu điểm lớn nhất là tôi sẽ không phải đối mặt với căng thẳng của giao thông giờ cao điểm."],
+            ["What’s more, I could use the journey time to relax or prepare for the working day.","Hơn nữa, tôi có thể dùng thời gian đi đường để thư giãn hoặc chuẩn bị cho ngày làm việc."],
+            ["Another point in its favour is that it’s much safer than riding a motorbike in heavy traffic.","Một điểm cộng khác là nó an toàn hơn nhiều so với đi xe máy trong giao thông đông đúc."]
+          ] },
+        { h: "Bác bỏ phương án khác", items: [
+            ["Riding a motorbike might be faster, but fifteen kilometres each way in the heat would leave me exhausted.","Đi xe máy có thể nhanh hơn, nhưng mười lăm cây số mỗi chiều dưới trời nắng sẽ khiến tôi kiệt sức."],
+            ["Renting a room sounds convenient, but I simply couldn’t afford to pay rent on a starting salary.","Thuê phòng nghe có vẻ tiện, nhưng tôi không đủ khả năng trả tiền thuê với mức lương khởi điểm."],
+            ["The main drawback of moving closer to work is that I’d be living away from my family.","Nhược điểm chính của việc chuyển đến gần chỗ làm là tôi sẽ phải sống xa gia đình."]
+          ] },
+        { h: "Kết luận", items: [
+            ["So, weighing everything up, the bus is clearly the most practical option for me.","Vì vậy, cân nhắc mọi thứ, xe buýt rõ ràng là phương án thực tế nhất với tôi."],
+            ["To sum up, it saves money, reduces stress and lets me stay at home with my family.","Tóm lại, nó tiết kiệm tiền, giảm căng thẳng và cho phép tôi ở nhà với gia đình."],
+            ["That’s why, at least for now, I’d choose the bus over the other two options.","Đó là lý do, ít nhất là lúc này, tôi chọn xe buýt thay vì hai phương án còn lại."]
+          ] }
       ]
     }
   ],

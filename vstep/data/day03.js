@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "At a railway station",
+          tip: "Câu hỏi giờ khởi hành hiện tại: bài sẽ có giờ gốc, số phút bị trễ và giờ mới. Đừng chọn giờ in trên vé hay tự cộng nhẩm; chờ nghe câu nêu giờ dự kiến mới (<em>now expected to…</em>).",
           script: [
             { sp: "F", text: "Good morning. This is an announcement for passengers travelling on the seven fifteen service to Hue. Unfortunately, this train has been delayed by thirty-five minutes because of a technical problem further down the line. It is now expected to depart at seven fifty from platform four, not platform two as shown on your ticket. Refreshments are available in the waiting room. We apologise for the delay." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Announcement 2",
           context: "At an airport departure gate",
+          tip: "Câu hỏi “Who … first”: nghe lời mời lên máy bay trước (<em>invite … to board first</em>) và phân biệt với nhóm được yêu cầu chờ (<em>remain seated</em>). Đáp án thường được diễn đạt lại bằng từ khác.",
           script: [
             { sp: "M", text: "Ladies and gentlemen, flight VN two-five-four to Singapore is now ready for boarding at gate twelve. We would like to invite passengers travelling with young children, and anyone who needs special assistance, to board first. All other passengers are kindly asked to remain seated until their row number is called. Please have your passport and boarding pass ready to show to our staff." }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Announcement 3",
           context: "A tour guide speaking to a group",
+          tip: "Câu hỏi điểm hẹn: hướng dẫn viên sẽ nhắc một địa điểm rồi phủ định nó (<em>we won't meet…</em>). Chờ nghe từ <em>Instead</em> để biết điểm hẹn thật.",
           script: [
             { sp: "F", text: "OK, everyone, we'll stop here at the Imperial City for about an hour and a half. You're free to explore on your own. Please be back by eleven thirty. And just to be clear, we won't meet at the main entrance where we came in – it gets far too crowded. Instead, come straight back to the car park and look for our bus. It's number twenty-seven, with a blue stripe." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Announcement 4",
           context: "A telephone message from a hotel",
+          tip: "Câu hỏi mục đích cuộc gọi: thông tin đặt phòng chỉ là bối cảnh. Nghe phần sau <em>I'm afraid…</em> – nơi người gọi nêu vấn đề và hướng xử lý – rồi tóm lại bằng một động từ (hủy? đổi? đề nghị?).",
           script: [
             { sp: "M", text: "Hello, this is Daniel from the Sunrise Hotel calling for Mr Kim about your booking for three nights from the twelfth of July. I'm afraid the sea-view room you requested is no longer available. We can offer you a garden-view room at the same price, or a sea-view suite for an extra twenty dollars a night. Could you call us back on 0236 555 0199 to let us know which you'd prefer?" }
           ],
@@ -71,6 +75,7 @@
         {
           label: "Announcement 5",
           context: "At a ferry terminal",
+          tip: "Câu hỏi về một mốc giờ cụ thể: bài có rất nhiều giờ (chuyến bị hủy, chuyến thay thế, giờ thông báo, giờ đóng cửa). Ghi nhanh “giờ – sự việc” khi nghe để không ghép nhầm.",
           script: [
             { sp: "F", text: "Attention, please. Because of strong winds, the two o'clock ferry to Cat Ba Island has been cancelled. Passengers may transfer their tickets to the four thirty ferry, but please be aware that this sailing has not yet been confirmed. We will make a further announcement at three thirty. Alternatively, you can get a full refund at the ticket office, which is open until six." }
           ],
@@ -84,6 +89,7 @@
         {
           label: "Announcement 6",
           context: "A radio advertisement for a travel agency",
+          tip: "Câu hỏi NOT included: khi nghe danh sách trong giá tour, gạch từng phương án được nhắc là có; chú ý paraphrase (<em>transport</em> = vé xe, <em>accommodation</em> = khách sạn) và câu phủ định <em>are not included</em>.",
           script: [
             { sp: "M", text: "Looking for a cool escape this summer? Green Hills Travel is offering a four-day tour of Da Lat for just three point five million dong. The price includes return coach tickets, three nights in a comfortable hotel and breakfast every morning. Lunch and dinner are not included, so you can try the local restaurants yourself. Book before the thirtieth of June and you'll get a ten per cent discount." }
           ],
@@ -97,6 +103,7 @@
         {
           label: "Announcement 7",
           context: "On a city sightseeing bus",
+          tip: "Câu hỏi việc phải làm cuối hành trình: nghe cụm thời gian <em>When you finish…</em> rồi động từ mệnh lệnh theo sau; thông tin về vé, tần suất xe và ngôn ngữ thuyết minh chỉ là nhiễu.",
           script: [
             { sp: "F", text: "Welcome aboard the City Explorer sightseeing bus. Your ticket is valid for twenty-four hours, so you can get off and back on at any of our twelve stops. Buses run every fifteen minutes. You'll find headphones in the pocket of the seat in front of you, with commentary in eight languages. When you finish your journey, please leave the headphones in the box by the door." }
           ],
@@ -110,6 +117,7 @@
         {
           label: "Announcement 8",
           context: "A voicemail message from a friend",
+          tip: "Câu hỏi điểm hẹn: bài nhắc nhiều nơi (sân bay, xe buýt, quán cà phê). Chú ý câu phủ định <em>Please don't…</em> và cụm <em>we can meet at…</em> để chọn đúng nơi gặp cuối cùng.",
           script: [
             { sp: "M", text: "Hi Mai, it's Jack. Bad news, I'm afraid – my flight from Bangkok has been delayed, so I'll land at about nine forty instead of eight. Please don't drive to the airport to pick me up; it'll be too late for you. I'll take the airport bus into town, and we can meet at the café opposite the Opera House at around eleven. See you there!" }
           ],
@@ -140,6 +148,30 @@
         "Supporters say that slow travel has several benefits. First, it is less stressful, because there is no need to pack a suitcase every two days. Second, it can be cheaper, since weekly or monthly rentals usually cost less per night than hotels. Third, it is better for the environment, as travellers take fewer flights and long car journeys.",
         "Slow travel also benefits local communities. When visitors spend their money in small family-run cafés and shops, the income stays in the area instead of going to large international companies. In addition, travellers who stay longer are more likely to learn a few words of the local language and form genuine connections with residents.",
         "Of course, this style of travel is not for everyone. People with only a few days of annual leave may feel they cannot afford to spend their whole holiday in a single town. Nevertheless, even a short trip can be slower: choosing two destinations instead of five, and spending whole days in each, might be the first step."
+      ],
+      gloss: [
+        ["For many years,","Trong nhiều năm,","cụm thời gian mở đầu đoạn"],
+        ["visiting as many famous places as possible","tham quan càng nhiều nơi nổi tiếng càng tốt","as many + N + as possible: càng nhiều… càng tốt"],
+        ["rushed from one city to the next","vội vã đi từ thành phố này sang thành phố khác","from one … to the next"],
+        ["returned home exhausted","trở về nhà kiệt sức","V + adj: trạng thái khi làm việc gì"],
+        ["a growing number of travellers have chosen","ngày càng nhiều du khách đã chọn","a growing number of + N số nhiều + V số nhiều"],
+        ["a different approach, known as","một cách tiếp cận khác, được gọi là","Mệnh đề quan hệ rút gọn bị động: (which is) known as"],
+        ["instead of seeing ten places in ten days","thay vì xem mười nơi trong mười ngày","instead of + V-ing"],
+        ["rent an apartment rather than book a hotel","thuê căn hộ thay vì đặt khách sạn","A rather than B: hai vế cùng dạng (V – V)"],
+        ["sign up for short cooking or language classes","đăng ký các lớp nấu ăn hoặc ngôn ngữ ngắn hạn","sign up for + N: đăng ký"],
+        ["This allows them to experience daily life","Điều này cho phép họ trải nghiệm cuộc sống thường ngày","allow sb to + V"],
+        ["not just its tourist attractions","chứ không chỉ các điểm du lịch","not just: không chỉ"],
+        ["there is no need to pack a suitcase","không cần phải xếp vali","there is no need to + V"],
+        ["since weekly or monthly rentals usually cost less per night","vì thuê theo tuần hoặc tháng thường rẻ hơn tính theo đêm","since = because; cost less: rẻ hơn"],
+        ["take fewer flights and long car journeys","đi ít chuyến bay và hành trình ô tô dài hơn","fewer + N đếm được số nhiều"],
+        ["small family-run cafés and shops","quán cà phê và cửa hàng nhỏ do gia đình tự kinh doanh","Tính từ ghép: family-run"],
+        ["the income stays in the area instead of going to","thu nhập ở lại trong vùng thay vì chảy về","stay in + nơi; instead of + V-ing"],
+        ["In addition,","Ngoài ra,","từ nối bổ sung ý"],
+        ["are more likely to learn a few words","có nhiều khả năng học được vài từ","be more likely to + V: có khả năng cao hơn"],
+        ["form genuine connections with residents","tạo mối quan hệ chân thành với người dân","form a connection with sb"],
+        ["this style of travel is not for everyone","kiểu du lịch này không dành cho tất cả mọi người","be not for everyone: không hợp với ai cũng"],
+        ["cannot afford to spend their whole holiday","không thể để dành cả kỳ nghỉ","can’t afford to + V: không đủ điều kiện (thời gian/tiền) để"],
+        ["Nevertheless,","Tuy vậy,","từ nối nhượng bộ, trang trọng hơn however"]
       ],
       questions: [
         { q: "According to paragraph 1, how did tourists often feel after a typical holiday?",
