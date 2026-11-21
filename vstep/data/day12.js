@@ -1,0 +1,172 @@
+(window.VSTEP_DAYS = window.VSTEP_DAYS || {})[12] = {
+  day: 12,
+  title: "Tin tức: nghe hàm ý, đọc quan điểm tác giả",
+  topic: "Media & news",
+  goal: "Luyện dạng câu hỏi suy luận trong Listening Part 2 (người nói ngụ ý gì, vì sao nói câu đó, thái độ ra sao) và dạng câu hỏi thái độ, mục đích tác giả trong passage 3. Mục tiêu: hiểu điều người nói/người viết “nghĩ” chứ không chỉ điều họ “nói”.",
+  sections: [
+    {
+      type: "listening",
+      part: 2,
+      lesson: [
+        "Hôm nay tập trung vào câu hỏi <b>suy luận</b> – dạng khó nhất của Part 2: <em>What does the woman mean when she says…?</em>, <em>Why does the man say…?</em>, <em>How does the woman feel about…?</em>. Đáp án không bao giờ lặp lại nguyên câu được trích.",
+        "Với câu hỏi “<b>What does she mean…?</b>”, hãy nghe <b>câu trước và câu sau</b> câu được trích. Ví dụ “He’d know” đứng sau “He’s worked there for twelve years” → ý là “nguồn tin của tôi đáng tin”.",
+        "Với câu hỏi “<b>Why does he say…?</b>” (chức năng), tự hỏi: câu đó dùng để <em>phản đối, khuyên, cảnh báo, đồng ý hay thay đổi chủ đề</em>? “The number of shares doesn’t tell you much” là để <b>phản bác</b> lập luận “nhiều người chia sẻ = đúng”.",
+        "Thái độ thường lộ qua <b>cụm cố định</b> hơn là từ chỉ cảm xúc: <em>too good to be true</em> (nghi ngờ), <em>a bit much, isn’t it?</em> (chê quá đà), <em>believe me</em> (thông cảm), <em>I suppose…</em> (miễn cưỡng đồng ý). Hãy học thuộc nhóm cụm này.",
+        "Ngữ điệu cũng là manh mối: câu hỏi đuôi xuống giọng (“a bit much, isn’t it?”) thường là <b>lời phê bình nhẹ</b>, không phải câu hỏi thật. Tiếng cười, “Fair enough” cho thấy hai người đã đạt <b>đồng thuận</b>.",
+        "Bẫy của câu suy luận: phương án <b>đúng một nửa</b> hoặc <b>quá mạnh</b> (“She is angry with him” khi cô ấy chỉ đùa). Chọn phương án vừa đủ, được ngữ cảnh ủng hộ rõ ràng."
+      ],
+      items: [
+        {
+          label: "Conversation 1",
+          context: "Two university students preparing a presentation",
+          script: [
+            { sp: "M", text: "Have you seen this article that’s been going round? It says scientists have found that people who drink coffee every day live ten years longer." },
+            { sp: "F", text: "Ten years? That sounds a bit too good to be true. Where’s it from?" },
+            { sp: "M", text: "A website called HealthNow Daily. It’s been shared over fifty thousand times." },
+            { sp: "F", text: "Well, the number of shares doesn’t tell you much. Does it link to the actual study?" },
+            { sp: "M", text: "Let me see… It mentions a university in Sweden, but it doesn’t name the researchers." },
+            { sp: "F", text: "That’s a warning sign. Actually, this could be a perfect example for our presentation on misinformation. We could show the class how to check it step by step." },
+            { sp: "M", text: "Good idea. I was planning to focus on political news, but this would be much easier for people to relate to." },
+            { sp: "F", text: "Exactly. So first, we search for the original research. Here – I think I’ve found it. It was published in a medical journal last March." },
+            { sp: "M", text: "And what does it actually say?" },
+            { sp: "F", text: "That moderate coffee drinkers had a slightly lower risk of heart disease. Nothing about living ten years longer. And it was only an observational study, so it can’t prove that coffee caused anything." },
+            { sp: "M", text: "Wow, so the headline completely exaggerated it. I nearly forwarded it to my mum yesterday." },
+            { sp: "F", text: "Most people would. That’s exactly why we need to talk about it. Shall I do the slides on tracing the original source, and you cover why false stories spread so fast?" },
+            { sp: "M", text: "Sure. I read an interesting piece claiming that false stories travel faster than true ones because they’re more surprising. I’ll track it down again tonight." }
+          ],
+          questions: [
+            { q: "What is the woman’s first reaction to the article?",
+              opts: ["She wants to send it to her mother.", "She is pleased because she drinks coffee.", "She is doubtful about its claim.", "She is annoyed that the man believed it."],
+              a: 2,
+              why: "“That sounds a bit too good to be true” = nghe quá tốt để là thật → nghi ngờ. Người suýt gửi cho mẹ là người nam; D quá mạnh, cô ấy không hề bực." },
+            { q: "Why does the woman say “the number of shares doesn’t tell you much”?",
+              opts: ["To point out that popularity does not prove a story is true", "To suggest that the website is not very popular", "To explain why she has not read the article", "To complain that people share too many articles"],
+              a: 0,
+              why: "Câu này đáp lại lập luận ngầm của người nam (“shared over fifty thousand times”) → chức năng là phản bác: nhiều lượt chia sẻ không chứng minh tin là đúng. Cô ấy lập tức hỏi về nghiên cứu gốc." },
+            { q: "What did the original study actually find?",
+              opts: ["Daily coffee drinkers lived ten years longer.", "Coffee can cause heart disease.", "Swedish people drink more coffee than others.", "Moderate coffee drinkers had a slightly lower risk of heart disease."],
+              a: 3,
+              why: "“moderate coffee drinkers had a slightly lower risk of heart disease. Nothing about living ten years longer.” A là thông tin bị phóng đại trong tiêu đề – bẫy chính." },
+            { q: "What will the man do tonight?",
+              opts: ["Prepare slides on checking original sources", "Look for an article about why false news spreads", "Show the article to his mother", "Research examples of political news"],
+              a: 1,
+              why: "“I read an interesting piece claiming that false stories travel faster… I’ll track it down again tonight.” → “track down” = tìm lại. Làm slide về nguồn gốc là phần của người nữ." }
+          ]
+        },
+        {
+          label: "Conversation 2",
+          context: "An editor and a young reporter at a local news website",
+          script: [
+            { sp: "M", text: "Lan, I’ve just read your piece on the factory closure. It’s well written, but we can’t publish it yet." },
+            { sp: "F", text: "Why not? The Daily Post will have the story online within the hour. If we wait, we’ll lose all the traffic." },
+            { sp: "M", text: "I know, but right now the whole article depends on one anonymous worker. If he’s wrong about five hundred job losses, we’ll look terrible." },
+            { sp: "F", text: "He’s worked there for twelve years. He’d know." },
+            { sp: "M", text: "He might. But our rule is two independent sources for anything this serious. Have you tried the company’s press office?" },
+            { sp: "F", text: "Twice. Nobody picked up. I left a message with the receptionist this morning." },
+            { sp: "M", text: "What about the workers’ union? They’d have heard something if the jobs were really going." },
+            { sp: "F", text: "That’s true… I hadn’t thought of them. I’ve got their representative’s number somewhere." },
+            { sp: "M", text: "Good. And there’s one more thing – the headline. “Town Faces Disaster as Factory Shuts” is a bit much, isn’t it?" },
+            { sp: "F", text: "I suppose it is rather dramatic. I was just trying to get people to click on it." },
+            { sp: "M", text: "I understand the pressure, believe me. But if readers feel we’re exaggerating, they won’t trust us next time. Something like “Up to 500 Jobs at Risk at Local Factory” is accurate and still grabs attention." },
+            { sp: "F", text: "Fine. But if the Post gets there first, I’m blaming you!" },
+            { sp: "M", text: "Fair enough. Being second and right is better than being first and wrong." },
+            { sp: "F", text: "OK, I’ll ring the union now and update the article as soon as I hear back." }
+          ],
+          questions: [
+            { q: "Why does the editor not want to publish the article immediately?",
+              opts: ["It is not well written.", "It relies on only one source.", "The company has asked them to wait.", "A competitor has already published it."],
+              a: 1,
+              why: "“the whole article depends on one anonymous worker… our rule is two independent sources”. A sai vì ông khen “It’s well written”; D sai vì Daily Post <em>sắp</em> đăng, chưa đăng." },
+            { q: "What does the woman mean when she says “He’d know”?",
+              opts: ["She has doubts about the worker’s story.", "She will ask the worker again.", "The worker is a union representative.", "She believes her source is reliable."],
+              a: 3,
+              why: "Câu trước: “He’s worked there for twelve years.” → “He’d know” = anh ấy chắc chắn biết, nguồn tin đáng tin. Đây là câu bảo vệ nguồn tin, không phải nghi ngờ." },
+            { q: "What is the editor’s opinion of the original headline?",
+              opts: ["It exaggerates the situation.", "It is too long for a website.", "It is too dull to attract readers.", "It contains a spelling mistake."],
+              a: 0,
+              why: "“is a bit much, isn’t it?” = hơi quá đà; sau đó ông nói “if readers feel we’re exaggerating…”. Tiêu đề mới được đề xuất là “accurate” – đối lập với tiêu đề cũ phóng đại." },
+            { q: "What will the woman most likely do next?",
+              opts: ["Call the company’s press office again", "Send her article to the Daily Post", "Contact the workers’ union", "Interview more factory workers"],
+              a: 2,
+              why: "Câu chốt: “I’ll ring the union now” → liên hệ công đoàn. Văn phòng báo chí đã gọi hai lần trước đó – bẫy hành động trong quá khứ." }
+          ]
+        }
+      ]
+    },
+    {
+      type: "reading",
+      passage: 3,
+      lesson: [
+        "Bài đọc về truyền thông hay có <b>nhiều giọng nói</b>: <em>critics argue, some researchers warn, economists call, studies suggest</em>. Gạch chân các cụm này – mỗi cụm là một ý kiến <b>được thuật lại</b>, chưa chắc là ý tác giả.",
+        "Câu hỏi <b>thái độ tác giả</b>: tìm các từ đánh giá do chính tác giả dùng – <em>Perhaps the most worrying, None of this means… hopeless, the evidence is mixed</em>. Một từ như <em>however</em> sau ý của người khác thường báo hiệu tác giả không hoàn toàn đồng ý.",
+        "Các tính từ mô tả thái độ hay gặp trong đáp án: <em>cautiously optimistic</em> (lạc quan dè dặt), <em>sceptical</em> (hoài nghi), <em>objective/neutral</em> (khách quan), <em>critical</em> (phê phán), <em>indifferent</em> (thờ ơ). Hiếm khi đáp án là thái độ cực đoan.",
+        "Phân biệt <b>fact</b> và <b>claim</b>: “hundreds of them have closed” là sự kiện; “this can trap people in filter bubbles” là nhận định có điều kiện (<em>can, some researchers warn</em>). Câu hỏi “Which is TRUE according to the passage?” hay bẫy bằng cách biến nhận định thành sự thật chắc chắn.",
+        "Câu hỏi <b>mục đích chính của bài</b> (main purpose): chọn động từ phù hợp – <em>examine, explain, persuade, compare, describe</em>. Bài có cả mặt tốt và mặt xấu → thường là <em>examine/discuss</em>, không phải <em>persuade</em>.",
+        "Câu tham chiếu ở bài dài: đại từ có thể chỉ một cụm danh từ khá xa hoặc một danh từ “ẩn” trong cụm (<em>a wider range of sources</em> → “it”). Luôn thay thử vào câu để kiểm tra."
+      ],
+      title: "News in the Attention Economy",
+      text: [
+        "Not long ago, most people received their news from a small number of sources: a morning newspaper, the evening television bulletin, perhaps a radio station on the way to work. Today, news reaches us continuously through our phones, often selected not by an editor but by an algorithm designed to keep us scrolling. This shift has transformed not only how we consume information but also how it is produced.",
+        "At the heart of the change is what economists call the “attention economy”. Because most online news is free, publishers earn money mainly from advertising, and advertisers pay according to the number of clicks and views. As a result, there is strong pressure to produce content that captures attention quickly. Emotional headlines, dramatic images and stories that provoke anger tend to perform best, while a story that takes a week to investigate may earn less than a sensational piece written in an hour. Critics argue that this has encouraged so-called clickbait – headlines that promise more than the article delivers – and has rewarded speed over accuracy.",
+        "Algorithms add a further layer of complexity. Social media platforms show users the content they are most likely to engage with, which often means content that confirms what they already believe. Over time, some researchers warn, this can trap people in “filter bubbles”, where they rarely encounter opposing views. The evidence here, however, is mixed. Several studies have found that heavy social media users actually come across a wider range of sources than people who rely on a single newspaper, even if they choose to ignore much of it.",
+        "Perhaps the most worrying consequence has been the decline of local journalism. Local newspapers, which once depended on classified advertisements and loyal subscribers, have lost much of their income to online platforms. In many countries, hundreds of them have closed in the past two decades. This matters because local reporters are often the only people attending council meetings or investigating local businesses. Without anyone watching closely, mistakes and even corruption are more likely to go unnoticed. Where they disappear, studies suggest, public spending tends to rise and fewer candidates stand in local elections.",
+        "None of this means that the situation is hopeless. Some publishers have successfully introduced subscriptions, persuading readers that reliable reporting is worth paying for. Non-profit newsrooms, funded by donations, have emerged to fill some of the gaps, and in a few towns readers have even formed cooperatives to buy and run their local paper. Meanwhile, schools in several countries now teach media literacy, helping young people to question sources and recognise manipulation. Ultimately, the quality of the news we receive may depend less on technology than on what we, as readers, are willing to value."
+      ],
+      questions: [
+        { q: "What is the main purpose of the passage?",
+          opts: ["To persuade readers to stop using social media", "To describe the history of television news", "To examine how digital technology has changed the news industry", "To compare the quality of news in different countries"],
+          a: 2,
+          why: "Câu cuối đoạn 1 nêu luận đề: “This shift has transformed not only how we consume information but also how it is produced.” Các đoạn sau phân tích nguyên nhân, hậu quả và giải pháp → “examine”. Tác giả không kêu gọi bỏ mạng xã hội (A)." },
+        { q: "According to paragraph 1, how is news today often selected?",
+          opts: ["By computer programs designed to hold users’ attention", "By the editors of morning newspapers", "By readers’ friends and relatives", "By government agencies"],
+          a: 0,
+          why: "“selected not by an editor but by an algorithm designed to keep us scrolling” → algorithm = computer program; keep us scrolling = hold attention. B là cách chọn tin <em>trước đây</em>." },
+        { q: "According to paragraph 2, why do publishers produce emotional content?",
+          opts: ["Readers prefer serious analysis.", "The government requires them to.", "Journalists find it easier to write.", "Their income depends on clicks and views."],
+          a: 3,
+          why: "“publishers earn money mainly from advertising, and advertisers pay according to the number of clicks and views. As a result, there is strong pressure…” – quan hệ nhân quả rõ ràng qua “As a result”." },
+        { q: "The word “provoke” in paragraph 2 is closest in meaning to",
+          opts: ["prevent", "cause", "describe", "reduce"],
+          a: 1,
+          why: "“stories that provoke anger” = câu chuyện gây ra/khơi dậy sự tức giận. Đứng cạnh “emotional headlines, dramatic images” – đều là thứ tạo cảm xúc mạnh." },
+        { q: "What is the author’s view of the idea of “filter bubbles”?",
+          opts: ["It has been proved to affect all internet users.", "It is completely false and should be ignored.", "The evidence supporting it is not conclusive.", "It only affects people who read newspapers."],
+          a: 2,
+          why: "Tác giả thuật lại “some researchers warn” rồi nhận xét: “The evidence here, however, is mixed” và dẫn nghiên cứu trái chiều → bằng chứng chưa thuyết phục. A quá mạnh, B quá cực đoan." },
+        { q: "The word “it” in paragraph 3 (“ignore much of it”) refers to",
+          opts: ["social media", "the evidence", "a single newspaper", "a wider range of sources"],
+          a: 3,
+          why: "“heavy social media users actually come across a wider range of sources…, even if they choose to ignore much of it” – người dùng tiếp xúc với nhiều nguồn nhưng bỏ qua phần lớn <em>dải nguồn đó</em>. “range” là danh từ số ít nên dùng “it”." },
+        { q: "According to paragraph 4, why have many local newspapers lost income?",
+          opts: ["Their advertising and readers have moved to online platforms.", "Local councils have stopped buying them.", "Their reporters have moved to national newspapers.", "They have been forced to close by new laws."],
+          a: 0,
+          why: "“Local newspapers, which once depended on classified advertisements and loyal subscribers, have lost much of their income to online platforms.” Các phương án khác không có trong bài." },
+        { q: "What can be inferred from paragraph 4 about local reporters?",
+          opts: ["They earn more than national journalists.", "Their presence may help to keep local authorities accountable.", "They are mainly interested in election results.", "They prefer working for online platforms."],
+          a: 1,
+          why: "Họ “attending council meetings or investigating local businesses”, và khi họ biến mất “public spending tends to rise” → suy ra sự có mặt của phóng viên giúp giám sát chính quyền địa phương. Bài không nói trực tiếp – đây là suy luận." },
+        { q: "Which of the following is NOT mentioned in paragraph 5 as a positive development?",
+          opts: ["Readers paying subscriptions for reliable news", "Newsrooms funded by donations", "Media literacy lessons in schools", "Government funding for local newspapers"],
+          a: 3,
+          why: "Đoạn 5 nêu: “subscriptions”, “Non-profit newsrooms, funded by donations”, “schools… now teach media literacy”. Không có tài trợ của chính phủ." },
+        { q: "Which word best describes the author’s attitude in the final paragraph?",
+          opts: ["Completely pessimistic", "Indifferent", "Cautiously optimistic", "Angry"],
+          a: 2,
+          why: "“None of this means that the situation is hopeless” + các ví dụ tích cực, nhưng kết bằng “may depend… on what we… are willing to value” (có điều kiện) → lạc quan dè dặt." }
+      ]
+    }
+  ],
+  vocab: [
+    ["misinformation", "thông tin sai lệch"],
+    ["exaggerate", "phóng đại, cường điệu"],
+    ["anonymous", "giấu tên, ẩn danh"],
+    ["algorithm", "thuật toán"],
+    ["attention economy", "nền kinh tế sự chú ý"],
+    ["clickbait", "tin câu view, giật tít"],
+    ["provoke", "khơi dậy, gây ra (cảm xúc)"],
+    ["filter bubble", "bong bóng lọc thông tin"],
+    ["subscriber", "người đặt mua dài hạn"],
+    ["media literacy", "năng lực hiểu biết truyền thông"]
+  ],
+  tip: "Gặp câu hỏi “What does the man mean when he says…?”, đừng chọn phương án chứa lại đúng những từ trong câu trích – hãy chọn phương án diễn đạt <b>ý định</b> của người nói dựa vào câu đứng trước nó."
+};

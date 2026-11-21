@@ -1,0 +1,166 @@
+(window.VSTEP_DAYS = window.VSTEP_DAYS || {})[19] = {
+  day: 19,
+  title: "Số liệu, chuỗi nhân quả & bài đọc so sánh giải pháp",
+  topic: "Climate change",
+  goal: "Xử lý số liệu, xu hướng và chuỗi nguyên nhân trong Listening Part 3 (kể cả câu “nói gì tiếp theo”); đọc passage 4 dạng so sánh nhiều giải pháp, trả lời câu ẩn dụ và câu “đúng nhưng không trả lời câu hỏi”.",
+  sections: [
+    {
+      type: "listening",
+      part: 3,
+      lesson: [
+        "<b>Ghi số kèm “nhãn”:</b> mỗi con số phải ghi cùng đối tượng và điều kiện (VD: “7° – đêm – trung tâm” ≠ “2–3° – ngày”). Bẫy Part 3 thường đặt <em>tất cả</em> các số đã nghe vào 4 phương án.",
+        "<b>Chuỗi nguyên nhân bằng mũi tên:</b> “dark surfaces → absorb heat → release at night”. Với câu NOT mentioned trong bài nghe, đánh dấu ✓ từng nguyên nhân khi nghe thấy; phương án không được ✓ là đáp án.",
+        "<b>Cấu trúc “It isn't X – it's Y”:</b> diễn giả bác bỏ X để nhấn mạnh Y. Đáp án là Y; X gần như chắc chắn xuất hiện trong phương án làm bẫy.",
+        "<b>Lời trích của nhân vật trong phóng sự:</b> câu nói trong ngoặc kép (“I'm not fighting the salt any more – I'm using it”) hay bị hỏi “What does he mean…?” – hiểu theo ý cả đoạn, không theo nghĩa đen.",
+        "<b>Câu cuối bài = câu hỏi “What will the speaker talk about next?”:</b> luôn chú ý câu chuyển tiếp cuối (“In the second half… we'll look at…”, “After the news, we'll hear from…”). Đừng tháo tai nghe sớm!",
+        "<b>Từ điều chỉnh mức độ:</b> “up to”, “around”, “more than”, “part of the story, but not the whole story” – đáp án đúng giữ nguyên mức độ này; phương án tuyệt đối hoá là sai."
+      ],
+      items: [
+        {
+          label: "Talk 1",
+          context: "A university lecture on environmental science",
+          script: [
+            { sp: "N", text: "You will hear part of a lecture about cities and rising temperatures." },
+            { sp: "F", text: "Good morning. Last week we looked at how global temperatures are rising. Today I want to zoom in on cities, because cities are heating up faster than the countryside around them. This effect is known as the urban heat island." },
+            { sp: "F", text: "Why does it happen? There are three main reasons. First, dark surfaces like asphalt roads and roofs absorb sunlight during the day and release it slowly at night. Second, cities have fewer trees and less open water, so there's less natural cooling from evaporation. And third, air conditioners, cars and factories all pump waste heat into the streets. Notice the irony there: the more people use air conditioning to escape the heat, the hotter the street outside becomes." },
+            { sp: "F", text: "How big is the difference? On a calm summer night, the centre of a large city can be up to seven degrees warmer than nearby farmland. During the day the gap is usually smaller, around two or three degrees. That night-time difference matters more than you might think, because our bodies need cool nights to recover. Most heat-related deaths during heatwaves happen not on the hottest afternoon but after several nights in which temperatures never drop." },
+            { sp: "F", text: "So what can be done? The cheapest option is simply to paint roofs white or another light colour. Studies suggest this can lower the temperature inside a top-floor flat by a couple of degrees. Trees are more expensive and take years to grow, but they offer additional benefits: shade, cleaner air and a more pleasant place to live. Some cities have gone further. Seoul, for example, removed an elevated motorway and restored a stream that had been buried under concrete; temperatures along that corridor are now noticeably lower than in the surrounding streets." },
+            { sp: "F", text: "I should stress, though, that none of these measures will stop global warming. They're adaptation, not prevention. What they can do is buy cities time and, quite literally, save lives during heatwaves." },
+            { sp: "F", text: "In the second half of today's session, we'll look at who is most at risk from urban heat, because, as you'll see, the risk isn't shared equally." }
+          ],
+          questions: [
+            { q: "What is the main topic of the lecture?",
+              opts: ["How global temperatures are measured", "Why farmland suffers during heatwaves", "The history of air conditioning", "Why cities are hotter and what can be done about it"],
+              a: 3,
+              why: "“Today I want to zoom in on cities, because cities are heating up faster…” rồi phần “Why does it happen?” và “So what can be done?” → D bao quát cả bài. A là nội dung tuần trước (“Last week…”)." },
+            { q: "On a calm summer night, how much warmer can a city centre be than nearby farmland?",
+              opts: ["Up to seven degrees", "Two to three degrees", "Around five degrees", "More than ten degrees"],
+              a: 0,
+              why: "“On a calm summer night… up to seven degrees warmer than nearby farmland.” “Two or three degrees” là chênh lệch <em>ban ngày</em> – bẫy số đi kèm điều kiện khác." },
+            { q: "Why does the lecturer say the night-time difference is important?",
+              opts: ["Most people in cities work at night.", "People's bodies need cool nights to recover.", "Night temperatures are easier to measure.", "Daytime temperatures in cities are falling."],
+              a: 1,
+              why: "“That night-time difference matters more than you might think, because our bodies need cool nights to recover” – kèm bằng chứng: phần lớn tử vong xảy ra “after several nights in which temperatures never drop”." },
+            { q: "What does the lecturer say about measures such as white roofs and trees?",
+              opts: ["They will eventually stop global warming.", "They are too expensive for most cities.", "They help cities cope with heat but do not prevent warming.", "They have only been tried in Seoul."],
+              a: 2,
+              why: "“none of these measures will stop global warming. They're adaptation, not prevention… buy cities time and… save lives” → giúp thích nghi, không ngăn chặn. A bị phủ định trực tiếp; B sai vì sơn mái là “the cheapest option”." },
+            { q: "What will the lecturer talk about next?",
+              opts: ["Other ways to reduce carbon emissions", "The groups of people most at risk from urban heat", "The transport system in Seoul", "How to choose the right roof paint"],
+              a: 1,
+              why: "Câu chuyển tiếp cuối: “In the second half of today's session, we'll look at who is most at risk from urban heat” → “who is most at risk” = “the groups of people most at risk”." }
+          ]
+        },
+        {
+          label: "Talk 2",
+          context: "A radio report",
+          script: [
+            { sp: "N", text: "You will hear a radio report about farming in the Mekong Delta." },
+            { sp: "M", text: "Good evening. Tonight's report comes from the Mekong Delta, the region that produces more than half of Vietnam's rice. For generations, farmers here have planted two or even three rice crops a year. But that pattern is coming under pressure, and the main reason isn't a lack of water – it's the wrong kind of water." },
+            { sp: "M", text: "During the dry season, when the river is low, seawater pushes further inland along the river channels. Scientists call this saltwater intrusion. In 2016, and again in 2020, salt reached more than ninety kilometres from the coast in some provinces, damaging hundreds of thousands of hectares of rice. Rising sea levels are part of the story, but they're not the whole story. Dams built upstream hold back water in the dry season, and in some areas the land itself is sinking because too much groundwater has been pumped out." },
+            { sp: "M", text: "So how are farmers responding? I spent a day with Mr Tam, who farms four hectares near the coast. Five years ago, he grew nothing but rice. Now he uses a rotation: during the rainy season, when the fields are fresh, he plants rice; in the dry season, when the water turns salty, he lets it in and raises shrimp. 'I was nervous at first,' he told me, 'and the first year I actually lost money. But now my income is more stable than before, because I'm not fighting the salt any more – I'm using it.'" },
+            { sp: "M", text: "Not everyone can follow his example. Shrimp farming needs investment and technical knowledge, and if too many farmers switch, prices could fall. Local officials I spoke to were also worried about disease spreading between shrimp ponds. Their advice is to change gradually and to work in cooperatives, so that farmers share costs and information." },
+            { sp: "M", text: "What struck me most was the change in attitude. Ten years ago, people talked about building higher dykes to keep the salt out. Today, the conversation is increasingly about learning to live with it. After the news, we'll hear from a scientist who is developing salt-tolerant varieties of rice." }
+          ],
+          questions: [
+            { q: "According to the reporter, what is the main threat to rice farming in the Mekong Delta?",
+              opts: ["A shortage of water during the dry season", "Salt water entering the rivers and fields", "Falling prices for rice", "Diseases spreading between farms"],
+              a: 1,
+              why: "“the main reason isn't a lack of water – it's the wrong kind of water” → nước mặn xâm nhập. A là bẫy kinh điển của cấu trúc “isn't X – it's Y”." },
+            { q: "Which of the following is NOT mentioned as a cause of saltwater intrusion?",
+              opts: ["Rising sea levels", "Dams built further up the river", "Land sinking because of groundwater use", "Heavier rainfall in the rainy season"],
+              a: 3,
+              why: "Ba nguyên nhân được nêu: “Rising sea levels”, “Dams built upstream”, “the land itself is sinking because too much groundwater has been pumped out”. Mưa lớn không được nhắc đến là nguyên nhân → D." },
+            { q: "What does Mr Tam say about his first year of using the rotation?",
+              opts: ["He lost money.", "His income doubled.", "He stopped growing rice completely.", "He joined a cooperative."],
+              a: 0,
+              why: "“the first year I actually lost money”. C sai vì ông vẫn trồng lúa vào mùa mưa; “more stable” (thu nhập ổn định hơn) là chuyện hiện tại, không phải “doubled”." },
+            { q: "What does Mr Tam mean when he says, “I'm not fighting the salt any more – I'm using it”?",
+              opts: ["He has built higher dykes around his fields.", "He now sells salt as well as rice.", "He has adapted his farming to the salt water instead of resisting it.", "He has moved his farm further from the coast."],
+              a: 2,
+              why: "Câu nói đứng sau mô tả việc ông “lets it in and raises shrimp” vào mùa khô → tận dụng nước mặn thay vì chống lại nó. A là cách làm cũ (“Ten years ago, people talked about building higher dykes”)." },
+            { q: "What do local officials advise farmers to do?",
+              opts: ["Switch to shrimp farming as quickly as possible", "Make changes step by step and cooperate with others", "Return to growing three rice crops a year", "Ask the government to build more dams"],
+              a: 1,
+              why: "“Their advice is to change gradually and to work in cooperatives” → “step by step” = gradually, “cooperate with others” = work in cooperatives. A ngược với “if too many farmers switch, prices could fall”." }
+          ]
+        }
+      ]
+    },
+    {
+      type: "reading",
+      passage: 4,
+      lesson: [
+        "<b>Bài so sánh nhiều giải pháp:</b> khi đọc lướt, dựng nhanh một “bảng trong đầu”: Phương pháp – Ưu – Nhược – Đoạn số mấy. Câu hỏi chi tiết khi đó chỉ cần nhảy đúng đoạn.",
+        "<b>Từ chuyển hướng trong đoạn:</b> “However”, “Its drawbacks are…”, “but scientists still disagree…” chia đoạn thành nửa ưu / nửa nhược. Câu hỏi về ưu điểm mà bạn đọc nửa sau sẽ chọn nhầm.",
+        "<b>Bẫy “đúng nhưng không trả lời câu hỏi”:</b> phương án có thể đúng với bài nhưng không phải là <em>lý do</em> hoặc không thuộc <em>đoạn</em> được hỏi. Luôn đọc lại câu hỏi trước khi chốt.",
+        "<b>Cụm động từ/thành ngữ trong ngữ cảnh (locked in, at scale):</b> dùng câu giải thích ngay trước hoặc sau. “Because CO₂ can remain… for centuries, much of the warming… is already locked in” → không thể tránh được nữa.",
+        "<b>Hình ảnh so sánh ở câu cuối (cây lau nhà – vòi nước):</b> thường tóm tắt quan điểm tác giả. Dịch hình ảnh thành ý: lau nhà chỉ có ích khi đã khoá vòi = loại bỏ CO₂ chỉ có ích khi đã cắt giảm phát thải.",
+        "<b>Câu hỏi về thuật ngữ được định nghĩa trong bài</b> (“moral hazard”, “enhanced weathering”): đáp án nằm ngay trong câu định nghĩa trước/sau thuật ngữ – đọc kỹ chủ ngữ của câu đó."
+      ],
+      title: "Can We Pull Carbon Out of the Sky?",
+      text: [
+        "For decades, the debate about climate change focused almost entirely on reducing emissions: burning less coal, driving fewer petrol cars, building more wind and solar farms. Those efforts remain essential. Yet many climate scientists now argue that cutting emissions, on its own, will no longer be enough to keep global warming within safe limits. Because carbon dioxide can remain in the atmosphere for centuries, much of the warming caused by past emissions is already locked in. To meet international targets, the world will probably also need to remove billions of tonnes of carbon dioxide that has already been released, a process known as carbon removal.",
+        "The oldest and most familiar method is to let nature do the work. Trees absorb carbon dioxide as they grow, storing it in their wood, their roots and the surrounding soil. Planting forests on a large scale is relatively cheap and brings other benefits, such as protecting wildlife and reducing the risk of floods. However, forests have clear limitations. They need vast areas of land, which may compete with food production, and the carbon they hold is not permanently secure: a single wildfire, or a change in government policy that permits logging, can release decades of stored carbon within weeks.",
+        "At the other end of the spectrum is direct air capture, a technology that uses giant fans to draw in air and chemical filters to extract carbon dioxide from it. The captured gas can then be pumped deep underground into rock formations, where it may remain for thousands of years. The appeal of this approach is that it is measurable and, in principle, permanent. Its drawbacks are cost and energy. Removing a single tonne currently costs several hundred dollars, and the machines consume so much electricity that they only make sense if they are powered by renewable sources. The largest plants now operating capture only a tiny fraction of what a single coal-fired power station emits. Supporters argue that costs will fall sharply as the technology matures, just as the price of solar panels did, but that remains to be seen.",
+        "Between these two extremes lie a number of experimental techniques. One, known as enhanced weathering, involves spreading finely crushed volcanic rock on farmland. As the rock slowly breaks down in the rain, it reacts with carbon dioxide and locks it into stable minerals, while also improving the quality of the soil for crops. Early field trials are promising, but scientists still disagree about how much carbon is actually removed, and verifying the results across thousands of fields is far from simple.",
+        "Perhaps the greatest danger of carbon removal is not technical but political. Some researchers fear that the promise of future technology could become an excuse for delaying difficult decisions today. If governments and companies believe that machines will eventually clean up the atmosphere, they may feel less pressure to cut emissions now. This concern, sometimes described as moral hazard, is not merely hypothetical: several large companies have already announced climate pledges that rely heavily on removal methods which do not yet exist at scale. Most experts therefore insist that removal should be treated as a complement to emission cuts, not a substitute for them – rather like a mop, which is useful only once someone has turned off the tap."
+      ],
+      questions: [
+        { q: "What is the passage mainly about?",
+          opts: ["Why efforts to reduce emissions have failed", "The history of planting forests", "Ways of removing carbon dioxide and their limitations", "How volcanic rock is formed"],
+          a: 2,
+          why: "Đoạn 1 giới thiệu “carbon removal”; đoạn 2–4 lần lượt phân tích rừng, direct air capture, enhanced weathering kèm nhược điểm; đoạn 5 nêu rủi ro chính trị. A sai: bài nói cắt giảm phát thải “remain essential”, không nói đã thất bại." },
+        { q: "According to paragraph 1, why is cutting emissions alone no longer considered enough?",
+          opts: ["Carbon dioxide already released stays in the atmosphere for a very long time.", "Wind and solar farms produce too little energy.", "International targets have recently been made stricter.", "Most countries have stopped reducing their emissions."],
+          a: 0,
+          why: "“Because carbon dioxide can remain in the atmosphere for centuries, much of the warming caused by past emissions is already locked in.” Từ “Because” chỉ thẳng lý do." },
+        { q: "The phrase “locked in” in paragraph 1 is closest in meaning to",
+          opts: ["hidden from view", "forgotten about", "difficult to predict", "certain to happen"],
+          a: 3,
+          why: "CO₂ tồn tại hàng thế kỷ nên lượng nóng lên từ phát thải cũ “already locked in” = đã được định sẵn, không thể tránh. Không mang nghĩa đen “bị khoá/giấu đi” (A)." },
+        { q: "Which of the following is NOT mentioned as a benefit of planting forests?",
+          opts: ["Its relatively low cost", "Creating jobs in rural communities", "Protecting wildlife", "Reducing the risk of floods"],
+          a: 1,
+          why: "Đoạn 2: “relatively cheap and brings other benefits, such as protecting wildlife and reducing the risk of floods”. Việc làm cho nông thôn không được nhắc đến → B." },
+        { q: "Why does the author mention wildfires in paragraph 2?",
+          opts: ["To show that forests need protection from farmers", "To explain why forests are cheap to plant", "To illustrate that carbon stored in forests may not stay there", "To argue that governments should ban logging"],
+          a: 2,
+          why: "Câu ngay trước: “the carbon they hold is not permanently secure” – cháy rừng là ví dụ minh hoạ “can release decades of stored carbon within weeks”. D là bẫy: “logging” được nhắc nhưng tác giả không kêu gọi cấm." },
+        { q: "The word “it” in paragraph 3 (“where it may remain for thousands of years”) refers to",
+          opts: ["the captured gas", "the rock formation", "the giant fan", "the air"],
+          a: 0,
+          why: "“The captured gas can then be pumped deep underground into rock formations, where it may remain…” – thứ được bơm xuống và nằm lại dưới lòng đất là khí CO₂ đã thu giữ. “rock formations” là số nhiều nên không thể là “it”." },
+        { q: "According to paragraph 3, which statement about direct air capture is true?",
+          opts: ["It is cheaper than planting forests.", "It already removes more carbon than a coal power station produces.", "It is mainly carried out on farmland.", "It is only worthwhile if it runs on renewable energy."],
+          a: 3,
+          why: "“the machines consume so much electricity that they only make sense if they are powered by renewable sources”. B ngược ý: các nhà máy lớn nhất chỉ thu “a tiny fraction” lượng một nhà máy than thải ra; C là đặc điểm của enhanced weathering." },
+        { q: "What does paragraph 4 suggest about enhanced weathering?",
+          opts: ["It has been proven to remove large amounts of carbon.", "It may benefit farmers as well as the climate.", "It requires giant fans and chemical filters.", "Its results are easy to check."],
+          a: 1,
+          why: "“…locks it into stable minerals, while also improving the quality of the soil for crops” → có lợi cho cả nông dân. A, D trái với “scientists still disagree about how much carbon is actually removed, and verifying the results… is far from simple”." },
+        { q: "In paragraph 5, “moral hazard” refers to the risk that",
+          opts: ["hopes of future removal will reduce pressure to cut emissions now", "removal technology will damage the environment", "companies will refuse to invest in new technology", "scientists will exaggerate the results of field trials"],
+          a: 0,
+          why: "Câu định nghĩa ngay trước: “If governments and companies believe that machines will eventually clean up the atmosphere, they may feel less pressure to cut emissions now. This concern, sometimes described as moral hazard…”." },
+        { q: "By comparing carbon removal to a mop, the author suggests that removal",
+          opts: ["is too slow to make any real difference", "should eventually replace emission cuts", "is useful only if emissions are also reduced", "is more important than turning off the tap"],
+          a: 2,
+          why: "“a complement to emission cuts, not a substitute for them – rather like a mop, which is useful only once someone has turned off the tap” → khoá vòi = cắt giảm phát thải; lau nhà (loại bỏ CO₂) chỉ có ích khi đã khoá vòi. B ngược trực tiếp với “not a substitute”." }
+      ]
+    }
+  ],
+  vocab: [
+    ["emissions", "lượng khí thải"],
+    ["absorb", "hấp thụ"],
+    ["evaporation", "sự bay hơi"],
+    ["heatwave", "đợt nắng nóng"],
+    ["adaptation", "sự thích ứng"],
+    ["saltwater intrusion", "xâm nhập mặn"],
+    ["renewable (sources)", "(nguồn năng lượng) tái tạo"],
+    ["drawback", "nhược điểm, hạn chế"],
+    ["verify", "kiểm chứng, xác minh"],
+    ["pledge", "cam kết, lời hứa"]
+  ],
+  tip: "Khi nghe một bài có nhiều con số, đừng cố nhớ – hãy viết ngay số kèm 1–2 chữ “nhãn” (ngày/đêm, năm, km). Bẫy số liệu ở Part 3 hầu như luôn là một con số đúng nhưng gắn với điều kiện khác."
+};
