@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "At an exam centre",
+          tip: "Câu hỏi “why”: thông báo có nhiều số phòng và quy định, nhưng câu hỏi chỉ hỏi lý do đổi phòng – nghe ngay sau “because / due to”. Đáp án đúng thường được diễn đạt lại bằng từ khác (paraphrase).",
           script: [
             { sp: "M", text: "Attention, all candidates for the morning English test. Please note that the listening section will now take place in room 204, not room 202 as printed on your admission slip, because there is a problem with the speakers in room 202. Bring only your ID card, pencils and an eraser into the room. Mobile phones must be switched off and left in the lockers on the ground floor. The doors will close at seven forty-five sharp." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Message 2",
           context: "A voicemail from a friend",
+          tip: "Câu hỏi về giờ: người nói có thể đính chính giờ ngay trong câu (“not … as I said earlier”). Khi nghe hai mốc giờ liền nhau, xác định mốc nào bị phủ định rồi mới chọn.",
           script: [
             { sp: "M", text: "Hi Mai, it’s Duc. I know you’re nervous about tomorrow, so here’s the plan. My dad can drive us both to the test centre. He’ll pick you up at six fifteen — not six thirty as I said earlier — because there are roadworks on Tran Phu Street and it might take longer. Don’t forget to have a proper breakfast, and I’ll bring some water for both of us. See you in the morning!" }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Instructions 3",
           context: "Before a speaking test",
+          tip: "Câu hỏi về giấy ghi chú: bài nhắc nhiều đồ vật (thẻ căn cước, giấy nháp), mỗi thứ đi với một hành động khác nhau. Chờ nghe đúng từ “notes / paper” và động từ đi sau “must”.",
           script: [
             { sp: "F", text: "Good morning, everyone. I’m the invigilator for this session. In a moment I’ll call your number and you’ll go into the speaking room. When you enter, hand the examiner your ID card and sit in front of the microphone, as you’ll be recorded throughout. For parts two and three, you’ll have one minute to prepare. You may write notes on the paper provided, but you must leave it on the desk when you finish." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Announcement 4",
           context: "In a university library",
+          tip: "Câu hỏi “what has changed”: nghe các từ báo thay đổi như “no longer… now…”. Bài có nhiều giờ giấc cho nhiều khu vực khác nhau – chỉ gán thông tin cho đúng “group discussion rooms”.",
           script: [
             { sp: "F", text: "This is a reminder that during exam week the self-study area will stay open until midnight, three hours later than usual. However, the café on the first floor will close at eight p.m. Students are asked to keep noise to a minimum at all times. Please also note that group discussion rooms can no longer be booked at the front desk; they must now be reserved online at least one day in advance." }
           ],
@@ -91,6 +95,21 @@
             "Q1: To be honest, I usually feel a bit nervous, especially in the morning. But I’ve learnt that a little stress is actually helpful, because it keeps me focused. Once the test starts, I normally calm down.",
             "Q2: I try not to study anything new. Instead, I quickly review my notes, prepare everything I need — my ID card, pencils and admission slip — and then go to bed early. A good night’s sleep makes a huge difference.",
             "Q3: Partly, yes. Exams are a fair way to compare many people under the same conditions. However, they only show how someone performs on one particular day, so they can’t measure things like creativity or teamwork. I think they should be combined with other kinds of assessment."
+          ],
+          gloss: [
+            ["To be honest,","Thành thật mà nói,","Cụm mở đầu câu trả lời tự nhiên"],
+            ["I usually feel a bit nervous","tôi thường cảm thấy hơi hồi hộp","feel + adj; a bit: hơi"],
+            ["a little stress is actually helpful","một chút căng thẳng thực ra lại có ích","a little + N không đếm được"],
+            ["it keeps me focused","nó giúp tôi tập trung","keep + O + adj"],
+            ["Once the test starts, I normally calm down.","Khi bài thi bắt đầu, tôi thường bình tĩnh lại.","Once + hiện tại đơn: một khi; calm down: bình tĩnh lại"],
+            ["I try not to study anything new.","Tôi cố gắng không học gì mới.","try not to + V"],
+            ["Instead,","Thay vào đó,","Từ nối thay thế"],
+            ["go to bed early","đi ngủ sớm",""],
+            ["A good night’s sleep makes a huge difference.","Một giấc ngủ ngon tạo ra khác biệt rất lớn.","make a difference: tạo ra khác biệt"],
+            ["Partly, yes.","Một phần là vậy.","Trả lời có giới hạn trước khi giải thích"],
+            ["under the same conditions","trong cùng điều kiện như nhau",""],
+            ["how someone performs on one particular day","một người thể hiện thế nào vào một ngày cụ thể","Mệnh đề danh từ với how"],
+            ["they should be combined with other kinds of assessment","chúng nên được kết hợp với các hình thức đánh giá khác","Bị động với should: should be + V3"]
           ]
         }
       ],
@@ -102,6 +121,28 @@
         ["Partly, yes. However, …", "Một phần là vậy. Tuy nhiên, …"],
         ["… makes a huge difference.", "… tạo ra khác biệt rất lớn."],
         ["I think they should be combined with…", "Tôi nghĩ chúng nên được kết hợp với…"]
+      ],
+      bank: [
+        { h: "Trả lời trực tiếp", items: [
+          ["Yes, I usually get quite nervous before big exams, but I try to stay calm.","Có, tôi thường khá hồi hộp trước các kỳ thi lớn, nhưng tôi cố giữ bình tĩnh."],
+          ["Not really. I prefer to relax the night before an exam rather than study late.","Không hẳn. Tôi thích thư giãn vào đêm trước kỳ thi hơn là học khuya."],
+          ["I’d say exams are useful, but they’re not the only way to judge someone’s ability.","Tôi cho rằng thi cử có ích, nhưng không phải là cách duy nhất để đánh giá năng lực một người."]
+        ] },
+        { h: "Đưa lý do", items: [
+          ["The main reason is that I want to do my best after months of preparation.","Lý do chính là tôi muốn làm tốt nhất sau nhiều tháng chuẩn bị."],
+          ["That’s because when I’m tired, I can’t think clearly in the exam room.","Đó là vì khi mệt, tôi không thể suy nghĩ rõ ràng trong phòng thi."],
+          ["I think this is because exams only test what you can remember under pressure.","Tôi nghĩ đó là vì thi cử chỉ kiểm tra những gì bạn nhớ được khi chịu áp lực."]
+        ] },
+        { h: "Ví dụ bản thân", items: [
+          ["For example, before my university entrance exam, I couldn’t sleep at all.","Ví dụ, trước kỳ thi đại học, tôi hoàn toàn không ngủ được."],
+          ["Last time I took a mock test, I finished the reading section with ten minutes to spare.","Lần trước khi làm bài thi thử, tôi làm xong phần đọc mà vẫn dư mười phút."],
+          ["I remember one friend who got top marks in exams but found it hard to work in a team.","Tôi nhớ một người bạn đạt điểm cao nhất trong các kỳ thi nhưng lại khó làm việc nhóm."]
+        ] },
+        { h: "Câu câu giờ tự nhiên", items: [
+          ["Hmm, that’s something I’ve never really thought about, but I guess…","Hmm, đó là điều tôi chưa thực sự nghĩ tới, nhưng tôi đoán là…"],
+          ["Let me see… I suppose the honest answer is…","Để tôi xem… Tôi cho rằng câu trả lời thật lòng là…"],
+          ["Well, it’s hard to say exactly, but generally speaking…","Chà, khó nói chính xác, nhưng nói chung thì…"]
+        ] }
       ]
     }
   ],
