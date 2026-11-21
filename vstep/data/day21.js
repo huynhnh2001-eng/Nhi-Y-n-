@@ -1,0 +1,167 @@
+(window.VSTEP_DAYS = window.VSTEP_DAYS || {})[21] = {
+  day: 21,
+  title: "Ôn tuần 3: chiến thuật thời gian Part 3 & passage 4",
+  topic: "Economy & consumerism",
+  goal: "Tổng hợp chiến thuật tuần 3 trong điều kiện thi thật: quản lý thời gian giữa các bài nghe, xử lý ví dụ minh hoạ và quan điểm nhiều chiều; đọc passage 4 có nhiều “giọng” (người phê phán, nhà sản xuất, nhà kinh tế) và chọn tiêu đề bao quát.",
+  sections: [
+    {
+      type: "listening",
+      part: 3,
+      lesson: [
+        "<b>Khoảng lặng giữa hai bài là “vàng”:</b> không ngồi tiếc câu vừa làm; dùng ngay thời gian đó đọc 5 câu của bài tiếp theo và gạch từ khoá. Ai đọc trước câu hỏi thường hơn người không đọc 1–2 câu mỗi bài.",
+        "<b>Hai câu hỏi sát nhau:</b> nhiều khi đáp án của hai câu liên tiếp chỉ cách nhau một câu nói. Luôn để mắt ở <em>hai</em> câu hỏi cùng lúc (câu đang chờ + câu kế tiếp) để không bị trôi.",
+        "<b>Ví dụ minh hoạ (thí nghiệm, tình huống giả định):</b> câu hỏi thường hỏi <em>mục đích</em> của ví dụ (“What is the purpose of…?”) hoặc <em>kết quả bất ngờ</em> (“sold more at the higher price”). Ghi kết quả, bỏ qua diễn biến.",
+        "<b>Quan điểm nhiều chiều:</b> khi diễn giả nói “I don't think there's a simple answer… On the other hand… Personally, I'd say…”, đáp án gắn với câu sau “Personally / My suggestion is”. Phương án cực đoan (“should be banned”, “never use”) thường sai.",
+        "<b>Paraphrase số và phân số:</b> “a fifth more” = 20% more; “around a third” = a significant minority; “up to six percent” = no more than 6%. Luyện tự chuyển đổi để nhận ra đáp án đã được viết lại.",
+        "<b>Không để trống:</b> VSTEP không trừ điểm câu sai. Câu không chắc hãy loại phương án lặp nguyên văn hoặc cực đoan rồi đoán – xác suất đúng tăng từ 25% lên 33–50%."
+      ],
+      items: [
+        {
+          label: "Talk 1",
+          context: "A lecture in a marketing course",
+          script: [
+            { sp: "N", text: "You will hear part of a lecture about pricing." },
+            { sp: "M", text: "Good morning. In economics, we often assume that customers compare prices rationally and choose the best value. Today I'm going to look at three pricing techniques that work precisely because we're not as rational as we think." },
+            { sp: "M", text: "The first is so common that you've probably stopped noticing it: prices ending in nine. A shirt costs 199,000 dong rather than 200,000. Logically, the difference is tiny – half of one percent. But because we read from left to right, our brains register the first digit and treat the price as 'one hundred and something'. In one experiment, a clothing catalogue raised the price of a dress from thirty-four dollars to thirty-nine – and actually sold more of it at the higher price, simply because thirty-nine looked like a bargain." },
+            { sp: "M", text: "The second technique is known as the decoy effect. Imagine a cinema selling popcorn: a small bag for 30,000 dong and a large one for 70,000. Most people buy the small. Now the cinema adds a medium bag for 65,000. Hardly anyone buys the medium, but that isn't its purpose. Its job is to make the large one look like a great deal, and sales of the large bag rise sharply. The medium is there to be rejected." },
+            { sp: "M", text: "The third technique is anchoring. The first number we see becomes a reference point for everything that follows. That's why some restaurants put one extremely expensive dish at the top of the menu. The owner doesn't really expect to sell it. But after reading a price of two million dong, a dish costing four hundred thousand suddenly seems reasonable." },
+            { sp: "M", text: "Are these techniques dishonest? That's a question my students always ask, and I don't think there's a simple answer. None of them involves lying about the product. On the other hand, they're designed to take advantage of predictable weaknesses in how we think. Personally, I'd say the best protection is simply awareness. Once you know that the medium popcorn exists to sell you the large one, it loses much of its power." },
+            { sp: "M", text: "For next week, I'd like you to collect three examples of these techniques from shops or websites you use and bring them to class." }
+          ],
+          questions: [
+            { q: "What is the lecture mainly about?",
+              opts: ["How shops calculate their profits", "Why customers always choose the cheapest option", "Pricing methods that exploit irrational decision-making", "The history of prices in cinemas and restaurants"],
+              a: 2,
+              why: "“three pricing techniques that work precisely because we're not as rational as we think” → cách định giá khai thác việc ra quyết định thiếu lý trí. B ngược với ý chính (người mua không luôn chọn rẻ nhất)." },
+            { q: "According to the lecturer, why are prices ending in nine effective?",
+              opts: ["Customers pay most attention to the first digit.", "The discount is larger than it appears.", "Customers prefer numbers that are easy to remember.", "Shops are required to use them by law."],
+              a: 0,
+              why: "“because we read from left to right, our brains register the first digit and treat the price as ‘one hundred and something’”. B sai: chênh lệch thực tế “tiny – half of one percent”." },
+            { q: "What happened in the catalogue experiment?",
+              opts: ["Sales of the dress fell when its price rose.", "The catalogue removed the dress after complaints.", "Customers preferred the dress at thirty-four dollars.", "More dresses were sold at the higher price."],
+              a: 3,
+              why: "“raised the price… from thirty-four dollars to thirty-nine – and actually sold more of it at the higher price”. Kết quả bất ngờ là trọng tâm câu hỏi; A là kết quả “hợp lý” mà người nghe dễ đoán sai." },
+            { q: "What is the purpose of the medium bag of popcorn?",
+              opts: ["To give customers more choice", "To make the large bag seem like good value", "To replace the small bag", "To reduce waste at the cinema"],
+              a: 1,
+              why: "“Hardly anyone buys the medium, but that isn't its purpose. Its job is to make the large one look like a great deal” → “a great deal” = good value. Câu “The medium is there to be rejected” xác nhận lại." },
+            { q: "What is the lecturer's view of these pricing techniques?",
+              opts: ["They should be banned because they are dishonest.", "They involve giving false information about products.", "They work only on inexperienced customers.", "They are hard to judge, but understanding them reduces their effect."],
+              a: 3,
+              why: "“I don't think there's a simple answer… Personally, I'd say the best protection is simply awareness… it loses much of its power.” B bị bác: “None of them involves lying about the product”; A là phương án cực đoan." }
+          ]
+        },
+        {
+          label: "Talk 2",
+          context: "A radio programme about personal finance",
+          script: [
+            { sp: "N", text: "You will hear part of a radio programme about personal finance." },
+            { sp: "F", text: "Hello, and welcome back to Money Matters. Today I want to talk about something that has grown incredibly fast: 'buy now, pay later' services. If you've shopped online recently, you've almost certainly seen the button. Instead of paying 1.2 million dong for a pair of trainers today, you pay four instalments of 300,000 over six weeks, with no interest." },
+            { sp: "F", text: "Sounds like a good deal, doesn't it? And for many people it is. Used carefully, it's essentially a free short-term loan. The companies make their money mainly from the shops, which pay a fee of up to six percent on every sale. Shops are happy to pay because customers using these services tend to spend more – about a fifth more per order, according to some retailers." },
+            { sp: "F", text: "That figure is exactly what worries consumer groups. When a purchase is split into small amounts, it simply doesn't feel like spending. A survey of young adults last year found that around a third had used these services for everyday items such as groceries, not just for occasional luxuries. And because each service is separate, it's easy to have four or five running at once without ever adding up the total. Miss a payment, and the late fees begin – fees that, for small purchases, can be surprisingly high compared with the original price." },
+            { sp: "F", text: "The providers argue that they're more responsible than credit card companies, and in one sense that's fair: most of them block your account after a missed payment, so debts can't keep growing endlessly. But until recently, many of them weren't covered by the same rules as banks, which meant they didn't have to check whether customers could actually afford the repayments." },
+            { sp: "F", text: "So what should you do? I'm not going to tell you never to use them. My suggestion is a simple rule: only use 'pay later' for something you could afford to pay for today. If you couldn't buy it now, splitting the price into four doesn't change that – it just delays the moment you realise it." },
+            { sp: "F", text: "After the break, we'll be answering your questions about saving for your first home." }
+          ],
+          questions: [
+            { q: "How do “buy now, pay later” companies mainly make money?",
+              opts: ["By charging customers high interest", "By selling customers' personal data", "By charging shops a fee on each sale", "By collecting monthly membership fees"],
+              a: 2,
+              why: "“The companies make their money mainly from the shops, which pay a fee of up to six percent on every sale.” A sai vì khách trả góp “with no interest”." },
+            { q: "Why are shops willing to work with these services?",
+              opts: ["Customers tend to spend more per order.", "The services reduce the number of returns.", "The fee is lower than for credit cards.", "Shops receive the full payment six weeks later."],
+              a: 0,
+              why: "“Shops are happy to pay because customers using these services tend to spend more – about a fifth more per order” (a fifth = 20%). Các phương án khác không được nhắc." },
+            { q: "What did the survey of young adults find?",
+              opts: ["Most of them had never used these services.", "A significant minority used them for basic purchases.", "Half of them had missed at least one payment.", "They used the services only for luxury goods."],
+              a: 1,
+              why: "“around a third had used these services for everyday items such as groceries, not just for occasional luxuries” → “around a third” = a significant minority; “everyday items such as groceries” = basic purchases. D ngược ý (“not just for… luxuries”)." },
+            { q: "What does the speaker accept is fair in the providers' argument?",
+              opts: ["They check every customer's income carefully.", "They charge lower late fees than banks.", "They are covered by the same rules as banks.", "They limit how large a customer's debt can become."],
+              a: 3,
+              why: "“in one sense that's fair: most of them block your account after a missed payment, so debts can't keep growing endlessly”. A và C ngược với câu sau: “weren't covered by the same rules as banks… didn't have to check whether customers could actually afford…”." },
+            { q: "What is the speaker's main advice to listeners?",
+              opts: ["Only use these services for things you could pay for immediately.", "Never use “buy now, pay later” services.", "Use several services at once to spread the cost.", "Choose a credit card instead of these services."],
+              a: 0,
+              why: "“My suggestion is a simple rule: only use ‘pay later’ for something you could afford to pay for today.” B bị phủ định trực tiếp: “I'm not going to tell you never to use them.”" }
+          ]
+        }
+      ]
+    },
+    {
+      type: "reading",
+      passage: 4,
+      lesson: [
+        "<b>Nhận diện “giọng” từng đoạn:</b> bài kinh tế – xã hội thường lần lượt đưa ý kiến của nhiều bên: critics → manufacturers → campaigners → economists. Ghi nhanh bên lề “ai nói” cho mỗi đoạn; câu hỏi “According to manufacturers…” chỉ được lấy đáp án từ đoạn của họ.",
+        "<b>Câu hỏi tiêu đề:</b> tiêu đề đúng phải bao quát <em>toàn bài</em>. Loại tiêu đề chỉ đúng với một đoạn (quá hẹp – thường là đoạn 1) và tiêu đề nói về điều bài không bàn (quá rộng). Làm câu này cuối cùng.",
+        "<b>“this/these” quy chiếu cả một ý:</b> ở passage 4, “If this is true…” thường chỉ cả một lập luận ở câu trước, không phải một danh từ. Chọn phương án tóm tắt đúng lập luận đó.",
+        "<b>Suy luận từ câu kết hoài nghi:</b> “Whether… is a different matter” = tác giả chưa chắc chắn/hoài nghi về điều đó. Đáp án suy luận thường diễn đạt lại sự hoài nghi này.",
+        "<b>Từ vựng theo cấu tạo từ:</b> obsolescence (obsolete = lỗi thời + -ence), penalise (penalty = hình phạt). Kết hợp cấu tạo từ với ngữ cảnh để đoán nhanh.",
+        "<b>Chiến thuật 60 phút toàn bài đọc:</b> nếu chỉ còn ~10 phút cho passage 4, làm trước câu từ vựng và quy chiếu (mỗi câu ~30 giây), sau đó câu chi tiết có từ khoá dễ dò (tên riêng, năm, số), cuối cùng mới đến suy luận/tiêu đề."
+      ],
+      title: "Built Not to Last?",
+      text: [
+        "In 1924, representatives of the world's leading light bulb manufacturers met in Geneva and quietly agreed to limit the life of their products to one thousand hours, roughly half of what was then technically possible. Companies that sold longer-lasting bulbs were fined. The arrangement, which only came to light decades later, is often cited as the first documented case of planned obsolescence: the deliberate design of products so that they will need to be replaced sooner than necessary.",
+        "Today, accusations of planned obsolescence are most often aimed at electronics. Critics point to smartphones whose batteries are glued in place, laptops whose components are permanently fixed to the main board, and printers that refuse to work with cheaper ink cartridges from other manufacturers. In each case, a fault that could in principle be fixed for a small sum instead pushes the owner towards buying a new device. Some printer makers even sell the printer itself at a loss, expecting to recover the money through years of overpriced ink. The environmental consequences are considerable. Electronic waste is now one of the fastest-growing waste streams in the world, and only a small proportion of it is properly recycled.",
+        "Manufacturers, however, reject the idea that they are secretly sabotaging their own products. They argue that sealed designs make devices thinner, lighter and more resistant to water and dust – features that consumers clearly want. They also point out that the main reason people replace their phones is not that the old one has broken, but that a newer model has appeared with a better camera or a larger screen. If this is true, the problem lies less with engineering than with consumer culture itself, and with marketing that encourages people to see a perfectly functional device as out of date.",
+        "Whatever the cause, a growing movement is pushing back. Campaigners for the right to repair argue that owners should be able to fix their own devices, or take them to independent repair shops, without being penalised by the loss of their warranty. Their efforts are starting to change the law. In several regions, manufacturers of certain household appliances, such as washing machines and refrigerators, are now required to make spare parts available for up to ten years and to supply repair manuals to professional repairers. Similar rules for smartphones, including batteries that users can replace themselves, are gradually being introduced. Several manufacturers have responded by launching their own self-repair programmes, although critics note that the parts are often expensive and the instructions far from simple.",
+        "Economists are divided on what these changes will mean. Some predict that longer-lasting products will lead to higher prices and fewer sales, harming manufacturers and the workers they employ. Others suggest that the money consumers save by repairing rather than replacing will simply be spent elsewhere, and that a thriving repair sector could create local jobs that cannot easily be moved abroad. What seems clear is that the assumption on which much of modern consumer culture has been built – that the newest version is always the best – is beginning to be questioned. Whether shoppers will change their behaviour as quickly as the law does is a different matter."
+      ],
+      questions: [
+        { q: "Why does the author mention the meeting in Geneva in 1924?",
+          opts: ["To show that light bulbs used to last longer than today", "To give an early example of products being designed to fail", "To explain how international trade agreements work", "To praise companies that produced long-lasting bulbs"],
+          a: 1,
+          why: "Đoạn 1 kết thúc: “often cited as the first documented case of planned obsolescence: the deliberate design of products so that they will need to be replaced sooner than necessary” → ví dụ sớm nhất về sản phẩm bị thiết kế để nhanh hỏng." },
+        { q: "The phrase “came to light” in paragraph 1 is closest in meaning to",
+          opts: ["became publicly known", "was officially cancelled", "grew more popular", "was greatly improved"],
+          a: 0,
+          why: "“The arrangement, which only came to light decades later” – một thoả thuận bí mật (“quietly agreed”) chỉ “lộ ra” nhiều thập kỷ sau → became publicly known. D là bẫy liên tưởng tới “light bulb”." },
+        { q: "Which of the following is NOT given in paragraph 2 as an example of a design that critics complain about?",
+          opts: ["Batteries that are glued into phones", "Laptop parts that are permanently attached", "Printers that reject other companies' ink", "Software updates that slow down old phones"],
+          a: 3,
+          why: "Đoạn 2 nêu: “batteries are glued in place”, “components are permanently fixed to the main board”, “printers that refuse to work with cheaper ink cartridges from other manufacturers”. Cập nhật phần mềm không được nhắc → D." },
+        { q: "According to paragraph 2, what is true about electronic waste?",
+          opts: ["Most of it is now properly recycled.", "It is increasing faster than most other types of waste.", "It consists mainly of light bulbs.", "Its amount has begun to fall."],
+          a: 1,
+          why: "“Electronic waste is now one of the fastest-growing waste streams in the world” → B. A sai vì “only a small proportion of it is properly recycled” – bẫy tráo mức độ." },
+        { q: "According to manufacturers, why do most people replace their phones?",
+          opts: ["Their batteries cannot be removed.", "Repairs are too expensive.", "They want the improved features of newer models.", "Their old phones are damaged by water and dust."],
+          a: 2,
+          why: "Đoạn 3 (quan điểm nhà sản xuất): “the main reason people replace their phones is not that the old one has broken, but that a newer model has appeared with a better camera or a larger screen”. A là quan điểm của bên phê phán (đoạn 2)." },
+        { q: "The word “this” in paragraph 3 (“If this is true”) refers to",
+          opts: ["the claim that people usually replace phones that still work", "the fact that sealed devices are thinner and lighter", "the idea that manufacturers sabotage their products", "the belief that newer phones have better cameras"],
+          a: 0,
+          why: "“this” quy chiếu cả lập luận ở câu trước: người ta thay điện thoại không phải vì hỏng mà vì có mẫu mới → nên “the problem lies… with consumer culture”. D chỉ là một chi tiết của lập luận đó, chưa đủ." },
+        { q: "Which statement about the new laws described in paragraph 4 is true?",
+          opts: ["All electronic devices must now be repairable by their owners.", "Independent repair shops must be approved by manufacturers.", "Some appliance makers must provide spare parts for an extended period.", "The rules do not apply to smartphones."],
+          a: 2,
+          why: "“manufacturers of certain household appliances… are now required to make spare parts available for up to ten years”. A quá rộng (“All”, chỉ “certain” thiết bị); D sai vì quy định tương tự cho điện thoại “are gradually being introduced”." },
+        { q: "The word “penalised” in paragraph 4 is closest in meaning to",
+          opts: ["rewarded", "advised", "delayed", "punished"],
+          a: 3,
+          why: "“penalise” cùng gốc với “penalty” (hình phạt); ngữ cảnh “by the loss of their warranty” – mất bảo hành là một hình thức bị phạt → punished." },
+        { q: "What can be inferred from the last sentence of the passage?",
+          opts: ["Shoppers have already stopped buying new models.", "Consumer habits may change more slowly than the law.", "The new laws will soon be cancelled.", "Economists agree that repair will create jobs."],
+          a: 1,
+          why: "“Whether shoppers will change their behaviour as quickly as the law does is a different matter” → tác giả hoài nghi thói quen người tiêu dùng sẽ thay đổi kịp luật. D sai: “Economists are divided”." },
+        { q: "Which of the following would be the best title for the passage?",
+          opts: ["Repair, Replace or Rethink? The Debate over Product Lifespans", "The Secret Light Bulb Agreement of 1924", "How to Recycle Your Old Smartphone", "Why Economists Support Higher Prices"],
+          a: 0,
+          why: "Bài bàn về tuổi thọ sản phẩm từ nhiều góc độ: lịch sử (đoạn 1), phê phán (2), phản biện của nhà sản xuất (3), phong trào quyền sửa chữa (4), tác động kinh tế (5). B quá hẹp (chỉ đoạn 1); C, D không phải nội dung chính." }
+      ]
+    }
+  ],
+  vocab: [
+    ["bargain", "món hời, giá hời"],
+    ["decoy", "mồi nhử"],
+    ["take advantage of", "lợi dụng, tận dụng"],
+    ["instalment", "khoản trả góp"],
+    ["retailer", "nhà bán lẻ"],
+    ["planned obsolescence", "lỗi thời có kế hoạch (cố tình làm sản phẩm nhanh hỏng)"],
+    ["sabotage", "phá hoại ngầm"],
+    ["warranty", "chế độ bảo hành"],
+    ["spare parts", "phụ tùng thay thế"],
+    ["consumer culture", "văn hoá tiêu dùng"]
+  ],
+  tip: "Tuần 3 kết thúc: hãy làm lại một bài nghe Part 3 và một passage 4 bất kỳ trong tuần với đồng hồ bấm giờ (nghe 1 lần, đọc tối đa 20 phút). Ghi lại loại câu hay sai nhất (suy luận, số liệu, quy chiếu…) để tập trung ôn trong tuần 4."
+};
