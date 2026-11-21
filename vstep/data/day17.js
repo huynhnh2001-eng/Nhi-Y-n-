@@ -19,6 +19,7 @@
         {
           label: "Talk 1",
           context: "A lecture for first-year university students",
+          tip: "Bài theo mô hình “thói quen phổ biến → bằng chứng ngược lại”. Với ví dụ thí nghiệm hai nhóm, chỉ ghi kết quả “lúc học” và “sau một tháng” của từng nhóm. Câu trích dẫn: nghe câu ngay trước nó; câu giới hạn đến sau “I don't want to oversell…”.",
           script: [
             { sp: "N", text: "You will hear part of a lecture about effective study techniques." },
             { sp: "F", text: "Good afternoon. In today's session I want to talk about something that affects every one of you: how to study so that what you learn actually stays in your memory. I'm going to focus on two techniques that cognitive psychologists have tested extensively – spacing and retrieval practice." },
@@ -54,6 +55,7 @@
         {
           label: "Talk 2",
           context: "A presentation at a teachers' conference",
+          tip: "Ghi O (ý người khác: “The theory says…”) và S (ý diễn giả: “The problem is…”). Câu “Why mention…” về sở thích cá nhân: nghe câu bắt đầu bằng “But” ngay sau đó. Câu về dán nhãn trẻ: đừng nhầm với mối lo khác về thời gian của giáo viên.",
           script: [
             { sp: "N", text: "You will hear part of a presentation given at a teachers' conference." },
             { sp: "M", text: "Thank you. I'd like to talk about an idea that most of us in this room have probably believed at some point – the idea of learning styles. The theory says that each person learns best through a particular sense: visual learners need pictures, auditory learners need to hear information, and so on. Teachers are advised to identify each student's style and match their lessons to it." },
@@ -106,6 +108,29 @@
         "That second point turns out to be crucial. Psychologists distinguish between ordinary practice and what they term deliberate practice. Ordinary practice consists largely of repeating what one can already do: a guitarist playing familiar songs, or a tennis player rallying with a friend. Deliberate practice, by contrast, targets specific weaknesses, takes place just beyond the learner's current ability, and is accompanied by immediate feedback, often from a coach. It is mentally exhausting, which is why even elite performers rarely sustain it for more than four hours a day. The distinction also explains a common puzzle: many people who have driven a car for decades are no better drivers than they were after their first year, because they stopped trying to improve once driving became automatic.",
         "None of this means that innate differences are irrelevant. Later studies, pooling data from many fields, have found that practice accounts for a substantial share of the variation in performance, but by no means all of it. Its influence appears strongest in activities with stable rules, such as music or chess, and weaker in unpredictable domains, such as business or responding to emergencies in aviation. Factors such as the age at which training begins, working memory capacity and even personality also seem to contribute. The honest conclusion is that practice is necessary for expertise, but not always sufficient.",
         "For ordinary learners, the implications are nonetheless encouraging. If skill depended entirely on talent, there would be little point in persisting with something that did not come easily. The research suggests instead that how we practise matters as much as how long. A language learner who spends twenty minutes a day on carefully chosen exercises, checking her mistakes and returning to the sounds she finds hardest, is likely to progress faster than one who passively watches films for two hours, even though the second learner may feel more productive. The difference lies not in the hours on the clock but in the attention paid to each of them."
+      ],
+      gloss: [
+        ["distributed at birth to a fortunate few", "được phân phát từ lúc sinh ra cho một số ít người may mắn", "Phân từ bị động rút gọn; a fortunate few: số ít người may mắn"],
+        ["have assembled a rather different picture", "đã ghép nên một bức tranh khá khác biệt", "assemble a picture: tổng hợp thành bức tranh"],
+        ["play a far larger role than most people assume", "đóng vai trò lớn hơn nhiều so với hầu hết mọi người nghĩ", "play a role; far + so sánh hơn"],
+        ["grew out of studies of musicians", "bắt nguồn từ các nghiên cứu về nhạc công", "grow out of: phát triển từ, bắt nguồn từ"],
+        ["The students whom teachers rated as the most accomplished", "Những sinh viên mà giáo viên đánh giá là xuất sắc nhất", "Mệnh đề quan hệ tân ngữ whom; rate sb as: đánh giá ai là"],
+        ["was later popularised as the claim that", "sau đó được phổ biến thành khẳng định rằng", "Bị động quá khứ; the claim that + mệnh đề"],
+        ["turns out to be crucial", "hóa ra là cực kỳ quan trọng", "turn out to be: hóa ra là"],
+        ["what they term deliberate practice", "cái mà họ gọi là luyện tập có chủ đích", "what-clause; term (v) = gọi là"],
+        ["consists largely of repeating what one can already do", "chủ yếu gồm việc lặp lại những gì người ta đã làm được", "consist of + V-ing"],
+        ["by contrast, targets specific weaknesses", "ngược lại, nhắm vào những điểm yếu cụ thể", "by contrast: ngược lại (từ nối đối lập)"],
+        ["is accompanied by immediate feedback", "đi kèm phản hồi ngay lập tức", "Bị động: be accompanied by"],
+        ["which is why even elite performers rarely sustain it", "đó là lý do ngay cả người xuất sắc nhất cũng hiếm khi duy trì được nó", "…, which is why: mệnh đề quan hệ chỉ hệ quả"],
+        ["are no better drivers than they were", "lái xe không giỏi hơn chút nào so với trước", "no better … than: không hơn gì"],
+        ["None of this means that innate differences are irrelevant", "Điều này hoàn toàn không có nghĩa là khác biệt bẩm sinh không quan trọng", "None of this means that…: nhượng bộ, giới hạn ý"],
+        ["accounts for a substantial share of the variation", "chiếm một phần đáng kể trong sự khác biệt", "account for: chiếm, giải thích cho"],
+        ["but by no means all of it", "nhưng hoàn toàn không phải tất cả", "by no means: hoàn toàn không"],
+        ["is necessary for expertise, but not always sufficient", "là cần thiết để thành chuyên gia nhưng không phải lúc nào cũng đủ", "necessary but not sufficient: cần nhưng chưa đủ"],
+        ["the implications are nonetheless encouraging", "tuy vậy, những hàm ý này vẫn đáng khích lệ", "nonetheless: tuy nhiên, dù vậy"],
+        ["If skill depended entirely on talent, there would be little point in persisting", "Nếu kỹ năng hoàn toàn phụ thuộc vào tài năng thì chẳng có mấy ý nghĩa gì khi kiên trì", "Câu điều kiện loại 2; there is little point in + V-ing"],
+        ["matters as much as how long", "quan trọng ngang với việc (luyện) bao lâu", "So sánh bằng: as much as"],
+        ["The difference lies not in the hours on the clock but in", "Sự khác biệt không nằm ở số giờ trên đồng hồ mà ở", "not in A but in B: không phải A mà là B"]
       ],
       questions: [
         { q: "What is the main purpose of the passage?",

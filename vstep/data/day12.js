@@ -19,6 +19,7 @@
         {
           label: "Conversation 1",
           context: "Two university students preparing a presentation",
+          tip: "Câu “first reaction” và câu hỏi ý nghĩa một câu nói: nghĩ xem câu đó đang đáp lại điều gì người kia vừa nói. Câu về kết quả nghiên cứu: tiêu đề bài báo là thông tin bị phóng đại – chờ nghe what does it actually say. Câu cuối: phân biệt việc của từng người.",
           script: [
             { sp: "M", text: "Have you seen this article that’s been going round? It says scientists have found that people who drink coffee every day live ten years longer." },
             { sp: "F", text: "Ten years? That sounds a bit too good to be true. Where’s it from?" },
@@ -56,6 +57,7 @@
         {
           label: "Conversation 2",
           context: "An editor and a young reporter at a local news website",
+          tip: "Câu “why not publish”: nghe lý do sau I know, but… và loại phương án mà người nói đã phủ nhận. Câu “What does she mean”: dựa vào câu đứng ngay trước. Câu “do next”: việc đã làm trong quá khứ là bẫy, chỉ chọn hành động sắp làm (I’ll… now).",
           script: [
             { sp: "M", text: "Lan, I’ve just read your piece on the factory closure. It’s well written, but we can’t publish it yet." },
             { sp: "F", text: "Why not? The Daily Post will have the story online within the hour. If we wait, we’ll lose all the traffic." },
@@ -111,6 +113,30 @@
         "Algorithms add a further layer of complexity. Social media platforms show users the content they are most likely to engage with, which often means content that confirms what they already believe. Over time, some researchers warn, this can trap people in “filter bubbles”, where they rarely encounter opposing views. The evidence here, however, is mixed. Several studies have found that heavy social media users actually come across a wider range of sources than people who rely on a single newspaper, even if they choose to ignore much of it.",
         "Perhaps the most worrying consequence has been the decline of local journalism. Local newspapers, which once depended on classified advertisements and loyal subscribers, have lost much of their income to online platforms. In many countries, hundreds of them have closed in the past two decades. This matters because local reporters are often the only people attending council meetings or investigating local businesses. Without anyone watching closely, mistakes and even corruption are more likely to go unnoticed. Where they disappear, studies suggest, public spending tends to rise and fewer candidates stand in local elections.",
         "None of this means that the situation is hopeless. Some publishers have successfully introduced subscriptions, persuading readers that reliable reporting is worth paying for. Non-profit newsrooms, funded by donations, have emerged to fill some of the gaps, and in a few towns readers have even formed cooperatives to buy and run their local paper. Meanwhile, schools in several countries now teach media literacy, helping young people to question sources and recognise manipulation. Ultimately, the quality of the news we receive may depend less on technology than on what we, as readers, are willing to value."
+      ],
+      gloss: [
+        ["not by an editor but by an algorithm","không phải bởi biên tập viên mà bởi thuật toán","not by A but by B: nhấn mạnh tác nhân (bị động)"],
+        ["designed to keep us scrolling","được thiết kế để khiến ta lướt mãi","Rút gọn bị động: (which is) designed to + V; keep sb V-ing"],
+        ["not only how we consume information but also","không chỉ cách ta tiếp nhận thông tin mà còn","not only … but also … với mệnh đề danh từ (how …)"],
+        ["At the heart of the change is","Cốt lõi của sự thay đổi là","Đảo ngữ: cụm giới từ + be + chủ ngữ"],
+        ["what economists call","cái mà các nhà kinh tế gọi là","what + S + call: cái mà ai gọi là"],
+        ["captures attention quickly","thu hút sự chú ý nhanh chóng","capture/grab attention"],
+        ["tend to perform best","có xu hướng hiệu quả nhất","tend to + V"],
+        ["so-called clickbait","cái gọi là “mồi nhử click”","so-called + N: cái gọi là"],
+        ["rewarded speed over accuracy","đề cao tốc độ hơn sự chính xác","reward/prioritise A over B"],
+        ["add a further layer of complexity","làm vấn đề phức tạp thêm một tầng","a layer of complexity"],
+        ["are most likely to engage with","có nhiều khả năng tương tác nhất","be likely to + V: có khả năng sẽ…"],
+        ["The evidence here, however, is mixed.","Tuy nhiên, bằng chứng về điều này còn trái chiều.","however chen giữa câu; mixed evidence: bằng chứng trái chiều"],
+        ["come across a wider range of sources","bắt gặp nhiều loại nguồn tin hơn","come across: tình cờ gặp; a wide range of"],
+        ["Perhaps the most worrying consequence","Có lẽ hệ quả đáng lo ngại nhất","So sánh nhất: the most + adj"],
+        ["which once depended on","vốn từng phụ thuộc vào","Mệnh đề quan hệ không xác định; depend on"],
+        ["have lost much of their income to","đã mất phần lớn thu nhập vào tay","lose sth to sb/sth"],
+        ["are more likely to go unnoticed","dễ bị bỏ qua, không ai phát hiện hơn","go + adj (unnoticed): trở nên…"],
+        ["stand in local elections","ra ứng cử trong bầu cử địa phương","stand in an election (Anh-Anh): ứng cử"],
+        ["None of this means that","Tất cả những điều này không có nghĩa là","Câu chuyển sang hướng tích cực"],
+        ["is worth paying for","đáng để trả tiền","be worth + V-ing (+ giới từ)"],
+        ["to fill some of the gaps","để lấp một phần khoảng trống","fill the gap: lấp chỗ trống"],
+        ["depend less on technology than on","phụ thuộc vào công nghệ ít hơn là vào","depend less on A than on B"]
       ],
       questions: [
         { q: "What is the main purpose of the passage?",
