@@ -8,7 +8,7 @@
   --bg:#f3f5f8; --surface:#ffffff; --sunk:#eef1f6; --ink:#152033; --muted:#5a6577; --line:#dde2ea;
   --accent:#1f4fd1; --accent-soft:#e6ecfc;
   --L:#0e7c86; --R:#7a4fc9; --W:#c2571a; --S:#b0306a;
-  --ok:#1f8a4c; --ok-soft:#e3f4ea; --bad:#c0392b; --bad-soft:#fbe7e4;
+  --ok:#1f8a4c; --ok-soft:#e3f4ea; --bad:#c0392b; --bad-soft:#fbe7e4; --hl:#fff1b8; --hl-strong:#ffe27a;
   --body:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
   --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
@@ -17,12 +17,12 @@
   --bg:#0f141c; --surface:#171e29; --sunk:#121821; --ink:#e7ecf4; --muted:#9aa5b6; --line:#2a3342;
   --accent:#7c9dff; --accent-soft:#1d2a48;
   --L:#4cc3cc; --R:#b495f0; --W:#f0915a; --S:#ec7aa9;
-  --ok:#4fcf86; --ok-soft:#15301f; --bad:#ff8a7a; --bad-soft:#3a1d1a; color-scheme:dark}}
+  --ok:#4fcf86; --ok-soft:#15301f; --bad:#ff8a7a; --bad-soft:#3a1d1a; --hl:#4a3f12; --hl-strong:#6b5a17; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0f141c; --surface:#171e29; --sunk:#121821; --ink:#e7ecf4; --muted:#9aa5b6; --line:#2a3342;
   --accent:#7c9dff; --accent-soft:#1d2a48;
   --L:#4cc3cc; --R:#b495f0; --W:#f0915a; --S:#ec7aa9;
-  --ok:#4fcf86; --ok-soft:#15301f; --bad:#ff8a7a; --bad-soft:#3a1d1a; color-scheme:dark}
+  --ok:#4fcf86; --ok-soft:#15301f; --bad:#ff8a7a; --bad-soft:#3a1d1a; --hl:#4a3f12; --hl-strong:#6b5a17; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 80px}
@@ -92,6 +92,42 @@ details.fmt>summary{cursor:pointer;padding:10px 14px;font-weight:600;font-size:1
 .lessonbox h4{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 .lessonbox ol{margin:0;padding-left:20px;display:grid;gap:5px;font-size:14.5px}
 
+/* two-column: exercise + tips beside it */
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;align-items:start}
+.cols>.main{display:grid;gap:14px;min-width:0}
+.cols>.aside{display:grid;gap:12px;min-width:0}
+@media (min-width:861px){.cols>.aside{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto;padding-right:2px}}
+@media (max-width:860px){.cols{grid-template-columns:1fr}.cols>.aside{order:-1}}
+.tipbox{border-left:3px solid var(--c);background:var(--sunk)}
+.tipbox h4{color:var(--c)}
+.tipbox ol{font-size:14px}
+details.tipwrap>summary{cursor:pointer;font-weight:700;font-size:13px;color:var(--c);padding:4px 0}
+.rq{display:grid;gap:12px}
+.itip{font-size:14px;background:var(--accent-soft);border-radius:8px;padding:8px 12px}
+.itip b{color:var(--c)}
+/* gloss */
+.gl{background:var(--hl);border-bottom:1.5px dotted var(--c);border-radius:3px;padding:0 2px;cursor:help}
+.gl:hover,.gl:focus{background:var(--hl-strong);outline:none}
+.nohl .gl{background:none;border-bottom:none;padding:0;cursor:text}
+.nohl .gl.demo{background:var(--hl)}
+#pop{position:fixed;z-index:50;background:var(--ink);color:var(--bg);border-radius:8px;padding:10px 12px;font-size:14px;line-height:1.45;display:grid;gap:3px;box-shadow:0 6px 24px rgba(0,0,0,.25);font-family:var(--body)}
+#pop b{font-size:13px;opacity:.75;font-weight:600}
+#pop span{font-weight:600}
+#pop i{font-style:normal;font-size:13px;opacity:.85;border-top:1px solid currentColor;padding-top:4px;margin-top:2px}
+.ph-h{display:grid;gap:6px}
+.ph-h .btn,.hlbtn{justify-self:start}
+.bank-h .btn{white-space:nowrap}
+/* sentence bank */
+.bank{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:10px}
+.bank-h{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.bank h4{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--c)}
+.bgrp h5{margin:0 0 4px;font-size:13px}
+.bgrp ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.bgrp li{display:grid;grid-template-columns:26px 1fr;gap:8px;font-size:14px;align-items:start}
+.bgrp .en{display:block;font-weight:500}
+.bgrp .vi{display:block;color:var(--muted);font-size:13px}
+.hidevi .vi{filter:blur(5px);transition:filter .2s}
+.hidevi li:hover .vi{filter:none}
 .plan{display:grid;gap:4px;font-size:14px}
 .prow{display:grid;grid-template-columns:72px 10px 1fr;gap:8px;align-items:center}
 .pt{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -274,28 +310,49 @@ function renderCal(){
 }
 
 /* ---------- questions ---------- */
-function quiz(day,key,qs,color){
-  const box=h(`<div class="qs"></div>`);const saved=(ST.ans[day]||{})[key]||{};
-  qs.forEach((Q,i)=>{const name=`q-${day}-${key}-${i}`;
-    const q=h(`<div class="q"><div class="qt"><span>${i+1}.</span>${Q.q}</div><div class="opts"></div><div class="why" hidden></div></div>`);
-    Q.opts.forEach((o,j)=>{const lab=h(`<label class="opt"><input type="radio" name="${name}" id="${name}-${j}" value="${j}"><span><b>${"ABCD"[j]}.</b> ${o}</span></label>`);
-      if(saved[i]===j)lab.querySelector("input").checked=true;
-      lab.querySelector("input").onchange=()=>{ST.ans[day]=ST.ans[day]||{};ST.ans[day][key]=ST.ans[day][key]||{};ST.ans[day][key][i]=j;save()};
-      q.querySelector(".opts").appendChild(lab)});
-    q.querySelector(".why").innerHTML=`<b>Đáp án ${"ABCD"[Q.a]}.</b> ${Q.why||""}`;
-    box.appendChild(q)});
+function qBlock(day,key,i,Q){const name=`q-${day}-${key}-${i}`;const saved=((ST.ans[day]||{})[key]||{})[i];
+  const q=h(`<div class="q"><div class="qt"><span>${i+1}.</span>${Q.q}</div><div class="opts"></div><div class="why" hidden></div></div>`);
+  Q.opts.forEach((o,j)=>{const lab=h(`<label class="opt"><input type="radio" name="${name}" id="${name}-${j}" value="${j}"><span><b>${"ABCD"[j]}.</b> ${o}</span></label>`);
+    if(saved===j)lab.querySelector("input").checked=true;
+    lab.querySelector("input").onchange=()=>{ST.ans[day]=ST.ans[day]||{};ST.ans[day][key]=ST.ans[day][key]||{};ST.ans[day][key][i]=j;save()};
+    q.querySelector(".opts").appendChild(lab)});
+  q.querySelector(".why").innerHTML=`<b>Đáp án ${"ABCD"[Q.a]}.</b> ${Q.why||""}`;return q;}
+function grader(day,key,qEls,qs,onSubmit){
   const res=h(`<div class="result"><button type="button" class="btn primary">Nộp bài và xem đáp án</button><button type="button" class="btn ghost" hidden>Làm lại</button><span class="score"></span></div>`);
   const [sub,redo]=res.querySelectorAll("button");
-  sub.onclick=()=>{let c=0;box.querySelectorAll(".q").forEach((q,i)=>{const Q=qs[i];
+  sub.onclick=()=>{let c=0;qEls.forEach((q,i)=>{const Q=qs[i];
       q.querySelectorAll(".opt").forEach((l,j)=>{l.classList.toggle("right",j===Q.a);const inp=l.querySelector("input");l.classList.toggle("wrong",inp.checked&&j!==Q.a);inp.disabled=true});
       const sel=q.querySelector("input:checked");if(sel&&+sel.value===Q.a)c++;q.querySelector(".why").hidden=false});
     res.querySelector(".score").textContent=`Đúng ${c}/${qs.length}`;
     ST.scores[day]=ST.scores[day]||{};ST.scores[day][key]={c,t:qs.length};save();renderCal();
-    sub.hidden=true;redo.hidden=false;};
-  redo.onclick=()=>{box.querySelectorAll(".opt").forEach(l=>{l.classList.remove("right","wrong");const i=l.querySelector("input");i.disabled=false;i.checked=false});
-    box.querySelectorAll(".why").forEach(w=>w.hidden=true);if(ST.ans[day])delete ST.ans[day][key];save();res.querySelector(".score").textContent="";sub.hidden=false;redo.hidden=true;};
-  const wrap=document.createElement("div");wrap.style.display="grid";wrap.style.gap="14px";wrap.append(box,res);return wrap;
-}
+    sub.hidden=true;redo.hidden=false;onSubmit&&onSubmit();};
+  redo.onclick=()=>{qEls.forEach(q=>{q.querySelectorAll(".opt").forEach(l=>{l.classList.remove("right","wrong");const i=l.querySelector("input");i.disabled=false;i.checked=false});q.querySelector(".why").hidden=true});
+    if(ST.ans[day])delete ST.ans[day][key];save();res.querySelector(".score").textContent="";sub.hidden=false;redo.hidden=true;};
+  return res;}
+function quiz(day,key,qs){const wrap=h(`<div style="display:grid;gap:14px"><div class="qs"></div></div>`);
+  const els=qs.map((Q,i)=>qBlock(day,key,i,Q));els.forEach(e=>wrap.firstChild.appendChild(e));wrap.appendChild(grader(day,key,els,qs));return wrap;}
+
+/* ---------- gloss (hover / tap translation) ---------- */
+const GL=[];
+function glossify(texts,gloss){
+  if(!gloss||!gloss.length)return texts.slice();
+  const order=gloss.map((g,i)=>[g,i]).sort((a,b)=>b[0][0].length-a[0][0].length);const used=new Set();const store=[];
+  let out=texts.map(t=>t);
+  order.forEach(([g])=>{for(let p=0;p<out.length;p++){const k=out[p].indexOf(g[0]);if(k<0)continue;
+      const id=GL.push(g)-1;store.push(id);out[p]=out[p].slice(0,k)+"\u0000"+id+"\u0000"+out[p].slice(k+g[0].length);break;}});
+  return out.map(t=>t.replace(/\u0000(\d+)\u0000/g,(_,id)=>`<span class="gl" tabindex="0" data-g="${id}">${GL[id][0]}</span>`));}
+const POP=document.createElement("div");POP.id="pop";POP.hidden=true;POP.setAttribute("role","tooltip");document.body.appendChild(POP);
+let popFor=null;
+function showPop(el){const g=GL[+el.dataset.g];if(!g)return;popFor=el;
+  POP.innerHTML=`<b>${g[0]}</b><span>${g[1]}</span>${g[2]?`<i>${g[2]}</i>`:""}`;POP.hidden=false;
+  const r=el.getBoundingClientRect(),pw=Math.min(320,innerWidth-24);POP.style.width=pw+"px";
+  let x=Math.max(12,Math.min(r.left,innerWidth-pw-12));const ph=POP.offsetHeight;let y=r.bottom+8;if(y+ph>innerHeight-8)y=r.top-ph-8;
+  POP.style.left=x+"px";POP.style.top=Math.max(8,y)+"px";}
+function hidePop(){POP.hidden=true;popFor=null}
+document.addEventListener("mouseover",e=>{const g=e.target.closest&&e.target.closest(".gl");if(g&&!document.body.classList.contains("nohl"))showPop(g);else if(popFor&&!e.target.closest("#pop"))hidePop()});
+document.addEventListener("focusin",e=>{const g=e.target.closest&&e.target.closest(".gl");if(g)showPop(g)});
+document.addEventListener("click",e=>{const g=e.target.closest(".gl");if(g){popFor===g&&!POP.hidden?hidePop():showPop(g);}else if(!e.target.closest("#pop"))hidePop()});
+addEventListener("scroll",()=>{if(popFor)hidePop()},{passive:true});
 
 /* ---------- player ---------- */
 function player(lines,scriptEl){
@@ -329,69 +386,91 @@ function timer(phases){ // [{label,secs}]
 }
 
 /* ---------- section renderers ---------- */
-function lessonBox(items,title){return h(`<div class="lessonbox"><h4>${title||"Bài học & chiến thuật"}</h4><ol>${items.map(x=>`<li>${x}</li>`).join("")}</ol></div>`)}
+function lessonBox(items,title){return h(`<div class="lessonbox tipbox"><h4>${title||"Mẹo áp dụng ngay"}</h4><ol>${items.map(x=>`<li>${x}</li>`).join("")}</ol></div>`)}
 function secShell(S,num){const k=SK[S.type];
   const lab=partLabel(S.type,S.type==="reading"?S.passage:S.type==="writing"?S.task:S.part);
-  const el=h(`<section class="sec" style="--c:${k[1]}"><div class="sec-h"><h2>Kỹ năng ${num}: ${lab}</h2><span class="small muted"></span></div></section>`);
+  return h(`<section class="sec" style="--c:${k[1]}"><div class="sec-h"><h2>Kỹ năng ${num}: ${lab}</h2><span class="small muted"></span></div></section>`);}
+function cols(){const c=h(`<div class="cols"><div class="main"></div><aside class="aside"></aside></div>`);return [c,c.firstChild,c.lastChild];}
+function bankBox(bank,title){
+  const el=h(`<div class="bank"><div class="bank-h"><h4>${title||"Câu mẫu học thuộc"}</h4><button type="button" class="btn sm ghost">Che nghĩa</button></div></div>`);
+  bank.forEach(g=>{const grp=h(`<div class="bgrp"><h5>${g.h}</h5><ul></ul></div>`);
+    g.items.forEach(x=>{const li=h(`<li><button type="button" class="say" aria-label="Nghe câu này">${ICON_SAY}</button><div><span class="en">${x[0]}</span><span class="vi">${x[1]}</span></div></li>`);
+      li.querySelector(".say").onclick=()=>sayWord(x[0].replace(/<[^>]+>/g,""));grp.querySelector("ul").appendChild(li)});
+    el.appendChild(grp)});
+  const b=el.querySelector(".bank-h button");b.onclick=()=>{const on=el.classList.toggle("hidevi");b.textContent=on?"Hiện nghĩa":"Che nghĩa"};
   return el;}
+function phraseTable(ph){return h(`<details class="more"><summary>Cụm từ dùng được ngay</summary><div><table class="ph">${ph.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table></div></details>`)}
+function hlToggle(){const b=h(`<button type="button" class="btn sm ghost hlbtn">${document.body.classList.contains("nohl")?"Bật tô sáng":"Tắt tô sáng (thi thật)"}</button>`);
+  b.onclick=()=>{const on=document.body.classList.toggle("nohl");hidePop();document.querySelectorAll(".hlbtn").forEach(x=>x.textContent=on?"Bật tô sáng":"Tắt tô sáng (thi thật)")};return b;}
 
 function renderListening(S,day,num){
   const el=secShell(S,num);const nq=S.items.reduce((a,it)=>a+it.questions.length,0);
   el.querySelector(".sec-h span").textContent=`${S.items.length} bài nghe · ${nq} câu hỏi`;
-  el.appendChild(lessonBox(S.lesson));
-  if(!TTS.ok)el.appendChild(h(`<p class="notts">Trình duyệt này không phát được giọng đọc. Bạn hãy mở trang bằng Chrome, Safari hoặc Edge, hoặc nhờ người khác đọc transcript cho bạn nghe.</p>`));
-  el.appendChild(h(`<p class="small muted">Cách làm: đọc câu hỏi trước, bấm <b>Phát audio</b> và chỉ nghe <b>1 lần</b> như thi thật. Chọn đáp án cho tất cả bài rồi mới nộp. Sau khi nộp, mở transcript và nghe lại những câu sai.</p>`));
-  const allQ=[];const hold=h(`<div style="display:grid;gap:12px"></div>`);
-  S.items.forEach((it,ii)=>{
+  const [c,main,aside]=cols();
+  aside.appendChild(h(`<p class="small muted">Cách làm: đọc mẹo và câu hỏi trước, bấm <b>Phát audio</b>, chỉ nghe <b>1 lần</b> như thi thật rồi chọn đáp án ngay bên dưới. Làm hết các bài rồi bấm nộp ở cuối. Sau khi nộp, mở transcript để nghe lại câu sai.</p>`));
+  aside.appendChild(lessonBox(S.lesson));
+  if(!TTS.ok)main.appendChild(h(`<p class="notts">Trình duyệt này không phát được giọng đọc. Bạn hãy mở trang bằng Chrome, Safari hoặc Edge, hoặc đọc transcript.</p>`));
+  const allQ=[],qEls=[];
+  S.items.forEach(it=>{
     const script=h(`<div class="script">${it.script.map(l=>`<p><b>${l.sp==="M"?"Man":l.sp==="F"?"Woman":"Narrator"}</b>${l.text}</p>`).join("")}</div>`);
     const tr=h(`<details class="more"><summary>Transcript</summary><div></div></details>`);tr.querySelector("div").appendChild(script);
     const card=h(`<div class="item"><div class="item-h"><div><h3>${it.label}</h3><span class="ctx">${it.context||""}</span></div></div></div>`);
     card.querySelector(".item-h").appendChild(player(it.script,script));
-    const start=allQ.length;it.questions.forEach(q=>allQ.push(q));
-    const qlist=h(`<ol class="small muted" start="${start+1}" style="margin:0;padding-left:22px">${it.questions.map(q=>`<li>${q.q}</li>`).join("")}</ol>`);
-    card.append(qlist,tr);hold.appendChild(card);});
-  el.appendChild(hold);
-  el.appendChild(h(`<h3>Phiếu trả lời</h3>`));
-  el.appendChild(quiz(day,"L",allQ));
-  return el;}
+    if(it.tip)card.appendChild(h(`<p class="itip"><b>Mẹo cho bài này:</b> ${it.tip}</p>`));
+    const qs=h(`<div class="qs"></div>`);
+    it.questions.forEach(Q=>{const e=qBlock(day,"L",allQ.length,Q);allQ.push(Q);qEls.push(e);qs.appendChild(e)});
+    card.append(qs,tr);main.appendChild(card);});
+  main.appendChild(grader(day,"L",qEls,allQ,()=>el.querySelectorAll(".item details.more").forEach(d=>d.open=false)));
+  el.appendChild(c);return el;}
 
 function renderReading(S,day,num){
-  const el=secShell(S,num);const wc=S.text.reduce((a,p)=>a+words(p.replace(/<[^>]+>/g,"")),0);
-  el.querySelector(".sec-h span").textContent=`${wc} từ · ${S.questions.length} câu · gợi ý ${[0,12,13,15,17][S.passage]||15} phút`;
-  el.appendChild(lessonBox(S.lesson));
-  const g=h(`<div class="rgrid"><article class="passage"><h3>${S.title}</h3>${S.text.map((p,i)=>`<p><i>${i+1}</i><span>${p}</span></p>`).join("")}</article><div style="display:grid;gap:12px"></div></div>`);
-  const right=g.children[1];right.appendChild(timer([{label:"Đang đọc",secs:([0,12,13,15,17][S.passage]||15)*60}]));
-  right.appendChild(quiz(day,"R",S.questions));el.appendChild(g);return el;}
+  const el=secShell(S,num);const wc=S.text.reduce((a,p)=>a+words(p.replace(/<[^>]+>/g,"")),0);const mins=[0,12,13,15,17][S.passage]||15;
+  el.querySelector(".sec-h span").textContent=`${wc} từ · ${S.questions.length} câu · gợi ý ${mins} phút`;
+  const paras=glossify(S.text,S.gloss);
+  const g=h(`<div class="rgrid"><article class="passage"><div class="ph-h"><h3>${S.title}</h3></div>${paras.map((p,i)=>`<p><i>${i+1}</i><span>${p}</span></p>`).join("")}</article><div class="rq"></div></div>`);
+  if(S.gloss&&S.gloss.length){const ph=g.querySelector(".ph-h");ph.appendChild(h(`<div class="small muted" style="font-family:var(--body)">Rê chuột hoặc chạm vào cụm <span class="gl demo">tô sáng</span> để xem nghĩa và cấu trúc.</div>`));ph.appendChild(hlToggle());}
+  const right=g.querySelector(".rq");
+  const tips=h(`<details class="tipwrap" open><summary>Mẹo áp dụng ngay</summary></details>`);tips.appendChild(lessonBox(S.lesson,"Chiến thuật cho bài này"));right.appendChild(tips);
+  right.appendChild(timer([{label:"Đang đọc",secs:mins*60}]));
+  right.appendChild(quiz(day,"R",S.questions));
+  if(S.gloss&&S.gloss.length)right.appendChild(h(`<details class="more"><summary>Danh sách ${S.gloss.length} cụm cần nhớ trong bài</summary><div><table class="ph">${S.gloss.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}${x[2]?`<br><span class="small muted">${x[2]}</span>`:""}</td></tr>`).join("")}</table></div></details>`));
+  el.appendChild(g);return el;}
 
 function renderWriting(S,day,num){
   const el=secShell(S,num);el.querySelector(".sec-h span").textContent=`${S.kind} · ≥${S.minWords} từ · ${S.minutes} phút`;
-  el.appendChild(lessonBox(S.lesson));
-  el.appendChild(h(`<div class="prompt"><div class="lab">Đề bài</div>${S.prompt}</div>`));
-  el.appendChild(timer([{label:"Đang viết",secs:S.minutes*60}]));
-  const id=`draft-${day}`;const ta=h(`<textarea id="${id}" placeholder="Viết bài của bạn ở đây. Bài được lưu tự động trên trình duyệt này." spellcheck="false"></textarea>`);
+  const [c,main,aside]=cols();
+  aside.appendChild(lessonBox(S.lesson));
+  if(S.bank)aside.appendChild(bankBox(S.bank,"Câu mẫu theo chủ đề · học thuộc"));
+  main.appendChild(h(`<div class="prompt"><div class="lab">Đề bài</div>${S.prompt}</div>`));
+  main.appendChild(timer([{label:"Đang viết",secs:S.minutes*60}]));
+  const id=`draft-${day}`;const ta=h(`<textarea id="${id}" placeholder="Viết bài của bạn ở đây. Dùng các câu mẫu ở cột bên. Bài được lưu tự động trên trình duyệt này." spellcheck="false"></textarea>`);
   ta.value=ST.drafts[day]||"";const ct=h(`<div class="count"></div>`);
   const upd=()=>{const n=words(ta.value);ct.textContent=`${n}/${S.minWords} từ`;ct.classList.toggle("ok",n>=S.minWords)};
-  ta.oninput=()=>{ST.drafts[day]=ta.value;save();upd()};upd();el.append(ta,ct);
-  el.appendChild(h(`<p class="small muted">Viết xong mới mở dàn ý và bài mẫu để so sánh. Tự chấm: đủ ý đề hỏi chưa, mỗi đoạn có 1 ý chính chưa, có lặp từ không, chia động từ đúng chưa.</p>`));
-  const o=h(`<details class="more"><summary>Dàn ý gợi ý</summary><div><ol class="notes">${S.outline.map(x=>`<li>${x}</li>`).join("")}</ol></div></details>`);
-  const m=h(`<details class="more"><summary>Bài mẫu band ~7.0 (${S.model.reduce((a,p)=>a+words(p.replace(/<[^>]+>/g,"")),0)} từ) và phân tích</summary><div><div class="model">${S.model.map(p=>`<p>${p}</p>`).join("")}</div><h4 class="eyebrow">Vì sao bài này được điểm cao</h4><ul class="notes">${S.notes.map(x=>`<li>${x}</li>`).join("")}</ul></div></details>`);
-  const p=h(`<details class="more" open><summary>Cụm từ dùng được ngay</summary><div><table class="ph">${S.phrases.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table></div></details>`);
-  el.append(o,m,p);return el;}
+  ta.oninput=()=>{ST.drafts[day]=ta.value;save();upd()};upd();main.append(ta,ct);
+  main.appendChild(h(`<p class="small muted">Viết xong mới mở dàn ý và bài mẫu để so sánh. Tự chấm: đủ ý đề hỏi chưa, mỗi đoạn có 1 ý chính chưa, có lặp từ không, chia động từ đúng chưa.</p>`));
+  main.appendChild(h(`<details class="more"><summary>Dàn ý gợi ý</summary><div><ol class="notes">${S.outline.map(x=>`<li>${x}</li>`).join("")}</ol></div></details>`));
+  const mp=glossify(S.model,S.gloss);
+  const m=h(`<details class="more"><summary>Bài mẫu band ~7.0 (${S.model.reduce((a,p)=>a+words(p.replace(/<[^>]+>/g,"")),0)} từ), tô sáng cụm hay và phân tích</summary><div><div class="model">${mp.map(p=>`<p>${p}</p>`).join("")}</div><h4 class="eyebrow">Vì sao bài này được điểm cao</h4><ul class="notes">${S.notes.map(x=>`<li>${x}</li>`).join("")}</ul></div></details>`);
+  if(S.gloss&&S.gloss.length)m.querySelector("div").prepend(hlToggle());
+  main.append(m,phraseTable(S.phrases));
+  el.appendChild(c);return el;}
 
 function renderSpeaking(S,day,num){
   const el=secShell(S,num);el.querySelector(".sec-h span").textContent=`${S.tasks.length} đề`;
-  el.appendChild(lessonBox(S.lesson));
-  el.appendChild(h(`<p class="small muted">Dùng điện thoại ghi âm khi luyện. Bấm <b>Bắt đầu</b> để chạy giờ chuẩn bị và giờ nói như phòng thi. Nói xong mới nghe bài mẫu.</p>`));
+  const [c,main,aside]=cols();
+  aside.appendChild(lessonBox(S.lesson));
+  if(S.bank)aside.appendChild(bankBox(S.bank,"Câu mẫu theo chủ đề · học thuộc"));
+  main.appendChild(h(`<p class="small muted">Dùng điện thoại ghi âm khi luyện. Bấm <b>Bắt đầu</b> để chạy giờ chuẩn bị và giờ nói như phòng thi. Nói xong mới mở bài mẫu, học thuộc các cụm tô sáng rồi nói lại lần 2.</p>`));
   S.tasks.forEach(T=>{
     const card=h(`<div class="task"><h3>${T.label}</h3><div class="prompt"><div class="lab">Đề</div>${T.prompt}</div></div>`);
     const ph=[];if(T.prep)ph.push({label:"Chuẩn bị",secs:T.prep});ph.push({label:"Nói",secs:T.time});card.appendChild(timer(ph));
-    const mtxt=T.model.map(p=>p.replace(/<[^>]+>/g," ")).join(" ");
-    const m=h(`<details class="more"><summary>Bài nói mẫu</summary><div><div class="model">${T.model.map(p=>`<p>${p}</p>`).join("")}</div></div></details>`);
+    const mp=glossify(T.model,T.gloss);
+    const m=h(`<details class="more"><summary>Bài nói mẫu (tô sáng cụm cần thuộc)</summary><div><div class="model">${mp.map(p=>`<p>${p}</p>`).join("")}</div></div></details>`);
     const lines=T.model.map(p=>({sp:"F",text:p.replace(/^Q\d+:\s*/,"").replace(/<[^>]+>/g," ")}));
     const pl=player(lines,m.querySelector(".model"));pl.querySelector("span").textContent="Nghe bài mẫu";
-    m.querySelector("div").prepend(pl);card.appendChild(m);el.appendChild(card);});
-  el.appendChild(h(`<details class="more" open><summary>Cụm từ dùng được ngay</summary><div><table class="ph">${S.phrases.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table></div></details>`));
-  return el;}
+    m.querySelector("div").prepend(pl);card.appendChild(m);main.appendChild(card);});
+  main.appendChild(phraseTable(S.phrases));
+  el.appendChild(c);return el;}
 
 /* ---------- 2-hour plan ---------- */
 function dayPlan(D){
