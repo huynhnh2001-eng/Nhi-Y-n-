@@ -30,8 +30,8 @@
       model: [
         "Dear Dr Carter,",
         "I am writing to apply for a place on the free online course “Data Skills for Beginners”, which I saw advertised on the university website.",
-        "I am a 27-year-old sales assistant at an electronics company in Da Nang. Over the past year, I have become increasingly involved in preparing monthly sales reports, and I have realised that a better understanding of data would allow me to identify trends more quickly and support my team more effectively. In the long term, I hope to move into a market analyst role.",
-        "I would be grateful if you could provide some further details about the course. In particular, could you tell me how many hours a week the live sessions last, and whether participants are assessed through exams or project work?",
+        "I am a 27-year-old sales assistant at an electronics company in Da Nang. Over the past year, I have become increasingly involved in preparing sales reports, and I have realised that a better understanding of data would allow me to identify trends more quickly and support my team more effectively. In the long term, I hope to move into a market analyst role.",
+        "I would be grateful if you could provide some further details about the course. Could you tell me how many hours a week the live sessions last, and whether participants are assessed through exams or project work?",
         "I would also like to ask whether it would be possible to watch recordings of some sessions. As I work rotating shifts, I am occasionally unable to attend in the evenings, although I would, of course, complete all assignments on time.",
         "Thank you for considering my application. I look forward to hearing from you.",
         "Yours sincerely,<br>Tran Thu Ha"

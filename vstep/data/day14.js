@@ -1,0 +1,173 @@
+(window.VSTEP_DAYS = window.VSTEP_DAYS || {})[14] = {
+  day: 14,
+  title: "Ôn tập tuần 2: hội thoại & bài đọc về nghề nghiệp",
+  topic: "Work & careers",
+  goal: "Làm Part 2 và passage 3 trong điều kiện gần như thi thật, đồng thời tổng hợp các bẫy đã học trong tuần 2. Mục tiêu: tự nhận diện được loại bẫy ở mỗi câu sai và có quy trình làm bài ổn định.",
+  sections: [
+    {
+      type: "listening",
+      part: 2,
+      lesson: [
+        "<b>Quy trình thi thật</b> cho mỗi hội thoại: (1) khoảng 20–30 giây trước khi nghe: đọc 4 câu hỏi, gạch từ khóa, đánh dấu câu nào hỏi “man”, câu nào hỏi “woman”; (2) khi nghe: khoanh tạm ngay, ghi chú bên lề; (3) sau khi nghe: kiểm tra lại trong vài giây rồi chuyển ngay sang đọc câu hỏi của hội thoại tiếp theo.",
+        "Tổng hợp <b>5 bẫy của tuần 2</b>: ① gợi ý bị bác bỏ (“How about…?” → “Hmm…”); ② thông tin bị sửa (“eight days” → “seven”); ③ đúng thông tin nhưng sai người nói; ④ hành động đã làm trong quá khứ vs. sẽ làm (“I asked them” vs. “I’ll ask”); ⑤ phương án đúng một nửa hoặc quá mạnh.",
+        "Khi nghe <b>so sánh hai lựa chọn</b> (hai công việc, hai trường…), kẻ nhanh bảng 2 cột và ghi tiêu chí: lương, công việc, rủi ro, đi lại. Câu hỏi thường hỏi về <b>sự khác biệt</b> (“not by much”) hoặc <b>yếu tố quyết định</b>.",
+        "Lỡ mất một câu? <b>Đừng tiếc</b> – đoán một phương án hợp lý nhất và tập trung ngay vào câu tiếp theo. Mất một câu vẫn tốt hơn mất cả ba câu vì mải nghĩ.",
+        "Câu hỏi về <b>điều kiện / quy định</b> (“What condition…?”, “Why must he…?”) thường có tín hiệu <em>as long as, provided that, you need to, because</em>. Lắng nghe mệnh đề đi sau những từ này.",
+        "Cuối mỗi bài luyện, phân loại câu sai theo 5 bẫy ở trên. Sau 1–2 tuần, bạn sẽ thấy mình hay mắc một loại bẫy cụ thể – đó là điểm cần luyện trọng tâm."
+      ],
+      items: [
+        {
+          label: "Conversation 1",
+          context: "Two friends discussing job offers",
+          script: [
+            { sp: "F", text: "Hey Nam, can I get your advice on something? I’ve been offered two jobs, and I have to decide by Friday." },
+            { sp: "M", text: "Congratulations! What are they?" },
+            { sp: "F", text: "One’s in the marketing department of a big international bank. The other is at a small start-up that makes educational apps." },
+            { sp: "M", text: "Let me guess – the bank pays a lot more." },
+            { sp: "F", text: "Actually, not by much. The bank offered fifteen million a month, and the start-up offered fourteen, plus a share of the profits if the company does well." },
+            { sp: "M", text: "So money isn’t really the issue. What about the work itself?" },
+            { sp: "F", text: "That’s the thing. At the bank, I’d mainly be writing reports and scheduling social media posts. At the start-up, I’d be in charge of the whole marketing strategy from day one." },
+            { sp: "M", text: "That’s a lot of responsibility. Do you feel ready for it?" },
+            { sp: "F", text: "Not completely, which is a bit scary. But I’d learn so much faster. At the bank, the manager told me it usually takes four or five years to get promoted." },
+            { sp: "M", text: "Hmm. The only thing that worries me about start-ups is that so many of them fail in the first couple of years. My brother joined one, and it closed after eighteen months." },
+            { sp: "F", text: "I know. I asked them about that, and they said they’ve just received investment that should last at least three years." },
+            { sp: "M", text: "That’s reassuring. And what about the commute?" },
+            { sp: "F", text: "The bank is a ten-minute walk from my flat. The start-up is across the river, so it’d take at least forty minutes by bus." },
+            { sp: "M", text: "That adds up over a year. Still, it sounds like you’ve already made up your mind." },
+            { sp: "F", text: "I think I have. I’ll call the start-up tomorrow and accept, but I’ll ask whether I can work from home one or two days a week." }
+          ],
+          questions: [
+            { q: "What does the woman say about the salaries?",
+              opts: ["The bank pays much more than the start-up.", "The start-up pays more than the bank.", "Both companies offer exactly the same salary.", "The difference between them is small."],
+              a: 3,
+              why: "Người nam đoán “the bank pays a lot more”, cô sửa: “Actually, not by much” – 15 triệu so với 14 triệu. Bẫy loại ②: thông tin bị sửa ngay sau đó." },
+            { q: "What attracts the woman most to the start-up?",
+              opts: ["The share of the profits", "The responsibility and the chance to learn quickly", "The shorter journey to work", "The company’s reputation"],
+              a: 1,
+              why: "“I’d be in charge of the whole marketing strategy from day one… I’d learn so much faster.” Chia lợi nhuận có được nhắc nhưng chỉ là chi tiết; quãng đường đến start-up thực ra xa hơn (bẫy C)." },
+            { q: "Why is the man concerned about the start-up?",
+              opts: ["Many new companies close within a short time.", "The woman is not qualified for the job.", "The salary is too low to live on.", "The manager seems inexperienced."],
+              a: 0,
+              why: "“so many of them fail in the first couple of years. My brother joined one, and it closed after eighteen months.” → paraphrase: công ty mới thường đóng cửa sớm." },
+            { q: "What will the woman ask the start-up about?",
+              opts: ["A higher monthly salary", "A larger share of the profits", "The possibility of working from home sometimes", "Whether the company has enough investment"],
+              a: 2,
+              why: "“I’ll ask whether I can work from home one or two days a week.” D là việc cô <em>đã hỏi</em> rồi (“I asked them about that”) – bẫy loại ④: quá khứ vs. tương lai." }
+          ]
+        },
+        {
+          label: "Conversation 2",
+          context: "An employee talking to a human resources manager",
+          script: [
+            { sp: "M", text: "Ms Huong, thanks for seeing me. I wanted to ask about the company’s support for further study." },
+            { sp: "F", text: "Of course, Duc. What did you have in mind?" },
+            { sp: "M", text: "I’ve been accepted onto a part-time master’s in data analysis. The classes are on Tuesday and Thursday evenings, and a few Saturday mornings." },
+            { sp: "F", text: "That sounds very relevant to your role. Our policy is that we pay up to half of the tuition fees for courses directly related to your job." },
+            { sp: "M", text: "That’s great. Are there any conditions?" },
+            { sp: "F", text: "Yes. You need to commit to staying with the company for at least two years after you finish. If you leave earlier, you’d have to pay back part of the money." },
+            { sp: "M", text: "That seems fair. I’m not planning to go anywhere. The other thing is that on Tuesdays and Thursdays I’d need to leave at five instead of half past, to get to class on time." },
+            { sp: "F", text: "That shouldn’t be a problem, as long as your manager agrees and you make up the time. Some people come in half an hour early on those days." },
+            { sp: "M", text: "I could easily do that. I’m usually at my desk early anyway." },
+            { sp: "F", text: "Then you just need to fill in the training request form and get your manager to sign it. Send it to me before the end of the month, because next year’s training budget is decided in early December." },
+            { sp: "M", text: "Will do. Should I attach the course details?" },
+            { sp: "F", text: "Yes, the fees and the timetable from the university. And Duc, if your final project could use some of our own sales data, that would be a real bonus for the company." },
+            { sp: "M", text: "That’s a good idea. I’ll discuss it with my supervisor at the university." }
+          ],
+          questions: [
+            { q: "What is the main purpose of the man’s visit?",
+              opts: ["To complain about his working hours", "To ask for support with a course he plans to take", "To apply for a position in another department", "To discuss the company’s sales figures"],
+              a: 1,
+              why: "Câu đầu: “I wanted to ask about the company’s support for further study” – sau đó anh nói về học phí và giờ giấc cho khóa thạc sĩ. Dữ liệu bán hàng chỉ xuất hiện ở cuối." },
+            { q: "What condition does the company set for paying the fees?",
+              opts: ["He must achieve high grades.", "He must study only at weekends.", "He must remain with the company for two years after the course.", "He must pay the full fees first and claim them back."],
+              a: 2,
+              why: "“You need to commit to staying with the company for at least two years after you finish.” → “remain” = “stay”. Tín hiệu điều kiện: “You need to…”." },
+            { q: "How will the man make up for leaving early on class days?",
+              opts: ["By working on Saturday mornings", "By taking work home", "By shortening his lunch break", "By starting work earlier on those days"],
+              a: 3,
+              why: "Người nữ: “Some people come in half an hour early on those days.” – người nam: “I could easily do that.” Thứ Bảy là lịch học, không phải ngày làm bù (bẫy A)." },
+            { q: "Why must the man submit the form before the end of the month?",
+              opts: ["Decisions about next year’s budget are made in early December.", "His course starts at the beginning of next month.", "His manager is leaving the company soon.", "The university requires the form by then."],
+              a: 0,
+              why: "“Send it to me before the end of the month, because next year’s training budget is decided in early December.” – lý do nằm ngay sau “because”." }
+          ]
+        }
+      ]
+    },
+    {
+      type: "reading",
+      passage: 3,
+      lesson: [
+        "<b>Quy trình 15 phút</b> cho passage 3: 2–3 phút đọc lướt và ghi ý chính từng đoạn → 10 phút trả lời theo thứ tự → 2 phút cuối làm câu tiêu đề/mục đích và kiểm tra câu NOT. Nếu một câu tốn hơn 90 giây, đánh dấu và bỏ qua.",
+        "Đáp án đúng gần như luôn là <b>paraphrase</b>: “automated” → “done by machines”; “carried by individuals” → “workers bear the risks”. Phương án lặp lại y nguyên nhiều từ trong bài nhưng sai ý là bẫy phổ biến nhất.",
+        "Cảnh giác với <b>từ tuyệt đối</b> trong phương án: <em>all, always, never, completely, only</em>. Bài học thuật thường dùng từ rào đón (<em>may, often, increasingly, most</em>), nên phương án tuyệt đối thường sai.",
+        "Đoán nghĩa từ vựng bằng <b>cấu tạo từ</b> + ngữ cảnh: <em>auto-</em> (tự động), <em>-able</em> (có thể), <em>re-</em> (lại). “adaptable” = có thể thích nghi. Sau đó kiểm tra bằng cách thay phương án vào câu.",
+        "Đại từ <b>“one”</b> trong văn viết trang trọng thường chỉ <b>“một người bất kỳ / người ta”</b> (“when one does not know…”), không chỉ một danh từ cụ thể phía trước. Đây là bẫy quen thuộc của câu tham chiếu.",
+        "Câu hỏi về <b>câu kết</b> của bài (“What does the last sentence suggest?”) thường là ý chính hoặc thông điệp của tác giả – hãy diễn giải lại câu kết bằng lời đơn giản rồi tìm phương án tương ứng."
+      ],
+      title: "The End of the Job for Life?",
+      text: [
+        "For much of the twentieth century, the ideal career followed a predictable path. A young person would leave school or university, join a company and climb steadily up its ranks until retirement, often receiving a generous pension at the end. This “job for life” offered security and a clear sense of who one was. Today, however, it is becoming increasingly rare. Surveys in many countries suggest that people now in their twenties may change employers a dozen times or more over their working lives.",
+        "Several forces lie behind this transformation. Rapid technological change means that entire industries can rise and fall within a single generation; skills that were valuable ten years ago may now be automated. Companies, under pressure to cut costs, increasingly rely on short-term contracts and freelancers rather than permanent staff, and even sectors once known for stability, such as banking and manufacturing, now go through regular rounds of restructuring. At the same time, digital platforms have made it far easier for individuals to sell their services directly, whether as designers, translators or drivers.",
+        "For some workers, these changes have opened up exciting possibilities. A growing number are building what has been called a “portfolio career”, combining several part-time roles – a graphic designer who also teaches evening classes and runs a small online shop, for example. Supporters argue that this variety reduces dependence on a single employer and allows people to pursue several interests at once. Many also value the freedom to choose their own hours and projects, and some find that moving between roles makes them better at each one, as ideas from one field feed into another.",
+        "Yet flexibility is not always a free choice. For many, particularly young people and those with fewer qualifications, short-term work means irregular income, no paid holidays and little protection if they fall ill. Critics point out that while the benefits of flexibility often go to companies, the risks are increasingly carried by individuals. Planning for the future, whether buying a home or starting a family, becomes considerably harder when one does not know what next month’s income will be.",
+        "What, then, should today’s students do to prepare? Most career experts agree that the answer lies less in choosing the “right” job than in developing adaptable skills. Communication, problem-solving and the ability to learn quickly are valued in almost every field and are unlikely to be replaced by machines. Equally important is a willingness to keep learning throughout one’s life, through short courses, online programmes or training on the job. In a world where no job is guaranteed, the most secure position may belong to the person who is ready for change."
+      ],
+      questions: [
+        { q: "Which of the following is the best title for the passage?",
+          opts: ["The Changing Nature of Working Life", "How to Become a Successful Graphic Designer", "The History of Pension Schemes", "Why Companies Prefer Permanent Staff"],
+          a: 0,
+          why: "Bài đi từ “job for life” truyền thống (Đ1) → nguyên nhân thay đổi (Đ2) → cơ hội (Đ3) → rủi ro (Đ4) → cách chuẩn bị (Đ5) = sự thay đổi của đời sống nghề nghiệp. B quá hẹp; D trái với Đ2." },
+        { q: "According to paragraph 1, the traditional “job for life”",
+          opts: ["involved changing employers frequently", "was unusual in the twentieth century", "gave workers security and a sense of identity", "usually began after retirement"],
+          a: 2,
+          why: "“This ‘job for life’ offered security and a clear sense of who one was” → “a sense of who one was” = sense of identity. A mô tả người trẻ ngày nay, không phải mô hình cũ." },
+        { q: "Which of the following is NOT mentioned in paragraph 2 as a cause of the change?",
+          opts: ["Fast technological development", "New government employment laws", "Companies trying to reduce costs", "Online platforms for selling services"],
+          a: 1,
+          why: "Đoạn 2 nêu: “Rapid technological change”, “Companies, under pressure to cut costs”, “digital platforms”. Không có luật lao động của chính phủ." },
+        { q: "The word “automated” in paragraph 2 is closest in meaning to",
+          opts: ["forgotten", "taught in schools", "paid more highly", "done by machines"],
+          a: 3,
+          why: "“auto-” = tự động; ngữ cảnh “technological change… skills that were valuable… may now be automated” → công việc nay do máy móc làm. Đoạn 5 cũng nhắc “replaced by machines”." },
+        { q: "Why does the author mention a graphic designer who also teaches evening classes?",
+          opts: ["To show that designers are poorly paid", "To suggest that teaching is a popular second job", "To criticise people who have too many jobs", "To give an example of a portfolio career"],
+          a: 3,
+          why: "Ví dụ đứng ngay sau định nghĩa “a ‘portfolio career’, combining several part-time roles” và có “for example” → minh họa khái niệm này." },
+        { q: "What does the author imply by saying that “flexibility is not always a free choice”?",
+          opts: ["Some people do short-term work because they have no alternative.", "Flexible jobs are usually unpaid.", "Most people would prefer to work for themselves.", "Companies force all workers to become freelancers."],
+          a: 0,
+          why: "“not always a free choice” → có người làm việc ngắn hạn vì không có lựa chọn khác, nhất là “young people and those with fewer qualifications”. D quá mạnh (“all workers”)." },
+        { q: "The word “one” in paragraph 4 (“when one does not know”) refers to",
+          opts: ["a home", "a family", "any person in that situation", "next month’s income"],
+          a: 2,
+          why: "“one” ở đây là đại từ trang trọng chỉ “một người bất kỳ / người ta”, không thay cho danh từ đứng trước. Thay thử: “when a person does not know what next month’s income will be” – hợp nghĩa." },
+        { q: "According to the critics mentioned in paragraph 4,",
+          opts: ["workers receive most of the benefits of flexibility", "companies gain from flexibility while workers bear the risks", "short-term contracts should be made illegal", "young people are better at handling irregular income"],
+          a: 1,
+          why: "“while the benefits of flexibility often go to companies, the risks are increasingly carried by individuals” → B là paraphrase chính xác. A ngược nghĩa; C không có trong bài." },
+        { q: "According to paragraph 5, what should students focus on?",
+          opts: ["Developing skills that are useful in many different fields", "Choosing the right job as early as possible", "Studying subjects related to machines", "Avoiding jobs that require communication"],
+          a: 0,
+          why: "“the answer lies less in choosing the ‘right’ job than in developing adaptable skills… valued in almost every field”. B bị bài phủ nhận bằng cấu trúc “less… than”." },
+        { q: "What does the final sentence of the passage suggest?",
+          opts: ["Permanent jobs will soon become common again.", "Machines will eventually replace most workers.", "Being able to adapt is the best form of security.", "Students should avoid changing jobs."],
+          a: 2,
+          why: "“the most secure position may belong to the person who is ready for change” → sẵn sàng thay đổi/thích nghi chính là sự an toàn lớn nhất. Đây cũng là thông điệp chính của tác giả." }
+      ]
+    }
+  ],
+  vocab: [
+    ["start-up", "công ty khởi nghiệp"],
+    ["get promoted", "được thăng chức"],
+    ["commute", "quãng đường/việc đi lại đến nơi làm"],
+    ["tuition fees", "học phí"],
+    ["make up the time", "làm bù thời gian"],
+    ["freelancer", "người làm nghề tự do"],
+    ["permanent staff", "nhân viên chính thức (dài hạn)"],
+    ["portfolio career", "sự nghiệp kết hợp nhiều công việc"],
+    ["irregular income", "thu nhập không ổn định"],
+    ["adaptable skills", "kỹ năng dễ thích ứng"]
+  ],
+  tip: "Tổng kết tuần 2: mỗi lần làm sai một câu Part 2, hãy ghi lại nó thuộc bẫy nào (bị bác bỏ, bị sửa, sai người, sai thì, quá mạnh) – nhận ra “bẫy quen” của chính mình giúp tăng điểm nhanh hơn làm thêm nhiều đề."
+};
