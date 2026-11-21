@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "A voicemail from a medical centre",
+          tip: "Câu hỏi giờ phải ĐẾN, không phải giờ hẹn: bài sẽ nêu giờ hẹn và yêu cầu đến sớm bao nhiêu phút, bạn phải tự tính. Nghe kỹ cả hai con số, đừng chọn ngay giờ đầu tiên nghe được.",
           script: [
             { sp: "F", text: "Hello, this message is for Ms Thu. This is Riverside Medical Centre calling to remind you about your appointment with Dr Patel tomorrow morning at ten forty. As this is your first visit, please arrive ten minutes early so that you can fill in a short registration form. Please also bring your insurance card and a list of any medication you're currently taking. Thank you." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Announcement 2",
           context: "At a pharmacy",
+          tip: "Câu hỏi lời khuyên của dược sĩ: nghe các cụm khuyên như <em>always…, I'd avoid…, it's important to…</em>. Phương án nhiễu thường đảo ngược chi tiết (before/after meals, stop/finish, số viên).",
           script: [
             { sp: "M", text: "Right, here's your prescription. You need to take two tablets three times a day, always after meals, because they can upset your stomach if you take them on an empty stomach. They might make you feel a bit drowsy, so I'd avoid driving while you're taking them. And it's important to finish the whole packet, even if you start to feel better after a few days." }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Announcement 3",
           context: "At a fitness centre",
+          tip: "Câu hỏi “What can members do while the pool is closed”: nghe phần sau cụm <em>During this time</em>. Phòng gym và lớp tập có được nhắc nhưng nói về chuyện khác; kiểm tra xem bài có hề nói đến refund hay giảm giá không.",
           script: [
             { sp: "F", text: "Attention, all members. The swimming pool will be closed from Monday to Wednesday next week for its annual deep clean. We're sorry for any inconvenience. During this time, you're welcome to use the pool at our Northside branch free of charge – just show your membership card at reception there. Please note that the gym and all fitness classes here will run as normal." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Announcement 4",
           context: "A health tip on the radio",
+          tip: "Câu hỏi “which statement is true”: đọc trước 4 phương án, gạch từ khóa (gym, fifty minutes, short sessions, gardening) rồi đánh dấu đúng/sai khi nghe. Cẩn thận: số phút mỗi tuần khác với số phút mỗi ngày.",
           script: [
             { sp: "M", text: "And now for today's health tip. Doctors recommend that adults do at least one hundred and fifty minutes of moderate exercise every week. That's just thirty minutes, five days a week. The good news is that it doesn't have to happen in a gym – brisk walking, cycling to work or even gardening all count. And if you're busy, you can split it into shorter sessions of ten minutes at a time." }
           ],
@@ -71,6 +75,7 @@
         {
           label: "Announcement 5",
           context: "At a hospital",
+          tip: "Câu hỏi về hoa: bỏ qua phần giờ thăm và số người thăm; chờ cụm lý do <em>For hygiene reasons</em> rồi nghe động từ mệnh lệnh sau <em>so please…</em>.",
           script: [
             { sp: "F", text: "Welcome to Ward Six. Visiting hours are from two to four in the afternoon and from six to eight in the evening. To allow patients to rest, a maximum of two visitors per patient is allowed at any one time. For hygiene reasons, flowers are not permitted on the ward, so please leave them with the staff at the main reception. Thank you for your cooperation." }
           ],
@@ -84,6 +89,7 @@
         {
           label: "Announcement 6",
           context: "An announcement on a university campus",
+          tip: "Câu hỏi việc cần làm TRƯỚC khi hiến máu: nghe từ <em>beforehand</em> và cụm <em>make sure you…</em>. Phương án nhiễu có thể đảo nghĩa (avoid…) hoặc nêu việc bài không nhắc (register online).",
           script: [
             { sp: "M", text: "The Red Cross will be holding a blood donation day this Saturday in the sports hall, from eight a.m. until four p.m. Anyone aged between eighteen and sixty who is in good health can donate. Please make sure you eat a proper breakfast and drink plenty of water beforehand. However, if you've had a cold or flu in the past week, we kindly ask you to wait until next time." }
           ],
@@ -97,6 +103,7 @@
         {
           label: "Announcement 7",
           context: "A voicemail from a dental clinic",
+          tip: "Câu hỏi mục đích tin nhắn: buổi hẹn thứ Năm được nhắc đầu tiên nhưng chưa chắc là mục đích. Nghe sau <em>Unfortunately…, so we need to…</em> để biết người gọi thực sự muốn gì.",
           script: [
             { sp: "F", text: "Hi, this is Lisa from Bright Smile Dental Clinic. I'm calling about your check-up with Dr Nam this Thursday at three. Unfortunately, Dr Nam is ill and won't be in on Thursday, so we need to move your appointment. We can offer you Friday at nine a.m. or Monday at four fifteen. Friday is filling up quickly, so please ring us back as soon as you can." }
           ],
@@ -110,6 +117,7 @@
         {
           label: "Announcement 8",
           context: "In an office building",
+          tip: "Câu hỏi ý nghĩa ký hiệu: nghe cụm định nghĩa <em>which means…</em> ngay sau tên ký hiệu. Thông tin về giá và trái cây miễn phí nằm ở câu khác, dễ bị cài làm bẫy.",
           script: [
             { sp: "M", text: "Good morning, everyone. From next month, the staff canteen will be offering a healthier menu. Every day there'll be at least two dishes marked with a green leaf symbol, which means the meal contains fewer than six hundred calories and plenty of vegetables. Prices will stay the same. We'll also be giving out free fruit every Friday, so do come and help yourselves." }
           ],
@@ -140,6 +148,30 @@
         "The reasons for this growing problem are not hard to find. Long working hours and long commutes leave less time for rest. Modern technology also plays a part. Many people check their phones in bed, and the blue light from screens tells the brain that it is still daytime. As a result, it becomes harder to fall asleep, even when they feel exhausted.",
         "Fortunately, there are simple steps that can make a real difference. Experts advise going to bed and waking up at the same time every day, including weekends, so that the body develops a regular rhythm. They also recommend keeping the bedroom cool, dark and quiet, and avoiding caffeine in the afternoon. Perhaps most importantly, screens should be switched off at least an hour before bedtime. Some people find it helpful to replace this habit with reading a paper book or listening to calm music.",
         "Some employers have begun to recognise the value of sleep as well. A few companies now allow staff to start work later or even provide quiet rooms where employees can take a short nap during the day. They have found that well-rested workers make fewer mistakes and take fewer sick days. If this trend continues, the old idea that sleeping less is a sign of hard work may finally disappear."
+      ],
+      gloss: [
+        ["Ask people what they do to stay healthy, and","Hãy hỏi mọi người họ làm gì để giữ sức khỏe, và","Câu mệnh lệnh + and + kết quả: cấu trúc mở bài gây chú ý"],
+        ["Far fewer will mention sleep","ít người hơn hẳn sẽ nhắc đến giấc ngủ","far fewer + N: ít hơn rất nhiều"],
+        ["is just as important as diet and exercise","cũng quan trọng y như ăn uống và tập luyện","just as + adj + as: so sánh bằng (nhấn mạnh)"],
+        ["recommended by health experts","được các chuyên gia y tế khuyến nghị","Mệnh đề quan hệ rút gọn bị động: (which are) recommended by"],
+        ["Lack of sleep affects the body in a number of ways","Thiếu ngủ ảnh hưởng đến cơ thể theo nhiều cách","affect + O (không có “on”); in a number of ways"],
+        ["In the short term,","Về ngắn hạn,","đối lập với “Over longer periods / In the long term”"],
+        ["which is why tired drivers are responsible for","đó là lý do tại sao tài xế mệt mỏi là nguyên nhân gây ra","which is why + mệnh đề: đó là lý do…; be responsible for: gây ra, chịu trách nhiệm"],
+        ["has been linked to weight gain","được cho là có liên quan đến tăng cân","Bị động hiện tại hoàn thành: has been + V3; be linked to"],
+        ["are also more likely to suffer from depression","cũng có nhiều khả năng bị trầm cảm hơn","be more likely to + V; suffer from + bệnh"],
+        ["are not hard to find","không khó tìm","be + adj + to V"],
+        ["leave less time for rest","để lại ít thời gian nghỉ ngơi hơn","less + N không đếm được"],
+        ["Modern technology also plays a part","Công nghệ hiện đại cũng góp một phần","play a part (in): góp phần"],
+        ["it becomes harder to fall asleep","việc ngủ thiếp đi trở nên khó hơn","it becomes + adj-er + to V; fall asleep: ngủ thiếp đi"],
+        ["there are simple steps that can make a real difference","có những bước đơn giản có thể tạo ra thay đổi thực sự","make a difference: tạo ra khác biệt; mệnh đề quan hệ that"],
+        ["Experts advise going to bed","Các chuyên gia khuyên nên đi ngủ","advise + V-ing (không có tân ngữ người)"],
+        ["so that the body develops a regular rhythm","để cơ thể hình thành nhịp sinh học đều đặn","so that + mệnh đề: để (mục đích)"],
+        ["Perhaps most importantly,","Có lẽ quan trọng nhất là,","cụm nhấn mạnh ý quan trọng nhất"],
+        ["screens should be switched off at least an hour before bedtime","nên tắt màn hình ít nhất một tiếng trước giờ ngủ","Bị động với động từ khuyết thiếu: should be + V3"],
+        ["have begun to recognise the value of sleep","đã bắt đầu nhận ra giá trị của giấc ngủ","Hiện tại hoàn thành; begin to + V"],
+        ["allow staff to start work later","cho phép nhân viên bắt đầu làm muộn hơn","allow sb to + V"],
+        ["take a short nap","chợp mắt một lát","take a nap: ngủ trưa, chợp mắt"],
+        ["is a sign of hard work","là dấu hiệu của sự chăm chỉ","a sign of + N"]
       ],
       questions: [
         { q: "What is the main purpose of the passage?",
