@@ -6,6 +6,55 @@
   sections: [
     {
       type: "writing",
+      gloss: [
+        ["I am writing to enquire about","Tôi viết thư này để hỏi thông tin về","enquire about + N: hỏi thông tin (văn phong trang trọng)"],
+        ["which was advertised in the Daily News","được quảng cáo trên tờ Daily News","Mệnh đề quan hệ + bị động quá khứ: was + V3"],
+        ["I work as a sales executive","tôi làm nhân viên kinh doanh","work as + a/an + nghề nghiệp"],
+        ["I regularly have to write emails and attend online meetings","tôi thường xuyên phải viết email và họp trực tuyến","have to + V: phải (do hoàn cảnh)"],
+        ["overseas clients","khách hàng nước ngoài",""],
+        ["Although I can communicate reasonably well","Mặc dù tôi giao tiếp tương đối tốt","Although + mệnh đề: mặc dù"],
+        ["I often lack confidence when giving presentations","tôi thường thiếu tự tin khi thuyết trình","lack + N (không có “of”); when + V-ing: mệnh đề rút gọn"],
+        ["your course seems ideal for me","khóa học của quý vị có vẻ rất phù hợp với tôi","seem + adj: có vẻ"],
+        ["I would be grateful if you could tell me","Tôi rất biết ơn nếu bà có thể cho tôi biết","would be grateful if you could + V: yêu cầu lịch sự"],
+        ["which evenings the classes take place","các lớp học diễn ra vào những buổi tối nào","Câu hỏi gián tiếp: từ để hỏi + S + V (không đảo ngữ)"],
+        ["I would also like to know how much the course costs","Tôi cũng muốn biết khóa học có giá bao nhiêu","Câu hỏi gián tiếp: how much + S + V"],
+        ["whether the fee includes course materials","liệu học phí có bao gồm tài liệu khóa học không","whether + mệnh đề: liệu… hay không"],
+        ["In addition,","Ngoài ra,","từ nối bổ sung ý"],
+        ["could you let me know if it is possible to","bà có thể cho tôi biết liệu có thể … không","let sb know if …; it is possible to + V"],
+        ["I would appreciate some information about","Tôi mong nhận được thông tin về","would appreciate + N"],
+        ["before the course begins","trước khi khóa học bắt đầu","Mệnh đề thời gian: dùng hiện tại đơn cho tương lai"],
+        ["whether a certificate is awarded at the end","liệu cuối khóa có được cấp chứng chỉ không","Bị động hiện tại đơn: is + V3"],
+        ["I look forward to hearing from you","Tôi mong sớm nhận được hồi âm của bà","look forward to + V-ing"]
+      ],
+      bank: [
+        { h: "Mở đầu thư", items: [
+          ["I am writing in response to your advertisement for the Business English evening course in this week’s newspaper.","Tôi viết thư này để phản hồi quảng cáo về khóa tiếng Anh thương mại buổi tối trên báo tuần này."],
+          ["I recently came across your advertisement for a 10-week Business English course and would like some further details.","Gần đây tôi tình cờ thấy quảng cáo khóa tiếng Anh thương mại 10 tuần của quý trung tâm và muốn biết thêm chi tiết."],
+          ["Please allow me to introduce myself: I am a marketing assistant at a manufacturing company in Hanoi.","Xin cho phép tôi tự giới thiệu: tôi là trợ lý marketing tại một công ty sản xuất ở Hà Nội."]
+        ] },
+        { h: "Nêu lý do viết thư", items: [
+          ["I am particularly interested in your course because my job increasingly requires me to communicate in English.","Tôi đặc biệt quan tâm đến khóa học vì công việc ngày càng đòi hỏi tôi giao tiếp bằng tiếng Anh."],
+          ["As my company has recently started working with foreign partners, I need to improve my business English as soon as possible.","Vì công ty tôi gần đây bắt đầu làm việc với đối tác nước ngoài, tôi cần nâng cao tiếng Anh thương mại càng sớm càng tốt."],
+          ["I am keen to develop my presentation skills, which is why your course caught my attention.","Tôi rất muốn phát triển kỹ năng thuyết trình, vì thế khóa học của quý vị đã thu hút sự chú ý của tôi."]
+        ] },
+        { h: "Trình bày từng ý", items: [
+          ["Could you please tell me how many students there are in each class?","Bà có thể cho tôi biết mỗi lớp có bao nhiêu học viên không?"],
+          ["I would like to know whether the classes are held on weekday evenings or at weekends.","Tôi muốn biết các lớp học được tổ chức vào buổi tối các ngày trong tuần hay vào cuối tuần."],
+          ["I would be grateful if you could send me details of the course fees and any discounts available.","Tôi rất biết ơn nếu bà có thể gửi cho tôi thông tin chi tiết về học phí và các ưu đãi hiện có."],
+          ["Could you also tell me whether the teachers have experience of working in business?","Bà cũng có thể cho tôi biết liệu giáo viên có kinh nghiệm làm việc trong môi trường kinh doanh không?"]
+        ] },
+        { h: "Câu nối & chuyển ý", items: [
+          ["Regarding the timetable, I would prefer classes that start after 6 p.m.","Về lịch học, tôi muốn học các lớp bắt đầu sau 6 giờ tối."],
+          ["As far as the fees are concerned, I would like to know if there are any additional costs.","Về vấn đề học phí, tôi muốn biết liệu có khoản chi phí phát sinh nào không."],
+          ["Apart from this, I have one more question about the course materials.","Ngoài ra, tôi còn một câu hỏi nữa về tài liệu khóa học."]
+        ] },
+        { h: "Kết thư", items: [
+          ["I would appreciate it if you could reply at your earliest convenience.","Tôi rất cảm kích nếu bà có thể hồi âm sớm nhất có thể."],
+          ["Thank you in advance for your help.","Xin cảm ơn trước sự giúp đỡ của bà."],
+          ["Please do not hesitate to contact me if you need any further information.","Xin đừng ngần ngại liên hệ với tôi nếu bà cần thêm thông tin."],
+          ["I look forward to receiving your reply.","Tôi mong nhận được thư trả lời của bà."]
+        ] }
+      ],
       task: 1,
       kind: "Formal letter – enquiry",
       lesson: [
@@ -57,6 +106,28 @@
     },
     {
       type: "speaking",
+      bank: [
+        { h: "Trả lời trực tiếp", items: [
+          ["At the moment I’m working as a marketing assistant for a software company.","Hiện tại tôi đang làm trợ lý marketing cho một công ty phần mềm."],
+          ["I’m a final-year student majoring in business administration.","Tôi là sinh viên năm cuối, chuyên ngành quản trị kinh doanh."],
+          ["I mainly study English online, usually in the evening after work.","Tôi chủ yếu học tiếng Anh trực tuyến, thường vào buổi tối sau giờ làm."]
+        ] },
+        { h: "Đưa lý do", items: [
+          ["The reason I enjoy it is that I get to learn something new every day.","Lý do tôi thích là vì ngày nào tôi cũng được học điều gì đó mới."],
+          ["That’s largely because my schedule is quite flexible.","Phần lớn là vì lịch làm việc của tôi khá linh hoạt."],
+          ["I’d like to change it simply because the workload is a bit too heavy.","Tôi muốn thay đổi điều đó đơn giản vì khối lượng công việc hơi quá nặng."]
+        ] },
+        { h: "Ví dụ bản thân", items: [
+          ["For instance, last month our team finished a big project two days ahead of schedule.","Ví dụ, tháng trước nhóm tôi hoàn thành một dự án lớn sớm hơn kế hoạch hai ngày."],
+          ["When I was at university, I worked part-time in a coffee shop, and it taught me a lot.","Hồi học đại học, tôi làm bán thời gian ở một quán cà phê, và việc đó dạy tôi rất nhiều."],
+          ["Just last week, I had to give a presentation in English for the first time.","Mới tuần trước, lần đầu tiên tôi phải thuyết trình bằng tiếng Anh."]
+        ] },
+        { h: "Câu câu giờ tự nhiên", items: [
+          ["That’s a good question – let me think for a second.","Câu hỏi hay đấy – để tôi nghĩ một chút."],
+          ["Hmm, I haven’t really thought about that before, but I guess…","Hmm, trước giờ tôi chưa thực sự nghĩ về điều đó, nhưng chắc là…"],
+          ["Well, it’s hard to say exactly, but…","À, khó nói chính xác, nhưng…"]
+        ] }
+      ],
       part: 1,
       lesson: [
         "<b>Trả lời ngay câu đầu:</b> giám khảo thường hỏi <em>Do you work or are you a student?</em> – hãy trả lời rõ ràng trong câu đầu tiên rồi mới mở rộng, không vòng vo.",
@@ -68,6 +139,22 @@
       ],
       tasks: [
         { label: "Part 1 – Topic: Your work or studies",
+          gloss: [
+            ["I work full-time as an accountant","tôi làm kế toán toàn thời gian","work full-time/part-time as + nghề"],
+            ["a medium-sized logistics company","một công ty logistics quy mô vừa","Tính từ ghép: medium-sized"],
+            ["I’m mainly responsible for checking invoices","tôi chủ yếu phụ trách kiểm tra hóa đơn","be responsible for + V-ing"],
+            ["I’ve been there for about three years now","tôi làm ở đó được khoảng ba năm rồi","Hiện tại hoàn thành + for + khoảng thời gian"],
+            ["What I like most is my colleagues","Điều tôi thích nhất là đồng nghiệp","Câu chẻ: What I like most is + N"],
+            ["Everyone is really supportive","Mọi người đều rất hay giúp đỡ","Everyone + V số ít"],
+            ["tight deadlines","hạn chót gấp",""],
+            ["we help each other out","chúng tôi giúp đỡ lẫn nhau","help sb out: giúp ai (lúc khó)"],
+            ["the atmosphere was much more competitive","bầu không khí cạnh tranh hơn nhiều","much more + adj: so sánh hơn nhấn mạnh"],
+            ["If I could change one thing, it would be the commute","Nếu có thể thay đổi một điều, đó sẽ là việc đi lại","Câu điều kiện loại 2: If + S + could, S + would"],
+            ["It takes me nearly an hour to get to the office","Tôi mất gần một tiếng để đến văn phòng","It takes sb + thời gian + to V"],
+            ["in the rush hour","vào giờ cao điểm",""],
+            ["I’d love to be able to work from home","tôi rất muốn được làm việc ở nhà","would love to + be able to + V"],
+            ["I’d be more productive and less stressed","tôi sẽ làm việc hiệu quả hơn và bớt căng thẳng","more + adj / less + adj"]
+          ],
           prompt: "Let’s talk about your work or studies.<br>1. Do you work or are you a student?<br>2. What do you like most about your job or your studies?<br>3. Is there anything you would like to change about your job or studies?",
           prep: 0,
           time: 90,
@@ -77,6 +164,22 @@
             "Q3: If I could change one thing, it would be the commute. It takes me nearly an hour to get to the office in the rush hour. I’d love to be able to work from home a couple of days a week – I think I’d be more productive and less stressed."
           ] },
         { label: "Part 1 – Topic: Studying and learning",
+          gloss: [
+            ["Mostly on my own","Chủ yếu là tự học","on my own: một mình, tự mình"],
+            ["online practice tests","các bài thi thử trực tuyến",""],
+            ["with subtitles","có phụ đề",""],
+            ["try to note down useful expressions","cố gắng ghi lại những cách diễn đạt hữu ích","note down: ghi chép lại"],
+            ["Definitely in the early morning","Chắc chắn là vào sáng sớm","trả lời thẳng bằng trạng từ nhấn mạnh"],
+            ["My mind is much clearer before work","đầu óc tôi minh mẫn hơn nhiều trước giờ làm","much + so sánh hơn"],
+            ["there are no distractions","không có gì làm xao nhãng",""],
+            ["I’m usually too tired to concentrate","tôi thường quá mệt để tập trung","too + adj + to V: quá… đến nỗi không thể"],
+            ["as long as the job doesn’t affect their studies","miễn là công việc không ảnh hưởng đến việc học","as long as + mệnh đề: miễn là"],
+            ["teaches young people how to manage money","dạy người trẻ cách quản lý tiền","teach sb how to + V"],
+            ["deal with customers","giao tiếp, xử lý với khách hàng","deal with sb/sth"],
+            ["which is valuable experience","đó là kinh nghiệm quý giá","which thay cho cả mệnh đề trước"],
+            ["That said,","Tuy vậy,","từ nối nhượng bộ trong văn nói"],
+            ["their grades might suffer","điểm số có thể bị ảnh hưởng","might + V: khả năng; suffer: bị ảnh hưởng xấu"]
+          ],
           prompt: "Now let’s talk about studying.<br>1. How do you usually study English?<br>2. Do you prefer to study in the morning or in the evening? Why?<br>3. Do you think it is a good idea for students to have part-time jobs?",
           prep: 0,
           time: 90,

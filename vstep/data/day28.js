@@ -19,6 +19,7 @@
         {
           label: "Announcement 1",
           context: "At a farmers’ market",
+          tip: "Câu hỏi về giờ: thông báo nhắc nhiều mốc giờ (giờ đóng cửa thường lệ, giờ mới, giờ cũ của sự kiện). Nghe từ khoá “cooking demonstration”, rồi chờ động từ chỉ sự thay đổi (moved to / rescheduled) – giờ nằm trong cụm “originally planned for” là giờ cũ.",
           script: [
             { sp: "F", text: "Good morning, shoppers, and welcome to the Riverside Farmers’ Market. Please note that because heavy rain is forecast for this afternoon, the market will close at one o’clock today instead of the usual four. As a result, the cooking demonstration originally planned for two p.m. has been moved to eleven thirty in the main tent. Stallholders offering free samples can be found near the north entrance. Thank you, and enjoy your visit." }
           ],
@@ -32,6 +33,7 @@
         {
           label: "Message 2",
           context: "A voicemail from a restaurant",
+          tip: "Câu hỏi “problem”: vấn đề thường nằm ngay sau “but unfortunately”. Các phương án nhà hàng đưa ra sau đó (giờ khác, bàn khác) là giải pháp, không phải vấn đề – đừng để chúng đánh lạc hướng.",
           script: [
             { sp: "F", text: "Hi, this is Lan from Green Leaf Restaurant, calling about your booking for Saturday evening. You asked for a table for eight at seven o’clock, but unfortunately our large tables are all taken at that time. We can offer you the same table at eight fifteen, or two smaller tables side by side at seven. Could you call us back on 0243 815 660 before Thursday to let us know which you prefer? Thanks." }
           ],
@@ -45,6 +47,7 @@
         {
           label: "Instructions 3",
           context: "At the start of a farm tour",
+          tip: "Câu hỏi “before eating”: hướng dẫn có nhiều địa điểm (cánh đồng số mấy, nhà kho, cửa hàng). Chờ đúng hành động “eat” và nghe động từ mệnh lệnh đi kèm “before”; cẩn thận số thứ tự của cánh đồng.",
           script: [
             { sp: "M", text: "Before we start the tour, just a few safety points. Please stay on the marked paths at all times and don’t feed the animals, even if they come right up to the fence. You’re welcome to pick strawberries in field three, but please wash them at the tap beside the barn before eating them, as the plants were sprayed with an organic treatment yesterday. The tour finishes at the farm shop." }
           ],
@@ -58,6 +61,7 @@
         {
           label: "Conversation 1",
           context: "Two flatmates talk about a vegetable box scheme",
+          tip: "Câu “why” nghe sau “because” và chú ý paraphrase. Câu số tiền: có hai con số – giá hộp rau và chi tiêu hiện tại, xác định con số nào trả lời đúng câu hỏi. Câu ngày giao: đề xuất đầu tiên bị phản bác. Câu cuối: phân biệt câu “I’ll…” của từng người.",
           script: [
             { sp: "F", text: "Tom, I’ve been looking at that organic vegetable box scheme I told you about. I really think we should sign up." },
             { sp: "M", text: "The one from the farm outside town? I thought you said it was too expensive." },
@@ -95,6 +99,7 @@
         {
           label: "Talk 1",
           context: "Part of a university lecture on agriculture",
+          tip: "Câu ý chính: nghe cả bố cục bài (ưu điểm → “However” → nhược điểm → “My own view”). Câu “why” nghe sau “since/because”. Từ dễ hiểu nhầm nghĩa – dựa vào ngữ cảnh. Câu cuối nằm ở phần “For your assignment…”.",
           script: [
             { sp: "N", text: "You will hear part of a lecture about vertical farming." },
             { sp: "M", text: "Good afternoon, everyone. Today I want to look at an idea that has attracted a great deal of attention and investment over the past decade: vertical farming. In simple terms, a vertical farm grows crops indoors, in stacked layers, often inside old warehouses or purpose-built towers in the middle of cities. Instead of sunlight, the plants receive light from LED lamps, and instead of soil, their roots usually sit in water enriched with nutrients." },
@@ -145,6 +150,29 @@
         "Against this background, scientists and farmers are taking a fresh look at so-called ‘forgotten’ or ‘orphan’ crops. One striking example is fonio, a tiny grain cultivated in West Africa for thousands of years. Fonio can mature in as little as eight weeks, grows in sandy soils where little else survives and requires no fertiliser. Bambara groundnut, a legume also native to Africa, tolerates both drought and heat while enriching the soil with nitrogen. In India, millets, which were long dismissed as ‘poor people’s food’, are now being promoted in school meals and city restaurants because they are rich in fibre and minerals and need far less water than rice. As droughts become more frequent, these qualities are increasingly valuable.",
         "Reviving such crops, however, is far from straightforward. Because they have received so little scientific attention, their yields are often low and unpredictable compared with those of modern staples. Processing can also be laborious. Fonio grains are so small that removing their husks by hand traditionally took several hours of pounding to produce enough for a single family meal, and only recently have affordable machines been designed for the task. Perhaps the greatest obstacle, though, is the market. Without reliable buyers, few farmers are willing to risk planting an unfamiliar crop, and without a steady supply, food companies hesitate to develop products from it. Breaking this cycle requires coordinated support from governments, researchers and businesses.",
         "None of this means that forgotten crops will replace rice or wheat; the sheer scale of global demand makes that unrealistic. Their real value lies in diversification. A farming system that includes a wider range of species is more resilient to shocks, and diets that draw on more plants tend to be more nutritious. There are encouraging signs: chefs are adding fonio to their menus, and start-ups are selling millet snacks to health-conscious consumers. The challenge now is to ensure that the communities who preserved these crops for generations, often in difficult conditions, share fairly in the profits of their rediscovery."
+      ],
+      gloss: [
+        ["account for roughly two-thirds of all crop production","chiếm khoảng hai phần ba tổng sản lượng cây trồng","account for + tỉ lệ: chiếm"],
+        ["did not happen by accident","không phải ngẫu nhiên mà xảy ra","by accident: tình cờ, ngẫu nhiên"],
+        ["dangerously dependent on a handful of plants","phụ thuộc một cách nguy hiểm vào một nhúm cây trồng","be dependent on; a handful of + N: một số ít"],
+        ["harvests rose so dramatically that famines","sản lượng tăng mạnh đến mức những nạn đói","so + adv/adj + that: đến nỗi mà"],
+        ["Yet the success came at a price.","Thế nhưng thành công đó phải trả giá.","come at a price: phải đánh đổi"],
+        ["encouraged by subsidies","được trợ cấp khuyến khích","Rút gọn mệnh đề bị động bằng V3"],
+        ["Against this background,","Trong bối cảnh đó,","Từ nối mở đoạn"],
+        ["taking a fresh look at","nhìn nhận lại với góc nhìn mới","take a fresh look at + N"],
+        ["in as little as eight weeks","chỉ trong vòng tám tuần","as little as + số lượng: chỉ (nhấn mạnh ít)"],
+        ["were long dismissed as","từ lâu bị xem nhẹ là","be dismissed as + N: bị gạt đi, coi là"],
+        ["are now being promoted","hiện đang được quảng bá","Bị động hiện tại tiếp diễn: are being + V3"],
+        ["is far from straightforward","còn lâu mới đơn giản","far from + adj: hoàn toàn không"],
+        ["compared with those of modern staples","so với năng suất của các loại lương thực chính hiện đại","those thay cho danh từ số nhiều đã nhắc (yields)"],
+        ["only recently have affordable machines been designed","chỉ gần đây mới có máy móc giá phải chăng được thiết kế","Đảo ngữ: Only recently + have + S + been + V3"],
+        ["few farmers are willing to risk planting","rất ít nông dân sẵn sàng liều trồng","be willing to + V; risk + V-ing"],
+        ["Breaking this cycle requires coordinated support","Phá vỡ vòng luẩn quẩn này đòi hỏi sự hỗ trợ phối hợp","V-ing làm chủ ngữ (động từ số ít)"],
+        ["None of this means that","Tất cả điều này không có nghĩa là","Câu rào đón, hạn chế kết luận"],
+        ["Their real value lies in diversification.","Giá trị thực sự của chúng nằm ở sự đa dạng hoá.","lie in + N: nằm ở"],
+        ["more resilient to shocks","chống chịu tốt hơn trước các cú sốc","resilient to + N"],
+        ["tend to be more nutritious","thường bổ dưỡng hơn","tend to + V: có xu hướng"],
+        ["share fairly in the profits","được chia phần lợi nhuận một cách công bằng","share in + N: cùng hưởng"]
       ],
       questions: [
         { q: "Which of the following would be the best alternative title for the passage?",

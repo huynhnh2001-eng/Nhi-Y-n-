@@ -39,6 +39,60 @@
         "<b>Phân lớp tác động “For individuals… At the level of society…”</b> – giúp đoạn 3 có trật tự logic, thể hiện cái nhìn đa chiều (Task Fulfilment).",
         "<b>“will not only shorten… but also undermine…”</b> – cấu trúc not only… but also kết bài mạnh, đồng thời nối hai lớp tác động cá nhân – xã hội."
       ],
+      gloss: [
+        ["have reported a worrying rise in obesity", "đã ghi nhận sự gia tăng đáng lo ngại về béo phì", "a rise in + N: sự gia tăng về"],
+        ["A large part of the explanation lies in", "Phần lớn lời giải thích nằm ở", "lie in: nằm ở (hedging khi nêu nguyên nhân)"],
+        ["an increasingly sedentary way of life", "lối sống ngày càng ít vận động", "increasingly + adj"],
+        ["The primary cause is the changing nature of work and study", "Nguyên nhân chính là bản chất đang thay đổi của công việc và học tập", "the changing nature of + N"],
+        ["leave them with little time or energy for exercise", "khiến họ còn rất ít thời gian hay sức lực để tập thể dục", "leave sb with sth: để lại cho ai cái gì"],
+        ["whereas previous generations played sport", "trong khi các thế hệ trước chơi thể thao", "whereas: so sánh đối lập quá khứ – hiện tại"],
+        ["are more likely to unwind by scrolling through social media", "có xu hướng thư giãn bằng cách lướt mạng xã hội", "be more likely to + V; by + V-ing"],
+        ["Added to this is the easy availability of", "Thêm vào đó là sự sẵn có dễ dàng của", "Đảo ngữ: Added to this is + N"],
+        ["bring straight to the door", "mang thẳng đến tận cửa", ""],
+        ["combined with a poor diet significantly increases the risk of", "kết hợp với chế độ ăn kém làm tăng đáng kể nguy cơ", "combined with: rút gọn bị động; increase the risk of + N"],
+        ["conditions that were once associated mainly with old age", "những bệnh từng chủ yếu gắn với tuổi già", "Đồng vị ngữ + mệnh đề quan hệ bị động; be associated with"],
+        ["Mental health is likely to suffer too", "Sức khỏe tinh thần cũng có khả năng bị ảnh hưởng", "be likely to + V: có khả năng sẽ…"],
+        ["one of the most effective ways of reducing stress", "một trong những cách hiệu quả nhất để giảm căng thẳng", "one of the + so sánh nhất + N số nhiều; ways of + V-ing"],
+        ["results in more sick days and lower productivity", "dẫn đến nhiều ngày nghỉ ốm hơn và năng suất thấp hơn", "result in: dẫn đến (nguyên nhân → kết quả)"],
+        ["places a heavy burden on public healthcare systems", "đặt gánh nặng lớn lên hệ thống y tế công", "place a burden on + N"],
+        ["that are already stretched", "vốn đã quá tải", "Mệnh đề quan hệ; stretched: căng, quá tải"],
+        ["Unless this trend is reversed", "Nếu xu hướng này không bị đảo ngược", "Unless = If… not; bị động hiện tại"],
+        ["will not only shorten individual lives but also undermine", "không chỉ rút ngắn tuổi thọ cá nhân mà còn làm suy yếu", "not only… but also…"]
+      ],
+      bank: [
+        { h: "Mở bài (paraphrase + quan điểm)", items: [
+          ["More and more young adults today spend most of their waking hours sitting down.", "Ngày càng nhiều người trẻ ngày nay dành phần lớn thời gian thức để ngồi."],
+          ["This shift towards inactive lifestyles has been accompanied by a sharp increase in weight-related illnesses.", "Sự chuyển dịch sang lối sống ít vận động này đi kèm sự gia tăng mạnh các bệnh liên quan đến cân nặng."],
+          ["This essay will examine why young people are becoming less active and how this affects both them and the wider community.", "Bài luận này sẽ xem xét vì sao người trẻ ngày càng ít vận động và điều đó ảnh hưởng thế nào đến họ và cộng đồng."]
+        ] },
+        { h: "Câu chủ đề thân bài", items: [
+          ["There are several reasons why young people are moving less than ever before.", "Có một số lý do khiến người trẻ vận động ít hơn bao giờ hết."],
+          ["The most significant factor is arguably the rise of desk-based employment.", "Có thể nói yếu tố quan trọng nhất là sự gia tăng của công việc văn phòng."],
+          ["This trend has far-reaching consequences for individuals as well as for society.", "Xu hướng này có hệ quả sâu rộng đối với cá nhân cũng như xã hội."],
+          ["The most immediate effect is on people’s physical health.", "Tác động trực tiếp nhất là lên sức khỏe thể chất của con người."]
+        ] },
+        { h: "Giải thích & đưa ví dụ", items: [
+          ["This is largely because office workers rarely have the time or energy to exercise after a ten-hour day.", "Điều này phần lớn là vì nhân viên văn phòng hiếm khi có thời gian hay sức lực tập luyện sau một ngày làm mười tiếng."],
+          ["For instance, a survey of students in Ho Chi Minh City found that most spent over six hours a day on screens.", "Chẳng hạn, một khảo sát sinh viên ở TP.HCM cho thấy phần lớn dành hơn sáu giờ mỗi ngày trước màn hình."],
+          ["As a consequence, illnesses such as type 2 diabetes are now being diagnosed in people under thirty.", "Hệ quả là các bệnh như tiểu đường tuýp 2 hiện được chẩn đoán ở cả người dưới ba mươi tuổi."],
+          ["Owing to the popularity of food delivery apps, a high-calorie meal is never more than a few taps away.", "Do sự phổ biến của ứng dụng giao đồ ăn, một bữa ăn nhiều calo luôn chỉ cách vài cú chạm."]
+        ] },
+        { h: "Câu nối & chuyển ý", items: [
+          ["Closely linked to this is the change in how young people spend their free time.", "Liên quan chặt chẽ đến điều này là sự thay đổi trong cách người trẻ dùng thời gian rảnh."],
+          ["Turning to the effects, the damage is felt at both a personal and a national level.", "Chuyển sang hệ quả, thiệt hại được cảm nhận ở cả cấp độ cá nhân lẫn quốc gia."],
+          ["Beyond the individual, there are also significant costs for society.", "Vượt ra ngoài phạm vi cá nhân, xã hội cũng phải chịu những chi phí đáng kể."]
+        ] },
+        { h: "Nhượng bộ – phản bác", items: [
+          ["Admittedly, some young people are more interested in fitness than ever, but they remain a minority.", "Phải thừa nhận rằng một số người trẻ quan tâm đến thể hình hơn bao giờ hết, nhưng họ vẫn là số ít."],
+          ["It could be argued that genetics also plays a role; however, genes alone cannot explain such a rapid change.", "Có thể lập luận rằng di truyền cũng đóng vai trò; tuy nhiên, chỉ riêng gen không thể giải thích sự thay đổi nhanh như vậy."],
+          ["While technology is often blamed, it is the way we use it, rather than technology itself, that causes harm.", "Dù công nghệ thường bị đổ lỗi, chính cách ta sử dụng nó chứ không phải bản thân công nghệ mới gây hại."]
+        ] },
+        { h: "Kết bài", items: [
+          ["In conclusion, inactive jobs, screen-based entertainment and unhealthy food are the main forces behind this trend.", "Tóm lại, công việc ít vận động, giải trí trên màn hình và đồ ăn không lành mạnh là những tác nhân chính của xu hướng này."],
+          ["If nothing is done, the next generation may well be the first to live shorter lives than their parents.", "Nếu không làm gì, thế hệ tiếp theo rất có thể sẽ là thế hệ đầu tiên sống ngắn hơn cha mẹ mình."],
+          ["Ultimately, the health of a nation depends on the daily habits of its young people.", "Suy cho cùng, sức khỏe của một quốc gia phụ thuộc vào thói quen hằng ngày của người trẻ."]
+        ] }
+      ],
       phrases: [
         ["A large part of the explanation lies in…", "Phần lớn lời giải thích nằm ở…"],
         ["The primary cause is…", "Nguyên nhân chính là…"],
@@ -76,8 +130,51 @@
             "<b>Follow-up 1:</b> I think it's a shared responsibility. Individuals have to make their own choices, but the government can make healthy choices easier – for example, by building parks and cycle lanes, or by putting clear labels on food that's high in sugar.",
             "<b>Follow-up 2:</b> To some extent, yes. People today know much more about nutrition, and gyms are full in the evenings. But knowing isn't the same as doing. My grandparents never went to a gym, but they walked everywhere and ate fresh vegetables every day, so in practice they were probably healthier.",
             "<b>Follow-up 3:</b> Something as simple as standing up and walking around for five minutes every hour makes a real difference. They could also take the stairs instead of the lift and bring a home-cooked lunch rather than ordering fast food. These changes don't cost anything, but over time they add up."
+          ],
+          gloss: [
+            ["On the whole, I'd say they are", "Nhìn chung, tôi cho rằng đúng là vậy", "On the whole: nhìn chung"],
+            ["don't get back until seven in the evening", "mãi đến bảy giờ tối mới về", "not… until: mãi đến… mới"],
+            ["too tired to cook", "quá mệt để nấu ăn", "too + adj + to V"],
+            ["they end up ordering fried chicken", "rốt cuộc họ lại gọi gà rán", "end up + V-ing"],
+            ["they burn very few calories", "họ đốt rất ít calo", "burn calories (collocation)"],
+            ["Over a few years, that adds up", "Qua vài năm, những điều đó cộng dồn lại", "add up: cộng dồn, tích tụ"],
+            ["have put on ten kilos", "đã tăng mười cân", "put on weight: tăng cân"],
+            ["keep our brains on alert", "khiến não chúng ta luôn trong trạng thái cảnh giác", "keep + O + on alert"],
+            ["makes it harder to switch off", "khiến việc thư giãn hoàn toàn khó hơn", "make it + adj + to V; switch off: ngắt kết nối, thư giãn"],
+            ["which I think people underestimate", "điều mà tôi nghĩ mọi người hay đánh giá thấp", "Mệnh đề quan hệ chèn I think"],
+            ["makes us crave sugary food", "khiến chúng ta thèm đồ ngọt", "make sb + V nguyên mẫu; crave: thèm"],
+            ["are cancelling out many of these advantages", "đang triệt tiêu nhiều lợi ích này", "cancel out: triệt tiêu, bù trừ"],
+            ["knowing isn't the same as doing", "biết không giống với làm", "Danh động từ làm chủ ngữ; the same as"],
+            ["Something as simple as standing up", "Một việc đơn giản như đứng dậy", "as + adj + as: so sánh bằng"]
           ]
         }
+      ],
+      bank: [
+        { h: "Mở đầu", items: [
+          ["I’d like to discuss whether the way we live nowadays is harming our health.", "Tôi muốn bàn về việc liệu lối sống ngày nay có đang gây hại cho sức khỏe của chúng ta."],
+          ["Generally speaking, I agree with this statement, especially when it comes to young office workers.", "Nói chung, tôi đồng ý với nhận định này, đặc biệt là với nhân viên văn phòng trẻ."],
+          ["I’ll talk about fast food and technology first, and then add a point of my own about stress.", "Tôi sẽ nói về đồ ăn nhanh và công nghệ trước, rồi thêm một ý riêng về căng thẳng."]
+        ] },
+        { h: "Chuyển ý", items: [
+          ["Moving on to fast food, convenience has clearly come at a cost.", "Chuyển sang đồ ăn nhanh, sự tiện lợi rõ ràng đã phải trả giá."],
+          ["On top of that, technology keeps us glued to our seats for hours.", "Thêm vào đó, công nghệ khiến chúng ta dính chặt vào ghế hàng giờ."],
+          ["That brings me to my next point, which is screen time.", "Điều đó dẫn tôi đến ý tiếp theo, đó là thời gian dùng màn hình."]
+        ] },
+        { h: "Ý riêng của bạn", items: [
+          ["Another factor I’d like to add is constant work pressure, which affects both body and mind.", "Một yếu tố khác tôi muốn thêm là áp lực công việc liên tục, ảnh hưởng cả thể chất lẫn tinh thần."],
+          ["Something people rarely mention is how little time we spend in nature these days.", "Một điều ít ai nhắc đến là ngày nay chúng ta dành rất ít thời gian ở giữa thiên nhiên."],
+          ["Personally, I’ve noticed that whenever I sleep badly, I eat worse and exercise less.", "Cá nhân tôi nhận thấy mỗi khi ngủ không ngon, tôi ăn uống tệ hơn và ít tập luyện hơn."]
+        ] },
+        { h: "Kết luận", items: [
+          ["So, to sum up, I believe modern habits are doing more harm than good to our health.", "Vậy tóm lại, tôi tin thói quen hiện đại đang gây hại cho sức khỏe nhiều hơn là có lợi."],
+          ["Although modern life has its benefits, the overall effect on our health is clearly negative.", "Dù cuộc sống hiện đại có lợi ích, tác động tổng thể lên sức khỏe rõ ràng là tiêu cực."],
+          ["That’s why I think we need to rethink our daily routines before it’s too late.", "Đó là lý do tôi nghĩ chúng ta cần xem lại thói quen hằng ngày trước khi quá muộn."]
+        ] },
+        { h: "Trả lời câu hỏi phụ", items: [
+          ["Well, I’d say it’s a bit of both, but individuals should take the first step.", "À, tôi cho rằng cả hai đều có phần, nhưng cá nhân nên là người bước bước đầu tiên."],
+          ["That’s a tricky one. In some ways yes, but in other ways people are actually less healthy than before.", "Câu này khó đấy. Ở một số mặt thì đúng, nhưng ở mặt khác con người thực ra kém khỏe mạnh hơn trước."],
+          ["The easiest change, in my opinion, would be to get up from your desk at least once an hour.", "Theo tôi, thay đổi dễ nhất là đứng dậy khỏi bàn làm việc ít nhất mỗi giờ một lần."]
+        ] }
       ],
       phrases: [
         ["On the whole, I'd say…", "Nhìn chung, tôi cho rằng…"],
