@@ -6,6 +6,54 @@
   sections: [
     {
       type: "writing",
+      gloss: [
+        ["I am writing to complain about","Tôi viết thư này để khiếu nại về","complain about + N: khiếu nại về"],
+        ["which I recently ordered from your website","mà tôi đã đặt mua gần đây trên trang web của quý công ty","Mệnh đề quan hệ which (tân ngữ); order sth from"],
+        ["I also paid an extra fee for express delivery","tôi cũng đã trả thêm phí giao hàng nhanh","pay a fee for + N"],
+        ["which promised that the item would arrive within two days","dịch vụ cam kết hàng sẽ đến trong vòng hai ngày","would + V: tương lai trong quá khứ; within + thời gian"],
+        ["Unfortunately, the parcel did not arrive until six days later","Thật không may, mãi sáu ngày sau bưu kiện mới đến","not … until: mãi đến … mới"],
+        ["Moreover,","Hơn nữa,","từ nối bổ sung ý (trang trọng)"],
+        ["I found that the box had clearly been opened before","tôi phát hiện hộp rõ ràng đã bị mở từ trước","Bị động quá khứ hoàn thành: had been + V3"],
+        ["the charging cable was missing","dây sạc bị thiếu","be missing: bị thiếu, bị mất"],
+        ["Even worse,","Tệ hơn nữa,","từ nối tăng mức độ nghiêm trọng"],
+        ["does not produce any sound at all","hoàn toàn không phát ra âm thanh nào","not … at all: hoàn toàn không"],
+        ["completely unusable","hoàn toàn không thể sử dụng","un- + use + -able: tiền tố phủ định"],
+        ["As you can imagine,","Như ông/bà có thể hình dung,",""],
+        ["I am extremely disappointed","tôi vô cùng thất vọng","extremely + adj: nhấn mạnh"],
+        ["I would therefore like you to send me a new pair","vì vậy tôi đề nghị quý công ty gửi cho tôi một chiếc mới","would like sb to + V; therefore đặt giữa câu"],
+        ["refund the express delivery charge within seven days","hoàn lại phí giao hàng nhanh trong vòng bảy ngày","refund + khoản tiền"],
+        ["If this is not possible, I expect a full refund","Nếu điều này không thể, tôi yêu cầu được hoàn tiền toàn bộ","Câu điều kiện loại 1; expect: yêu cầu, mong đợi chính đáng"],
+        ["I look forward to your prompt reply","Tôi mong sớm nhận được phản hồi của quý công ty","look forward to + N"]
+      ],
+      bank: [
+        { h: "Mở đầu thư", items: [
+          ["I am writing to express my dissatisfaction with an order I placed on your website last month.","Tôi viết thư này để bày tỏ sự không hài lòng về một đơn hàng tôi đặt trên trang web của quý công ty tháng trước."],
+          ["I am writing to draw your attention to a problem with a recent purchase from your online shop.","Tôi viết thư này để lưu ý quý công ty về một vấn đề với món hàng tôi mua gần đây tại cửa hàng trực tuyến."],
+          ["I wish to complain about the poor quality of a product I bought from your company.","Tôi muốn khiếu nại về chất lượng kém của một sản phẩm tôi đã mua của quý công ty."]
+        ] },
+        { h: "Nêu lý do viết thư", items: [
+          ["The reason for this letter is that the headphones I received are faulty.","Lý do của lá thư này là chiếc tai nghe tôi nhận được bị lỗi."],
+          ["I feel I must complain because the service I received fell far below the standard I expected.","Tôi thấy mình phải khiếu nại vì dịch vụ tôi nhận được kém xa so với tiêu chuẩn tôi mong đợi."],
+          ["I am contacting you because I have not received any reply to my two previous emails.","Tôi liên hệ với quý công ty vì chưa nhận được phản hồi nào cho hai email trước đó."]
+        ] },
+        { h: "Trình bày từng ý", items: [
+          ["On 3rd November, I placed an order for a pair of wireless headphones, order number TZ-48213.","Ngày 3 tháng 11, tôi đặt mua một chiếc tai nghe không dây, mã đơn hàng TZ-48213."],
+          ["When I opened the parcel, I discovered that the right earphone was badly scratched.","Khi mở bưu kiện, tôi phát hiện bên tai nghe phải bị trầy xước nặng."],
+          ["To make matters worse, the item was delivered four days later than promised.","Tệ hơn nữa, món hàng được giao muộn hơn bốn ngày so với cam kết."],
+          ["I contacted your customer service team by phone, but nobody was able to help me.","Tôi đã gọi điện cho bộ phận chăm sóc khách hàng nhưng không ai giúp được tôi."]
+        ] },
+        { h: "Câu nối & chuyển ý", items: [
+          ["In addition to this, the instructions were only available in Chinese.","Ngoài ra, sách hướng dẫn chỉ có bằng tiếng Trung."],
+          ["Not only was the delivery late, but the product was also damaged.","Không chỉ giao hàng trễ mà sản phẩm còn bị hỏng."],
+          ["As a result, I was unable to use the headphones on an important business trip.","Vì thế, tôi đã không thể dùng tai nghe trong một chuyến công tác quan trọng."]
+        ] },
+        { h: "Kết thư", items: [
+          ["I would be grateful if you could replace the item or give me a full refund as soon as possible.","Tôi rất biết ơn nếu quý công ty có thể đổi sản phẩm hoặc hoàn tiền toàn bộ cho tôi càng sớm càng tốt."],
+          ["I trust that you will deal with this matter promptly.","Tôi tin rằng quý công ty sẽ giải quyết vấn đề này nhanh chóng."],
+          ["If I do not hear from you within ten days, I will have to take further action.","Nếu không nhận được phản hồi trong vòng mười ngày, tôi sẽ buộc phải có biện pháp tiếp theo."],
+          ["I look forward to hearing from you at your earliest convenience.","Tôi mong sớm nhận được hồi âm của quý công ty."]
+        ] }
+      ],
       task: 1,
       kind: "Formal letter – complaint",
       lesson: [
@@ -57,6 +105,28 @@
     },
     {
       type: "speaking",
+      bank: [
+        { h: "Trả lời trực tiếp", items: [
+          ["Honestly, I’m not a big shopper – I only go shopping when I really need something.","Thật ra tôi không mê mua sắm lắm – tôi chỉ đi mua khi thật sự cần thứ gì đó."],
+          ["Yes, I do. I love shopping, especially at local markets.","Có chứ. Tôi thích mua sắm, nhất là ở các chợ địa phương."],
+          ["I mostly shop online these days, to be honest.","Thật lòng mà nói, dạo này tôi chủ yếu mua sắm trực tuyến."]
+        ] },
+        { h: "Đưa lý do", items: [
+          ["The main reason is that online shopping saves me a lot of time.","Lý do chính là mua sắm trực tuyến giúp tôi tiết kiệm rất nhiều thời gian."],
+          ["I prefer real shops because I like to see and touch products before I buy them.","Tôi thích cửa hàng thật hơn vì tôi muốn nhìn và sờ sản phẩm trước khi mua."],
+          ["That’s mainly because the staff there are always friendly and helpful.","Chủ yếu là vì nhân viên ở đó luôn thân thiện và nhiệt tình."]
+        ] },
+        { h: "Ví dụ bản thân", items: [
+          ["For example, last month I bought a jacket online and it looked completely different from the picture.","Ví dụ, tháng trước tôi mua một chiếc áo khoác trên mạng và nó trông khác hẳn ảnh."],
+          ["I remember once a shop assistant spent half an hour helping me choose a gift for my mum.","Tôi nhớ có lần một nhân viên bán hàng dành nửa tiếng giúp tôi chọn quà cho mẹ."],
+          ["Just last week, I returned a faulty kettle and got my money back the same day.","Mới tuần trước, tôi trả lại một chiếc ấm đun nước bị lỗi và được hoàn tiền ngay trong ngày."]
+        ] },
+        { h: "Câu câu giờ tự nhiên", items: [
+          ["Hmm, let me see… I’d probably say…","Hmm, để xem nào… có lẽ tôi sẽ nói là…"],
+          ["That’s an interesting question. I suppose…","Câu hỏi thú vị đấy. Tôi cho là…"],
+          ["Well, I’ve never really thought about it, but…","À, tôi chưa bao giờ thực sự nghĩ về điều đó, nhưng…"]
+        ] }
+      ],
       part: 1,
       lesson: [
         "<b>Diễn đạt lại câu hỏi khi bắt đầu:</b> thay vì lặp nguyên văn (<em>Do you prefer shopping online? – I prefer shopping online…</em>), hãy dùng từ khác: <em>I’d rather buy things on the internet…</em>. Paraphrase cho thấy vốn từ phong phú – tiêu chí Lexical Resource.",
@@ -68,6 +138,22 @@
       ],
       tasks: [
         { label: "Part 1 – Topic: Shopping",
+          gloss: [
+            ["It depends on what I’m buying","Còn tùy tôi đang mua gì","depend on + mệnh đề danh từ (what + S + V)"],
+            ["I quite like browsing in bookshops and markets","tôi khá thích dạo xem ở hiệu sách và chợ","like + V-ing; browse: xem lướt, dạo xem"],
+            ["is a bit of a chore for me","là việc hơi ngán đối với tôi","a bit of a + N: hơi là…"],
+            ["since I find it hard to choose","vì tôi thấy khó chọn","find it + adj + to V"],
+            ["the shops are always crowded at weekends","các cửa hàng lúc nào cũng đông vào cuối tuần",""],
+            ["I’d rather buy things on the internet","tôi thích mua đồ trên mạng hơn","would rather + V nguyên mẫu"],
+            ["great discounts","các đợt giảm giá hấp dẫn",""],
+            ["I need to try them on","tôi cần thử chúng","try sth on: mặc/đi thử (đại từ đứng giữa)"],
+            ["two sizes too small","nhỏ hơn hai cỡ","số lượng + too + adj"],
+            ["It has changed dramatically","Nó đã thay đổi đáng kể","Hiện tại hoàn thành + trạng từ mức độ"],
+            ["Compared with ten years ago,","So với mười năm trước,","Compared with + mốc thời gian"],
+            ["far more people now use apps","giờ có nhiều người dùng ứng dụng hơn hẳn","far more + N: nhiều hơn hẳn"],
+            ["have started ordering groceries online","đã bắt đầu đặt mua thực phẩm trên mạng","start + V-ing; groceries: thực phẩm, đồ tạp hóa"],
+            ["younger people tend to visit shopping malls","người trẻ có xu hướng đến trung tâm thương mại","tend to + V: có xu hướng"]
+          ],
           prompt: "Let’s talk about shopping.<br>1. Do you enjoy going shopping? Why or why not?<br>2. Do you prefer shopping online or in shops?<br>3. How has the way people in your country shop changed in recent years?",
           prep: 0,
           time: 90,
@@ -77,6 +163,22 @@
             "Q3: It has changed dramatically. Compared with ten years ago, far more people now use apps like Shopee or Lazada, and even my parents have started ordering groceries online. Traditional markets are still popular, but younger people tend to visit shopping malls or simply shop from home."
           ] },
         { label: "Part 1 – Topic: Services and customer care",
+          gloss: [
+            ["that I go to almost every morning","mà tôi đến gần như mỗi sáng","Mệnh đề quan hệ kết thúc bằng giới từ: go to"],
+            ["The owner knows exactly how I like my coffee","Chủ quán biết chính xác tôi thích cà phê thế nào","Câu hỏi gián tiếp: how + S + V"],
+            ["a nice quiet place to read the news","một chỗ yên tĩnh dễ chịu để đọc tin tức","N + to V: nơi để làm gì"],
+            ["the most important thing is that","điều quan trọng nhất là","the most + adj + N is that + mệnh đề"],
+            ["genuinely willing to help","thực lòng sẵn sàng giúp đỡ","be willing to + V"],
+            ["The main reason is that","Lý do chính là",""],
+            ["when something goes wrong","khi có chuyện gì trục trặc","go wrong: gặp trục trặc"],
+            ["customers want their problem solved quickly","khách hàng muốn vấn đề của họ được giải quyết nhanh","want + O + V3: muốn cái gì được làm"],
+            ["not passed from one person to another","chứ không bị đẩy từ người này sang người khác","from one … to another"],
+            ["keep their promises about delivery and refunds","giữ đúng cam kết về giao hàng và hoàn tiền","keep a promise: giữ lời hứa"],
+            ["I was waiting for a new phone that I had ordered online","tôi đang chờ một chiếc điện thoại mới đã đặt trên mạng","Quá khứ tiếp diễn + quá khứ hoàn thành"],
+            ["explained the problem calmly","giải thích vấn đề một cách bình tĩnh","V + O + trạng từ"],
+            ["To be fair,","Công bằng mà nói,",""],
+            ["sent me a replacement within three days","gửi cho tôi sản phẩm thay thế trong vòng ba ngày","send sb sth; replacement: đồ thay thế"]
+          ],
           prompt: "Now let’s talk about services.<br>1. Is there a shop or café near your home that you go to regularly?<br>2. In your opinion, what makes good customer service?<br>3. Have you ever complained about a product or a service?",
           prep: 0,
           time: 90,
