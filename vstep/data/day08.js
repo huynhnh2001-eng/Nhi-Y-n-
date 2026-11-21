@@ -1,0 +1,172 @@
+(window.VSTEP_DAYS = window.VSTEP_DAYS || {})[8] = {
+  day: 8,
+  title: "Hội thoại Part 2 & bài đọc về gia đình",
+  topic: "Family",
+  goal: "Làm quen với Listening Part 2 (hội thoại 2 người, 4 câu hỏi) và luyện bài đọc mức passage 2 về chủ đề gia đình. Mục tiêu: theo dõi được ai đề xuất gì, ai đồng ý hay phản đối, và xử lý câu hỏi tham chiếu, từ vựng trong ngữ cảnh.",
+  sections: [
+    {
+      type: "listening",
+      part: 2,
+      lesson: [
+        "Part 2 khác Part 1: mỗi bài là <b>một cuộc hội thoại dài 2–3 phút giữa nam và nữ</b>, có 4 câu hỏi. Khi nghe hướng dẫn, hãy đọc lướt cả 4 câu hỏi và gạch chân từ khóa: <em>Why</em>, <em>What will… do</em>, <em>the man / the woman</em>.",
+        "Câu hỏi đi <b>theo thứ tự nội dung</b> của bài nghe. Câu 1 thường hỏi chủ đề chính hoặc lý do cuộc gọi; câu 4 thường hỏi kế hoạch tiếp theo (“What will the man do next?”). Đừng chờ câu 3 khi bài đã sang ý của câu 4.",
+        "Trong 5 giây đầu, xác định <b>quan hệ giữa hai người</b> (anh chị em, đồng nghiệp, khách – nhân viên) và <b>mục đích</b> cuộc trò chuyện. Điều này giúp đoán trước loại thông tin sẽ xuất hiện.",
+        "Luôn ghi chú theo hai cột <b>M</b> và <b>F</b>: ai đề xuất, ai phản đối. Bẫy phổ biến nhất của Part 2 là đáp án chứa một ý <em>được nhắc đến nhưng bị bác bỏ</em> (ví dụ: “What about…?” → “Hmm, …”).",
+        "Chú ý các tín hiệu đổi hướng: <em>but, actually, fair enough, I’d rather not, how about…</em>. Thông tin đứng <b>sau</b> những từ này thường là đáp án; thông tin đứng trước thường là bẫy.",
+        "Đáp án gần như luôn là <b>diễn đạt lại (paraphrase)</b>: “can’t eat shellfish anymore” → “has health problems with certain food”. Nếu một phương án lặp lại nguyên văn từ trong bài, hãy kiểm tra kỹ trước khi chọn."
+      ],
+      items: [
+        {
+          label: "Conversation 1",
+          context: "Two siblings planning a family celebration",
+          script: [
+            { sp: "F", text: "Hi Tom, have you got a minute? I want to sort out the plans for Mum and Dad’s anniversary before the weekend." },
+            { sp: "M", text: "Sure. It’s their thirty-fifth, isn’t it?" },
+            { sp: "F", text: "No, the thirtieth. They got married in 1996. Anyway, I was thinking we could book that seafood restaurant by the river." },
+            { sp: "M", text: "Hmm, Dad’s been complaining about his stomach lately, and the doctor told him to stay away from shellfish. What about having it at home instead? Everyone could bring a dish." },
+            { sp: "F", text: "That would be cheaper, but then Mum would end up cleaning the kitchen all evening, and the whole point is to let her relax." },
+            { sp: "M", text: "Fair enough. How about the Vietnamese place near Grandma’s house? It has a private room upstairs, and Grandma wouldn’t have to travel far." },
+            { sp: "F", text: "Good idea. She finds long car journeys exhausting these days. How many people are we talking about?" },
+            { sp: "M", text: "Well, there’s the two of us, Uncle Minh’s family, Aunt Lan and her husband, plus Grandma. I’d say around fourteen, including the grandchildren." },
+            { sp: "F", text: "The private room holds up to twenty, so that’s fine. Should we keep the whole thing a surprise?" },
+            { sp: "M", text: "I’d rather not. Remember when we surprised Dad for his sixtieth? He’d already eaten a huge lunch and could barely touch the cake. Let’s just tell them the date but keep the present secret." },
+            { sp: "F", text: "Agreed. And for the present, I’ve been looking at a photo album with pictures from every decade of their marriage." },
+            { sp: "M", text: "Lovely. I’ll go through the old boxes in the attic this weekend and scan the best photos. Some of them must be from their wedding day." },
+            { sp: "F", text: "Perfect. I’ll ring the restaurant first thing tomorrow and book the room." }
+          ],
+          questions: [
+            { q: "What are the speakers mainly discussing?",
+              opts: ["Choosing a birthday present for their grandmother", "Their parents’ wedding in 1996", "A family holiday for the extended family", "Arrangements for their parents’ anniversary"],
+              a: 3,
+              why: "Ngay câu đầu: “sort out the plans for Mum and Dad’s anniversary”. Năm 1996 chỉ là chi tiết phụ (bẫy B); quà cho bà và kỳ nghỉ không được nhắc đến." },
+            { q: "Why does the man reject the seafood restaurant?",
+              opts: ["It is too expensive for the family.", "It is too far from their grandmother’s house.", "Their father has been told to avoid certain food.", "It does not have a private room."],
+              a: 2,
+              why: "Người nam nói: “the doctor told him to stay away from shellfish” → paraphrase thành “told to avoid certain food”. “Cheaper” được nói về phương án tổ chức ở nhà, không phải lý do loại nhà hàng hải sản." },
+            { q: "Why do they decide not to make the celebration a surprise?",
+              opts: ["A previous surprise for their father did not go well.", "Their mother does not like surprises.", "Their grandmother cannot keep a secret.", "It would be too difficult to organise."],
+              a: 0,
+              why: "“I’d rather not. Remember when we surprised Dad for his sixtieth? He’d already eaten a huge lunch and could barely touch the cake.” → lần bất ngờ trước không thành công. “I’d rather not” = lời từ chối lịch sự." },
+            { q: "What will the man do at the weekend?",
+              opts: ["Book the private room", "Look for old family photographs", "Buy a photo album", "Visit his grandmother"],
+              a: 1,
+              why: "“I’ll go through the old boxes in the attic this weekend and scan the best photos.” Đặt phòng là việc của người nữ (“I’ll ring the restaurant… tomorrow”) – bẫy đổi người." }
+          ]
+        },
+        {
+          label: "Conversation 2",
+          context: "Two colleagues talking during a lunch break",
+          script: [
+            { sp: "M", text: "You look tired, Hoa. Is everything all right?" },
+            { sp: "F", text: "Oh, I’m fine. It’s just that my mother moved in with us last month, and we’re all still adjusting." },
+            { sp: "M", text: "Really? I thought she loved living in the countryside." },
+            { sp: "F", text: "She did, but since my father passed away two years ago, she’s been very lonely. And honestly, with both of us working full-time, we needed some help with the kids." },
+            { sp: "M", text: "So she looks after them after school?" },
+            { sp: "F", text: "Yes, she picks them up at half past four and cooks dinner. At first I thought that would solve everything, but there have been a few tensions." },
+            { sp: "M", text: "Such as?" },
+            { sp: "F", text: "Well, she has very different ideas about bringing up children. She lets them watch cartoons for hours, and when I say something, she reminds me that I was raised the same way and I turned out fine." },
+            { sp: "M", text: "That sounds familiar. When my in-laws stayed with us, we argued constantly about sweets. In the end, we all sat down and agreed on three or four basic rules that everyone had to follow." },
+            { sp: "F", text: "And did that work?" },
+            { sp: "M", text: "Mostly. But the key was that my wife raised the subject, not me. Criticism from your own child is easier to accept than from a son-in-law." },
+            { sp: "F", text: "That makes sense. My husband has been very patient, but I can tell he’s starting to feel like a guest in his own home." },
+            { sp: "M", text: "Maybe you could also encourage your mother to have a life of her own, like an evening class or a club. It isn’t healthy for anyone if her whole day revolves around the grandchildren." },
+            { sp: "F", text: "That’s a great point. There’s a community choir near us, and she used to sing when she was young." }
+          ],
+          questions: [
+            { q: "Why did the woman’s mother move in with her?",
+              opts: ["She needed to be near a hospital in the city.", "She had been lonely since her husband died.", "Her house in the countryside was sold.", "She wanted to spend her retirement travelling."],
+              a: 1,
+              why: "“since my father passed away two years ago, she’s been very lonely” → “passed away” = “died”. Lý do thứ hai là cần người trông con, không có phương án nào nói về bệnh viện hay bán nhà." },
+            { q: "What is the main cause of tension in the woman’s home?",
+              opts: ["The cost of the children’s after-school activities", "The time her mother collects the children", "Different views on how to raise the children", "Who is responsible for cooking dinner"],
+              a: 2,
+              why: "“she has very different ideas about bringing up children” – ví dụ là cho trẻ xem hoạt hình hàng giờ. “Half past four” và “cooks dinner” xuất hiện trong bài nhưng không phải nguồn mâu thuẫn." },
+            { q: "According to the man, why did the rules work in his family?",
+              opts: ["They were written down and displayed.", "The children helped to create them.", "His in-laws only stayed for a short time.", "His wife, rather than he, brought up the issue."],
+              a: 3,
+              why: "“the key was that my wife raised the subject, not me” → “raised the subject” = “brought up the issue”. Ý giải thích: con ruột góp ý thì cha mẹ dễ chấp nhận hơn con rể." },
+            { q: "What does the man suggest the woman should do?",
+              opts: ["Help her mother find activities outside the family", "Ask her husband to speak to her mother", "Employ a babysitter for the evenings", "Move to a larger house"],
+              a: 0,
+              why: "“encourage your mother to have a life of her own, like an evening class or a club” → hoạt động bên ngoài gia đình. Người nữ hưởng ứng bằng ý tưởng dàn hợp xướng cộng đồng." }
+          ]
+        }
+      ]
+    },
+    {
+      type: "reading",
+      passage: 2,
+      lesson: [
+        "Passage 2 dài khoảng 350–400 từ, khó hơn passage 1 một bậc. Trước khi đọc chi tiết, hãy <b>đọc câu đầu của mỗi đoạn</b> (topic sentence) để vẽ “bản đồ” bài: đoạn nào nói về nguyên nhân, lợi ích, mặt trái, giải pháp.",
+        "Câu hỏi <b>tham chiếu</b> (“The word ‘they’ refers to…”): quay lại câu chứa từ đó, tìm danh từ số nhiều/số ít phù hợp đứng <b>trước</b> nó, rồi thay thử vào câu xem có hợp nghĩa không.",
+        "Câu hỏi <b>từ vựng trong ngữ cảnh</b>: không chọn nghĩa quen thuộc nhất của từ, mà chọn nghĩa hợp với câu. Cách làm: che từ gốc, tự đoán một từ thay thế, rồi so với 4 phương án.",
+        "Câu <b>NOT TRUE / NOT mentioned</b>: kiểm tra lần lượt từng phương án trong đoạn được chỉ định và đánh dấu ✓; phương án còn lại không tìm thấy hoặc trái với bài là đáp án. Dạng này tốn thời gian – nên làm sau cùng.",
+        "Câu <b>suy luận</b> (infer/imply): đáp án không được viết thẳng nhưng phải được bài <em>chứng minh</em>. Loại các phương án quá mạnh (always, all, never) hoặc thêm thông tin bài không có.",
+        "Câu hỏi <b>thái độ tác giả</b> thường dựa vào đoạn cuối: tìm các từ đánh giá như <em>valuable, not entirely positive, healthiest</em> để xác định tác giả trung lập, ủng hộ hay phê phán."
+      ],
+      title: "The Quiet Rise of the Grandparent",
+      text: [
+        "In many countries, the image of the typical family has changed dramatically over the past fifty years. Households have become smaller, people marry later, and a growing number of couples choose to have only one child or none at all. Yet one family role has quietly grown in importance rather than declined: that of the grandparent.",
+        "Several factors explain this shift. First, people are living longer and staying healthier, so many grandparents are still active and energetic when their grandchildren are born. Second, in families where both parents work full-time, childcare is often expensive or difficult to find, and many parents feel uncomfortable leaving a baby with a stranger. As a result, grandparents frequently step in. A recent survey in one European country found that nearly two thirds of grandparents looked after their grandchildren on a regular basis, and around one in five did so for more than fifteen hours a week.",
+        "The benefits appear to flow in both directions. Children who spend time with their grandparents often develop a stronger sense of identity, as they hear stories about the family’s past and learn customs that might otherwise disappear. Researchers have also noted that teenagers who feel close to a grandparent tend to report fewer emotional difficulties. For older people, meanwhile, caring for grandchildren can provide a sense of purpose and help them stay physically and mentally active, which may even reduce their risk of loneliness and depression.",
+        "However, the picture is not entirely positive. When childcare becomes a daily obligation rather than a choice, it can be exhausting. Some grandparents admit that they feel unable to refuse their children’s requests, even when their own health is suffering. Disagreements over discipline, diet and screen time can also create tension between generations, particularly when three generations share the same home.",
+        "Experts suggest that the most successful arrangements are built on open communication. Parents should discuss expectations clearly, show appreciation and avoid taking help for granted. Grandparents, for their part, need to feel comfortable saying no from time to time. When these conditions are met, the extended family can be one of the most valuable sources of support a child will ever have."
+      ],
+      questions: [
+        { q: "What is the passage mainly about?",
+          opts: ["Why modern couples are choosing to have fewer children", "The increasing role of grandparents in family life and its effects", "How parents can find cheap and reliable childcare", "The emotional problems experienced by teenagers today"],
+          a: 1,
+          why: "Đoạn 1 nêu luận điểm: “one family role has quietly grown in importance… that of the grandparent”; các đoạn sau bàn nguyên nhân, lợi ích, mặt trái và lời khuyên. A và C chỉ là chi tiết nhỏ; D chỉ xuất hiện một câu ở đoạn 3." },
+        { q: "According to paragraph 1, which of the following is NOT a change in family life?",
+          opts: ["Households have fewer members.", "People get married at an older age.", "More couples decide to have one child or no children.", "More adults continue to live with their parents."],
+          a: 3,
+          why: "Đoạn 1 liệt kê: “Households have become smaller” (A), “people marry later” (B), “a growing number of couples choose to have only one child or none” (C). Ý D không hề được nhắc đến → NOT mentioned." },
+        { q: "The phrase “step in” in paragraph 2 is closest in meaning to",
+          opts: ["become involved to help", "move into a new house", "make a formal complaint", "take a step back"],
+          a: 0,
+          why: "Ngữ cảnh: childcare đắt hoặc khó tìm → “As a result, grandparents frequently step in” = ông bà tham gia giúp đỡ. “Step in” không mang nghĩa đen là bước vào nhà (B)." },
+        { q: "According to the survey mentioned in paragraph 2, about one in five grandparents",
+          opts: ["did not look after their grandchildren at all", "cared for their grandchildren for over fifteen hours weekly", "were too unhealthy to provide childcare", "paid for their grandchildren’s childcare"],
+          a: 1,
+          why: "“around one in five did so for more than fifteen hours a week” – “did so” thay cho “looked after their grandchildren”. Chú ý “nearly two thirds” là số liệu khác (chăm sóc thường xuyên)." },
+        { q: "The word “they” in paragraph 3 refers to",
+          opts: ["researchers", "grandparents", "children", "customs"],
+          a: 2,
+          why: "Câu: “Children who spend time with their grandparents often develop a stronger sense of identity, as they hear stories…” – người được nghe kể chuyện là trẻ em (chủ ngữ của câu), không phải ông bà." },
+        { q: "What can be inferred from paragraph 3 about family customs?",
+          opts: ["They are more important to teenagers than to young children.", "They are usually taught at school.", "Some of them could be lost if grandparents did not pass them on.", "Most of them are no longer practised in Europe."],
+          a: 2,
+          why: "“learn customs that might otherwise disappear” – “otherwise” = nếu không có ông bà kể lại → phong tục có thể mất đi. Các phương án khác thêm thông tin bài không nói." },
+        { q: "According to paragraph 4, why can caring for grandchildren become exhausting?",
+          opts: ["Grandparents may feel they cannot say no to their children.", "Grandchildren behave worse with grandparents than with parents.", "Grandparents are rarely thanked for their help.", "Grandparents have to pay for food and activities."],
+          a: 0,
+          why: "“Some grandparents admit that they feel unable to refuse their children’s requests, even when their own health is suffering.” → “unable to refuse” = “cannot say no”. Ý “không được cảm ơn” chỉ ngầm có ở đoạn 5, không phải lý do ở đoạn 4." },
+        { q: "Which of the following is NOT mentioned as a source of disagreement between generations?",
+          opts: ["Discipline", "Money", "Diet", "Screen time"],
+          a: 1,
+          why: "Đoạn 4: “Disagreements over discipline, diet and screen time” – không có tiền bạc (money)." },
+        { q: "The phrase “taking help for granted” in paragraph 5 is closest in meaning to",
+          opts: ["paying for help", "refusing help politely", "asking for help too often", "failing to appreciate help"],
+          a: 3,
+          why: "“take something for granted” = coi là đương nhiên, không trân trọng. Ngữ cảnh đứng cạnh “show appreciation” (thể hiện sự biết ơn) giúp xác nhận nghĩa đối lập." },
+        { q: "What is the author’s overall attitude towards grandparents’ involvement in childcare?",
+          opts: ["Strongly critical", "Completely uninterested", "Generally positive but aware of problems", "Unconditionally enthusiastic"],
+          a: 2,
+          why: "Tác giả nêu lợi ích (đoạn 3), thừa nhận “the picture is not entirely positive” (đoạn 4), và kết luận gia đình mở rộng là “one of the most valuable sources of support” nếu có điều kiện → tích cực nhưng có cân nhắc. D sai vì có “When these conditions are met”." }
+      ]
+    }
+  ],
+  vocab: [
+    ["anniversary", "ngày kỷ niệm (cưới…)"],
+    ["in-laws", "bố mẹ chồng/vợ, họ hàng bên chồng/vợ"],
+    ["bringing up children", "việc nuôi dạy con cái"],
+    ["revolves around", "xoay quanh (dạng chia: revolve around)"],
+    ["household", "hộ gia đình"],
+    ["step in", "can thiệp, vào cuộc giúp đỡ"],
+    ["sense of identity", "ý thức về bản sắc, nguồn cội"],
+    ["obligation", "nghĩa vụ, bổn phận"],
+    ["sense of purpose", "cảm giác sống có mục đích"],
+    ["extended family", "gia đình mở rộng (nhiều thế hệ, họ hàng)"]
+  ],
+  tip: "Ở Part 2, khi nghe “How about…?” hay “What about…?”, đừng vội khoanh – hãy chờ câu đáp lại của người kia: nếu có “Hmm”, “but” hoặc “I’d rather not”, phương án đó đã bị loại."
+};

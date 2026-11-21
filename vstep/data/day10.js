@@ -1,0 +1,171 @@
+(window.VSTEP_DAYS = window.VSTEP_DAYS || {})[10] = {
+  day: 10,
+  title: "Lễ hội: nghe đề xuất – quyết định, đọc passage 3",
+  topic: "Culture & festivals",
+  goal: "Luyện phân biệt lời gợi ý với quyết định cuối cùng trong hội thoại Part 2 và làm quen với bài đọc passage 3 (khoảng 450 từ) có nhiều quan điểm đối lập. Mục tiêu: không mắc bẫy “đã nhắc nhưng bị sửa” và trả lời đúng câu hỏi mục đích của tác giả.",
+  sections: [
+    {
+      type: "listening",
+      part: 2,
+      lesson: [
+        "Nhận diện <b>4 dạng câu hỏi</b> quen thuộc của Part 2: (1) lý do/vấn đề (<em>Why… / What problem…</em>), (2) chi tiết (<em>What… / When…</em>), (3) ý kiến của một người (<em>What does the man think about…</em>), (4) hành động tiếp theo (<em>What will… probably do</em>). Mỗi dạng có “tín hiệu” riêng trong bài nghe.",
+        "Phân biệt <b>gợi ý</b> và <b>quyết định</b>: gợi ý thường đi với <em>Have you thought about…? / I’d suggest… / Maybe you could…</em>; quyết định thường là <em>Then I’ll… / Let’s… / OK, I’ll go with…</em>. Câu hỏi “What will she do?” luôn lấy đáp án từ <b>quyết định</b>.",
+        "Với ngày tháng và con số, bài nghe hay <b>sửa lại thông tin</b>: “eight days, doesn’t it?” → “Seven this year… from the 6th to the 12th”. Ghi cả hai con số, gạch con số bị sửa. Câu chốt cuối cùng mới là đáp án.",
+        "Khi đọc trước 4 câu hỏi, hãy <b>so sánh 4 phương án</b> để đoán nội dung: nếu các phương án đều là lý do khác nhau (giá, thời tiết, đám đông…), bạn biết sẽ phải nghe một lời phàn nàn và cần bắt đúng nguyên nhân.",
+        "Lý do “thật” thường được nhấn mạnh bằng <em>to be honest, the main thing is, actually, my only concern…</em>. Một lý do khác nhắc đến trước (“the cost isn’t my only concern”) thường là bẫy cho câu hỏi về lý do chính.",
+        "Với hội thoại về phong tục/văn hóa, người nói hay giải thích <b>vì sao</b> (<em>is believed to, is considered, associate it with</em>). Đây là chỗ ra câu hỏi “Why…?” – hãy ghi lại cụm sau các động từ này."
+      ],
+      items: [
+        {
+          label: "Conversation 1",
+          context: "Two friends talking about a traditional festival",
+          script: [
+            { sp: "M", text: "Linh, are you still thinking of going to the Hue Festival next month?" },
+            { sp: "F", text: "I was, but I’ve just found out that hotel prices have nearly tripled for that week. Even the guesthouses near the Citadel are fully booked." },
+            { sp: "M", text: "That’s the problem with big festivals. Have you thought about staying in a homestay outside the city? My cousin runs one about twenty minutes away by bike." },
+            { sp: "F", text: "Really? That would help a lot. But to be honest, the cost isn’t my only concern. Last time I went, there were so many tourists that I could hardly see the performances." },
+            { sp: "M", text: "Which events did you go to?" },
+            { sp: "F", text: "Mainly the evening shows by the river. They were stunning, but I spent most of the time looking at the back of people’s heads." },
+            { sp: "M", text: "Then I’d suggest the daytime events rather than the big evening shows. The folk games and the traditional craft workshops are much quieter, they’re free, and you can actually chat with the artisans." },
+            { sp: "F", text: "That sounds more my style. I’m doing a photography course at the moment, and I’d love to take portraits of the craftspeople at work." },
+            { sp: "M", text: "Just make sure you ask permission first. Some of the older artisans don’t like having cameras pointed at them." },
+            { sp: "F", text: "Of course. So what about the dates? The festival runs for eight days, doesn’t it?" },
+            { sp: "M", text: "Seven this year, I think – from the 6th to the 12th. The opening night is always the busiest, so I’d avoid the first couple of days." },
+            { sp: "F", text: "Then I’ll go from the 8th to the 11th. Could you send me your cousin’s number?" },
+            { sp: "M", text: "Sure, I’ll message it to you tonight." }
+          ],
+          questions: [
+            { q: "Why has the woman started to reconsider her trip?",
+              opts: ["She cannot get time off work.", "Accommodation has become much more expensive.", "The festival has been shortened.", "Her friend is unable to go with her."],
+              a: 1,
+              why: "“hotel prices have nearly tripled for that week” → giá chỗ ở tăng mạnh. Việc lễ hội có 7 ngày thay vì 8 là chi tiết sửa ngày, không phải lý do cô ấy do dự." },
+            { q: "What did the woman dislike about her previous visit?",
+              opts: ["The shows were too expensive.", "The river was too crowded with boats.", "Large crowds made it hard to see the shows.", "The performances started too late."],
+              a: 2,
+              why: "“there were so many tourists that I could hardly see the performances… looking at the back of people’s heads”. Chú ý câu “the cost isn’t my only concern” báo hiệu lý do thứ hai quan trọng hơn." },
+            { q: "Why is the woman interested in the craft workshops?",
+              opts: ["She wants to buy souvenirs for her family.", "She hopes to learn a traditional craft.", "They are close to her friend’s cousin’s homestay.", "She would like to photograph the artisans."],
+              a: 3,
+              why: "“I’m doing a photography course… I’d love to take portraits of the craftspeople”. “They’re free” do người nam nói, nhưng đó không phải lý do cô ấy quan tâm – bẫy chi tiết đúng nhưng sai người/sai câu hỏi." },
+            { q: "When will the woman probably attend the festival?",
+              opts: ["From the 8th to the 11th", "From the 6th to the 12th", "Only on the opening night", "For all eight days"],
+              a: 0,
+              why: "Quyết định cuối: “Then I’ll go from the 8th to the 11th.” “6th to the 12th” là thời gian cả lễ hội; “eight days” đã bị người nam sửa thành bảy ngày." }
+          ]
+        },
+        {
+          label: "Conversation 2",
+          context: "A student asking a Vietnamese friend about a holiday visit",
+          script: [
+            { sp: "M", text: "Mai, thanks again for inviting me to your family’s home for Tet. I’m really excited, but I’m also a bit nervous about doing something wrong." },
+            { sp: "F", text: "Don’t worry, my family’s very relaxed. But there are a few things that might be useful to know." },
+            { sp: "M", text: "Great. Should I bring a present? I was thinking of a nice wall clock for your parents." },
+            { sp: "F", text: "Ah, maybe not a clock. Some older people associate it with time running out, so it’s considered a little unlucky. A basket of fruit or a box of good tea would be perfect." },
+            { sp: "M", text: "Good to know. And what time should I arrive on the first day?" },
+            { sp: "F", text: "Actually, it’s better if you come on the second day. The first visitor of the year is believed to bring luck to the whole household, so my parents have already asked a neighbour who had a very successful year to come first." },
+            { sp: "M", text: "I see. That’s a lot of pressure on the neighbour! What about the children? I’ve heard about red envelopes." },
+            { sp: "F", text: "Yes, lucky money. You don’t have to give any, since you’re a guest, but if you’d like to, a small amount is fine. It’s the gesture that matters, not the amount. Just make sure the notes are new." },
+            { sp: "M", text: "New notes? Where do I get those?" },
+            { sp: "F", text: "Most banks exchange them before the holiday, but the queues get really long nearer the time. If I were you, I’d go this week." },
+            { sp: "M", text: "Right, I’ll do that. Anything else I should avoid?" },
+            { sp: "F", text: "Try not to talk about anything negative, like illness or problems at work. People believe the mood of the first few days sets the tone for the whole year. Oh, and my grandmother will almost certainly ask whether you’re married!" },
+            { sp: "M", text: "Then I’d better prepare a polite answer." }
+          ],
+          questions: [
+            { q: "Why does the woman advise the man not to give a clock?",
+              opts: ["Her parents already have several clocks.", "It would be too expensive for a student.", "It would be difficult to carry.", "Some older people link it to bad luck."],
+              a: 3,
+              why: "“Some older people associate it with time running out, so it’s considered a little unlucky.” → “associate it with” = “link it to”." },
+            { q: "Why should the man not visit on the first day?",
+              opts: ["A specially chosen person is expected to visit first.", "The family will be away visiting relatives.", "The banks will be closed that day.", "Her grandmother needs to rest that day."],
+              a: 0,
+              why: "“The first visitor of the year is believed to bring luck… my parents have already asked a neighbour… to come first.” Người hàng xóm được chọn trước – đây là phong tục xông đất." },
+            { q: "What does the woman say about lucky money?",
+              opts: ["Guests are expected to give a large amount.", "Only grandparents give it to children.", "The amount is less important than the gesture.", "It should be given in old notes."],
+              a: 2,
+              why: "“It’s the gesture that matters, not the amount.” D trái với bài: “make sure the notes are new”. A sai vì “You don’t have to give any”." },
+            { q: "What will the man probably do this week?",
+              opts: ["Buy a basket of fruit", "Go to a bank to get new notes", "Meet the woman’s neighbour", "Call the woman’s grandmother"],
+              a: 1,
+              why: "Người nữ khuyên: “If I were you, I’d go this week” (đến ngân hàng đổi tiền mới) và người nam đáp “Right, I’ll do that.” → quyết định. Giỏ trái cây chỉ là gợi ý quà, không gắn với “this week”." }
+          ]
+        }
+      ]
+    },
+    {
+      type: "reading",
+      passage: 3,
+      lesson: [
+        "Passage 3 dài 430–480 từ và thường trình bày <b>nhiều quan điểm</b>: lợi ích – phê phán – phản biện – giải pháp. Khi đọc lướt, ghi bên lề mỗi đoạn 2–3 chữ (ví dụ: “Đ2: lợi ích kinh tế”, “Đ3: critics”) để tìm lại nhanh.",
+        "Phân bổ thời gian: khoảng <b>15–16 phút</b> cho passage 3. Đọc lướt toàn bài tối đa 3 phút, sau đó trả lời câu hỏi theo thứ tự vì câu hỏi chi tiết thường đi theo trình tự đoạn văn.",
+        "Câu hỏi <b>mục đích</b> (“Why does the author mention…?”): đừng hỏi “ví dụ này nói gì” mà hỏi “ví dụ này <em>chứng minh</em> cho câu nào?”. Thường câu chủ đề ngay trước ví dụ là đáp án.",
+        "Phân biệt quan điểm của <b>tác giả</b> và của <b>người khác</b>: <em>critics argue, anthropologists point out, some observers</em> là ý kiến được thuật lại; ý tác giả thường nằm ở đoạn cuối với từ nối <em>therefore, the challenge is</em>.",
+        "Câu <b>suy luận về cảm xúc</b> (“feel like actors in their own celebrations”): chuyển ẩn dụ sang nghĩa thực – diễn viên thì biểu diễn cho người khác xem → người dân cảm thấy lễ hội không còn là của mình.",
+        "Câu <b>tiêu đề phù hợp</b>: chọn tiêu đề bao quát toàn bài, không quá hẹp (chỉ một đoạn) và không quá rộng (cả lịch sử lễ hội). Làm câu này cuối cùng, khi đã nắm ý tất cả các đoạn."
+      ],
+      title: "Festivals in the Age of Tourism",
+      text: [
+        "For centuries, festivals have played a central role in community life. They marked the turning of the seasons, celebrated the harvest, honoured ancestors and brought scattered relatives back to their home villages. Today, however, many traditional festivals face a challenge their founders could never have imagined: they have become tourist attractions, promoted on social media and visited by people with no connection to the communities that created them.",
+        "The economic benefits of this change are undeniable. In many rural areas, a single festival week can generate more income for local businesses than the rest of the year combined. Young people who might otherwise move to the cities in search of work can find seasonal jobs as guides, drivers or performers. Hotels, restaurants and craft sellers depend on these visitors, and the revenue often pays for the restoration of temples and historic buildings. Governments, too, have recognised festivals as a powerful way of promoting national identity abroad, and some now fund international advertising campaigns built around them.",
+        "Yet critics argue that this success comes at a price. When a ritual is performed mainly for spectators, its meaning can gradually shift. In some places, ceremonies that once took place at dawn have been moved to the evening so that tour groups can attend, and sacred dances have been shortened to fit into a performance schedule. Local residents sometimes complain that they feel like actors in their own celebrations. A more serious concern is that younger generations may come to see the festival purely as a commercial event, losing touch with the beliefs that gave it its original purpose.",
+        "Not all observers share this pessimistic view. Anthropologists point out that festivals have always evolved; many customs now regarded as ancient were in fact introduced or reshaped within the last hundred years. From this perspective, tourism is simply one more influence in a long history of change. Moreover, outside interest can encourage communities to revive traditions that were on the verge of disappearing. In several regions, folk songs and crafts have been rediscovered precisely because visitors were willing to pay to experience them.",
+        "The challenge, therefore, is not to keep tourists away but to manage their presence wisely. Some communities have found a balance by separating public performances from private rituals, which remain open only to residents. Others publish simple guidelines explaining how visitors should dress and behave during ceremonies. Still others involve village elders in deciding how the festival is presented, ensuring that any changes are made by the community itself rather than imposed by outside organisers. Where such approaches are adopted, festivals can remain both economically viable and culturally meaningful."
+      ],
+      questions: [
+        { q: "Which of the following is the best title for the passage?",
+          opts: ["The History of Harvest Celebrations", "Traditional Festivals and the Impact of Tourism", "How to Organise a Profitable Festival", "Why Tourists Prefer Modern Celebrations"],
+          a: 1,
+          why: "Cả bài xoay quanh việc lễ hội truyền thống trở thành điểm du lịch: lợi ích (Đ2), phê phán (Đ3), phản biện (Đ4), cách quản lý (Đ5). A quá hẹp (chỉ Đ1), C và D không phải nội dung bài." },
+        { q: "According to paragraph 1, traditional festivals did all of the following EXCEPT",
+          opts: ["mark the change of seasons", "celebrate the harvest", "honour ancestors", "attract foreign traders"],
+          a: 3,
+          why: "Đoạn 1: “marked the turning of the seasons, celebrated the harvest, honoured ancestors and brought scattered relatives back”. Không có ý thu hút thương nhân nước ngoài." },
+        { q: "The word “undeniable” in paragraph 2 is closest in meaning to",
+          opts: ["clearly true", "fairly small", "difficult to measure", "widely criticised"],
+          a: 0,
+          why: "“undeniable” = không thể chối cãi → rõ ràng là đúng. Các câu sau đưa bằng chứng mạnh (thu nhập một tuần lễ hội nhiều hơn cả năm), khẳng định nghĩa này." },
+        { q: "According to paragraph 2, festival revenue is sometimes used to",
+          opts: ["build new hotels for visitors", "train young performers", "restore religious and historic buildings", "pay local residents to take part"],
+          a: 2,
+          why: "“the revenue often pays for the restoration of temples and historic buildings” → temples = religious buildings. Các phương án khác không được nhắc đến." },
+        { q: "The word “its” in paragraph 3 (“its meaning can gradually shift”) refers to",
+          opts: ["success", "a ritual", "a price", "spectators"],
+          a: 1,
+          why: "“When a ritual is performed mainly for spectators, its meaning can gradually shift.” – ý nghĩa thay đổi là ý nghĩa của nghi lễ. “spectators” là số nhiều, không thể dùng “its”." },
+        { q: "Why does the author mention ceremonies being moved from dawn to the evening?",
+          opts: ["To show that tourists prefer evening events", "To explain why festivals have become longer", "To criticise tour companies for being dishonest", "To illustrate how rituals are changed to suit visitors"],
+          a: 3,
+          why: "Ví dụ này minh họa cho câu chủ đề ngay trước: “When a ritual is performed mainly for spectators, its meaning can gradually shift” – nghi lễ bị thay đổi “so that tour groups can attend”." },
+        { q: "What can be inferred from the statement that residents “feel like actors in their own celebrations”?",
+          opts: ["They are paid to perform for tourists.", "They enjoy the attention from visitors.", "They feel the festival no longer fully belongs to them.", "They want to become professional performers."],
+          a: 2,
+          why: "Diễn viên biểu diễn cho khán giả, không phải cho bản thân → người dân thấy lễ hội không còn hoàn toàn là của họ. A không có trong bài; B trái với giọng phàn nàn (“complain”)." },
+        { q: "According to anthropologists in paragraph 4,",
+          opts: ["many customs thought to be ancient are relatively recent", "tourism has destroyed most traditional customs", "festivals should not be allowed to change", "folk songs are less popular than crafts"],
+          a: 0,
+          why: "“many customs now regarded as ancient were in fact introduced or reshaped within the last hundred years” → paraphrase của A. B và C ngược với quan điểm của các nhà nhân học." },
+        { q: "The phrase “on the verge of” in paragraph 4 is closest in meaning to",
+          opts: ["recovering from", "responsible for", "very close to", "far away from"],
+          a: 2,
+          why: "“traditions that were on the verge of disappearing” = sắp biến mất, rất gần với việc biến mất. Ngữ cảnh “revive” (hồi sinh) và “rediscovered” xác nhận nghĩa này." },
+        { q: "Which of the following is NOT mentioned in paragraph 5 as a way of managing tourism?",
+          opts: ["Separating public performances from private rituals", "Involving elders in decisions about the festival", "Letting the community decide on changes", "Limiting visitor numbers by selling tickets"],
+          a: 3,
+          why: "Đoạn 5 nêu: “separating public performances from private rituals”, “involve village elders”, “changes are made by the community itself”. Không có ý bán vé để giới hạn khách." }
+      ]
+    }
+  ],
+  vocab: [
+    ["artisan", "nghệ nhân"],
+    ["fully booked", "kín chỗ, hết phòng"],
+    ["associate it with", "liên tưởng nó với (associate A with B)"],
+    ["sets the tone", "tạo không khí, định hướng cho"],
+    ["ritual", "nghi lễ"],
+    ["revenue", "doanh thu"],
+    ["sacred", "linh thiêng"],
+    ["revive", "hồi sinh, khôi phục"],
+    ["on the verge of", "sắp, trên bờ vực"],
+    ["economically viable", "khả thi về kinh tế"]
+  ],
+  tip: "Trong Part 2, câu hỏi cuối thường là “What will… do?”. Hãy chờ câu chốt dạng “Then I’ll…” hoặc “Right, I’ll do that” – đó mới là quyết định, còn mọi câu “I’d suggest…” trước đó chỉ là gợi ý."
+};

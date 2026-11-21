@@ -1,0 +1,167 @@
+(window.VSTEP_DAYS = window.VSTEP_DAYS || {})[15] = {
+  day: 15,
+  title: "Nghe bài giảng Part 3 & đọc bài khó nhất",
+  topic: "Science & discovery",
+  goal: "Làm quen với Listening Part 3 (bài giảng dài, 5 câu hỏi) bằng kỹ thuật ghi chú theo khung, và chinh phục Reading passage 4 – bài dài nhất, nhiều câu suy luận và thái độ tác giả.",
+  sections: [
+    {
+      type: "listening",
+      part: 3,
+      lesson: [
+        "<b>Đọc trước 5 câu hỏi trong 15–20 giây:</b> gạch chân từ khoá (tên riêng, số, động từ chính). Câu hỏi Part 3 đi <em>theo đúng trình tự</em> bài nói, nên 5 câu hỏi chính là “bản đồ” của bài giảng.",
+        "<b>Bắt câu dẫn dắt ở đầu bài:</b> diễn giả thường nói “I'll start with…, then…, and finally…”. Ghi ngay khung 3 dòng (1 – 2 – 3) để biết mình đang ở phần nào khi nghe.",
+        "<b>Ghi chú 2 cột:</b> trái = ý chính, phải = ví dụ / số liệu. Dùng ký hiệu thay chữ: ↑ (tăng), ↓ (giảm), → (dẫn đến), ≠ (khác), ✓/✗ (đồng ý/phản đối). Không ghi cả câu – chỉ 2–3 từ.",
+        "<b>Nghe từ chuyển ý (signposts):</b> “But…”, “Now, I should add…”, “This brings me to…”, “Crucially…”. Thông tin ngay sau những từ này gần như luôn được hỏi.",
+        "<b>Bẫy “trùng từ”:</b> phương án lặp nguyên văn một cụm trong bài thường là bẫy; đáp án đúng hay được <em>paraphrase</em> (ví dụ “too big and expensive for ordinary kitchens” → “unsuitable for most homes”).",
+        "<b>Câu hỏi mục đích/ý chính và câu “imply”:</b> mục đích thường lộ ở đoạn mở hoặc kết; câu “imply/suggest” cần suy ra từ quan điểm của diễn giả, không phải từ một chi tiết lẻ."
+      ],
+      items: [
+        {
+          label: "Talk 1",
+          context: "A lecture on the history of science",
+          script: [
+            { sp: "N", text: "You will hear part of a lecture on the history of science." },
+            { sp: "F", text: "Good morning, everyone. Today I want to look at a question that students often ask me: are great discoveries mostly the result of luck? I'll start with a famous example, then I'll explain why I think 'luck' is the wrong word, and finally I'll say something about what this means for how we fund research." },
+            { sp: "F", text: "Let's begin in 1945. An engineer named Percy Spencer was working on radar equipment when he noticed that a chocolate bar in his pocket had melted. Now, plenty of people had probably felt equipment warm up before. What made Spencer different was that he didn't simply clean his pocket and carry on. He fetched some popcorn kernels, placed them near the device and watched them pop. Within a couple of years his company had produced the first microwave oven, although, I should add, it was nearly two metres tall and far too expensive for ordinary kitchens." },
+            { sp: "F", text: "So was this luck? Partly, yes. But the French scientist Louis Pasteur once said that chance favours only the prepared mind, and I think he was right. Spencer had spent years learning how these machines behaved. The accident only became a discovery because he was able to recognise that something unusual had happened and, crucially, because he was curious enough to test it immediately." },
+            { sp: "F", text: "Historians call this pattern serendipity, and when you look closely, it appears again and again. The common thread isn't the accident itself; accidents happen in laboratories every day. It's the combination of deep knowledge and a willingness to take a strange result seriously instead of dismissing it as an error." },
+            { sp: "F", text: "This brings me to my final point. Many research funding systems today reward projects with clearly predictable outcomes. Applicants are asked to state in advance exactly what they expect to find. That's understandable – governments want value for money. But if so many breakthroughs come from noticing the unexpected, then a system that only funds the expected may, ironically, be reducing the chance of the next great discovery. Some agencies have started setting aside a small share of their budgets, around five percent, for what they call 'blue-sky' projects, and I'd argue that share should be larger." },
+            { sp: "F", text: "Next week we'll look at a case where ignoring an odd result cost a research team a Nobel Prize." }
+          ],
+          questions: [
+            { q: "What is the main purpose of the lecture?",
+              opts: ["To describe how the microwave oven was developed", "To argue that discoveries depend on more than chance", "To criticise the research methods of Percy Spencer", "To compare French and American science"],
+              a: 1,
+              why: "Mở bài: “are great discoveries mostly the result of luck?… I'll explain why I think ‘luck’ is the wrong word”. Câu chuyện lò vi sóng chỉ là <em>ví dụ</em>, không phải mục đích → A là bẫy chi tiết." },
+            { q: "What did Spencer do after he noticed the melted chocolate?",
+              opts: ["He cleaned his pocket and continued working.", "He reported the problem to his company.", "He tested the effect with a different food.", "He stopped working with radar equipment."],
+              a: 2,
+              why: "“He fetched some popcorn kernels, placed them near the device and watched them pop” = thử nghiệm với một loại thực phẩm khác. A là việc người khác làm: “he didn't simply clean his pocket and carry on” – bẫy phủ định." },
+            { q: "What does the lecturer say about the first microwave oven?",
+              opts: ["It was produced in 1945.", "It was quickly bought by many families.", "It was designed by Louis Pasteur.", "It was unsuitable for most homes."],
+              a: 3,
+              why: "“nearly two metres tall and far too expensive for ordinary kitchens” → paraphrase thành “unsuitable for most homes”. A là bẫy số: 1945 là năm phát hiện, lò ra đời “within a couple of years” sau đó." },
+            { q: "According to the lecturer, what do serendipitous discoveries have in common?",
+              opts: ["Expertise combined with openness to unexpected results", "Laboratories where accidents happen frequently", "Scientists who work alone without funding", "Results that are later shown to be errors"],
+              a: 0,
+              why: "“The common thread isn't the accident itself… It's the combination of deep knowledge and a willingness to take a strange result seriously”. B lấy từ “accidents happen in laboratories every day” nhưng diễn giả nói rõ đó <em>không</em> phải điểm chung." },
+            { q: "What does the lecturer imply about many current funding systems?",
+              opts: ["They should support only predictable projects.", "They may be discouraging important breakthroughs.", "They spend too much money on blue-sky research.", "They are not interested in value for money."],
+              a: 1,
+              why: "“a system that only funds the expected may, ironically, be reducing the chance of the next great discovery” → hàm ý hệ thống hiện tại có thể cản trở đột phá. C ngược ý: cô ấy muốn phần 5% “should be larger”." }
+          ]
+        },
+        {
+          label: "Talk 2",
+          context: "A radio programme about science",
+          script: [
+            { sp: "N", text: "You will hear a radio talk about citizen science." },
+            { sp: "M", text: "Hello and welcome to Science Weekly. This week's topic is citizen science – research projects in which members of the public, most of them with no scientific training at all, help professional researchers collect or analyse data." },
+            { sp: "M", text: "The idea isn't new. Bird-watchers have been sending their counts to ornithologists for well over a century. What has changed is the scale. Thanks to smartphones and the internet, a single project can now involve hundreds of thousands of volunteers. One astronomy project I've been following asked the public to sort images of galaxies by shape. The researchers originally estimated that the job would take their small team several years. Volunteers finished the first round in less than six months." },
+            { sp: "M", text: "Now, you might expect professional scientists to be suspicious of data produced by amateurs, and at first many were. The usual solution is repetition: each image or recording is checked by many different volunteers, and only answers that most people agree on are accepted. Studies comparing this crowd data with expert judgements have found it to be, in most cases, just as reliable." },
+            { sp: "M", text: "But accuracy isn't the only benefit, and it may not even be the most important one. Researchers I've spoken to keep coming back to something else: volunteers notice things that nobody asked them to look for. In the galaxy project, a schoolteacher spotted a strange green object that didn't fit any category. It turned out to be a type of object astronomers had never described before." },
+            { sp: "M", text: "There are, of course, limits. Citizen science works best for tasks that are easy to explain but time-consuming to do. Work that needs specialist equipment or years of training is still better left to professionals. And there's a risk that institutions treat volunteers simply as free labour, without ever telling them what happened to their contributions. The best projects, in my view, publish regular updates and even name volunteers in their research papers." },
+            { sp: "M", text: "So, if you have a spare half hour, why not give it a try? After the break, I'll be talking to a woman who has classified more than forty thousand images from her kitchen table." }
+          ],
+          questions: [
+            { q: "According to the speaker, what has changed most about citizen science?",
+              opts: ["It now focuses mainly on astronomy.", "Volunteers now need scientific training.", "Far more people can take part at the same time.", "It is no longer supported by scientists."],
+              a: 2,
+              why: "“What has changed is the scale… a single project can now involve hundreds of thousands of volunteers” → “far more people can take part”. B ngược với “no scientific training at all”." },
+            { q: "How long did volunteers take to complete the first round of the galaxy project?",
+              opts: ["Under half a year", "Several years", "Exactly six months", "Over a century"],
+              a: 0,
+              why: "“Volunteers finished the first round in less than six months” = under half a year. “Several years” là ước tính ban đầu của nhóm nghiên cứu; “over a century” nói về người quan sát chim – bẫy số liệu gần nhau." },
+            { q: "How do projects make sure that volunteers' data is reliable?",
+              opts: ["Volunteers must pass a test before starting.", "Experts recheck every single answer.", "Only experienced bird-watchers are accepted.", "The same item is checked by many different people."],
+              a: 3,
+              why: "“each image or recording is checked by many different volunteers, and only answers that most people agree on are accepted”. Bài không nhắc đến bài kiểm tra hay chuyên gia kiểm tra lại toàn bộ." },
+            { q: "What does the speaker suggest may be the most important benefit of citizen science?",
+              opts: ["Its data is more accurate than experts' data.", "Volunteers sometimes make discoveries nobody planned.", "It allows researchers to save money on equipment.", "It teaches schoolchildren about astronomy."],
+              a: 1,
+              why: "“accuracy isn't the only benefit, and it may not even be the most important one… volunteers notice things that nobody asked them to look for”. A sai: dữ liệu chỉ “just as reliable”, không chính xác hơn." },
+            { q: "What practice does the speaker criticise?",
+              opts: ["Using smartphones to collect data", "Choosing tasks that are easy to explain", "Treating volunteers as unpaid workers without feedback", "Naming volunteers in research papers"],
+              a: 2,
+              why: "“there's a risk that institutions treat volunteers simply as free labour, without ever telling them what happened to their contributions”. D là việc anh ấy <em>khen</em> (“The best projects… name volunteers”)." }
+          ]
+        }
+      ]
+    },
+    {
+      type: "reading",
+      passage: 4,
+      lesson: [
+        "<b>Phân bổ thời gian:</b> passage 4 nên có 18–20 phút (3 bài trước ~40 phút). Làm câu chi tiết, từ vựng, quy chiếu trước; để câu ý chính/tiêu đề và thái độ tác giả làm cuối khi đã hiểu toàn bài.",
+        "<b>Đọc “xương sống” trước:</b> câu đầu mỗi đoạn + 2 câu cuối bài. Passage 4 thường là bài lập luận: nêu vấn đề → nguyên nhân → giải pháp → phản biện → kết luận của tác giả.",
+        "<b>NOT TRUE / NOT mentioned:</b> tìm và gạch 3 phương án có trong bài, phương án còn lại là đáp án. Cảnh giác với từ bị tráo mức độ: “a small fraction” trong bài ↔ “most” trong đáp án.",
+        "<b>Thái độ tác giả:</b> soi các từ đánh giá (“troubling”, “arguably”, “deserve to be taken seriously, yet…”). Sau cấu trúc nhượng bộ (“These concerns…, yet…”) mới là quan điểm thật của tác giả.",
+        "<b>Câu hỏi về hình ảnh ẩn dụ:</b> khi tác giả so sánh (“like drawing a target around an arrow”), hãy đọc câu ngay trước – hình ảnh luôn minh hoạ cho ý vừa nêu.",
+        "<b>Quy chiếu (it/they/this):</b> thay từng phương án vào chỗ đại từ và đọc lại cả câu; kiểm tra số ít/số nhiều và nghĩa có hợp lý không."
+      ],
+      title: "Why Science Needs Repetition",
+      text: [
+        "For most of the twentieth century, a scientific finding was considered established once it had passed peer review and appeared in a respected journal. Few researchers saw any reason to repeat an experiment that someone else had already published; journals rarely accepted such studies, and funding bodies were reluctant to pay for work that seemed to offer nothing new. Over the past two decades, however, this assumption has been seriously challenged. When teams of researchers in several fields systematically attempted to reproduce well-known results, they found that a surprisingly large proportion could not be confirmed. In some areas of psychology and medicine, fewer than half of the repeated studies produced the same outcome as the original.",
+        "It would be easy to conclude that the original scientists were careless or dishonest, but deliberate fraud appears to explain only a small fraction of these failures. A more troubling explanation lies in the incentives that shape scientific careers. Researchers are judged largely by the number of papers they publish and by how often those papers are cited. Journals, in turn, prefer results that are new and striking. A study showing that a promising drug had no effect is far less likely to be published than one claiming a dramatic improvement. As a result, positive findings reach print while negative ones remain in desk drawers, giving a distorted picture of what the evidence actually shows.",
+        "Statistical practices have made the problem worse. Many studies, particularly older ones, relied on small samples, which are more likely to produce misleadingly large effects purely by chance. Researchers also enjoyed considerable freedom in how they analysed their data: which participants to exclude, which measurements to emphasise, when to stop collecting data. None of these choices is necessarily wrong in itself, but when they are made after the results are known, they can quietly push an analysis towards the answer the researcher was hoping for. Critics have compared this to drawing a target around an arrow after it has landed.",
+        "In response, a number of reforms have gained ground. One of the most significant is pre-registration, in which scientists publicly record their hypotheses and methods before collecting any data. This makes it much harder to adjust the analysis afterwards without readers noticing. Some journals now go further, agreeing to publish a study on the basis of its design alone, regardless of whether the eventual results turn out to be positive or negative. Meanwhile, large collaborative projects, in which dozens of laboratories run the same experiment simultaneously, are producing estimates far more robust than any single team could achieve.",
+        "Not everyone welcomes these changes. Some researchers worry that strict pre-registration will discourage the kind of exploratory work from which unexpected discoveries often emerge, and that a culture of constant checking may damage public trust in science. These concerns deserve to be taken seriously, yet they arguably misunderstand what science is. Its authority has never rested on individual studies being infallible; it rests on a process that is able to detect and correct its own mistakes. Seen in this light, the so-called replication crisis is less a sign that science is broken than evidence that its self-correcting machinery, after a long period of neglect, has finally been switched back on."
+      ],
+      questions: [
+        { q: "Which of the following is the best title for the passage?",
+          opts: ["The End of Public Trust in Science", "Fraud in Modern Laboratories", "Checking Science: Problems and Remedies", "How Journals Choose Their Articles"],
+          a: 2,
+          why: "Bài đi từ vấn đề (kết quả không lặp lại được – đoạn 1), nguyên nhân (đoạn 2–3), giải pháp (đoạn 4) đến đánh giá (đoạn 5) → “Problems and Remedies”. B sai vì đoạn 2 nói gian lận chỉ là “a small fraction”; A quá mạnh và trái kết luận của tác giả." },
+        { q: "According to paragraph 1, why were replication studies uncommon in the past?",
+          opts: ["Scientists were forbidden to repeat other people's work.", "Journals and funders saw little value in them.", "They always confirmed the original results.", "Peer review made them unnecessary by law."],
+          a: 1,
+          why: "Đoạn 1: “journals rarely accepted such studies, and funding bodies were reluctant to pay for work that seemed to offer nothing new”. Không có chi tiết “forbidden” hay “by law”." },
+        { q: "The word “striking” in paragraph 2 is closest in meaning to",
+          opts: ["remarkable", "violent", "accurate", "controversial"],
+          a: 0,
+          why: "“Journals… prefer results that are new and striking” – câu sau giải thích bằng “a dramatic improvement” → striking = gây ấn tượng, nổi bật (remarkable). “Violent” là nghĩa của “strike” = đánh – bẫy nghĩa gốc." },
+        { q: "Which of the following is NOT mentioned as a reason why many results could not be reproduced?",
+          opts: ["Pressure on researchers to publish many papers", "Journals' preference for positive findings", "Studies based on small numbers of participants", "A shortage of modern laboratory equipment"],
+          a: 3,
+          why: "A: “judged largely by the number of papers they publish” (đoạn 2). B: “positive findings reach print while negative ones remain in desk drawers”. C: “relied on small samples” (đoạn 3). Thiết bị phòng thí nghiệm không được nhắc → D." },
+        { q: "The word “they” in paragraph 3 (“when they are made after the results are known”) refers to",
+          opts: ["researchers", "choices", "participants", "measurements"],
+          a: 1,
+          why: "Câu trước: “None of these choices is necessarily wrong in itself, but when they are made…” – “they… are made” = những lựa chọn được đưa ra. Người (researchers) không “được đưa ra”." },
+        { q: "The comparison to “drawing a target around an arrow after it has landed” illustrates",
+          opts: ["using unfamiliar equipment in an experiment", "repeating the same experiment many times", "deciding what counts as success after seeing the outcome", "collecting data from too many participants"],
+          a: 2,
+          why: "Hình ảnh ngay sau câu “when they are made after the results are known, they can quietly push an analysis towards the answer the researcher was hoping for” → vẽ bia sau khi tên đã cắm = định nghĩa “thành công” sau khi đã thấy kết quả." },
+        { q: "What is special about the journals described in paragraph 4?",
+          opts: ["They accept studies based on their methods before the results are known.", "They only publish studies with positive results.", "They require dozens of laboratories to take part.", "They refuse to publish exploratory research."],
+          a: 0,
+          why: "“agreeing to publish a study on the basis of its design alone, regardless of whether the eventual results turn out to be positive or negative” → chấp nhận dựa trên phương pháp, trước khi biết kết quả. B ngược ý; C là đặc điểm của “collaborative projects”, không phải tạp chí." },
+        { q: "It can be inferred from paragraph 4 that large collaborative projects are valuable because",
+          opts: ["they are cheaper than individual studies", "they allow scientists to skip pre-registration", "they are always published in respected journals", "they reduce the influence of chance on any single result"],
+          a: 3,
+          why: "“dozens of laboratories run the same experiment simultaneously… estimates far more robust than any single team could achieve”. Kết hợp với đoạn 3 (mẫu nhỏ tạo kết quả sai “purely by chance”) → nhiều phòng thí nghiệm giảm yếu tố ngẫu nhiên. Đây là suy luận, bài không nói thẳng." },
+        { q: "What is the author's overall attitude towards the “replication crisis”?",
+          opts: ["Deeply alarmed about the future of science", "Cautiously positive about what it reveals", "Indifferent to its consequences", "Opposed to the reforms it has caused"],
+          a: 1,
+          why: "Câu cuối: “less a sign that science is broken than evidence that its self-correcting machinery… has finally been switched back on” → nhìn nhận tích cực. “Cautiously” vì tác giả vẫn thừa nhận “These concerns deserve to be taken seriously”." },
+        { q: "According to the passage, which of the following is NOT true?",
+          opts: ["Studies with negative results are less likely to be published.", "Some researchers fear that pre-registration may limit exploration.", "Small samples can make effects appear larger than they are.", "Most failed replications are caused by deliberate fraud."],
+          a: 3,
+          why: "Đoạn 2: “deliberate fraud appears to explain only a small fraction of these failures” → D sai (bẫy tráo “small fraction” thành “most”). A (đoạn 2), B (đoạn 5), C (đoạn 3) đều đúng." }
+      ]
+    }
+  ],
+  vocab: [
+    ["peer review", "bình duyệt (các nhà khoa học cùng ngành thẩm định bài báo)"],
+    ["reproduce (a result)", "lặp lại, tái tạo (một kết quả nghiên cứu)"],
+    ["incentive", "động lực, sự khuyến khích (thường là lợi ích)"],
+    ["sample", "mẫu nghiên cứu (nhóm người/vật được khảo sát)"],
+    ["hypothesis (pl. hypotheses)", "giả thuyết"],
+    ["robust", "vững chắc, đáng tin cậy"],
+    ["infallible", "không thể sai"],
+    ["serendipity", "sự tình cờ may mắn dẫn đến phát hiện"],
+    ["breakthrough", "bước đột phá"],
+    ["volunteer", "tình nguyện viên"]
+  ],
+  tip: "Ở Listening Part 3, nếu lỡ mất đáp án một câu, hãy đoán nhanh và chuyển ngay sang câu tiếp theo – câu hỏi đi theo trình tự bài nói, đừng để một câu bị lỡ kéo theo mất cả ba câu sau."
+};

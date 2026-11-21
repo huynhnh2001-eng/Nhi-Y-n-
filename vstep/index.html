@@ -92,6 +92,10 @@ details.fmt>summary{cursor:pointer;padding:10px 14px;font-weight:600;font-size:1
 .lessonbox h4{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 .lessonbox ol{margin:0;padding-left:20px;display:grid;gap:5px;font-size:14.5px}
 
+.plan{display:grid;gap:4px;font-size:14px}
+.prow{display:grid;grid-template-columns:72px 10px 1fr;gap:8px;align-items:center}
+.pt{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pd{width:8px;height:8px;border-radius:50%;background:var(--c)}
 /* listening */
 .item{border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:12px}
 .item-h{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
@@ -169,7 +173,7 @@ table.ph td:first-child{font-weight:600;width:55%}
 
 <div class="wrap">
 <header>
-  <span class="eyebrow">Mục tiêu 6.5 – 7.0 · mỗi ngày 2 kỹ năng · khoảng 2 giờ</span>
+  <span class="eyebrow">Mục tiêu 6.5 – 7.0 · mỗi ngày 2 kỹ năng · 2 tiếng</span>
   <h1>VSTEP B2 trong 30 ngày</h1>
   <p class="lead">Ngày lẻ học Nghe + Đọc, ngày chẵn học Viết + Nói. Tuần 1 làm Part 1, tuần 2 lên Part 2, tuần 3 lên Part 3 (bài đọc 4 khó nhất), tuần 4 làm bài tổng hợp như thi thật. Mỗi bài nghe có audio đọc bằng giọng máy, bài đọc có 10 câu hỏi, chấm điểm và giải thích từng câu.</p>
   <details class="fmt"><summary>Cấu trúc đề VSTEP bậc 3–5 và thang điểm</summary>
@@ -389,6 +393,26 @@ function renderSpeaking(S,day,num){
   el.appendChild(h(`<details class="more" open><summary>Cụm từ dùng được ngay</summary><div><table class="ph">${S.phrases.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join("")}</table></div></details>`));
   return el;}
 
+/* ---------- 2-hour plan ---------- */
+function dayPlan(D){
+  const rows=[];
+  D.sections.forEach(S=>{const c=SK[S.type][1];
+    if(S.type==="listening"){const n=S.items.length,q=S.items.reduce((a,i)=>a+i.questions.length,0);
+      rows.push([10,"Đọc chiến thuật Nghe",c],[Math.max(15,Math.min(30,n*4+q)),`Làm ${n} bài nghe (${q} câu), mỗi bài nghe 1 lần`,c],[15,"Mở transcript, nghe lại các câu sai, chép câu then chốt",c]);}
+    if(S.type==="reading"){const r=[0,12,13,15,17][S.passage]||15;
+      rows.push([8,"Đọc chiến thuật Đọc",c],[r,`Làm bài đọc ${S.passage} (10 câu), bấm giờ`,c],[15,"Chữa bài: tìm dòng chứa đáp án, gạch chân paraphrase",c]);}
+    if(S.type==="writing")rows.push([10,"Đọc chiến thuật và đề Viết, lập dàn ý",c],[S.minutes,`Viết bài (≥${S.minWords} từ), bấm giờ`,c],[15,"So với bài mẫu, sửa lỗi và chép 3 cụm hay",c]);
+    if(S.type==="speaking"){const t=S.tasks.reduce((a,x)=>a+x.prep+x.time,0);
+      rows.push([10,"Đọc chiến thuật Nói và cụm từ mẫu",c],[Math.min(15,Math.max(10,Math.round(t*2/60))),`Nói ${S.tasks.length} đề, ghi âm, mỗi đề làm 2 lần`,c],[15,"Nghe bài mẫu, nói lại theo (shadowing)",c]);}
+  });
+  rows.push([15,"Học 10 từ vựng hôm nay (bấm loa để nghe phát âm)","var(--accent)"]);
+  const used=rows.reduce((a,r)=>a+r[0],0);
+  if(used<120)rows.push([120-used,"Ôn sổ lỗi và từ vựng các ngày trước","var(--muted)"]);
+  const total=rows.reduce((a,r)=>a+r[0],0);
+  let t=0;const el=h(`<div class="lessonbox"><h4>Lịch học hôm nay · ${total} phút</h4><div class="plan"></div></div>`);
+  rows.forEach(r=>{const s=t;t+=r[0];el.querySelector(".plan").appendChild(h(`<div class="prow"><span class="pt">${s}'–${t}'</span><span class="pd" style="--c:${r[2]}"></span><span>${r[1]}</span></div>`))});
+  return el;}
+
 /* ---------- lesson page ---------- */
 function renderDay(d){
   TTS.stop();const L=document.getElementById("lesson");L.innerHTML="";const D=DATA[d];const P=PLAN[d];
@@ -398,6 +422,7 @@ function renderDay(d){
     <div class="row"><span class="chip" style="--c:${SK[P[0]][1]}">${partLabel(P[0],P[1])}</span><span class="chip" style="--c:${SK[P[2]][1]}">${partLabel(P[2],P[3])}</span></div>
     ${D?`<p class="goal">${D.goal}</p>`:""}</div>`);
   L.appendChild(head);
+  if(D)L.appendChild(dayPlan(D));
   if(!D){L.appendChild(h(`<div class="empty">Bài của ngày ${d} chưa có nội dung.</div>`));return;}
   const R={listening:renderListening,reading:renderReading,writing:renderWriting,speaking:renderSpeaking};
   D.sections.forEach((S,i)=>L.appendChild(R[S.type](S,d,i+1)));
